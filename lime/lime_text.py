@@ -11,6 +11,9 @@ import scipy as sp
 import sklearn
 from sklearn.utils import check_random_state
 
+import torch
+from transformers import pipeline
+
 from . import explanation
 from . import lime_base
 
@@ -160,7 +163,7 @@ class IndexedString(object):
         else:
             return self.string_start[[self.positions[id_]]]
 
-    def inverse_removing(self, words_to_remove):
+    def inverse_removing(self, words_to_remove, model, prompt):
         """Returns a string after removing the appropriate words.
 
         If self.bow is false, replaces word with UNKWORDZ instead of removing
@@ -172,6 +175,7 @@ class IndexedString(object):
         Returns:
             original raw string with appropriate words removed.
         """
+        return model(prompt.format(self.raw ,words_to_remove))
         mask = np.ones(self.as_np.shape[0], dtype='bool')
         mask[self.__get_idxs(words_to_remove)] = False
         if not self.bow:
@@ -269,7 +273,7 @@ class IndexedCharacters(object):
         else:
             return self.string_start[[self.positions[id_]]]
 
-    def inverse_removing(self, words_to_remove):
+    def inverse_removing(self, words_to_remove, model, prompt):
         """Returns a string after removing the appropriate words.
 
         If self.bow is false, replaces word with UNKWORDZ instead of removing
@@ -281,6 +285,7 @@ class IndexedCharacters(object):
         Returns:
             original raw string with appropriate words removed.
         """
+        return model(prompt.format(self.raw ,words_to_remove))
         mask = np.ones(self.as_np.shape[0], dtype='bool')
         mask[self.__get_idxs(words_to_remove)] = False
         if not self.bow:
@@ -313,7 +318,13 @@ class LimeTextExplainer(object):
                  bow=True,
                  mask_string=None,
                  random_state=None,
-                 char_level=False):
+                 char_level=False,
+                 model="huggyllama/llama-7b",
+                 prompt="""
+                For the given sentence : "{}" replace the words: {} folowing the given rules:
+                1. If it is a noun replace it with a similar noun.
+                2. If it is a adjective replace it with the opositie meaning adjactive
+                """):
         """Init function.
 
         Args:
@@ -364,6 +375,8 @@ class LimeTextExplainer(object):
         self.mask_string = mask_string
         self.split_expression = split_expression
         self.char_level = char_level
+        self.model = pipeline(task="text-generation",model="huggyllama/llama-7b",dtype=torch.float16,device=0)
+        self.prompt = prompt
 
     def explain_instance(self,
                          text_instance,
@@ -479,7 +492,7 @@ class LimeTextExplainer(object):
             inactive = self.random_state.choice(features_range, size,
                                                 replace=False)
             data[i, inactive] = 0
-            inverse_data.append(indexed_string.inverse_removing(inactive))
+            inverse_data.append(indexed_string.inverse_removing(inactive,self.model,self.prompt))
         labels = classifier_fn(inverse_data)
         distances = distance_fn(sp.sparse.csr_matrix(data))
         return data, labels, distances
