@@ -14,6 +14,7 @@ from sklearn.utils import check_random_state
 from . import explanation
 from . import lime_base
 
+from sentence_transformers import SentenceTransformer
 
 class TextDomainMapper(explanation.DomainMapper):
     """Maps feature ids to words or word-positions"""
@@ -364,6 +365,7 @@ class LimeTextExplainer(object):
         self.mask_string = mask_string
         self.split_expression = split_expression
         self.char_level = char_level
+        self.sentence_embedder = SentenceTransformer("all-mpnet-base-v2")
 
     def explain_instance(self,
                          text_instance,
@@ -402,7 +404,7 @@ class LimeTextExplainer(object):
             An Explanation object (see explanation.py) with the corresponding
             explanations.
         """
-
+        self.sentence_embedder.similarity_fn_name = distance_metric
         indexed_string = (IndexedCharacters(
             text_instance, bow=self.bow, mask_string=self.mask_string)
                           if self.char_level else
@@ -466,8 +468,9 @@ class LimeTextExplainer(object):
         """
 
         def distance_fn(x):
-            return sklearn.metrics.pairwise.pairwise_distances(
-                x, x[0], metric=distance_metric).ravel() * 100
+            embeddings = self.sentence_embedder.encode(x)
+            similarities = self.sentence_embedder.similarity(embeddings, embeddings[0])
+            return similarities.numpy().ravel()*100
 
         doc_size = indexed_string.num_words()
         sample = self.random_state.randint(1, doc_size + 1, num_samples - 1)
@@ -481,5 +484,5 @@ class LimeTextExplainer(object):
             data[i, inactive] = 0
             inverse_data.append(indexed_string.inverse_removing(inactive))
         labels = classifier_fn(inverse_data)
-        distances = distance_fn(sp.sparse.csr_matrix(data))
+        distances = distance_fn(inverse_data)
         return data, labels, distances
