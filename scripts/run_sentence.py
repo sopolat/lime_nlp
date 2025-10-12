@@ -22,6 +22,7 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from lime.lime_text import LimeTextExplainer
 import warnings
 
+
 def load_model(model_name: str):
     tokenizer = AutoTokenizer.from_pretrained(model_name, use_fast=True)
     model = AutoModelForSequenceClassification.from_pretrained(model_name)
@@ -43,7 +44,7 @@ def load_model(model_name: str):
         """Return an (N, num_labels) numpy array of probabilities."""
         all_probs = []
         for i in range(0, len(texts), batch_size):
-            batch = texts[i:i+batch_size]
+            batch = texts[i:i + batch_size]
             enc = tokenizer(
                 batch, padding=True, truncation=True, max_length=max_length, return_tensors="pt"
             )
@@ -62,6 +63,7 @@ def load_model(model_name: str):
         return np.vstack(all_probs)
 
     return tokenizer, model, class_names, predict_proba
+
 
 def main():
     warnings.filterwarnings("ignore", category=UserWarning)
@@ -102,10 +104,11 @@ def main():
         print(f"  {word:>20s} : {weight:+.4f}")
 
     if args.html:
-        html = exp.as_html(label=pred_idx)
+        html = exp.as_html()
         with open(args.html, "w", encoding="utf-8") as f:
             f.write(html)
         print(f"\nSaved HTML explanation to: {os.path.abspath(args.html)}")
+
 
 if __name__ == "__main__":
     main()

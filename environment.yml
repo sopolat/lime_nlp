@@ -19,6 +19,7 @@ dependencies:
   - tqdm
   - evaluate
   - scikit-learn
+  - sentence-transformers
   - jupyterlab
   - pip
   - pip:
