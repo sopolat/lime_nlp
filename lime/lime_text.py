@@ -315,7 +315,8 @@ class LimeTextExplainer(object):
                  bow=True,
                  mask_string=None,
                  random_state=None,
-                 char_level=False):
+                 char_level=False,
+                 sentence_transformer_model_name_or_path=None):
         """Init function.
 
         Args:
@@ -366,7 +367,7 @@ class LimeTextExplainer(object):
         self.mask_string = mask_string
         self.split_expression = split_expression
         self.char_level = char_level
-        self.sentence_embedder = SentenceTransformer("all-mpnet-base-v2")
+        self.sentence_embedder = SentenceTransformer(model_name_or_path=sentence_transformer_model_name_or_path)
 
     def explain_instance(self,
                          text_instance,

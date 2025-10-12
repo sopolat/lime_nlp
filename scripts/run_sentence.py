@@ -8,10 +8,15 @@ LIME + HuggingFace BERT demo using gmihaila/bert-base-cased-hatexplain.
 
 Run:
   python scripts/run_sentence.py \
-    --text "These people are awful and should leave." \
+    --text " can not do politics offline when degenerate scum like you control the offline that why we have to siege kike shill" \
     --model gmihaila/bert-base-cased-hatexplain \
     --num-samples 2 \
     --html explanation.html
+
+
+ToDo:
+    Add option to manually provide the samples.
+
 """
 
 import argparse
@@ -22,6 +27,9 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from lime.lime_text import LimeTextExplainer
 import warnings
 
+
+
+SENTENCE_TRANSFORMER_MODEL = "all-mpnet-base-v2"
 
 def load_model(model_name: str):
     tokenizer = AutoTokenizer.from_pretrained(model_name, use_fast=True)
@@ -90,7 +98,11 @@ def main():
     print(f"Predicted: {class_names[pred_idx]}  ({pretty_probs})")
 
     # LIME explanation
-    explainer = LimeTextExplainer(class_names=class_names, random_state=42)
+    explainer = LimeTextExplainer(
+        class_names=class_names,
+        random_state=42,
+        sentence_transformer_model_name_or_path=SENTENCE_TRANSFORMER_MODEL,
+    )
     exp = explainer.explain_instance(
         args.text,
         predict_proba,
