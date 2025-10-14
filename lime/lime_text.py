@@ -17,7 +17,7 @@ from . import lime_base
 from sentence_transformers import SentenceTransformer
 
 def wr(words,mask):
-    return ''.join([words if mask[i] else "[UNK]" for i in range(mask.shape[0])])
+    return ''.join([words[i] if mask[i] else "[UNK]" for i in range(mask.shape[0])])
 
 class TextDomainMapper(explanation.DomainMapper):
     """Maps feature ids to words or word-positions"""
