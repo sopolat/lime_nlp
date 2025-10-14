@@ -178,7 +178,7 @@ class IndexedString(object):
         
         mask = np.ones(self.as_np.shape[0], dtype='bool')
         mask[self.__get_idxs(words_to_remove)] = False
-        return wordReverser(self.as_list[i],mask)
+        return wordReverser(self.as_list,mask)
         if not self.bow:
             return ''.join(
                 [self.as_list[i] if mask[i] else self.mask_string
@@ -288,7 +288,7 @@ class IndexedCharacters(object):
         """
         mask = np.ones(self.as_np.shape[0], dtype='bool')
         mask[self.__get_idxs(words_to_remove)] = False
-        return wordReverser(self.as_list[i],mask)
+        return wordReverser(self.as_list,mask)
         if not self.bow:
             return ''.join(
                 [self.as_list[i] if mask[i] else self.mask_string
