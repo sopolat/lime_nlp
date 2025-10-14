@@ -14,6 +14,8 @@ from sklearn.utils import check_random_state
 from . import explanation
 from . import lime_base
 
+def wr(words,mask):
+    return ''.join([words if mask[i] else "[UNK]" for i in range(mask.shape[0])])
 
 class TextDomainMapper(explanation.DomainMapper):
     """Maps feature ids to words or word-positions"""
@@ -160,7 +162,7 @@ class IndexedString(object):
         else:
             return self.string_start[[self.positions[id_]]]
 
-    def inverse_removing(self, words_to_remove):
+    def inverse_removing(self, words_to_remove,wordReverser):
         """Returns a string after removing the appropriate words.
 
         If self.bow is false, replaces word with UNKWORDZ instead of removing
@@ -172,8 +174,11 @@ class IndexedString(object):
         Returns:
             original raw string with appropriate words removed.
         """
+        
+        
         mask = np.ones(self.as_np.shape[0], dtype='bool')
         mask[self.__get_idxs(words_to_remove)] = False
+        return wordReverser(self.as_list[i],mask)
         if not self.bow:
             return ''.join(
                 [self.as_list[i] if mask[i] else self.mask_string
@@ -269,7 +274,7 @@ class IndexedCharacters(object):
         else:
             return self.string_start[[self.positions[id_]]]
 
-    def inverse_removing(self, words_to_remove):
+    def inverse_removing(self, words_to_remove,wordReverser):
         """Returns a string after removing the appropriate words.
 
         If self.bow is false, replaces word with UNKWORDZ instead of removing
@@ -283,6 +288,7 @@ class IndexedCharacters(object):
         """
         mask = np.ones(self.as_np.shape[0], dtype='bool')
         mask[self.__get_idxs(words_to_remove)] = False
+        return wordReverser(self.as_list[i],mask)
         if not self.bow:
             return ''.join(
                 [self.as_list[i] if mask[i] else self.mask_string
@@ -313,7 +319,8 @@ class LimeTextExplainer(object):
                  bow=True,
                  mask_string=None,
                  random_state=None,
-                 char_level=False):
+                 char_level=False,
+                 wordReverser=None):
         """Init function.
 
         Args:
@@ -364,6 +371,10 @@ class LimeTextExplainer(object):
         self.mask_string = mask_string
         self.split_expression = split_expression
         self.char_level = char_level
+        if wordReverser is None:
+            self.wordReverser = wr
+        else:
+            self.wordReverser = wordReverser
 
     def explain_instance(self,
                          text_instance,
@@ -479,7 +490,7 @@ class LimeTextExplainer(object):
             inactive = self.random_state.choice(features_range, size,
                                                 replace=False)
             data[i, inactive] = 0
-            inverse_data.append(indexed_string.inverse_removing(inactive))
+            inverse_data.append(indexed_string.inverse_removing(inactive,self.wordReverser))
         labels = classifier_fn(inverse_data)
         distances = distance_fn(sp.sparse.csr_matrix(data))
         return data, labels, distances
