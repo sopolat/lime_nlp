@@ -8,10 +8,10 @@ LIME + HuggingFace BERT demo using gmihaila/bert-base-cased-hatexplain.
 
 Run:
   python scripts/run_sentence.py \
-    --text " can not do politics offline when degenerate scum like you control the offline that why we have to siege kike shill" \
+    --text "can not do politics offline when degenerate scum like you control the offline that why we have to siege kike shill" \
     --model gmihaila/bert-base-cased-hatexplain \
-    --num-samples 2 \
-    --html explanation.html
+    --num-samples 6 \
+    --html original_lime_explanation.html
 
 
 ToDo:
@@ -21,56 +21,16 @@ ToDo:
 
 import argparse
 import os
-import numpy as np
-import torch
-from transformers import AutoTokenizer, AutoModelForSequenceClassification
-from lime.lime_text import LimeTextExplainer
 import warnings
 
+import numpy as np
 
+from lime.lime_text import LimeTextExplainer
+from lime.utils.custom_utils import load_model
 
 SENTENCE_TRANSFORMER_MODEL = "all-mpnet-base-v2"
 
-def load_model(model_name: str):
-    tokenizer = AutoTokenizer.from_pretrained(model_name, use_fast=True)
-    model = AutoModelForSequenceClassification.from_pretrained(model_name)
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    model.to(device).eval()
 
-    # Class names from config (ordered by id)
-    id2label = getattr(model.config, "id2label", None)
-    if id2label and isinstance(id2label, dict) and len(id2label) == model.config.num_labels:
-        class_names = [id2label[i] for i in range(model.config.num_labels)]
-    else:
-        class_names = [f"LABEL_{i}" for i in range(model.config.num_labels)]
-
-    # Detect problem type for probabilities
-    problem_type = getattr(model.config, "problem_type", None)
-
-    @torch.no_grad()
-    def predict_proba(texts, batch_size: int = 32, max_length: int = 256):
-        """Return an (N, num_labels) numpy array of probabilities."""
-        all_probs = []
-        for i in range(0, len(texts), batch_size):
-            batch = texts[i:i + batch_size]
-            enc = tokenizer(
-                batch, padding=True, truncation=True, max_length=max_length, return_tensors="pt"
-            )
-            enc = {k: v.to(device) for k, v in enc.items()}
-            logits = model(**enc).logits
-
-            # Probabilities
-            if problem_type == "multi_label_classification":
-                probs = torch.sigmoid(logits)  # independent per class
-                # Normalize rows so LIME gets a distribution (helps stability)
-                probs = probs / probs.sum(dim=-1, keepdim=True).clamp_min(1e-12)
-            else:
-                probs = torch.softmax(logits, dim=-1)
-
-            all_probs.append(probs.cpu().numpy())
-        return np.vstack(all_probs)
-
-    return tokenizer, model, class_names, predict_proba
 
 
 def main():
@@ -116,10 +76,11 @@ def main():
         print(f"  {word:>20s} : {weight:+.4f}")
 
     if args.html:
+        path = os.path.join("outputs", args.html)
         html = exp.as_html()
-        with open(args.html, "w", encoding="utf-8") as f:
+        with open(path, "w", encoding="utf-8") as f:
             f.write(html)
-        print(f"\nSaved HTML explanation to: {os.path.abspath(args.html)}")
+        print(f"\nSaved HTML explanation to: {path}")
 
 
 if __name__ == "__main__":

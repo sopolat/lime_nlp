@@ -377,7 +377,9 @@ class LimeTextExplainer(object):
                          num_features=10,
                          num_samples=5000,
                          distance_metric='cosine',
-                         model_regressor=None):
+                         model_regressor=None,
+                         llm_sample_data=None,
+                         ):
         """Generates explanations for a prediction.
 
         First, we generate neighborhood data by randomly hiding features from
@@ -416,6 +418,7 @@ class LimeTextExplainer(object):
         domain_mapper = TextDomainMapper(indexed_string)
         data, yss, distances = self.__data_labels_distances(
             indexed_string, classifier_fn, num_samples,
+            llm_sample_data=llm_sample_data,
             distance_metric=distance_metric)
         if self.class_names is None:
             self.class_names = [str(x) for x in range(yss[0].shape[0])]
@@ -441,6 +444,7 @@ class LimeTextExplainer(object):
                                 indexed_string,
                                 classifier_fn,
                                 num_samples,
+                                llm_sample_data,
                                 distance_metric='cosine'):
         """Generates a neighborhood around a prediction.
 
@@ -474,17 +478,22 @@ class LimeTextExplainer(object):
             similarities = self.sentence_embedder.similarity(embeddings, embeddings[0])
             return similarities.numpy().ravel() * 100
 
-        doc_size = indexed_string.num_words()
-        sample = self.random_state.randint(1, doc_size + 1, num_samples - 1)
-        data = np.ones((num_samples, doc_size))
-        data[0] = np.ones(doc_size)
-        features_range = range(doc_size)
-        inverse_data = [indexed_string.raw_string()]
-        for i, size in enumerate(sample, start=1):
-            inactive = self.random_state.choice(features_range, size,
-                                                replace=False)
-            data[i, inactive] = 0
-            inverse_data.append(indexed_string.inverse_removing(inactive))
+        if llm_sample_data is None:
+            doc_size = indexed_string.num_words()
+            sample = self.random_state.randint(1, doc_size + 1, num_samples - 1)
+            data = np.ones((num_samples, doc_size))
+            data[0] = np.ones(doc_size)
+            features_range = range(doc_size)
+            inverse_data = [indexed_string.raw_string()]
+            for i, size in enumerate(sample, start=1):
+                inactive = self.random_state.choice(features_range, size,
+                                                    replace=False)
+                data[i, inactive] = 0
+                inverse_data.append(indexed_string.inverse_removing(inactive))
+        else:
+            inverse_data = [indexed_string.raw_string()] + llm_sample_data["text"]
+            data = np.array([[1] * len(llm_sample_data["mask"][0])] + llm_sample_data["mask"])
+
         labels = classifier_fn(inverse_data)
         distances = distance_fn(inverse_data)
         return data, labels, distances
