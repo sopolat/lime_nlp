@@ -12,6 +12,10 @@
 # Unit test / coverage reports
 .cache
 
+.DS_Store
+
+.env
+
 # Created by https://www.gitignore.io/api/pycharm
 
 ### PyCharm ###

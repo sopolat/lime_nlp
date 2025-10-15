@@ -491,7 +491,9 @@ class LimeTextExplainer(object):
                 data[i, inactive] = 0
                 inverse_data.append(indexed_string.inverse_removing(inactive))
         else:
+
             inverse_data = [indexed_string.raw_string()] + llm_sample_data["text"]
+
             data = np.array([[1] * len(llm_sample_data["mask"][0])] + llm_sample_data["mask"])
 
         labels = classifier_fn(inverse_data)
