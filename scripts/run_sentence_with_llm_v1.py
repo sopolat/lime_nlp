@@ -30,7 +30,7 @@ load_dotenv()
 # ============================================================================
 
 # Experiment Settings
-TEST_MODE = False  # Set to True to run 1 example per dataset for testing
+TEST_MODE = True  # Set to True to run 1 example per dataset for testing
 
 # LLM Settings
 LLM_PROVIDER = "anthropic"  # "openai" or "anthropic"
@@ -39,7 +39,7 @@ ANTHROPIC_MODEL = "claude-3-5-sonnet-20241022"
 SENTENCE_TRANSFORMER_MODEL = "all-mpnet-base-v2"
 
 # Paths
-DATA_PATH = "data/xai_combined_df_30_examples.csv"
+DATA_PATH = "data/xai_combined_df_150_examples.csv"
 OUTPUT_DIR = f"outputs/{'test' if TEST_MODE else 'run'}_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
 LOG_FILE = f"{OUTPUT_DIR}/llm_calls.jsonl"
 
