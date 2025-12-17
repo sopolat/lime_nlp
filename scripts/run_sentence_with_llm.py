@@ -3,9 +3,9 @@
 LLM-Enhanced LIME Evaluation Pipeline
 Compares LIME-LLM against baseline XAI methods
 
-Version 1 (v1) - older experiments where SST2 not as good.
 """
 
+import re
 import json
 import sys
 import os
@@ -23,7 +23,27 @@ warnings.filterwarnings("ignore")
 from dotenv import load_dotenv
 from lime.lime_text import LimeTextExplainer
 from lime.utils.custom_utils import load_model
+from prompts import SYSTEM_PROMPTS_VERSIONS, USER_PROMPT_VERSION
 
+# Model Paths
+TASK_MODELS = {
+    "sst2": "distilbert-base-uncased-finetuned-sst-2-english",
+    "hatexplain": "gmihaila/bert-base-cased-hatexplain",
+    "cola": "textattack/distilbert-base-uncased-CoLA"
+}
+
+METHODS = ["Partition SHAP", "LIME", "Integrated Gradient", "LIME-LLM"]
+
+LLM_SET = {
+    "sonnet45": {
+        "model": "claude-sonnet-4-5-20250929",
+        "provider": "anthropic"  # "openai" or "anthropic"
+    },
+    "gpt41": {
+        "model": "gpt-4.1-2025-04-14",
+        "provider": "openai",
+    },
+}
 # Load environment variables from .env file
 load_dotenv()
 
@@ -31,244 +51,32 @@ load_dotenv()
 # CONFIGURATION
 # ============================================================================
 
-# Experiment Settings
+# Modify Settings
 TEST_MODE = True  # Set to True to run 1 example per dataset for testing
-
-# LLM Settings
-LLM_PROVIDER = "anthropic"  # "openai" or "anthropic"
-OPENAI_MODEL = "gpt-3.5-turbo"
-ANTHROPIC_MODEL = "claude-3-5-sonnet-20241022"
+SYSTEM_PROMPT_USE_VERSION = "v1"
+USER_PROMPT_USE_VERSION = "v4"
+LLM_NAME = "sonnet45"  # sonnet45 gpt41
 SENTENCE_TRANSFORMER_MODEL = "all-mpnet-base-v2"
+TEMPERATURE = 0.0
+DATA_SAMPLES = 30  # 30 60 150
 
-# Paths
-DATA_PATH = "data/xai_combined_df_150_examples.csv"
-OUTPUT_DIR = f"outputs/{'test' if TEST_MODE else 'run'}_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+# Fixed
+LLM_PROVIDER = LLM_SET[LLM_NAME]["provider"]
+LLM_MODEL = LLM_SET[LLM_NAME]["model"]
+DATA_PATH = f"data/xai_combined_df_{DATA_SAMPLES}_examples.csv"
+OUTPUT_DIR = f"outputs/{'test' if TEST_MODE else 'run'}_{LLM_NAME}_{os.path.basename(DATA_PATH).removesuffix(".csv")}"
 LOG_FILE = f"{OUTPUT_DIR}/llm_calls.jsonl"
-
-# Model Paths
-MODELS = {
-    "sst2": "distilbert-base-uncased-finetuned-sst-2-english",
-    "hatexplain": "gmihaila/bert-base-cased-hatexplain",
-    "cola": "textattack/distilbert-base-uncased-CoLA"
-}
-
-# ============================================================================
-# DATASET-SPECIFIC PROMPTS
-# ============================================================================
-
-SYSTEM_PROMPT = """You are an NLP/XAI expert assisting a LIME explainer. You MUST generate EXACTLY {n_samples} mask samples - no more, no fewer. Analyze why the black-box made its prediction, then generate strategic masks over the vocabulary that test your hypotheses. For each mask, create two perturbations: neutral_infill (supports prediction) and boundary_infill (challenges prediction). Output JSON only."""
-
-SST2_PROMPT = """Generate EXACTLY {n_samples} strategic LIME vocabulary masks for SST2 sentiment classification.
-
-CRITICAL REQUIREMENT: You MUST provide EXACTLY {n_samples} samples in your output. Count: 1, 2, 3, ... {n_samples}. Do NOT stop early.
-
-INPUTS:
-TEXT: "{text}"
-TEXT_LENGTH: {text_length} words
-VOCAB: {vocab}
-VOCAB_COUNT: {vocab_count}
-PREDICTED_LABEL: "{predicted_label}"
-CLASSES: ["positive", "negative"]
-
-APPROACH:
-1. First, identify which vocabulary words likely drove the black-box to predict "{predicted_label}" sentiment
-2. Generate EXACTLY {n_samples} masks that test different hypotheses about the model's reasoning
-3. Each mask isolates specific vocabulary features (e.g., sentiment words, negations, intensifiers, context words)
-
-MASK REQUIREMENTS:
-- Binary array with EXACTLY {vocab_count} elements (one per vocabulary word in VOCAB order)
-- Format: [1,0,1,...] where 1=word MUST appear in perturbed text, 0=word MUST NOT appear
-- Each mask tests a distinct feature combination
-- Vary density: some sparse (test individual terms), some dense (test combinations)
-- Target vocabulary words that explain why black-box predicted "{predicted_label}"
-
-FOR EACH MASK, GENERATE 2 PERTURBED TEXT SAMPLES:
-- neutral_infill: includes all MASK=1 words, excludes all MASK=0 words, maintains/supports predicted sentiment
-- boundary_infill: includes all MASK=1 words, excludes all MASK=0 words, pushes toward opposite sentiment
-
-PERTURBATION RULES:
-- MUST include all vocabulary words where MASK=1
-- MUST NOT include any vocabulary words where MASK=0
-- Target length: {text_length} words (80-120% acceptable)
-- Use natural sentence structure with articles, connecting words
-- Text should be semantically coherent and style-consistent
-
-CRITICAL VALIDATION:
-- Each mask array MUST have exactly {vocab_count} elements matching VOCAB order
-- You MUST provide EXACTLY {n_samples} complete samples
-- If you cannot generate EXACTLY {n_samples} valid masks, output {{"status":"FAIL"}}
-
-OUTPUT FORMAT (JSON ONLY):
-{{
-  "status": "OK",
-  "sample_count": {n_samples},  // Must match this number
-  "samples": [
-    // Sample 1
-    {{
-      "mask": [1,0,1,...],  // MUST be length {vocab_count}
-      "neutral_infill": {{"text": "..."}},
-      "boundary_infill": {{"text": "..."}}
-    }},
-    // Sample 2
-    {{
-      "mask": [1,0,1,...],
-      "neutral_infill": {{"text": "..."}},
-      "boundary_infill": {{"text": "..."}}
-    }},
-    // Sample 3
-    {{
-      "mask": [1,0,1,...],
-      "neutral_infill": {{"text": "..."}},
-      "boundary_infill": {{"text": "..."}}
-    }}
-    // ... continue until you have EXACTLY {n_samples} samples
-  ]
-}}
-OR {{"status":"FAIL"}}
-
-REMEMBER: You must provide all {n_samples} samples."""
-
-COLA_PROMPT = """Generate EXACTLY {n_samples} strategic LIME vocabulary masks for CoLA grammatical acceptability classification.
-
-CRITICAL REQUIREMENT: You MUST provide EXACTLY {n_samples} samples in your output. Count: 1, 2, 3, ... {n_samples}. Do NOT stop early.
-
-INPUTS:
-TEXT: "{text}"
-TEXT_LENGTH: {text_length} words
-VOCAB: {vocab}
-VOCAB_COUNT: {vocab_count}
-PREDICTED_LABEL: "{predicted_label}"
-CLASSES: ["acceptable", "unacceptable"]
-
-APPROACH:
-1. First, identify which vocabulary words likely drove the black-box to predict "{predicted_label}" grammaticality
-2. Generate EXACTLY {n_samples} masks that test different hypotheses about the model's reasoning
-3. Each mask isolates specific vocabulary features (e.g., function words, word order, agreement markers, verb forms)
-
-MASK REQUIREMENTS:
-- Binary array with EXACTLY {vocab_count} elements (one per vocabulary word in VOCAB order)
-- Format: [1,0,1,...] where 1=word MUST appear in perturbed text, 0=word MUST NOT appear
-- Each mask tests a distinct feature combination
-- Vary density: some sparse (test individual terms), some dense (test combinations)
-- Target vocabulary words that explain why black-box predicted "{predicted_label}"
-
-FOR EACH MASK, GENERATE 2 PERTURBED TEXT SAMPLES:
-- neutral_infill: includes all MASK=1 words, excludes all MASK=0 words, maintains/supports predicted grammaticality
-- boundary_infill: includes all MASK=1 words, excludes all MASK=0 words, pushes toward opposite grammaticality
-
-PERTURBATION RULES:
-- MUST include all vocabulary words where MASK=1
-- MUST NOT include any vocabulary words where MASK=0
-- Generate COMPLETE, NATURAL English sentences (not fragments)
-- Target length: {text_length} words (80-120% acceptable)
-- Use natural sentence structure with articles, connecting words
-- Pay attention to: word order, subject-verb agreement, tense, articles, prepositions
-- For acceptable: maintain grammatical correctness
-- For unacceptable: maintain or introduce grammatical errors
-
-OUTPUT FORMAT (JSON ONLY):
-{{
-  "status": "OK",
-  "sample_count": {n_samples},
-  "samples": [
-    {{
-      "mask": [1,0,1,...],
-      "neutral_infill": {{"text": "complete natural English sentence..."}},
-      "boundary_infill": {{"text": "complete natural English sentence..."}}
-    }}
-  ]
-}}
-OR {{"status":"FAIL"}}
-
-REMEMBER: You must provide all {n_samples} samples. Generate COMPLETE, NATURAL sentences. Respect grammaticality constraints."""
-
-HATEXPLAIN_PROMPT = """Generate EXACTLY {n_samples} strategic LIME vocabulary masks for HateXplain classification.
-
-CRITICAL REQUIREMENT: You MUST provide EXACTLY {n_samples} samples in your output. Count: 1, 2, 3, ... {n_samples}. Do NOT stop early.
-
-INPUTS:
-TEXT: "{text}"
-VOCAB: {vocab}
-VOCAB_COUNT: {vocab_count}
-PREDICTED_LABEL: "{predicted_label}"
-CLASSES: ["hatespeech", "offensive", "normal"]
-
-APPROACH:
-1. First, identify which vocabulary words likely drove the black-box to predict "{predicted_label}"
-2. Generate EXACTLY {n_samples} masks that test different hypotheses about the model's reasoning
-3. Each mask isolates specific vocabulary features (e.g., slurs, dehumanizing terms, threats, context words)
-
-MASK REQUIREMENTS:
-- Binary array with EXACTLY {vocab_count} elements (one per vocabulary word in VOCAB order)
-- Format: [1,0,1,...] where 1=word MUST appear in perturbed text, 0=word MUST NOT appear
-- Each mask tests a distinct feature combination
-- Vary density: some sparse (test individual terms), some dense (test combinations)
-- Target vocabulary words that explain why black-box predicted "{predicted_label}"
-
-FOR EACH MASK, GENERATE 2 PERTURBED TEXT SAMPLES:
-- neutral_infill: perturbed text that includes all MASK=1 words, excludes all MASK=0 words, and maintains/supports predicted label
-- boundary_infill: perturbed text that includes all MASK=1 words, excludes all MASK=0 words, and pushes toward different label
-
-PERTURBATION RULES:
-- MUST include all vocabulary words where MASK=1
-- MUST NOT include any vocabulary words where MASK=0
-- Text should be semantically coherent and style-consistent (social media style, may be ungrammatical)
-- SAFETY: do NOT add new slurs/attacks/threats beyond what's in VOCAB
-- Keep similar length to original text
-- Maintain natural word order and grammar where possible
-
-CRITICAL VALIDATION:
-- Each mask array MUST have exactly {vocab_count} elements matching VOCAB order
-- You MUST provide EXACTLY {n_samples} complete samples
-- If you cannot generate EXACTLY {n_samples} valid masks, output {{"status":"FAIL"}}
-
-OUTPUT FORMAT (JSON ONLY):
-{{
-  "status": "OK",
-  "sample_count": {n_samples},  // Must match this number
-  "samples": [
-    // Sample 1
-    {{
-      "mask": [1,0,1,...],  // MUST be length {vocab_count}
-      "neutral_infill": {{"text": "..."}},
-      "boundary_infill": {{"text": "..."}}
-    }},
-    // Sample 2
-    {{
-      "mask": [1,0,1,...],
-      "neutral_infill": {{"text": "..."}},
-      "boundary_infill": {{"text": "..."}}
-    }},
-    // Sample 3
-    {{
-      "mask": [1,0,1,...],
-      "neutral_infill": {{"text": "..."}},
-      "boundary_infill": {{"text": "..."}}
-    }}
-    // ... continue until you have EXACTLY {n_samples} samples
-  ]
-}}
-OR {{"status":"FAIL"}}
-
-REMEMBER: You must provide all {n_samples} samples."""
-
-PROMPT_TEMPLATES = {
-    "sst2": SST2_PROMPT,
-    "cola": COLA_PROMPT,
-    "hatexplain": HATEXPLAIN_PROMPT
-}
 
 
 def get_prompts(dataset: str, text: str, vocab: list, predicted_label: str, n_samples: int = 10) -> tuple:
     """Generate dataset-specific prompts with all required parameters."""
-    system = SYSTEM_PROMPT.format(n_samples=n_samples)
-    user = PROMPT_TEMPLATES[dataset].format(
-        n_samples=n_samples,
+    system = SYSTEM_PROMPTS_VERSIONS[SYSTEM_PROMPT_USE_VERSION].format(n_samples=n_samples)
+    user = USER_PROMPT_VERSION[USER_PROMPT_USE_VERSION][dataset].format(
         text=text,
         text_length=len(text.split()),
-        vocab=str(vocab),
-        vocab_count=len(vocab),
-        predicted_label=predicted_label
+        predicted_label=predicted_label,
+        vocab=list(vocab),
+        n_samples=n_samples  # 10 is optimal trade-off based on LLiMe paper
     )
     return system, user
 
@@ -298,23 +106,25 @@ def call_llm(system_msg: str, user_msg: str, client) -> str:
     try:
         if LLM_PROVIDER == "openai":
             response = client.chat.completions.create(
-                model=OPENAI_MODEL,
+                model=LLM_MODEL,
                 messages=[
                     {"role": "system", "content": system_msg},
                     {"role": "user", "content": user_msg}
                 ],
-                temperature=0.7
+                temperature=TEMPERATURE
             )
             return response.choices[0].message.content
-        else:
+        elif LLM_PROVIDER == "anthropic":
             response = client.messages.create(
-                model=ANTHROPIC_MODEL,
+                model=LLM_MODEL,
                 max_tokens=4000,
                 system=system_msg,
                 messages=[{"role": "user", "content": user_msg}],
-                temperature=0.7
+                temperature=TEMPERATURE
             )
             return response.content[0].text
+        else:
+            raise ValueError(f"INVALID LLM PROVIDER: {LLM_PROVIDER}")
     except Exception as e:
         return json.dumps({"status": "ERROR", "error": str(e)})
 
@@ -322,13 +132,24 @@ def call_llm(system_msg: str, user_msg: str, client) -> str:
 def log_llm_call(idx: str, dataset: str, text: str, predicted_label: str, vocab: str, response: str):
     """Log LLM call to JSONL."""
     with open(LOG_FILE, 'a', encoding='utf-8') as f:
-        f.write(json.dumps({
-            "idx": idx, "dataset": dataset, "text": text, "predicted_label": predicted_label,
-            "provider": LLM_PROVIDER, "timestamp": datetime.now().isoformat(),
-            "vocab": vocab,
-            "n_vocab": len(vocab),
-            "response": response
-        }) + '\n')
+        f.write(
+            json.dumps(
+                obj={
+                    "idx": idx,
+                    "dataset": dataset,
+                    "text": text,
+                    "predicted_label": predicted_label,
+                    "provider": LLM_PROVIDER,
+                    "timestamp": datetime.now().isoformat(),
+                    "vocab": vocab,
+                    "n_vocab": len(vocab),
+                    "response": response,
+                },
+                indent=2,
+                ensure_ascii=False,
+            )
+            + "\n"
+        )
 
 
 # ============================================================================
@@ -337,19 +158,18 @@ def log_llm_call(idx: str, dataset: str, text: str, predicted_label: str, vocab:
 
 def parse_llm_response(response: str) -> dict:
     """Parse LLM JSON response into LIME-compatible format."""
-    data = json.loads(response)
+    clean = re.sub(r"^```(?:json)?\s*|\s*```$", "", response.strip())
+    data = json.loads(clean)
     if data.get("status") != "OK":
         raise ValueError(f"LLM error: {data.get('error', 'Unknown')}")
 
     texts, masks = [], []
     for sample in data.get("samples", []):
         mask = sample.get("mask", [])
-        if "neutral_infill" in sample:
-            texts.append(sample["neutral_infill"]["text"])
-            masks.append(mask)
-        if "boundary_infill" in sample:
-            texts.append(sample["boundary_infill"]["text"])
-            masks.append(mask)
+        for key_output in USER_PROMPT_VERSION[USER_PROMPT_USE_VERSION]["key_outputs"]:
+            if key_output in sample:
+                texts.append(sample[key_output]["text"])
+                masks.append(mask)
 
     return {"text": texts, "mask": masks}
 
@@ -384,7 +204,8 @@ def get_lime_llm_scores(text: str, dataset: str, model_path: str, llm_client, id
     indexed_string = (
         IndexedCharacters(raw_string=text, bow=explainer.bow, mask_string=explainer.mask_string)
         if explainer.char_level else
-        IndexedString(raw_string=text, bow=explainer.bow, split_expression=explainer.split_expression, mask_string=explainer.mask_string))
+        IndexedString(raw_string=text, bow=explainer.bow, split_expression=explainer.split_expression,
+                      mask_string=explainer.mask_string))
     vocab = [str(val) for val in indexed_string.inverse_vocab]
 
     # Get dataset-specific prompts
@@ -506,16 +327,69 @@ def plot_curves(df: pd.DataFrame, dataset: str):
     print(f"  ✓ Saved curves: curves_{dataset}.png")
 
 
+def aggregate_metrics(df_results: pd.DataFrame, out_json_path: str = "aggregate_metrics.json"):
+    out = {
+        "generated_at": datetime.now().isoformat(),
+        "methods": METHODS,
+        "datasets": {}
+    }
+
+    print("\n" + "=" * 80)
+    print("AGGREGATE METRICS")
+    print("=" * 80)
+
+    for dataset, dfg in df_results.groupby("dataset_name", dropna=False):
+        dataset_key = str(dataset)
+        out["datasets"][dataset_key] = {}
+
+        print(f"\n{dataset_key}:")
+
+        for method in METHODS:
+            if method not in dfg.columns:
+                continue
+
+            tmp = dfg[[method, "words_rationale"]].copy()
+            tmp[method] = pd.to_numeric(tmp[method], errors="coerce")
+            tmp["words_rationale"] = pd.to_numeric(tmp["words_rationale"], errors="coerce")
+            tmp = tmp.dropna(subset=[method, "words_rationale"])
+
+            if tmp.empty:
+                continue
+
+            y_true = tmp["words_rationale"].to_numpy(dtype=float)
+            y_scores = tmp[method].to_numpy(dtype=float)
+
+            if np.unique(y_true).size < 2:
+                # ROC/PR AUC not meaningful if only one class present
+                continue
+
+            m = compute_metrics(y_true, y_scores)  # expects {"roc_auc": ..., "pr_auc": ...}
+            out["datasets"][dataset_key][method] = {
+                "n": int(len(tmp)),
+                "roc_auc": float(m["roc_auc"]),
+                "pr_auc": float(m["pr_auc"]),
+            }
+
+            print(f"  {method:20s}: ROC-AUC={m['roc_auc']:.4f}, PR-AUC={m['pr_auc']:.4f} (n={len(tmp)})")
+
+    with open(out_json_path, "w", encoding="utf-8") as f:
+        json.dump(out, f, indent=2, ensure_ascii=False)
+
+    print("\n" + "=" * 80)
+    print("✓ PIPELINE COMPLETE")
+    print(f"Saved: {out_json_path}")
+    print("=" * 80 + "\n")
+
+    return None
+
+
 # ============================================================================
 # MAIN PIPELINE
 # ============================================================================
 
 def main():
-    # Setup
-    Path(OUTPUT_DIR).mkdir(parents=True, exist_ok=True)
-    for dataset in MODELS.keys():
-        Path(f"{OUTPUT_DIR}/html/{dataset}").mkdir(parents=True, exist_ok=True)
 
+    # Setup
     print(f"\n{'=' * 80}")
     print(f"LLM-Enhanced LIME Evaluation Pipeline")
     print(f"Mode: {'TEST (1 example per dataset)' if TEST_MODE else 'FULL'}")
@@ -540,6 +414,9 @@ def main():
             print("Exiting...")
             sys.exit(0)
 
+    Path(OUTPUT_DIR).mkdir(parents=True, exist_ok=True)
+    for dataset in TASK_MODELS.keys():
+        Path(f"{OUTPUT_DIR}/html/{dataset}").mkdir(parents=True, exist_ok=True)
 
     # Get unique example identifiers
     example_groups = df.groupby(["dataset_name", "idx"], sort=False)
@@ -557,6 +434,10 @@ def main():
     for example_idx, (group_key, example_data) in enumerate(example_groups):
         dataset, idx = group_key
 
+        # Debug SST2
+        # if dataset != "sst2":
+        #     continue
+
         # Get text from first row (all rows have same text for an example)
         text = " ".join(example_data["words"])
 
@@ -566,7 +447,7 @@ def main():
 
         # Generate LIME-LLM scores
         try:
-            scores = get_lime_llm_scores(text, dataset, MODELS[dataset], llm_client, idx)
+            scores = get_lime_llm_scores(text, dataset, TASK_MODELS[dataset], llm_client, idx)
             if scores is not None:
                 # Store LIME-LLM scores back to the example rows
                 if len(scores) == len(example_data):
@@ -606,41 +487,7 @@ def main():
         plot_curves(df_results, dataset)
 
     # Compute aggregate metrics
-    print(f"\n{'=' * 80}")
-    print("AGGREGATE METRICS")
-    print(f"{'=' * 80}")
-
-    for dataset in df_results["dataset_name"].unique():
-        df_dataset = df_results[df_results["dataset_name"] == dataset]
-        print(f"\n{dataset}:")
-
-        for method in ["Partition SHAP", "LIME", "Integrated Gradient", "LIME-LLM"]:
-            if method not in df_dataset.columns:
-                continue
-
-            # Filter out rows with missing data
-            valid_rows = df_dataset.dropna(subset=[method, "words_rationale"])
-
-            if len(valid_rows) == 0:
-                continue
-
-            y_true = valid_rows["words_rationale"].values
-            y_scores = valid_rows[method].values
-
-            # Ensure both are numeric arrays
-            try:
-                y_true = np.array([float(x) for x in y_true])
-                y_scores = np.array([float(x) for x in y_scores])
-
-                if len(np.unique(y_true)) > 1:
-                    metrics = compute_metrics(y_true, y_scores)
-                    print(f"  {method:20s}: ROC-AUC={metrics['roc_auc']:.4f}, PR-AUC={metrics['pr_auc']:.4f}")
-            except (ValueError, TypeError):
-                print(f"  {method:20s}: Data format error")
-
-    print(f"\n{'=' * 80}")
-    print(f"✓ PIPELINE COMPLETE")
-    print(f"{'=' * 80}\n")
+    aggregate_metrics(df_results=df_results, out_json_path=f"{OUTPUT_DIR}/aggregate_metrics.json")
 
 
 if __name__ == "__main__":
