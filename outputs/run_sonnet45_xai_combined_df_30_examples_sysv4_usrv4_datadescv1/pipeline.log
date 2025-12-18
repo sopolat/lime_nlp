@@ -1,0 +1,139 @@
+2025-12-18 11:51:47 | INFO | 
+================================================================================
+2025-12-18 11:51:47 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-18 11:51:47 | INFO | Mode: FULL
+2025-12-18 11:51:47 | INFO | Provider: ANTHROPIC
+2025-12-18 11:51:47 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv4_usrv4_datadescv1
+2025-12-18 11:51:47 | INFO | ================================================================================
+
+2025-12-18 11:52:44 | INFO | Processing 30 examples
+2025-12-18 11:52:44 | INFO | Total rows: 496
+2025-12-18 11:52:44 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2025-12-18 11:52:44 | INFO | [1/30] sst2 - 506
+2025-12-18 11:52:44 | INFO |   Text: crackerjack entertainment -- nonstop romance , music , suspense and action ....
+2025-12-18 11:52:44 | INFO |   Words: 12 tokens
+2025-12-18 11:52:59 | WARNING |   ✗ Error: TextEncodeInput must be Union[TextInputSequence, Tuple[InputSequence, InputSequence]]
+2025-12-18 12:25:29 | INFO | 
+================================================================================
+2025-12-18 12:25:29 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-18 12:25:29 | INFO | Mode: FULL
+2025-12-18 12:25:29 | INFO | Provider: ANTHROPIC
+2025-12-18 12:25:29 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv4_usrv4_datadescv1
+2025-12-18 12:25:29 | INFO | ================================================================================
+
+2025-12-18 12:25:33 | INFO | Processing 30 examples
+2025-12-18 12:25:33 | INFO | Total rows: 496
+2025-12-18 12:25:33 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2025-12-18 12:25:33 | INFO | [1/30] sst2 - 506
+2025-12-18 12:25:33 | INFO |   Text: crackerjack entertainment -- nonstop romance , music , suspense and action ....
+2025-12-18 12:25:33 | INFO |   Words: 12 tokens
+2025-12-18 12:25:48 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2025-12-18 12:25:48 | INFO | [2/30] sst2 - 742
+2025-12-18 12:25:48 | INFO |   Text: it 's a demented kitsch mess ( although the smeary digital video does match the ...
+2025-12-18 12:25:48 | INFO |   Words: 40 tokens
+2025-12-18 12:26:18 | INFO |   ✓ LIME-LLM scores generated (40 tokens)
+2025-12-18 12:26:18 | INFO | [3/30] sst2 - 170
+2025-12-18 12:26:18 | INFO |   Text: it 's also , clearly , great fun ....
+2025-12-18 12:26:18 | INFO |   Words: 9 tokens
+2025-12-18 12:26:32 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2025-12-18 12:26:32 | INFO | [4/30] sst2 - 602
+2025-12-18 12:26:32 | INFO |   Text: instead , he shows them the respect they are due ....
+2025-12-18 12:26:32 | INFO |   Words: 11 tokens
+2025-12-18 12:26:47 | INFO |   ✓ LIME-LLM scores generated (11 tokens)
+2025-12-18 12:26:47 | INFO | [5/30] sst2 - 287
+2025-12-18 12:26:47 | INFO |   Text: it 's a much more emotional journey than what shyamalan has given us in his past...
+2025-12-18 12:26:47 | INFO |   Words: 39 tokens
+2025-12-18 12:27:15 | INFO |   ✓ LIME-LLM scores generated (39 tokens)
+2025-12-18 12:27:15 | INFO | [6/30] sst2 - 302
+2025-12-18 12:27:15 | INFO |   Text: the wild thornberrys movie is a jolly surprise ....
+2025-12-18 12:27:15 | INFO |   Words: 9 tokens
+2025-12-18 12:27:29 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2025-12-18 12:27:29 | INFO | [7/30] sst2 - 148
+2025-12-18 12:27:29 | INFO |   Text: feels too formulaic and too familiar to produce the transgressive thrills of ear...
+2025-12-18 12:27:29 | INFO |   Words: 16 tokens
+2025-12-18 12:27:48 | INFO |   ✓ LIME-LLM scores generated (16 tokens)
+2025-12-18 12:27:48 | INFO | [8/30] sst2 - 835
+2025-12-18 12:27:48 | INFO |   Text: a giggle-inducing comedy with snappy dialogue and winning performances by an unl...
+2025-12-18 12:27:48 | INFO |   Words: 22 tokens
+2025-12-18 12:28:14 | INFO |   ✓ LIME-LLM scores generated (22 tokens)
+2025-12-18 12:28:14 | INFO | [9/30] sst2 - 345
+2025-12-18 12:28:14 | INFO |   Text: this tenth feature is a big deal , indeed -- at least the third-best , and maybe...
+2025-12-18 12:28:14 | INFO |   Words: 36 tokens
+2025-12-18 12:28:41 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2025-12-18 12:28:41 | INFO | [10/30] sst2 - 387
+2025-12-18 12:28:41 | INFO |   Text: director andrew niccol ... demonstrates a wry understanding of the quirks of fam...
+2025-12-18 12:28:41 | INFO |   Words: 14 tokens
+2025-12-18 12:28:58 | INFO |   ✓ LIME-LLM scores generated (14 tokens)
+2025-12-18 12:28:58 | INFO | [11/30] cola - 1017
+2025-12-18 12:28:58 | INFO |   Text: It is the problem that he is here....
+2025-12-18 12:28:58 | INFO |   Words: 8 tokens
+2025-12-18 12:29:12 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2025-12-18 12:29:12 | INFO | [12/30] cola - 23
+2025-12-18 12:29:12 | INFO |   Text: Mickey looked up it....
+2025-12-18 12:29:12 | INFO |   Words: 4 tokens
+2025-12-18 12:29:23 | INFO |   ✓ LIME-LLM scores generated (4 tokens)
+2025-12-18 12:29:23 | INFO | [13/30] cola - 354
+2025-12-18 12:29:23 | INFO |   Text: the panther's the coat is dark black....
+2025-12-18 12:29:23 | INFO |   Words: 7 tokens
+2025-12-18 12:29:38 | WARNING |   ✗ LLM parsing failed: Expecting value: line 1 column 1 (char 0)
+2025-12-18 12:29:38 | WARNING |   ✗ Failed to generate scores
+2025-12-18 12:29:38 | INFO | [14/30] cola - 191
+2025-12-18 12:29:38 | INFO |   Text: I shaped a loaf....
+2025-12-18 12:29:38 | INFO |   Words: 4 tokens
+2025-12-18 12:29:52 | WARNING |   ✗ LLM parsing failed: Expecting value: line 1 column 1 (char 0)
+2025-12-18 12:29:53 | WARNING |   ✗ Failed to generate scores
+2025-12-18 12:29:53 | INFO | [15/30] cola - 170
+2025-12-18 12:29:53 | INFO |   Text: Carla slid at the book....
+2025-12-18 12:29:53 | INFO |   Words: 5 tokens
+2025-12-18 12:30:07 | INFO |   ✓ LIME-LLM scores generated (5 tokens)
+2025-12-18 12:30:07 | INFO | [16/30] cola - 384
+2025-12-18 12:30:07 | INFO |   Text: John thinks that Mary loves himself....
+2025-12-18 12:30:07 | INFO |   Words: 6 tokens
+2025-12-18 12:30:22 | INFO |   ✓ LIME-LLM scores generated (6 tokens)
+2025-12-18 12:30:22 | INFO | [17/30] cola - 733
+2025-12-18 12:30:22 | INFO |   Text: Who for Sandy to talk to is still enrolled in the class?...
+2025-12-18 12:30:22 | INFO |   Words: 12 tokens
+2025-12-18 12:30:37 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2025-12-18 12:30:37 | INFO | [18/30] cola - 813
+2025-12-18 12:30:37 | INFO |   Text: Birds sings....
+2025-12-18 12:30:37 | INFO |   Words: 2 tokens
+2025-12-18 12:30:48 | INFO |   ✓ LIME-LLM scores generated (2 tokens)
+2025-12-18 12:30:48 | INFO | [19/30] cola - 836
+2025-12-18 12:30:48 | INFO |   Text: We relied above Leslie....
+2025-12-18 12:30:48 | INFO |   Words: 4 tokens
+2025-12-18 12:31:01 | WARNING |   ✗ LLM parsing failed: Expecting value: line 1 column 1 (char 0)
+2025-12-18 12:31:01 | WARNING |   ✗ Failed to generate scores
+2025-12-18 12:31:01 | INFO | [20/30] cola - 880
+2025-12-18 12:31:01 | INFO |   Text: I enjoy yourself....
+2025-12-18 12:31:01 | INFO |   Words: 3 tokens
+2025-12-18 12:31:12 | WARNING |   ✗ LLM parsing failed: Expecting value: line 1 column 1 (char 0)
+2025-12-18 12:31:12 | WARNING |   ✗ Failed to generate scores
+2025-12-18 12:31:12 | INFO | [21/30] hatexplain - 4701852_gab
+2025-12-18 12:31:12 | INFO |   Text: fanbloodytastic by time these leeches are held to account especially the muzzie ...
+2025-12-18 12:31:12 | INFO |   Words: 36 tokens
+2025-12-18 12:31:42 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2025-12-18 12:31:42 | INFO | [22/30] hatexplain - 21242245_gab
+2025-12-18 12:31:42 | INFO |   Text: hm [UNK] maybe if i survive my chemo and grow up i could be a lifeguard at a nig...
+2025-12-18 12:31:42 | INFO |   Words: 22 tokens
+2025-12-18 12:32:05 | INFO |   ✓ LIME-LLM scores generated (22 tokens)
+2025-12-18 12:32:05 | INFO | [23/30] hatexplain - 3Z8UJEJOCZEG603II1EL4BE4QZH93Z_nf_4
+2025-12-18 12:32:05 | INFO |   Text: then an older nigger wearing an apron dressed like a kitchen staff member and ho...
+2025-12-18 12:32:05 | INFO |   Words: 36 tokens
+2025-12-18 12:32:30 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2025-12-18 12:32:30 | INFO | [24/30] hatexplain - 21112613_gab
+2025-12-18 12:32:30 | INFO |   Text: trudeau is a muzzie loving faggot he loves the goathumpers at the expense of can...
+2025-12-18 12:32:30 | INFO |   Words: 25 tokens
+2025-12-18 12:32:53 | INFO |   ✓ LIME-LLM scores generated (25 tokens)
+2025-12-18 12:32:53 | INFO | [25/30] hatexplain - 15132440_gab
+2025-12-18 12:32:53 | INFO |   Text: tfw you are vice provost of diversity nigger equity vp of difference sameness at...
+2025-12-18 12:32:53 | INFO |   Words: 18 tokens
+2025-12-18 12:33:14 | INFO |   ✓ LIME-LLM scores generated (18 tokens)
+2025-12-18 12:33:14 | INFO | [26/30] hatexplain - 15430511_gab
+2025-12-18 12:33:14 | INFO |   Text: hey nazi dirtbag is your black bull keeping you occupied...
+2025-12-18 12:33:14 | INFO |   Words: 10 tokens
+2025-12-18 12:33:30 | INFO |   ✓ LIME-LLM scores generated (10 tokens)
+2025-12-18 12:33:30 | INFO | [27/30] hatexplain - 15292851_gab
+2025-12-18 12:33:30 | INFO |   Text: really i have seen men come together that we are atheist buddast odinist christi...
+2025-12-18 12:33:30 | INFO |   Words: 43 tokens

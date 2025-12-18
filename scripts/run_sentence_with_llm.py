@@ -7,12 +7,13 @@ Compares LIME-LLM against baseline XAI methods
 
 import re
 import json
-import sys
+import logging, sys
 import os
 from pathlib import Path
 from datetime import datetime
 import pandas as pd
 import numpy as np
+import wandb
 import matplotlib.pyplot as plt
 from lime.lime_text import IndexedString, IndexedCharacters
 from sklearn.metrics import roc_auc_score, average_precision_score, roc_curve, precision_recall_curve
@@ -23,60 +24,152 @@ warnings.filterwarnings("ignore")
 from dotenv import load_dotenv
 from lime.lime_text import LimeTextExplainer
 from lime.utils.custom_utils import load_model
-from prompts import SYSTEM_PROMPTS_VERSIONS, USER_PROMPT_VERSION
+from prompts import SYSTEM_PROMPT_VERSIONS, USER_PROMPT_VERSIONS, DATASET_DESCRIPTION
 
-# Model Paths
-TASK_MODELS = {
-    "sst2": "distilbert-base-uncased-finetuned-sst-2-english",
-    "hatexplain": "gmihaila/bert-base-cased-hatexplain",
-    "cola": "textattack/distilbert-base-uncased-CoLA"
-}
 
-METHODS = ["Partition SHAP", "LIME", "Integrated Gradient", "LIME-LLM"]
+class Args(object):
+    """
+    LLM-Enhanced LIME Evaluation Pipeline arguments.
+    """
 
-LLM_SET = {
-    "sonnet45": {
-        "model": "claude-sonnet-4-5-20250929",
-        "provider": "anthropic"  # "openai" or "anthropic"
-    },
-    "gpt41": {
-        "model": "gpt-4.1-2025-04-14",
-        "provider": "openai",
-    },
-}
+    # ============================================================================
+    # CONFIGURATION
+    # ============================================================================
+    TEST_MODE = False  # Set to True to run 1 example per dataset for testing
+    SYSTEM_PROMPT_USE_VERSION = "v4"
+    USER_PROMPT_USE_VERSION = "v4"
+    DATASET_DESCRIPTION_VERSION = "v1"
+    LLM_NAME = "sonnet45"  # sonnet45 gpt41
+    SENTENCE_TRANSFORMER_MODEL = "all-mpnet-base-v2"
+    TEMPERATURE = 0.0
+    DATA_SAMPLES = 30  # 30 60 150
+    WANDB_ENABLED = True
+    WANDB_PROJECT = "lime-nlp"
+    WANDB_ENTITY = os.getenv("WANDB_ENTITY")  # optional
+    WANDB_MODE = os.getenv("WANDB_MODE", "online")  # "online" | "offline" | "disabled"
+
+    # Fixed
+    TASK_MODELS = {
+        "sst2": "distilbert-base-uncased-finetuned-sst-2-english",
+        "hatexplain": "gmihaila/bert-base-cased-hatexplain",
+        "cola": "textattack/distilbert-base-uncased-CoLA"
+    }
+    METHODS = ["Partition SHAP", "LIME", "Integrated Gradient", "LIME-LLM"]
+    LLM_SET = {
+        "sonnet45": {
+            "model": "claude-sonnet-4-5-20250929",
+            "provider": "anthropic"  # "openai" or "anthropic"
+        },
+        "gpt41": {
+            "model": "gpt-4.1-2025-04-14",
+            "provider": "openai",
+        },
+    }
+    LLM_PROVIDER = LLM_SET[LLM_NAME]["provider"]
+    LLM_MODEL = LLM_SET[LLM_NAME]["model"]
+    DATA_PATH = f"data/xai_combined_df_{DATA_SAMPLES}_examples.csv"
+    OUTPUT_DIR = f"outputs/{'test' if TEST_MODE else 'run'}_{LLM_NAME}_{os.path.basename(DATA_PATH).removesuffix(".csv")}_sys{SYSTEM_PROMPT_USE_VERSION}_usr{USER_PROMPT_USE_VERSION}_datadesc{DATASET_DESCRIPTION_VERSION}"
+    LOG_FILE = f"{OUTPUT_DIR}/llm_calls.jsonl"
+    Path(OUTPUT_DIR).mkdir(parents=True, exist_ok=True)
+
+    def to_dict(self):
+        """
+        Combine class and instance attributes
+        """
+        return {**self.__class__.__dict__}
+
+
+def get_logger(log_file: str, level: int = logging.INFO) -> logging.Logger:
+    """
+    Logger
+    """
+    log = logging.getLogger("lime-llm")
+    if log.handlers:  # already configured (prevents duplicate logs)
+        return log
+
+    log.setLevel(level)
+    fmt = logging.Formatter("%(asctime)s | %(levelname)s | %(message)s", "%Y-%m-%d %H:%M:%S")
+
+    sh = logging.StreamHandler(sys.stdout)
+    sh.setFormatter(fmt)
+
+    fh = logging.FileHandler(log_file, encoding="utf-8")
+    fh.setFormatter(fmt)
+
+    log.addHandler(sh)
+    log.addHandler(fh)
+    return log
+
+
+args = Args()
+LOG = get_logger(f"{args.OUTPUT_DIR}/pipeline.log")
 # Load environment variables from .env file
 load_dotenv()
 
-# ============================================================================
-# CONFIGURATION
-# ============================================================================
 
-# Modify Settings
-TEST_MODE = True  # Set to True to run 1 example per dataset for testing
-SYSTEM_PROMPT_USE_VERSION = "v1"
-USER_PROMPT_USE_VERSION = "v4"
-LLM_NAME = "sonnet45"  # sonnet45 gpt41
-SENTENCE_TRANSFORMER_MODEL = "all-mpnet-base-v2"
-TEMPERATURE = 0.0
-DATA_SAMPLES = 30  # 30 60 150
+def wandb_log_curves(df_results: pd.DataFrame, dataset: str, run, methods, n_grid: int = 201):
+    """
+    Log “all methods” ROC + PR as W&B line-series charts (no images)
+    """
+    dfd = df_results[df_results["dataset_name"] == dataset]
 
-# Fixed
-LLM_PROVIDER = LLM_SET[LLM_NAME]["provider"]
-LLM_MODEL = LLM_SET[LLM_NAME]["model"]
-DATA_PATH = f"data/xai_combined_df_{DATA_SAMPLES}_examples.csv"
-OUTPUT_DIR = f"outputs/{'test' if TEST_MODE else 'run'}_{LLM_NAME}_{os.path.basename(DATA_PATH).removesuffix(".csv")}"
-LOG_FILE = f"{OUTPUT_DIR}/llm_calls.jsonl"
+    fpr_grid = np.linspace(0.0, 1.0, n_grid)
+    rec_grid = np.linspace(0.0, 1.0, n_grid)
+
+    keys, ys_roc, ys_pr = [], [], []
+
+    for method in methods:
+        if method not in dfd.columns:
+            continue
+
+        tmp = dfd[[method, "words_rationale"]].copy()
+        tmp[method] = pd.to_numeric(tmp[method], errors="coerce")
+        tmp["words_rationale"] = pd.to_numeric(tmp["words_rationale"], errors="coerce")
+        tmp = tmp.dropna()
+        if tmp.empty:
+            continue
+
+        y_true = tmp["words_rationale"].to_numpy(dtype=float)
+        y_score = tmp[method].to_numpy(dtype=float)
+        if np.unique(y_true).size < 2:
+            continue
+
+        fpr, tpr, _ = roc_curve(y_true, y_score)
+        tpr_i = np.interp(fpr_grid, fpr, tpr)
+
+        prec, rec, _ = precision_recall_curve(y_true, y_score)
+        order = np.argsort(rec)
+        prec_i = np.interp(rec_grid, rec[order], prec[order])
+
+        keys.append(method)
+        ys_roc.append(tpr_i.tolist())
+        ys_pr.append(prec_i.tolist())
+
+    if not keys:
+        return None, None
+
+    run.log({
+        f"curves/{dataset}/roc": wandb.plot.line_series(
+            fpr_grid.tolist(), ys_roc, keys=keys, title=f"ROC - {dataset}", xname="False Positive Rate"
+        ),
+        f"curves/{dataset}/pr": wandb.plot.line_series(
+            rec_grid.tolist(), ys_pr, keys=keys, title=f"PR - {dataset}", xname="Recall"
+        ),
+    })
+    return (fpr_grid, ys_roc, keys), (rec_grid, ys_pr, keys)
 
 
 def get_prompts(dataset: str, text: str, vocab: list, predicted_label: str, n_samples: int = 10) -> tuple:
     """Generate dataset-specific prompts with all required parameters."""
-    system = SYSTEM_PROMPTS_VERSIONS[SYSTEM_PROMPT_USE_VERSION].format(n_samples=n_samples)
-    user = USER_PROMPT_VERSION[USER_PROMPT_USE_VERSION][dataset].format(
+    system = SYSTEM_PROMPT_VERSIONS[args.SYSTEM_PROMPT_USE_VERSION].format(n_samples=n_samples, )
+    user = USER_PROMPT_VERSIONS[args.USER_PROMPT_USE_VERSION]["user_prompt"].format(
         text=text,
         text_length=len(text.split()),
         predicted_label=predicted_label,
         vocab=list(vocab),
-        n_samples=n_samples  # 10 is optimal trade-off based on LLiMe paper
+        vocab_count=len(list(vocab)),
+        n_samples=n_samples,  # 10 is optimal trade-off based on LLiMe paper
+        dataset_description=DATASET_DESCRIPTION[args.DATASET_DESCRIPTION_VERSION][dataset],
     )
     return system, user
 
@@ -87,7 +180,7 @@ def get_prompts(dataset: str, text: str, vocab: list, predicted_label: str, n_sa
 
 def get_llm_client():
     """Initialize LLM client."""
-    if LLM_PROVIDER == "openai":
+    if args.LLM_PROVIDER == "openai":
         from openai import OpenAI
         api_key = os.getenv("OPENAI")
         if not api_key:
@@ -104,34 +197,34 @@ def get_llm_client():
 def call_llm(system_msg: str, user_msg: str, client) -> str:
     """Call LLM and return response."""
     try:
-        if LLM_PROVIDER == "openai":
+        if args.LLM_PROVIDER == "openai":
             response = client.chat.completions.create(
-                model=LLM_MODEL,
+                model=args.LLM_MODEL,
                 messages=[
                     {"role": "system", "content": system_msg},
                     {"role": "user", "content": user_msg}
                 ],
-                temperature=TEMPERATURE
+                temperature=args.TEMPERATURE
             )
             return response.choices[0].message.content
-        elif LLM_PROVIDER == "anthropic":
+        elif args.LLM_PROVIDER == "anthropic":
             response = client.messages.create(
-                model=LLM_MODEL,
+                model=args.LLM_MODEL,
                 max_tokens=4000,
                 system=system_msg,
                 messages=[{"role": "user", "content": user_msg}],
-                temperature=TEMPERATURE
+                temperature=args.TEMPERATURE
             )
             return response.content[0].text
         else:
-            raise ValueError(f"INVALID LLM PROVIDER: {LLM_PROVIDER}")
+            raise ValueError(f"INVALID LLM PROVIDER: {args.LLM_PROVIDER}")
     except Exception as e:
         return json.dumps({"status": "ERROR", "error": str(e)})
 
 
 def log_llm_call(idx: str, dataset: str, text: str, predicted_label: str, vocab: str, response: str):
     """Log LLM call to JSONL."""
-    with open(LOG_FILE, 'a', encoding='utf-8') as f:
+    with open(args.LOG_FILE, 'a', encoding='utf-8') as f:
         f.write(
             json.dumps(
                 obj={
@@ -139,7 +232,7 @@ def log_llm_call(idx: str, dataset: str, text: str, predicted_label: str, vocab:
                     "dataset": dataset,
                     "text": text,
                     "predicted_label": predicted_label,
-                    "provider": LLM_PROVIDER,
+                    "provider": args.LLM_PROVIDER,
                     "timestamp": datetime.now().isoformat(),
                     "vocab": vocab,
                     "n_vocab": len(vocab),
@@ -166,9 +259,9 @@ def parse_llm_response(response: str) -> dict:
     texts, masks = [], []
     for sample in data.get("samples", []):
         mask = sample.get("mask", [])
-        for key_output in USER_PROMPT_VERSION[USER_PROMPT_USE_VERSION]["key_outputs"]:
+        for key_output in USER_PROMPT_VERSIONS[args.USER_PROMPT_USE_VERSION]["key_outputs"]:
             if key_output in sample:
-                texts.append(sample[key_output]["text"])
+                texts.append(sample[key_output]["text"])  # Needs added.
                 masks.append(mask)
 
     return {"text": texts, "mask": masks}
@@ -220,14 +313,14 @@ def get_lime_llm_scores(text: str, dataset: str, model_path: str, llm_client, id
     try:
         llm_data = parse_llm_response(response)
     except Exception as e:
-        print(f"  ✗ LLM parsing failed: {e}")
+        LOG.warning(f"  ✗ LLM parsing failed: {e}")
         return None
 
     # Run LIME with LLM samples
     explainer = LimeTextExplainer(
         class_names=class_names,
         random_state=42,
-        sentence_transformer_model_name_or_path=SENTENCE_TRANSFORMER_MODEL
+        sentence_transformer_model_name_or_path=args.SENTENCE_TRANSFORMER_MODEL
     )
 
     exp = explainer.explain_instance(
@@ -322,29 +415,29 @@ def plot_curves(df: pd.DataFrame, dataset: str):
     ax2.grid(alpha=0.3)
 
     plt.tight_layout()
-    plt.savefig(f"{OUTPUT_DIR}/curves_{dataset}.png", dpi=300, bbox_inches="tight")
+    plt.savefig(f"{args.OUTPUT_DIR}/curves_{dataset}.png", dpi=300, bbox_inches="tight")
     plt.close()
-    print(f"  ✓ Saved curves: curves_{dataset}.png")
+    LOG.info(f"  ✓ Saved curves: curves_{dataset}.png")
 
 
 def aggregate_metrics(df_results: pd.DataFrame, out_json_path: str = "aggregate_metrics.json"):
     out = {
         "generated_at": datetime.now().isoformat(),
-        "methods": METHODS,
+        "methods": args.METHODS,
         "datasets": {}
     }
 
-    print("\n" + "=" * 80)
-    print("AGGREGATE METRICS")
-    print("=" * 80)
+    LOG.info("\n" + "=" * 80)
+    LOG.info("AGGREGATE METRICS")
+    LOG.info("=" * 80)
 
     for dataset, dfg in df_results.groupby("dataset_name", dropna=False):
         dataset_key = str(dataset)
         out["datasets"][dataset_key] = {}
 
-        print(f"\n{dataset_key}:")
+        LOG.info(f"\n{dataset_key}:")
 
-        for method in METHODS:
+        for method in args.METHODS:
             if method not in dfg.columns:
                 continue
 
@@ -370,17 +463,17 @@ def aggregate_metrics(df_results: pd.DataFrame, out_json_path: str = "aggregate_
                 "pr_auc": float(m["pr_auc"]),
             }
 
-            print(f"  {method:20s}: ROC-AUC={m['roc_auc']:.4f}, PR-AUC={m['pr_auc']:.4f} (n={len(tmp)})")
+            LOG.info(f"  {method:20s}: ROC-AUC={m['roc_auc']:.4f}, PR-AUC={m['pr_auc']:.4f} (n={len(tmp)})")
 
     with open(out_json_path, "w", encoding="utf-8") as f:
         json.dump(out, f, indent=2, ensure_ascii=False)
 
-    print("\n" + "=" * 80)
-    print("✓ PIPELINE COMPLETE")
-    print(f"Saved: {out_json_path}")
-    print("=" * 80 + "\n")
+    LOG.info("\n" + "=" * 80)
+    LOG.info("✓ PIPELINE COMPLETE")
+    LOG.info(f"Saved: {out_json_path}")
+    LOG.info("=" * 80 + "\n")
 
-    return None
+    return out
 
 
 # ============================================================================
@@ -388,42 +481,64 @@ def aggregate_metrics(df_results: pd.DataFrame, out_json_path: str = "aggregate_
 # ============================================================================
 
 def main():
+    """
+    MAIN PIPELINE
+    """
 
     # Setup
-    print(f"\n{'=' * 80}")
-    print(f"LLM-Enhanced LIME Evaluation Pipeline")
-    print(f"Mode: {'TEST (1 example per dataset)' if TEST_MODE else 'FULL'}")
-    print(f"Provider: {LLM_PROVIDER.upper()}")
-    print(f"Output: {OUTPUT_DIR}")
-    print(f"{'=' * 80}\n")
+    LOG.info(f"\n{'=' * 80}")
+    LOG.info(f"LLM-Enhanced LIME Evaluation Pipeline")
+    LOG.info(f"Mode: {'TEST (1 example per dataset)' if args.TEST_MODE else 'FULL'}")
+    LOG.info(f"Provider: {args.LLM_PROVIDER.upper()}")
+    LOG.info(f"Output: {args.OUTPUT_DIR}")
+    LOG.info(f"{'=' * 80}\n")
 
     # Load data
-    df = pd.read_csv(DATA_PATH)
+    df = pd.read_csv(args.DATA_PATH)
 
     # Test mode: keep all rows for first unique idx per dataset
-    if TEST_MODE:
-        print("RUNNING LLM 💸💸")
+    if args.TEST_MODE:
+        LOG.info("RUNNING LLM 💸💸")
         # Get first unique idx for each dataset
         first_idx_per_dataset = df.groupby("dataset_name")["idx"].first().to_dict()
         # Filter to keep all rows matching these idx values
         df = df[df.apply(lambda row: row["idx"] == first_idx_per_dataset[row["dataset_name"]], axis=1)].reset_index(
             drop=True)
     else:
-        if input(f"You are about to run {DATA_PATH} through LLM 💸💸. "
+        if input(f"You are about to run {args.DATA_PATH} through LLM 💸💸. "
                  f"Do you want to continue? (y/n): ").strip().lower() != 'y':
-            print("Exiting...")
+            LOG.info("Exiting...")
             sys.exit(0)
 
-    Path(OUTPUT_DIR).mkdir(parents=True, exist_ok=True)
-    for dataset in TASK_MODELS.keys():
-        Path(f"{OUTPUT_DIR}/html/{dataset}").mkdir(parents=True, exist_ok=True)
+    # --- wandb init (minimal) ---
+    run = None
+    if args.WANDB_ENABLED and wandb is not None and args.WANDB_MODE != "disabled":
+        run = wandb.init(
+            project=args.WANDB_PROJECT,
+            entity=args.WANDB_ENTITY,
+            name=os.path.basename(args.OUTPUT_DIR),
+            config={k: str(v) for k, v in args.to_dict().items()},
+            tags=[args.LLM_NAME, args.LLM_PROVIDER, f"sys{args.SYSTEM_PROMPT_USE_VERSION}",
+                  f"usr{args.USER_PROMPT_USE_VERSION}"],
+            mode=args.WANDB_MODE,
+        )
+
+    if run:
+        wandb.log({
+            "data/rows": int(len(df)),
+            "data/examples": int(len(df.groupby(["dataset_name", "idx"]))),
+            "data/examples_per_dataset": df.groupby("dataset_name")["idx"].nunique().to_dict(),
+        })
+
+    for dataset in args.TASK_MODELS.keys():
+        Path(f"{args.OUTPUT_DIR}/html/{dataset}").mkdir(parents=True, exist_ok=True)
 
     # Get unique example identifiers
     example_groups = df.groupby(["dataset_name", "idx"], sort=False)
 
-    print(f"Processing {len(example_groups)} examples")
-    print(f"Total rows: {len(df)}")
-    print(f"Datasets: {df.groupby('dataset_name')['idx'].nunique().to_dict()}\n")
+    LOG.info(f"Processing {len(example_groups)} examples")
+    LOG.info(f"Total rows: {len(df)}")
+    LOG.info(f"Datasets: {df.groupby('dataset_name')['idx'].nunique().to_dict()}\n")
 
     # Initialize LLM
     llm_client = get_llm_client()
@@ -431,6 +546,7 @@ def main():
     # Process each example
     results = []
 
+    trouble_examples = []
     for example_idx, (group_key, example_data) in enumerate(example_groups):
         dataset, idx = group_key
 
@@ -441,35 +557,47 @@ def main():
         # Get text from first row (all rows have same text for an example)
         text = " ".join(example_data["words"])
 
-        print(f"[{example_idx + 1}/{len(example_groups)}] {dataset} - {idx}")
-        print(f"  Text: {text[:80]}...")
-        print(f"  Words: {len(example_data)} tokens")
+        LOG.info(f"[{example_idx + 1}/{len(example_groups)}] {dataset} - {idx}")
+        LOG.info(f"  Text: {text[:80]}...")
+        LOG.info(f"  Words: {len(example_data)} tokens")
 
         # Generate LIME-LLM scores
         try:
-            scores = get_lime_llm_scores(text, dataset, TASK_MODELS[dataset], llm_client, idx)
+            scores = get_lime_llm_scores(text, dataset, args.TASK_MODELS[dataset], llm_client, idx)
             if scores is not None:
                 # Store LIME-LLM scores back to the example rows
                 if len(scores) == len(example_data):
                     example_data_copy = example_data.copy()
                     example_data_copy["LIME-LLM"] = scores
                     results.append(example_data_copy)
-                    print(f"  ✓ LIME-LLM scores generated ({len(scores)} tokens)")
+                    LOG.info(f"  ✓ LIME-LLM scores generated ({len(scores)} tokens)")
                 else:
-                    print(f"  ✗ Score length mismatch: {len(scores)} vs {len(example_data)} tokens")
+                    LOG.info(f"  ✗ Score length mismatch: {len(scores)} vs {len(example_data)} tokens")
                     example_data_copy = example_data.copy()
                     example_data_copy["LIME-LLM"] = None
                     results.append(example_data_copy)
             else:
-                print(f"  ✗ Failed to generate scores")
+                LOG.warning(f"  ✗ Failed to generate scores")
                 example_data_copy = example_data.copy()
                 example_data_copy["LIME-LLM"] = None
                 results.append(example_data_copy)
         except Exception as e:
-            print(f"  ✗ Error: {e}")
+            LOG.warning(f"  ✗ Error: {e}")
             example_data_copy = example_data.copy()
             example_data_copy["LIME-LLM"] = None
             results.append(example_data_copy)
+            trouble_examples.append(f"{idx}|{dataset}|'{text}'")
+
+        if run:
+            wandb.log(
+                {
+                    "progress/example_idx": example_idx + 1,
+                    "progress/examples_total": len(example_groups),
+                    "progress/failed_examples": len(trouble_examples),
+                    "example/ok": 0 if scores is None else 1,
+                },
+                step=example_idx + 1
+            )
 
     # Combine all results
     df_results = pd.concat(results, ignore_index=True)
@@ -477,17 +605,61 @@ def main():
     # Save results
     output_cols = ["dataset_name", "idx", "words", "words_rationale",
                    "Partition SHAP", "LIME", "Integrated Gradient", "LIME-LLM"]
-    df_results[output_cols].to_csv(f"{OUTPUT_DIR}/results.csv", index=False)
-    print(f"\n✓ Results saved: results.csv")
+    df_results[output_cols].to_csv(f"{args.OUTPUT_DIR}/results.csv", index=False)
+    LOG.warning(f"\n✓ Results saved: results.csv")
+    if run:
+        wandb.log({"files/results_csv": wandb.Table(dataframe=df_results[output_cols].head(50))})
 
     # Generate evaluation plots for each dataset
-    print(f"\nGenerating evaluation plots...")
+    LOG.info(f"\nGenerating evaluation plots...")
     for dataset in df_results["dataset_name"].unique():
-        print(f"  Processing {dataset}...")
+        LOG.info(f"  Processing {dataset}...")
         plot_curves(df_results, dataset)
+        if run:
+            img_path = f"{args.OUTPUT_DIR}/curves_{dataset}.png"
+            if os.path.exists(img_path):
+                wandb.log({f"curves/{dataset}": wandb.Image(img_path)})
+            wandb_log_curves(df_results, dataset, run, args.METHODS)
 
     # Compute aggregate metrics
-    aggregate_metrics(df_results=df_results, out_json_path=f"{OUTPUT_DIR}/aggregate_metrics.json")
+    # aggregate_metrics(df_results=df_results, out_json_path=f"{args.OUTPUT_DIR}/aggregate_metrics.json")
+    agg = aggregate_metrics(df_results=df_results, out_json_path=f"{args.OUTPUT_DIR}/aggregate_metrics.json")
+
+    if run and agg:
+        # log scalar metrics
+        for dset, methods in agg.get("datasets", {}).items():
+            for method, m in methods.items():
+                wandb.log({
+                    f"roc_auc_{dset}/{method}": m["roc_auc"],
+                })
+                wandb.log({
+                    f"pr_auc_{dset}/{method}": m["pr_auc"],
+                })
+
+    LOG.warning(f"Failed examples {len(trouble_examples)}/{len(example_groups)}\n{trouble_examples}")
+
+    if run:
+        # trouble examples table
+        rows = []
+        for s in trouble_examples:
+            parts = s.split("|", 2)
+            if len(parts) == 3:
+                rows.append(parts)
+        if rows:
+            wandb.log({"trouble_examples": wandb.Table(columns=["idx", "dataset", "text"], data=rows)})
+
+        # artifacts (results + metrics + llm log if present)
+        art = wandb.Artifact(name=os.path.basename(args.OUTPUT_DIR), type="run_outputs")
+        for p in [
+            f"{args.OUTPUT_DIR}/results.csv",
+            f"{args.OUTPUT_DIR}/aggregate_metrics.json",
+            args.LOG_FILE,
+        ]:
+            if os.path.exists(p):
+                art.add_file(p)
+        run.log_artifact(art)
+
+        run.finish()
 
 
 if __name__ == "__main__":

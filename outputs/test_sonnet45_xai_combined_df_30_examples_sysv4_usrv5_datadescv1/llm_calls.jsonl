@@ -1,0 +1,20 @@
+{
+  "idx": "506",
+  "dataset": "sst2",
+  "text": "crackerjack entertainment -- nonstop romance , music , suspense and action .",
+  "predicted_label": "positive",
+  "provider": "anthropic",
+  "timestamp": "2025-12-18T12:19:58.718996",
+  "vocab": [
+    "crackerjack",
+    "entertainment",
+    "nonstop",
+    "romance",
+    "music",
+    "suspense",
+    "and",
+    "action"
+  ],
+  "n_vocab": 8,
+  "response": "```json\n{\n  \"status\": \"OK\",\n  \"sample_count\": 10,\n  \"samples\": [\n    {\n      \"mask\": [1, 1, 1, 1, 1, 1, 1, 1],\n      \"neutral_infill\": {\n        \"text\": \"crackerjack entertainment -- nonstop romance , music , suspense and action .\"\n      },\n      \"contrastive_infill\": {\n        \"text\": \"crackerjack entertainment -- nonstop romance , music , suspense and action .\"\n      }\n    },\n    {\n      \"mask\": [1, 1, 0, 0, 0, 0, 1, 0],\n      \"neutral_infill\": {\n        \"text\": \"crackerjack entertainment and film .\"\n      },\n      \"contrastive_infill\": {\n        \"text\": \"crackerjack entertainment and presentation .\"\n      }\n    },\n    {\n      \"mask\": [0, 1, 1, 1, 1, 1, 1, 1],\n      \"neutral_infill\": {\n        \"text\": \"the entertainment -- nonstop romance , music , suspense and action .\"\n      },\n      \"contrastive_infill\": {\n        \"text\": \"standard entertainment -- nonstop romance , music , suspense and action .\"\n      }\n    },\n    {\n      \"mask\": [1, 0, 1, 0, 0, 0, 1, 0],\n      \"neutral_infill\": {\n        \"text\": \"crackerjack film -- nonstop scenes and footage .\"\n      },\n      \"contrastive_infill\": {\n        \"text\": \"crackerjack production -- nonstop sequences and material .\"\n      }\n    },\n    {\n      \"mask\": [0, 0, 0, 1, 1, 1, 1, 1],\n      \"neutral_infill\": {\n        \"text\": \"the film has romance , music , suspense and action .\"\n      },\n      \"contrastive_infill\": {\n        \"text\": \"it features romance , music , suspense and action .\"\n      }\n    },\n    {\n      \"mask\": [1, 1, 1, 0, 0, 0, 1, 0],\n      \"neutral_infill\": {\n        \"text\": \"crackerjack entertainment -- nonstop scenes and moments .\"\n      },\n      \"contrastive_infill\": {\n        \"text\": \"crackerjack entertainment -- nonstop sequences and content .\"\n      }\n    },\n    {\n      \"mask\": [0, 1, 0, 1, 1, 0, 1, 1],\n      \"neutral_infill\": {\n        \"text\": \"the entertainment has romance , music and action .\"\n      },\n      \"contrastive_infill\": {\n        \"text\": \"standard entertainment with romance , music and action .\"\n      }\n    },\n    {\n      \"mask\": [1, 0, 0, 0, 1, 1, 1, 1],\n      \"neutral_infill\": {\n        \"text\": \"crackerjack film with music , suspense and action .\"\n      },\n      \"contrastive_infill\": {\n        \"text\": \"crackerjack production featuring music , suspense and action .\"\n      }\n    },\n    {\n      \"mask\": [0, 0, 1, 1, 0, 1, 1, 1],\n      \"neutral_infill\": {\n        \"text\": \"the film offers nonstop romance , suspense and action .\"\n      },\n      \"contrastive_infill\": {\n        \"text\": \"it provides nonstop romance , suspense and action .\"\n      }\n    },\n    {\n      \"mask\": [1, 1, 0, 0, 1, 0, 1, 1],\n      \"neutral_infill\": {\n        \"text\": \"crackerjack entertainment with music and action .\"\n      },\n      \"contrastive_infill\": {\n        \"text\": \"crackerjack entertainment featuring music and action .\"\n      }\n    }\n  ]\n}\n```"
+}
