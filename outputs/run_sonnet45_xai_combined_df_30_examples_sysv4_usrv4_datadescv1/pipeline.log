@@ -137,3 +137,56 @@
 2025-12-18 12:33:30 | INFO | [27/30] hatexplain - 15292851_gab
 2025-12-18 12:33:30 | INFO |   Text: really i have seen men come together that we are atheist buddast odinist christi...
 2025-12-18 12:33:30 | INFO |   Words: 43 tokens
+2025-12-18 12:34:02 | INFO |   ✓ LIME-LLM scores generated (43 tokens)
+2025-12-18 12:34:02 | INFO | [28/30] hatexplain - 1107036788005179392_twitter
+2025-12-18 12:34:02 | INFO |   Text: <user> <user> are you retarded...
+2025-12-18 12:34:02 | INFO |   Words: 5 tokens
+2025-12-18 12:34:14 | INFO |   ✓ LIME-LLM scores generated (5 tokens)
+2025-12-18 12:34:14 | INFO | [29/30] hatexplain - 12666909_gab
+2025-12-18 12:34:14 | INFO |   Text: damn he a homo too not surprising israel is full of queers...
+2025-12-18 12:34:14 | INFO |   Words: 12 tokens
+2025-12-18 12:34:33 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2025-12-18 12:34:33 | INFO | [30/30] hatexplain - 20501519_gab
+2025-12-18 12:34:33 | INFO |   Text: only boer farmers are welcome the suburban white population initiated this holoc...
+2025-12-18 12:34:33 | INFO |   Words: 26 tokens
+2025-12-18 12:35:01 | INFO |   ✓ LIME-LLM scores generated (26 tokens)
+2025-12-18 12:35:01 | WARNING | 
+✓ Results saved: results.csv
+2025-12-18 12:35:02 | INFO | 
+Generating evaluation plots...
+2025-12-18 12:35:02 | INFO |   Processing sst2...
+2025-12-18 12:35:02 | INFO |   ✓ Saved curves: curves_sst2.png
+2025-12-18 12:35:03 | INFO |   Processing cola...
+2025-12-18 12:35:03 | INFO |   ✓ Saved curves: curves_cola.png
+2025-12-18 12:35:04 | INFO |   Processing hatexplain...
+2025-12-18 12:35:05 | INFO |   ✓ Saved curves: curves_hatexplain.png
+2025-12-18 12:35:06 | INFO | 
+================================================================================
+2025-12-18 12:35:06 | INFO | AGGREGATE METRICS
+2025-12-18 12:35:06 | INFO | ================================================================================
+2025-12-18 12:35:06 | INFO | 
+cola:
+2025-12-18 12:35:06 | INFO |   Partition SHAP      : ROC-AUC=0.4554, PR-AUC=0.2398 (n=55)
+2025-12-18 12:35:06 | INFO |   LIME                : ROC-AUC=0.4554, PR-AUC=0.2286 (n=55)
+2025-12-18 12:35:06 | INFO |   Integrated Gradient : ROC-AUC=0.5368, PR-AUC=0.3208 (n=55)
+2025-12-18 12:35:06 | INFO |   LIME-LLM            : ROC-AUC=0.7328, PR-AUC=0.5295 (n=37)
+2025-12-18 12:35:06 | INFO | 
+hatexplain:
+2025-12-18 12:35:06 | INFO |   Partition SHAP      : ROC-AUC=0.3525, PR-AUC=0.2631 (n=233)
+2025-12-18 12:35:06 | INFO |   LIME                : ROC-AUC=0.3039, PR-AUC=0.2364 (n=233)
+2025-12-18 12:35:06 | INFO |   Integrated Gradient : ROC-AUC=0.5455, PR-AUC=0.4442 (n=233)
+2025-12-18 12:35:06 | INFO |   LIME-LLM            : ROC-AUC=0.7379, PR-AUC=0.5737 (n=233)
+2025-12-18 12:35:06 | INFO | 
+sst2:
+2025-12-18 12:35:06 | INFO |   Partition SHAP      : ROC-AUC=0.6751, PR-AUC=0.4564 (n=208)
+2025-12-18 12:35:06 | INFO |   LIME                : ROC-AUC=0.7284, PR-AUC=0.5766 (n=208)
+2025-12-18 12:35:06 | INFO |   Integrated Gradient : ROC-AUC=0.5184, PR-AUC=0.3052 (n=208)
+2025-12-18 12:35:06 | INFO |   LIME-LLM            : ROC-AUC=0.6419, PR-AUC=0.2199 (n=208)
+2025-12-18 12:35:06 | INFO | 
+================================================================================
+2025-12-18 12:35:06 | INFO | ✓ PIPELINE COMPLETE
+2025-12-18 12:35:06 | INFO | Saved: outputs/run_sonnet45_xai_combined_df_30_examples_sysv4_usrv4_datadescv1/aggregate_metrics.json
+2025-12-18 12:35:06 | INFO | ================================================================================
+
+2025-12-18 12:35:06 | WARNING | Failed examples 0/30
+[]

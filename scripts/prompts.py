@@ -19,9 +19,139 @@ USER PROMPT:
 
 """
 
-
 # Need to have "key_outputs" and "user_prompt"
+################################## USER_PROMPT_VERSIONS ##################################
 USER_PROMPT_VERSIONS = {
+    #####################################################
+    # v9 - Include Protocol in Data Description
+    #####################################################
+    "v9": {
+        "key_outputs": ["neutral_infill", "contrastive_infill"],
+        "user_prompt": """# INPUT
+Text: "{text}"
+Label: "{predicted_label}"
+Vocab: {vocab} (length={vocab_count})
+Samples needed: {n_samples}
+
+{dataset_description}
+
+# OUTPUT FORMAT (JSON)
+{{
+  "status": "OK",
+  "sample_count": {n_samples},
+  "samples": [
+    {{
+      "mask": [1,0,1,...],
+      "neutral_infill": {{"text": "..."}},
+      "contrastive_infill": {{"text": "..."}}
+    }}
+  ]
+}}
+OR {{"status": "FAIL"}}"""
+    },
+
+    #####################################################
+    # v8 - Improved V4 - which was missing descriptions
+    #####################################################
+    "v8": {
+        "key_outputs": ["neutral_infill", "boundary_infill"],
+        "user_prompt": """# INPUT
+TEXT: "{text}"
+PREDICTED_LABEL: "{predicted_label}"
+VOCAB (ordered): {vocab}
+VOCAB_COUNT: {vocab_count}
+N_SAMPLES: {n_samples}
+
+# TASK RULES (dataset-specific)
+{dataset_description}
+
+# HARD CONSTRAINTS (MUST FOLLOW)
+- Output EXACTLY N_SAMPLES samples.
+- Each mask is a binary list of length VOCAB_COUNT (0/1 only).
+- masked_vocab MUST be exactly: [vocab[i] for i where mask[i]==1] (same order, no extras).
+- Generated text may use ONLY:
+  (a) words in masked_vocab, PLUS
+  (b) function words explicitly allowed by TASK RULES (if any).
+- Do NOT introduce synonyms/antonyms, new sentiment/toxic/grammar tokens, new names, or extra content words.
+
+# NEIGHBORHOOD DESIGN (diverse + informative)
+Create a balanced set of masks that probes local behavior:
+1) Full mask (all 1s): 1 sample.
+2) Leave-one-out: masks that drop exactly 1 vocab word (use several different dropped words).
+3) Small “Signal-focused” masks: keep only likely Signal words (and minimal glue if allowed).
+4) Noise-only masks: keep only likely Noise words (per task rules).
+5) Interaction masks: small pairs/triples that test combinations (e.g., negation+adjective, error token+context).
+
+# INFILL GENERATION (for each mask)
+Generate TWO texts using ONLY allowed words:
+
+A) neutral_infill (Label-preserving)
+- Must satisfy TASK RULES for this dataset.
+- If mask contains Signal words, the text MUST reflect "{predicted_label}".
+- If mask contains ONLY Noise words, the text MUST be neutral/factual (zero sentiment/toxicity).
+
+B) boundary_infill (Decision-boundary probing)
+- Use the SAME allowed words as neutral_infill (masked_vocab + allowed function words only).
+- Push prediction toward the opposite label by:
+  - re-ordering / changing scope,
+  - using negation/hedging ONLY if allowed,
+  - contrastive framing with allowed glue words,
+  - if a true flip is impossible under constraints, make it maximally ambiguous to reduce confidence.
+- Must stay grammatical and natural (no word salad).
+
+# OUTPUT FORMAT (JSON)
+{{
+  "status": "OK",
+  "sample_count": {n_samples},
+  "samples": [
+    {{
+      "mask": [1,0,1,...],
+      "neutral_infill": {{"text": "..."}},
+      "boundary_infill": {{"text": "..."}}
+    }}
+  ]
+}}
+OR {{"status": "FAIL", "reason": "..."}}"""
+    },
+    #####################################################
+    # v7 - Compact Triple-Infill (Variance-Optimized)
+    # - 3 samples: primary, contrastive, minimal
+    # - Task definitions inline, concise system prompt
+    # - Fixes SST2 sparsity while maintaining CoLA/HateXplain
+    #####################################################
+    "v7": {
+        "key_outputs": ["primary_sample", "contrastive_sample", "minimal_sample"],
+        "user_prompt": """# INPUT
+Text: "{text}"
+Label: "{predicted_label}"
+Vocab: {vocab} ({vocab_count} words)
+Samples: {n_samples}
+
+# TASK
+{dataset_description}
+
+# PROTOCOL
+1. Generate {n_samples} masks (mix small/medium/large sizes)
+2. Per mask, create 3 samples using ONLY masked words:
+   - primary_sample (per task rules)
+   - contrastive_sample (per task rules)
+   - minimal_sample (per task rules)
+
+# OUTPUT FORMAT (JSON)
+{{
+  "status": "OK",
+  "sample_count": {n_samples},
+  "samples": [
+    {{
+      "mask": [1,0,1,...],
+      "primary_sample": {{"text": "..."}},
+      "contrastive_sample": {{"text": "..."}},
+      "minimal_sample": {{"text": "..."}}
+    }}
+  ]
+}}
+OR {{"status": "FAIL", "reason": "..."}}"""
+    },
     #####################################################
     # v6 - Minimal Phrasing Strategy (Variance-Optimized)
     # - Simple, fragment-based infills for all tasks
@@ -96,7 +226,7 @@ Samples needed: {n_samples}
   ]
 }}
 OR {{"status": "FAIL", "reason": "..."}}"""
-},
+    },
     #####################################################
     # v4 - Task-Adaptive Infill Strategy
     # - Task-specific infill types (weak/boundary/clinical)
@@ -293,8 +423,18 @@ OR {{"status":"FAIL"}}"""
     }
 }
 
-
+################################## SYSTEM_PROMPT_VERSIONS ##################################
 SYSTEM_PROMPT_VERSIONS = {
+    "v9": """You are an Explainable AI (XAI) expert specializing in expert generating LIME training samples.""",
+    #####################################################
+    # v7 - Minimal System Prompt
+    #####################################################
+    "v7": """XAI expert generating LIME samples.
+
+Create 3 diverse samples per mask to maximize model prediction variance.
+Follow task-specific infill rules exactly.
+Use only masked vocabulary + allowed function words.""",
+
     #####################################################
     # v5 - Minimal Phrasing for Maximum Variance
     #####################################################
@@ -309,7 +449,7 @@ Core principles:
 - FRAGMENTS OK: "great performance" beats "The great performance stands out"
 
 Why: Complex fluent text creates similar model predictions across samples, reducing the linear surrogate's ability to learn feature importance.""",
-          
+
     #####################################################
     # v4 - Task-Adaptive Infill Strategy
     # - Task-specific infill types (weak/boundary/clinical)
@@ -381,7 +521,171 @@ For every request, you must generate binary masks and 3 specific sample types pe
 """
 }
 
+################################## DATASET_DESCRIPTION ##################################
 DATASET_DESCRIPTION = {
+    #####################################################
+    # v9 - Include Protocol in Data Description
+    #####################################################
+    "v9": {
+        "sst2": """ # YOUR ROLE
+Generate semantically-aware training samples for local surrogate models. Unlike vanilla LIME's random word dropout, your samples stay on the semantic manifold to improve explanation faithfulness and stability.
+
+# CORE PRINCIPLES
+- **Semantic Fidelity**: Generate natural, fluent text using only masked vocabulary
+- **Hypothesis-Driven**: Test specific hypotheses about feature importance
+- **Contrastive Power**: Create samples that probe decision boundaries effectively
+- **Model Faithfulness**: Approximate the model's decision logic, not your intuitions
+
+Follow the detailed protocol and task-specific semantics provided in each request.
+
+# TASK RULES
+Task: Sentiment Analysis (Positive/Negative).
+Signal: Adjectives, adverbs, and intensifiers (e.g., "terrible", "great").
+Noise: Neutral nouns and function words (e.g., "movie", "film").
+RULE: If the mask contains Signal words, the text MUST reflect the predicted label.
+RULE: If the mask contains ONLY Noise words, the text MUST be Neutral (boring, factual, zero emotion).
+
+# PROTOCOL
+**Step 1: Mask Generation**
+Generate {n_samples} diverse binary masks [{vocab_count} values: 0 or 1].
+- mask[i]=1: include vocab[i], mask[i]=0: exclude vocab[i]
+- Test different hypotheses: feature importance, combinations, necessity
+- Create varied masks: some with many features, some with few
+
+**Step 2: Dual Infill Generation**
+For each mask, generate TWO samples using ONLY masked vocabulary:
+
+A. **neutral_infill** (Label-Preserving)
+   - Maintain predicted label "{predicted_label}"
+   - Use masked words naturally to support the prediction
+   - Write fluent text that agrees with the label
+
+B. **contrastive_infill** (Label-Challenging)
+   - Push toward the opposite label
+   - Use masked words with contrary framing, hedging, or negation
+   - Maximize semantic shift while staying grammatical
+
+**Step 3: Quality Check**
+- Both infills use ONLY words where mask[i]=1
+- Both are grammatical and natural (no word salad)
+- They form a contrastive pair (same vocab, different semantics)
+
+""",
+
+        "cola": """Generate semantically-aware perturbations that stay on-manifold (unlike random word dropout).
+
+# CORE PRINCIPLES
+- Use only masked vocabulary + allowed function words
+- Generate natural, fluent text
+- Follow task-specific strategies exactly
+- Create effective contrastive pairs
+
+# TASK RULES
+Task: Grammar Checking (Acceptable/Unacceptable).
+Signal: The structural error or the specific grammatical construct.
+Noise: Valid words that do not affect grammaticality.
+RULE: If the mask contains the error, the text MUST be Unacceptable.
+RULE: If the mask removes the error (leaving only Noise), the text MUST be Acceptable (valid).
+
+# PROTOCOL
+1. Generate {n_samples} binary masks [{vocab_count} values] following task strategies
+2. For each mask, create TWO infills using ONLY masked words:
+   - neutral_infill: as defined in task rules
+   - contrastive_infill: as defined in task rules
+3. Use only masked_vocab + allowed function words (if specified)
+""",
+
+        "hatexplain": """Generate semantically-aware perturbations that stay on-manifold (unlike random word dropout).
+
+# CORE PRINCIPLES
+- Use only masked vocabulary + allowed function words
+- Generate natural, fluent text
+- Follow task-specific strategies exactly
+- Create effective contrastive pairs
+
+# TASK RULES
+Task: Hate Speech Detection (Hatespeech/Offensive/Normal).
+Signal: Slurs, attacks, or toxic terms.
+Noise: Safe, benign words.
+RULE: If the mask contains Signal words, the text MUST be Toxic/Offensive.
+RULE: If the mask contains ONLY Noise words, the text MUST be Benign/Safe (clinical, no implied hate).
+
+# PROTOCOL
+1. Generate {n_samples} binary masks [{vocab_count} values] following task strategies
+2. For each mask, create TWO infills using ONLY masked words:
+   - neutral_infill: as defined in task rules
+   - contrastive_infill: as defined in task rules
+3. Use only masked_vocab + allowed function words (if specified)
+""",
+    },
+
+    "v7": {
+        "sst2": """Sentiment (Positive/Negative)
+
+Masks ({n_samples} total - vary sizes):
+- 40% random (2-6 words)
+- 30% sentiment words (terrible, great, boring)
+- 20% negation pairs (not good, never boring)
+- 10% intensifiers (very disappointing, really great)
+
+3 Infills:
+primary_sample: Clear sentiment matching "{predicted_label}"
+  Ex: [great, performance] → "The great performance"
+
+contrastive_sample: Weak/mixed sentiment (NOT opposite)
+  Ex: [great, performance] → "Great in parts"
+
+minimal_sample: Fragment (2-5 words, no elaboration)
+  Ex: [great, performance] → "great performance"
+
+Allowed: a, an, the, is, are, was, were, and, or, but, in, at, to, of, for, with
+Keep minimal under 5 words.""",
+
+        "cola": """Grammar (Acceptable/Unacceptable)
+
+Masks ({n_samples} total):
+- 60% error only (1-2 words)
+- 30% error + context (3-4 words)
+- 10% valid words only
+
+3 Infills:
+primary_sample: Preserve label "{predicted_label}"
+  If Unacceptable: keep error → "go"
+  If Acceptable: keep correct → "goes"
+
+contrastive_sample: Flip grammar
+  If Unacceptable: fix → "goes"
+  If Acceptable: break → "go"
+
+minimal_sample: Just the word(s)
+  Ex: [go] → "go"
+  Ex: [are, cat] → "are cat"
+
+Allowed: the, a, an, to, of, in, on, at, is, are
+Single words OK.""",
+
+        "hatexplain": """Hate Speech (Hatespeech/Offensive/Normal)
+
+Masks ({n_samples} total):
+- 50% toxic only (1-2 words)
+- 30% toxic + context (3-5 words)
+- 20% neutral only
+
+3 Infills:
+primary_sample: Direct with safety framing
+  Toxic → "The [slur] as [attack]"
+  Normal → "The group and people"
+
+contrastive_sample: Academic/quoted framing
+  Ex: "Text contains '[slur]' as attack"
+
+minimal_sample: Minimal with quotes
+  Ex: [slur] → "[slur]"
+  Ex: [attack] → "term [attack]"
+
+Allowed: the, a, an, as, in, of, about, term, phrase, text, contains
+NEVER unframed toxic content."""
+    },
     # for v6
     "v4":
         {
@@ -408,7 +712,7 @@ Examples:
 Allowed additions: a, an, the, is, are, and, or
 Avoid: elaborate framing, descriptive context, complex structures""",
 
-    "cola": """**Task**: Grammar (Acceptable/Unacceptable)
+            "cola": """**Task**: Grammar (Acceptable/Unacceptable)
 
 **Mask Strategies** ({n_samples} total):
 - 60% error_only: Just the grammatical error (1-2 words)
@@ -427,7 +731,7 @@ Examples:
 Single words are perfectly acceptable.
 Minimal phrases test grammar directly.""",
 
-    "hatexplain": """**Task**: Hate Speech Detection
+            "hatexplain": """**Task**: Hate Speech Detection
 
 **Mask Strategies** ({n_samples} total):
 - 50% toxic_only: Slurs/toxic terms alone (1-2 words)
@@ -444,7 +748,7 @@ Examples:
 
 For toxic terms: Use quotation marks or "the term X" for safety.
 Keep it minimal - avoid elaborate academic framing."""
-},
+        },
     # For V5
     "v3": {"sst2": """**Task**: Sentiment (Positive/Negative)
 
@@ -476,7 +780,7 @@ Examples:
 - No contradictions or mixed signals
 - Keep it simple and natural""",
 
-    "cola": """**Task**: Grammar (Acceptable/Unacceptable)
+           "cola": """**Task**: Grammar (Acceptable/Unacceptable)
 
 **Features**:
 - Critical: grammatical errors (subject-verb, word order, missing articles)
@@ -501,7 +805,7 @@ contrastive_infill: Flip grammaticality
 - Single words or minimal phrases OK
 - Create discrete correct ↔ incorrect flip""",
 
-    "hatexplain": """**Task**: Hate Speech (Hatespeech/Offensive/Normal)
+           "hatexplain": """**Task**: Hate Speech (Hatespeech/Offensive/Normal)
 
 **Features**:
 - Critical: slurs, dehumanizing terms, threats
@@ -587,7 +891,7 @@ B. **contrastive_infill** (Label-Weakening):
 - contrastive_infill should weaken (not flip) the sentiment
 - Avoid contradictions like "great... but terrible" unless both words are in mask""",
 
-    "cola": """**TASK**: Grammatical Acceptability (Acceptable/Unacceptable)
+        "cola": """**TASK**: Grammatical Acceptability (Acceptable/Unacceptable)
 
 **LABEL-CRITICAL FEATURES**:
 - Grammatical errors: subject-verb agreement violations, word order errors, missing articles
@@ -638,7 +942,7 @@ B. **contrastive_infill** (Label-Flipping):
 - contrastive_infill should create discrete grammatical flip (correct ↔ incorrect)
 - No need for complex sentences; minimal valid constructions are fine""",
 
-    "hatexplain": """**TASK**: Hate Speech Detection (Hatespeech/Offensive/Normal)
+        "hatexplain": """**TASK**: Hate Speech Detection (Hatespeech/Offensive/Normal)
 
 **LABEL-CRITICAL FEATURES**:
 - Slurs: racial, ethnic, religious, gender-based, sexual orientation slurs
@@ -694,21 +998,21 @@ B. **contrastive_infill** (Label-Neutralizing):
 - Use quotation marks, "the term X", or "the phrase X" to create distance
 - contrastive_infill should reframe (not amplify) toxicity
 - Both infills must be safe for human evaluators to read"""
-},
+    },
     "v1": {
-    "sst2": """Task: Sentiment Analysis (Positive/Negative).
+        "sst2": """Task: Sentiment Analysis (Positive/Negative).
 Signal: Adjectives, adverbs, and intensifiers (e.g., "terrible", "great").
 Noise: Neutral nouns and function words (e.g., "movie", "film").
 RULE: If the mask contains Signal words, the text MUST reflect the predicted label.
 RULE: If the mask contains ONLY Noise words, the text MUST be Neutral (boring, factual, zero emotion).""",
 
-    "cola": """Task: Grammar Checking (Acceptable/Unacceptable).
+        "cola": """Task: Grammar Checking (Acceptable/Unacceptable).
 Signal: The structural error or the specific grammatical construct.
 Noise: Valid words that do not affect grammaticality.
 RULE: If the mask contains the error, the text MUST be Unacceptable.
 RULE: If the mask removes the error (leaving only Noise), the text MUST be Acceptable (valid).""",
 
-    "hatexplain": """Task: Hate Speech Detection (Hatespeech/Offensive/Normal).
+        "hatexplain": """Task: Hate Speech Detection (Hatespeech/Offensive/Normal).
 Signal: Slurs, attacks, or toxic terms.
 Noise: Safe, benign words.
 RULE: If the mask contains Signal words, the text MUST be Toxic/Offensive.

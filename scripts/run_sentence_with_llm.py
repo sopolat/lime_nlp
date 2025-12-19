@@ -36,9 +36,9 @@ class Args(object):
     # CONFIGURATION
     # ============================================================================
     TEST_MODE = False  # Set to True to run 1 example per dataset for testing
-    SYSTEM_PROMPT_USE_VERSION = "v4"
-    USER_PROMPT_USE_VERSION = "v4"
-    DATASET_DESCRIPTION_VERSION = "v1"
+    SYSTEM_PROMPT_USE_VERSION = "v9"
+    USER_PROMPT_USE_VERSION = "v9"
+    DATASET_DESCRIPTION_VERSION = "v9"
     LLM_NAME = "sonnet45"  # sonnet45 gpt41
     SENTENCE_TRANSFORMER_MODEL = "all-mpnet-base-v2"
     TEMPERATURE = 0.0
@@ -76,7 +76,13 @@ class Args(object):
         """
         Combine class and instance attributes
         """
-        return {**self.__class__.__dict__}
+        dict_arguments = {**self.__class__.__dict__}
+        dict_arguments = {k:str(v) for k, v in dict_arguments.items()}
+        dict_arguments.update({
+            "system_prompt_version": SYSTEM_PROMPT_VERSIONS[args.SYSTEM_PROMPT_USE_VERSION],
+            "user_prompt_version": USER_PROMPT_VERSIONS[args.USER_PROMPT_USE_VERSION],
+            "dataset_description_version": DATASET_DESCRIPTION[args.DATASET_DESCRIPTION_VERSION], })
+        return dict_arguments
 
 
 def get_logger(log_file: str, level: int = logging.INFO) -> logging.Logger:
@@ -517,7 +523,7 @@ def main():
             project=args.WANDB_PROJECT,
             entity=args.WANDB_ENTITY,
             name=os.path.basename(args.OUTPUT_DIR),
-            config={k: str(v) for k, v in args.to_dict().items()},
+            config=args.to_dict(),
             tags=[args.LLM_NAME, args.LLM_PROVIDER, f"sys{args.SYSTEM_PROMPT_USE_VERSION}",
                   f"usr{args.USER_PROMPT_USE_VERSION}"],
             mode=args.WANDB_MODE,
@@ -657,6 +663,12 @@ def main():
         ]:
             if os.path.exists(p):
                 art.add_file(p)
+
+        run.log_artifact(art)
+
+        p = Path("prompts.py")
+        art = wandb.Artifact(name="prompts", type="code")
+        art.add_file(str(p))  # logs the actual .py file
         run.log_artifact(art)
 
         run.finish()
