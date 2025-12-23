@@ -26,25 +26,39 @@ USER_PROMPT_VERSIONS = {
     # v9 - Include Protocol in Data Description
     #####################################################
     "v9": {
-        "key_outputs": ["neutral_infill", "contrastive_infill"],
+        "key_outputs": ["neutral_infill", "boundary_infill"],
         "user_prompt": """# INPUT
 Text: "{text}"
 Label: "{predicted_label}"
 Vocab: {vocab} (length={vocab_count})
-Samples needed: {n_samples}
+Vocab Count: {vocab_count} (Masks must have exactly this length)
+
+# TASK CONFIGURATION:
+- neutral_infill Samples: {n_per_strategy}
+- boundary_infill Samples: {n_per_strategy}
+- Total Samples to Generate: {total_samples}
+
+# GUIDELINES:
+1. UNIQUE MASK CONSTRAINT: Every sample must use a unique binary mask. You must generate {total_samples} distinct masks. Do not repeat masks.
+2. QUALITY: Text must be fluent, grammatical, and style-consistent (no artifacts or broken sentences).
 
 {dataset_description}
 
 # OUTPUT FORMAT (JSON)
 {{
   "status": "OK",
-  "sample_count": {n_samples},
+  "sample_count": {total_samples},
   "samples": [
     {{
       "mask": [1,0,1,...],
-      "neutral_infill": {{"text": "..."}},
-      "contrastive_infill": {{"text": "..."}}
-    }}
+      "strategy": "neutral_infill",
+      "text": "Generated text here..."
+    }},
+    {{
+      "mask": [0,0,1,...],
+      "strategy": "boundary_infill",
+      "text": "Generated text here..."
+    }},
   ]
 }}
 OR {{"status": "FAIL"}}"""
@@ -527,96 +541,83 @@ DATASET_DESCRIPTION = {
     # v9 - Include Protocol in Data Description
     #####################################################
     "v9": {
-        "sst2": """ # YOUR ROLE
-Generate semantically-aware training samples for local surrogate models. Unlike vanilla LIME's random word dropout, your samples stay on the semantic manifold to improve explanation faithfulness and stability.
+        # THIS
+        "sst2": """# DATASET: SST2 (Stanford Sentiment Treebank v2)
+Task: Binary sentiment classification
+Labels: ["negative", "positive"]
 
-# CORE PRINCIPLES
-- **Semantic Fidelity**: Generate natural, fluent text using only masked vocabulary
-- **Hypothesis-Driven**: Test specific hypotheses about feature importance
-- **Contrastive Power**: Create samples that probe decision boundaries effectively
-- **Model Faithfulness**: Approximate the model's decision logic, not your intuitions
+# MASK SEMANTICS
+- mask=1: ANCHOR word. Must appear (or be minimally paraphrased) in the generated text.
+- mask=0: INFILL slot. Replace this word with contextually appropriate alternatives based on the strategy.
 
-Follow the detailed protocol and task-specific semantics provided in each request.
+# STRATEGY DEFINITIONS
 
-# TASK RULES
-Task: Sentiment Analysis (Positive/Negative).
-Signal: Adjectives, adverbs, and intensifiers (e.g., "terrible", "great").
-Noise: Neutral nouns and function words (e.g., "movie", "film").
-RULE: If the mask contains Signal words, the text MUST reflect the predicted label.
-RULE: If the mask contains ONLY Noise words, the text MUST be Neutral (boring, factual, zero emotion).
+## neutral_infill
+Goal: Generate fluent text that PRESERVES the predicted label.
+- Anchor all mask=1 words.
+- Replace mask=0 words with semantically compatible alternatives that maintain the same sentiment polarity.
+- Output should be a plausible paraphrase that any sentiment classifier would still label as "{predicted_label}".
 
-# PROTOCOL
-**Step 1: Mask Generation**
-Generate {n_samples} diverse binary masks [{vocab_count} values: 0 or 1].
-- mask[i]=1: include vocab[i], mask[i]=0: exclude vocab[i]
-- Test different hypotheses: feature importance, combinations, necessity
-- Create varied masks: some with many features, some with few
+## boundary_infill
+Goal: Generate fluent text that FLIPS sentiment toward the OPPOSITE label.
+- Anchor all mask=1 words.
+- Replace mask=0 words with alternatives that push sentiment toward the opposite polarity.
+- This is a counterfactual probe: if the original is positive, generate text that feels negative (and vice versa).
+- CRITICAL: Do NOT just insert neutral or synonym substitutes. You must actively inject sentiment-flipping language (e.g., replace "excellent" with "terrible", not "good" or "fine").
 
-**Step 2: Dual Infill Generation**
-For each mask, generate TWO samples using ONLY masked vocabulary:
+# INTELLIGENT MASKING REQUIREMENTS
+- For boundary_infill: Masks must zero-out high-sentiment words to give room for polarity flip. Do not mask only function words.
+- For neutral_infill: Masks can target any word types, but preserve enough sentiment anchors to maintain label.
+- VARY your mask targets across samples. Do not repeatedly mask the same word set. Explore different subsets to map the full decision boundary.
 
-A. **neutral_infill** (Label-Preserving)
-   - Maintain predicted label "{predicted_label}"
-   - Use masked words naturally to support the prediction
-   - Write fluent text that agrees with the label
+# AVOID THE INFILLING TRAP
+When generating boundary_infill samples, the LLM tendency is to prioritize fluency and inadvertently use synonyms or weak substitutes that preserve the original sentiment. This defeats the purpose.
+- BAD: "amazing" → "great" (synonym, no flip)
+- GOOD: "amazing" → "awful" (true counterfactual)
+If you cannot flip sentiment while anchoring the mask=1 words, still attempt the strongest polarity shift possible.""",
+        # Opus45
+        "cola": """# DATASET: CoLA (Corpus of Linguistic Acceptability)
+Task: Binary grammatical acceptability classification
+Labels: "acceptable" (grammatically correct) | "unacceptable" (grammatically incorrect)
 
-B. **contrastive_infill** (Label-Challenging)
-   - Push toward the opposite label
-   - Use masked words with contrary framing, hedging, or negation
-   - Maximize semantic shift while staying grammatical
+Key linguistic phenomena affecting acceptability:
+- Subject-verb agreement
+- Argument structure and subcategorization
+- Word order and constituent placement
+- Tense/aspect consistency
+- Determiner and quantifier usage
+- Negation scope and placement
+- Auxiliary and modal verb requirements
 
-**Step 3: Quality Check**
-- Both infills use ONLY words where mask[i]=1
-- Both are grammatical and natural (no word salad)
-- They form a contrastive pair (same vocab, different semantics)
+# GENERATION GUIDANCE
+For neutral_infill: Preserve grammaticality status by maintaining or substituting with equivalently (un)grammatical structures.
+For contrastive_infill: Flip grammaticality by introducing/fixing errors in agreement, word order, argument structure, or morphology.
 
-""",
+Masks should isolate hypotheses about which tokens are critical to the grammaticality judgment (e.g., verb inflection, word order violations, missing arguments).""",
 
-        "cola": """Generate semantically-aware perturbations that stay on-manifold (unlike random word dropout).
+        # Opus45
+        "hatexplain": """Dataset: HatExplain (social media hate speech detection)
+Labels: "hate", "offensive", "normal"
 
-# CORE PRINCIPLES
-- Use only masked vocabulary + allowed function words
-- Generate natural, fluent text
-- Follow task-specific strategies exactly
-- Create effective contrastive pairs
+Linguistic features driving classification:
+- Slurs and identity-targeted attacks (race, religion, gender, sexuality)
+- Dehumanizing or degrading language
+- Threats, violent verbs, calls to action
+- Profanity and intensifiers
+- Target group mentions (neutral mention ≠ hate; hostility required)
 
-# TASK RULES
-Task: Grammar Checking (Acceptable/Unacceptable).
-Signal: The structural error or the specific grammatical construct.
-Noise: Valid words that do not affect grammaticality.
-RULE: If the mask contains the error, the text MUST be Unacceptable.
-RULE: If the mask removes the error (leaving only Noise), the text MUST be Acceptable (valid).
+Mask generation guidance:
+- Each mask should encode a hypothesis about which tokens drive the predicted label
+- Prioritize: slurs, identity terms, threat words, profanity, derogatory adjectives
 
-# PROTOCOL
-1. Generate {n_samples} binary masks [{vocab_count} values] following task strategies
-2. For each mask, create TWO infills using ONLY masked words:
-   - neutral_infill: as defined in task rules
-   - contrastive_infill: as defined in task rules
-3. Use only masked_vocab + allowed function words (if specified)
-""",
+Infill requirements:
+- neutral_infill: Retain all mask=1 tokens; reconstruct fluent text preserving the original label's toxicity level
+- contrastive_infill: Retain mask=1 tokens but reframe toward the opposite end of the toxicity spectrum (hate/offensive → normal; normal → mildly offensive)
 
-        "hatexplain": """Generate semantically-aware perturbations that stay on-manifold (unlike random word dropout).
-
-# CORE PRINCIPLES
-- Use only masked vocabulary + allowed function words
-- Generate natural, fluent text
-- Follow task-specific strategies exactly
-- Create effective contrastive pairs
-
-# TASK RULES
-Task: Hate Speech Detection (Hatespeech/Offensive/Normal).
-Signal: Slurs, attacks, or toxic terms.
-Noise: Safe, benign words.
-RULE: If the mask contains Signal words, the text MUST be Toxic/Offensive.
-RULE: If the mask contains ONLY Noise words, the text MUST be Benign/Safe (clinical, no implied hate).
-
-# PROTOCOL
-1. Generate {n_samples} binary masks [{vocab_count} values] following task strategies
-2. For each mask, create TWO infills using ONLY masked words:
-   - neutral_infill: as defined in task rules
-   - contrastive_infill: as defined in task rules
-3. Use only masked_vocab + allowed function words (if specified)
-""",
+Constraints:
+- Both infills must be fluent, realistic social media text
+- Preserve grammatical structure where possible
+- Avoid introducing tokens outside the semantic scope of the original""",
     },
 
     "v7": {

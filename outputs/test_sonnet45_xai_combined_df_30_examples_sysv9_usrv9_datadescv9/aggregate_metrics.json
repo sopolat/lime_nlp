@@ -1,0 +1,33 @@
+{
+  "generated_at": "2025-12-22T13:45:48.016029",
+  "methods": [
+    "Partition SHAP",
+    "LIME",
+    "Integrated Gradient",
+    "LIME-LLM"
+  ],
+  "datasets": {
+    "sst2": {
+      "Partition SHAP": {
+        "n": 12,
+        "roc_auc": 0.8148148148148148,
+        "pr_auc": 0.7916666666666666
+      },
+      "LIME": {
+        "n": 12,
+        "roc_auc": 0.8148148148148149,
+        "pr_auc": 0.6984126984126984
+      },
+      "Integrated Gradient": {
+        "n": 12,
+        "roc_auc": 0.7407407407407408,
+        "pr_auc": 0.4444444444444445
+      },
+      "LIME-LLM": {
+        "n": 12,
+        "roc_auc": 0.8518518518518519,
+        "pr_auc": 0.7222222222222223
+      }
+    }
+  }
+}

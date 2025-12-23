@@ -858,3 +858,1517 @@ sst2:
 
 2025-12-19 17:32:08 | WARNING | Failed examples 0/30
 []
+2025-12-19 17:56:43 | INFO | 
+================================================================================
+2025-12-19 17:56:43 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-19 17:56:43 | INFO | Mode: FULL
+2025-12-19 17:56:43 | INFO | Provider: ANTHROPIC
+2025-12-19 17:56:43 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-19 17:56:43 | INFO | ================================================================================
+
+2025-12-19 17:56:47 | INFO | Processing 30 examples
+2025-12-19 17:56:47 | INFO | Total rows: 496
+2025-12-19 17:56:47 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2025-12-19 17:56:47 | INFO | [21/30] hatexplain - 4701852_gab
+2025-12-19 17:56:47 | INFO |   Text: fanbloodytastic by time these leeches are held to account especially the muzzie ...
+2025-12-19 17:56:47 | INFO |   Words: 36 tokens
+2025-12-19 17:57:16 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2025-12-19 17:57:16 | INFO | [22/30] hatexplain - 21242245_gab
+2025-12-19 17:57:16 | INFO |   Text: hm [UNK] maybe if i survive my chemo and grow up i could be a lifeguard at a nig...
+2025-12-19 17:57:16 | INFO |   Words: 22 tokens
+2025-12-19 17:57:37 | INFO |   ✓ LIME-LLM scores generated (22 tokens)
+2025-12-19 17:57:37 | INFO | [23/30] hatexplain - 3Z8UJEJOCZEG603II1EL4BE4QZH93Z_nf_4
+2025-12-19 17:57:37 | INFO |   Text: then an older nigger wearing an apron dressed like a kitchen staff member and ho...
+2025-12-19 17:57:37 | INFO |   Words: 36 tokens
+2025-12-19 17:58:02 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2025-12-19 17:58:02 | INFO | [24/30] hatexplain - 21112613_gab
+2025-12-19 17:58:02 | INFO |   Text: trudeau is a muzzie loving faggot he loves the goathumpers at the expense of can...
+2025-12-19 17:58:02 | INFO |   Words: 25 tokens
+2025-12-19 17:58:28 | INFO |   ✓ LIME-LLM scores generated (25 tokens)
+2025-12-19 17:58:28 | INFO | [25/30] hatexplain - 15132440_gab
+2025-12-19 17:58:28 | INFO |   Text: tfw you are vice provost of diversity nigger equity vp of difference sameness at...
+2025-12-19 17:58:28 | INFO |   Words: 18 tokens
+2025-12-19 17:58:49 | INFO |   ✓ LIME-LLM scores generated (18 tokens)
+2025-12-19 17:58:49 | INFO | [26/30] hatexplain - 15430511_gab
+2025-12-19 17:58:49 | INFO |   Text: hey nazi dirtbag is your black bull keeping you occupied...
+2025-12-19 17:58:49 | INFO |   Words: 10 tokens
+2025-12-19 17:59:08 | INFO |   ✓ LIME-LLM scores generated (10 tokens)
+2025-12-19 17:59:08 | INFO | [27/30] hatexplain - 15292851_gab
+2025-12-19 17:59:08 | INFO |   Text: really i have seen men come together that we are atheist buddast odinist christi...
+2025-12-19 17:59:08 | INFO |   Words: 43 tokens
+2025-12-19 17:59:39 | INFO |   ✓ LIME-LLM scores generated (43 tokens)
+2025-12-19 17:59:39 | INFO | [28/30] hatexplain - 1107036788005179392_twitter
+2025-12-19 17:59:39 | INFO |   Text: <user> <user> are you retarded...
+2025-12-19 17:59:39 | INFO |   Words: 5 tokens
+2025-12-19 17:59:53 | INFO |   ✓ LIME-LLM scores generated (5 tokens)
+2025-12-19 17:59:53 | INFO | [29/30] hatexplain - 12666909_gab
+2025-12-19 17:59:53 | INFO |   Text: damn he a homo too not surprising israel is full of queers...
+2025-12-19 17:59:53 | INFO |   Words: 12 tokens
+2025-12-19 18:00:09 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2025-12-19 18:00:09 | INFO | [30/30] hatexplain - 20501519_gab
+2025-12-19 18:00:09 | INFO |   Text: only boer farmers are welcome the suburban white population initiated this holoc...
+2025-12-19 18:00:09 | INFO |   Words: 26 tokens
+2025-12-19 18:00:36 | INFO |   ✓ LIME-LLM scores generated (26 tokens)
+2025-12-19 18:00:36 | WARNING | 
+✓ Results saved: results.csv
+2025-12-19 18:00:37 | INFO | 
+Generating evaluation plots...
+2025-12-19 18:00:37 | INFO |   Processing hatexplain...
+2025-12-19 18:00:38 | INFO |   ✓ Saved curves: curves_hatexplain.png
+2025-12-19 18:00:39 | INFO | 
+================================================================================
+2025-12-19 18:00:39 | INFO | AGGREGATE METRICS
+2025-12-19 18:00:39 | INFO | ================================================================================
+2025-12-19 18:00:39 | INFO | 
+hatexplain:
+2025-12-19 18:00:39 | INFO |   Partition SHAP      : ROC-AUC=0.3525, PR-AUC=0.2631 (n=233)
+2025-12-19 18:00:39 | INFO |   LIME                : ROC-AUC=0.3039, PR-AUC=0.2364 (n=233)
+2025-12-19 18:00:39 | INFO |   Integrated Gradient : ROC-AUC=0.5455, PR-AUC=0.4442 (n=233)
+2025-12-19 18:00:39 | INFO |   LIME-LLM            : ROC-AUC=0.6800, PR-AUC=0.4689 (n=233)
+2025-12-19 18:00:39 | INFO | 
+================================================================================
+2025-12-19 18:00:39 | INFO | ✓ PIPELINE COMPLETE
+2025-12-19 18:00:39 | INFO | Saved: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/aggregate_metrics.json
+2025-12-19 18:00:39 | INFO | ================================================================================
+
+2025-12-19 18:00:39 | WARNING | Failed examples 0/30
+[]
+2025-12-19 18:07:49 | INFO | 
+================================================================================
+2025-12-19 18:07:49 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-19 18:07:49 | INFO | Mode: FULL
+2025-12-19 18:07:49 | INFO | Provider: ANTHROPIC
+2025-12-19 18:07:49 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-19 18:07:49 | INFO | ================================================================================
+
+2025-12-19 18:09:21 | INFO | Processing 30 examples
+2025-12-19 18:09:21 | INFO | Total rows: 496
+2025-12-19 18:09:21 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2025-12-19 18:09:21 | INFO | [21/30] hatexplain - 4701852_gab
+2025-12-19 18:09:21 | INFO |   Text: fanbloodytastic by time these leeches are held to account especially the muzzie ...
+2025-12-19 18:09:21 | INFO |   Words: 36 tokens
+2025-12-19 18:09:48 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2025-12-19 18:09:48 | INFO | [22/30] hatexplain - 21242245_gab
+2025-12-19 18:09:48 | INFO |   Text: hm [UNK] maybe if i survive my chemo and grow up i could be a lifeguard at a nig...
+2025-12-19 18:09:48 | INFO |   Words: 22 tokens
+2025-12-19 18:10:07 | INFO |   ✓ LIME-LLM scores generated (22 tokens)
+2025-12-19 18:10:07 | INFO | [23/30] hatexplain - 3Z8UJEJOCZEG603II1EL4BE4QZH93Z_nf_4
+2025-12-19 18:10:07 | INFO |   Text: then an older nigger wearing an apron dressed like a kitchen staff member and ho...
+2025-12-19 18:10:07 | INFO |   Words: 36 tokens
+2025-12-19 18:10:33 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2025-12-19 18:10:33 | INFO | [24/30] hatexplain - 21112613_gab
+2025-12-19 18:10:33 | INFO |   Text: trudeau is a muzzie loving faggot he loves the goathumpers at the expense of can...
+2025-12-19 18:10:33 | INFO |   Words: 25 tokens
+2025-12-19 18:10:54 | INFO |   ✓ LIME-LLM scores generated (25 tokens)
+2025-12-19 18:10:54 | INFO | [25/30] hatexplain - 15132440_gab
+2025-12-19 18:10:54 | INFO |   Text: tfw you are vice provost of diversity nigger equity vp of difference sameness at...
+2025-12-19 18:10:54 | INFO |   Words: 18 tokens
+2025-12-19 18:11:16 | INFO |   ✓ LIME-LLM scores generated (18 tokens)
+2025-12-19 18:11:16 | INFO | [26/30] hatexplain - 15430511_gab
+2025-12-19 18:11:16 | INFO |   Text: hey nazi dirtbag is your black bull keeping you occupied...
+2025-12-19 18:11:16 | INFO |   Words: 10 tokens
+2025-12-19 18:11:30 | INFO |   ✓ LIME-LLM scores generated (10 tokens)
+2025-12-19 18:11:30 | INFO | [27/30] hatexplain - 15292851_gab
+2025-12-19 18:11:30 | INFO |   Text: really i have seen men come together that we are atheist buddast odinist christi...
+2025-12-19 18:11:30 | INFO |   Words: 43 tokens
+2025-12-19 18:11:59 | INFO |   ✓ LIME-LLM scores generated (43 tokens)
+2025-12-19 18:11:59 | INFO | [28/30] hatexplain - 1107036788005179392_twitter
+2025-12-19 18:11:59 | INFO |   Text: <user> <user> are you retarded...
+2025-12-19 18:11:59 | INFO |   Words: 5 tokens
+2025-12-19 18:12:09 | INFO |   ✓ LIME-LLM scores generated (5 tokens)
+2025-12-19 18:12:09 | INFO | [29/30] hatexplain - 12666909_gab
+2025-12-19 18:12:09 | INFO |   Text: damn he a homo too not surprising israel is full of queers...
+2025-12-19 18:12:09 | INFO |   Words: 12 tokens
+2025-12-19 18:12:23 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2025-12-19 18:12:23 | INFO | [30/30] hatexplain - 20501519_gab
+2025-12-19 18:12:23 | INFO |   Text: only boer farmers are welcome the suburban white population initiated this holoc...
+2025-12-19 18:12:23 | INFO |   Words: 26 tokens
+2025-12-19 18:12:44 | INFO |   ✓ LIME-LLM scores generated (26 tokens)
+2025-12-19 18:12:44 | WARNING | 
+✓ Results saved: results.csv
+2025-12-19 18:12:45 | INFO | 
+Generating evaluation plots...
+2025-12-19 18:12:45 | INFO |   Processing hatexplain...
+2025-12-19 18:12:45 | INFO |   ✓ Saved curves: curves_hatexplain.png
+2025-12-19 18:12:46 | INFO | 
+================================================================================
+2025-12-19 18:12:46 | INFO | AGGREGATE METRICS
+2025-12-19 18:12:46 | INFO | ================================================================================
+2025-12-19 18:12:46 | INFO | 
+hatexplain:
+2025-12-19 18:12:46 | INFO |   Partition SHAP      : ROC-AUC=0.3525, PR-AUC=0.2631 (n=233)
+2025-12-19 18:12:46 | INFO |   LIME                : ROC-AUC=0.3039, PR-AUC=0.2364 (n=233)
+2025-12-19 18:12:46 | INFO |   Integrated Gradient : ROC-AUC=0.5455, PR-AUC=0.4442 (n=233)
+2025-12-19 18:12:46 | INFO |   LIME-LLM            : ROC-AUC=0.6924, PR-AUC=0.5012 (n=233)
+2025-12-19 18:12:46 | INFO | 
+================================================================================
+2025-12-19 18:12:46 | INFO | ✓ PIPELINE COMPLETE
+2025-12-19 18:12:46 | INFO | Saved: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/aggregate_metrics.json
+2025-12-19 18:12:46 | INFO | ================================================================================
+
+2025-12-19 18:12:46 | WARNING | Failed examples 0/30
+[]
+2025-12-19 18:16:11 | INFO | 
+================================================================================
+2025-12-19 18:16:11 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-19 18:16:11 | INFO | Mode: FULL
+2025-12-19 18:16:11 | INFO | Provider: ANTHROPIC
+2025-12-19 18:16:11 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-19 18:16:11 | INFO | ================================================================================
+
+2025-12-19 18:16:11 | INFO | RUNNING LLM 💸💸
+2025-12-19 18:16:13 | INFO | Processing 3 examples
+2025-12-19 18:16:13 | INFO | Total rows: 56
+2025-12-19 18:16:13 | INFO | Datasets: {'cola': 1, 'hatexplain': 1, 'sst2': 1}
+
+2025-12-19 18:16:13 | INFO | [3/3] hatexplain - 4701852_gab
+2025-12-19 18:16:13 | INFO |   Text: fanbloodytastic by time these leeches are held to account especially the muzzie ...
+2025-12-19 18:16:13 | INFO |   Words: 36 tokens
+2025-12-19 18:16:37 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2025-12-19 18:16:37 | WARNING | 
+✓ Results saved: results.csv
+2025-12-19 18:16:38 | INFO | 
+Generating evaluation plots...
+2025-12-19 18:16:38 | INFO |   Processing hatexplain...
+2025-12-19 18:16:38 | INFO |   ✓ Saved curves: curves_hatexplain.png
+2025-12-19 18:16:39 | INFO | 
+================================================================================
+2025-12-19 18:16:39 | INFO | AGGREGATE METRICS
+2025-12-19 18:16:39 | INFO | ================================================================================
+2025-12-19 18:16:39 | INFO | 
+hatexplain:
+2025-12-19 18:16:39 | INFO |   Partition SHAP      : ROC-AUC=0.0294, PR-AUC=0.0429 (n=36)
+2025-12-19 18:16:39 | INFO |   LIME                : ROC-AUC=0.0000, PR-AUC=0.0421 (n=36)
+2025-12-19 18:16:39 | INFO |   Integrated Gradient : ROC-AUC=0.9559, PR-AUC=0.5000 (n=36)
+2025-12-19 18:16:39 | INFO |   LIME-LLM            : ROC-AUC=1.0000, PR-AUC=1.0000 (n=36)
+2025-12-19 18:16:39 | INFO | 
+================================================================================
+2025-12-19 18:16:39 | INFO | ✓ PIPELINE COMPLETE
+2025-12-19 18:16:39 | INFO | Saved: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/aggregate_metrics.json
+2025-12-19 18:16:39 | INFO | ================================================================================
+
+2025-12-19 18:16:39 | WARNING | Failed examples 0/3
+[]
+2025-12-21 17:39:23 | INFO | 
+================================================================================
+2025-12-21 17:39:23 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-21 17:39:23 | INFO | Mode: FULL
+2025-12-21 17:39:23 | INFO | Provider: ANTHROPIC
+2025-12-21 17:39:23 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-21 17:39:23 | INFO | ================================================================================
+
+2025-12-21 17:39:23 | INFO | RUNNING LLM 💸💸
+2025-12-21 17:39:24 | INFO | Processing 3 examples
+2025-12-21 17:39:24 | INFO | Total rows: 56
+2025-12-21 17:39:24 | INFO | Datasets: {'cola': 1, 'hatexplain': 1, 'sst2': 1}
+
+2025-12-21 17:39:25 | INFO | [2/3] cola - 1017
+2025-12-21 17:39:25 | INFO |   Text: It is the problem that he is here....
+2025-12-21 17:39:25 | INFO |   Words: 8 tokens
+2025-12-21 17:39:38 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2025-12-21 17:39:38 | WARNING | 
+✓ Results saved: results.csv
+2025-12-21 17:39:39 | INFO | 
+Generating evaluation plots...
+2025-12-21 17:39:39 | INFO |   Processing cola...
+2025-12-21 17:39:39 | INFO |   ✓ Saved curves: curves_cola.png
+2025-12-21 17:39:40 | INFO | 
+================================================================================
+2025-12-21 17:39:40 | INFO | AGGREGATE METRICS
+2025-12-21 17:39:40 | INFO | ================================================================================
+2025-12-21 17:39:40 | INFO | 
+cola:
+2025-12-21 17:39:40 | INFO |   Partition SHAP      : ROC-AUC=0.4286, PR-AUC=0.2000 (n=8)
+2025-12-21 17:39:40 | INFO |   LIME                : ROC-AUC=1.0000, PR-AUC=1.0000 (n=8)
+2025-12-21 17:39:40 | INFO |   Integrated Gradient : ROC-AUC=0.4286, PR-AUC=0.2000 (n=8)
+2025-12-21 17:39:40 | INFO |   LIME-LLM            : ROC-AUC=0.4286, PR-AUC=0.2000 (n=8)
+2025-12-21 17:39:40 | INFO | 
+================================================================================
+2025-12-21 17:39:40 | INFO | ✓ PIPELINE COMPLETE
+2025-12-21 17:39:40 | INFO | Saved: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/aggregate_metrics.json
+2025-12-21 17:39:40 | INFO | ================================================================================
+
+2025-12-21 17:39:40 | WARNING | Failed examples 0/3
+[]
+2025-12-21 17:41:29 | INFO | 
+================================================================================
+2025-12-21 17:41:29 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-21 17:41:29 | INFO | Mode: FULL
+2025-12-21 17:41:29 | INFO | Provider: ANTHROPIC
+2025-12-21 17:41:29 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-21 17:41:29 | INFO | ================================================================================
+
+2025-12-21 17:41:29 | INFO | RUNNING LLM 💸💸
+2025-12-21 17:41:30 | INFO | Processing 3 examples
+2025-12-21 17:41:30 | INFO | Total rows: 56
+2025-12-21 17:41:30 | INFO | Datasets: {'cola': 1, 'hatexplain': 1, 'sst2': 1}
+
+2025-12-21 17:41:30 | INFO | [2/3] cola - 1017
+2025-12-21 17:41:30 | INFO |   Text: It is the problem that he is here....
+2025-12-21 17:41:30 | INFO |   Words: 8 tokens
+2025-12-21 17:41:42 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2025-12-21 17:41:42 | WARNING | 
+✓ Results saved: results.csv
+2025-12-21 17:41:43 | INFO | 
+Generating evaluation plots...
+2025-12-21 17:41:43 | INFO |   Processing cola...
+2025-12-21 17:41:44 | INFO |   ✓ Saved curves: curves_cola.png
+2025-12-21 17:41:44 | INFO | 
+================================================================================
+2025-12-21 17:41:44 | INFO | AGGREGATE METRICS
+2025-12-21 17:41:44 | INFO | ================================================================================
+2025-12-21 17:41:44 | INFO | 
+cola:
+2025-12-21 17:41:44 | INFO |   Partition SHAP      : ROC-AUC=0.4286, PR-AUC=0.2000 (n=8)
+2025-12-21 17:41:44 | INFO |   LIME                : ROC-AUC=1.0000, PR-AUC=1.0000 (n=8)
+2025-12-21 17:41:44 | INFO |   Integrated Gradient : ROC-AUC=0.4286, PR-AUC=0.2000 (n=8)
+2025-12-21 17:41:44 | INFO |   LIME-LLM            : ROC-AUC=0.4286, PR-AUC=0.2000 (n=8)
+2025-12-21 17:41:44 | INFO | 
+================================================================================
+2025-12-21 17:41:44 | INFO | ✓ PIPELINE COMPLETE
+2025-12-21 17:41:44 | INFO | Saved: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/aggregate_metrics.json
+2025-12-21 17:41:44 | INFO | ================================================================================
+
+2025-12-21 17:41:44 | WARNING | Failed examples 0/3
+[]
+2025-12-21 17:42:49 | INFO | 
+================================================================================
+2025-12-21 17:42:49 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-21 17:42:49 | INFO | Mode: FULL
+2025-12-21 17:42:49 | INFO | Provider: ANTHROPIC
+2025-12-21 17:42:49 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-21 17:42:49 | INFO | ================================================================================
+
+2025-12-21 17:44:08 | INFO | Processing 30 examples
+2025-12-21 17:44:08 | INFO | Total rows: 496
+2025-12-21 17:44:08 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2025-12-21 17:44:08 | INFO | [11/30] cola - 1017
+2025-12-21 17:44:08 | INFO |   Text: It is the problem that he is here....
+2025-12-21 17:44:08 | INFO |   Words: 8 tokens
+2025-12-21 17:44:21 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2025-12-21 17:44:21 | INFO | [12/30] cola - 23
+2025-12-21 17:44:21 | INFO |   Text: Mickey looked up it....
+2025-12-21 17:44:21 | INFO |   Words: 4 tokens
+2025-12-21 17:44:31 | INFO |   ✓ LIME-LLM scores generated (4 tokens)
+2025-12-21 17:44:31 | INFO | [13/30] cola - 354
+2025-12-21 17:44:31 | INFO |   Text: the panther's the coat is dark black....
+2025-12-21 17:44:31 | INFO |   Words: 7 tokens
+2025-12-21 17:44:45 | INFO |   ✓ LIME-LLM scores generated (7 tokens)
+2025-12-21 17:44:45 | INFO | [14/30] cola - 191
+2025-12-21 17:44:45 | INFO |   Text: I shaped a loaf....
+2025-12-21 17:44:45 | INFO |   Words: 4 tokens
+2025-12-21 17:44:57 | INFO |   ✓ LIME-LLM scores generated (4 tokens)
+2025-12-21 17:44:57 | INFO | [15/30] cola - 170
+2025-12-21 17:44:57 | INFO |   Text: Carla slid at the book....
+2025-12-21 17:44:57 | INFO |   Words: 5 tokens
+2025-12-21 17:45:09 | INFO |   ✓ LIME-LLM scores generated (5 tokens)
+2025-12-21 17:45:09 | INFO | [16/30] cola - 384
+2025-12-21 17:45:09 | INFO |   Text: John thinks that Mary loves himself....
+2025-12-21 17:45:09 | INFO |   Words: 6 tokens
+2025-12-21 17:45:31 | INFO |   ✓ LIME-LLM scores generated (6 tokens)
+2025-12-21 17:45:31 | INFO | [17/30] cola - 733
+2025-12-21 17:45:31 | INFO |   Text: Who for Sandy to talk to is still enrolled in the class?...
+2025-12-21 17:45:31 | INFO |   Words: 12 tokens
+2025-12-21 17:45:45 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2025-12-21 17:45:45 | INFO | [18/30] cola - 813
+2025-12-21 17:45:45 | INFO |   Text: Birds sings....
+2025-12-21 17:45:45 | INFO |   Words: 2 tokens
+2025-12-21 17:45:55 | INFO |   ✓ LIME-LLM scores generated (2 tokens)
+2025-12-21 17:45:55 | INFO | [19/30] cola - 836
+2025-12-21 17:45:55 | INFO |   Text: We relied above Leslie....
+2025-12-21 17:45:55 | INFO |   Words: 4 tokens
+2025-12-21 17:46:12 | INFO |   ✓ LIME-LLM scores generated (4 tokens)
+2025-12-21 17:46:12 | INFO | [20/30] cola - 880
+2025-12-21 17:46:12 | INFO |   Text: I enjoy yourself....
+2025-12-21 17:46:12 | INFO |   Words: 3 tokens
+2025-12-21 17:46:22 | INFO |   ✓ LIME-LLM scores generated (3 tokens)
+2025-12-21 17:46:22 | WARNING | 
+✓ Results saved: results.csv
+2025-12-21 17:46:22 | INFO | 
+Generating evaluation plots...
+2025-12-21 17:46:22 | INFO |   Processing cola...
+2025-12-21 17:46:23 | INFO |   ✓ Saved curves: curves_cola.png
+2025-12-21 17:46:24 | INFO | 
+================================================================================
+2025-12-21 17:46:24 | INFO | AGGREGATE METRICS
+2025-12-21 17:46:24 | INFO | ================================================================================
+2025-12-21 17:46:24 | INFO | 
+cola:
+2025-12-21 17:46:24 | INFO |   Partition SHAP      : ROC-AUC=0.4554, PR-AUC=0.2398 (n=55)
+2025-12-21 17:46:24 | INFO |   LIME                : ROC-AUC=0.4554, PR-AUC=0.2286 (n=55)
+2025-12-21 17:46:24 | INFO |   Integrated Gradient : ROC-AUC=0.5368, PR-AUC=0.3208 (n=55)
+2025-12-21 17:46:24 | INFO |   LIME-LLM            : ROC-AUC=0.6182, PR-AUC=0.4215 (n=55)
+2025-12-21 17:46:24 | INFO | 
+================================================================================
+2025-12-21 17:46:24 | INFO | ✓ PIPELINE COMPLETE
+2025-12-21 17:46:24 | INFO | Saved: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/aggregate_metrics.json
+2025-12-21 17:46:24 | INFO | ================================================================================
+
+2025-12-21 17:46:24 | WARNING | Failed examples 0/30
+[]
+2025-12-21 17:48:32 | INFO | 
+================================================================================
+2025-12-21 17:48:32 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-21 17:48:32 | INFO | Mode: FULL
+2025-12-21 17:48:32 | INFO | Provider: ANTHROPIC
+2025-12-21 17:48:32 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-21 17:48:32 | INFO | ================================================================================
+
+2025-12-21 17:48:36 | INFO | Processing 30 examples
+2025-12-21 17:48:36 | INFO | Total rows: 496
+2025-12-21 17:48:36 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2025-12-21 17:48:36 | INFO | [11/30] cola - 1017
+2025-12-21 17:48:36 | INFO |   Text: It is the problem that he is here....
+2025-12-21 17:48:36 | INFO |   Words: 8 tokens
+2025-12-21 17:48:46 | WARNING |   ✗ LLM parsing failed: Extra data: line 4 column 1 (char 23)
+2025-12-21 17:48:46 | WARNING |   ✗ Failed to generate scores
+2025-12-21 17:48:46 | INFO | [12/30] cola - 23
+2025-12-21 17:48:46 | INFO |   Text: Mickey looked up it....
+2025-12-21 17:48:46 | INFO |   Words: 4 tokens
+2025-12-21 17:48:58 | WARNING |   ✗ LLM parsing failed: Extra data: line 4 column 1 (char 23)
+2025-12-21 17:48:58 | WARNING |   ✗ Failed to generate scores
+2025-12-21 17:48:58 | INFO | [13/30] cola - 354
+2025-12-21 17:48:58 | INFO |   Text: the panther's the coat is dark black....
+2025-12-21 17:48:58 | INFO |   Words: 7 tokens
+2025-12-21 17:49:09 | INFO |   ✓ LIME-LLM scores generated (7 tokens)
+2025-12-21 17:49:09 | INFO | [14/30] cola - 191
+2025-12-21 17:49:09 | INFO |   Text: I shaped a loaf....
+2025-12-21 17:49:09 | INFO |   Words: 4 tokens
+2025-12-21 17:49:20 | INFO |   ✓ LIME-LLM scores generated (4 tokens)
+2025-12-21 17:49:20 | INFO | [15/30] cola - 170
+2025-12-21 17:49:20 | INFO |   Text: Carla slid at the book....
+2025-12-21 17:49:20 | INFO |   Words: 5 tokens
+2025-12-21 17:49:29 | WARNING |   ✗ LLM parsing failed: Extra data: line 4 column 1 (char 23)
+2025-12-21 17:49:29 | WARNING |   ✗ Failed to generate scores
+2025-12-21 17:49:29 | INFO | [16/30] cola - 384
+2025-12-21 17:49:29 | INFO |   Text: John thinks that Mary loves himself....
+2025-12-21 17:49:29 | INFO |   Words: 6 tokens
+2025-12-21 17:49:41 | WARNING |   ✗ LLM parsing failed: Extra data: line 4 column 1 (char 23)
+2025-12-21 17:49:41 | WARNING |   ✗ Failed to generate scores
+2025-12-21 17:49:41 | INFO | [17/30] cola - 733
+2025-12-21 17:49:41 | INFO |   Text: Who for Sandy to talk to is still enrolled in the class?...
+2025-12-21 17:49:41 | INFO |   Words: 12 tokens
+2025-12-21 17:49:50 | WARNING |   ✗ LLM parsing failed: Extra data: line 4 column 1 (char 23)
+2025-12-21 17:49:50 | WARNING |   ✗ Failed to generate scores
+2025-12-21 17:49:50 | INFO | [18/30] cola - 813
+2025-12-21 17:49:50 | INFO |   Text: Birds sings....
+2025-12-21 17:49:50 | INFO |   Words: 2 tokens
+2025-12-21 17:50:00 | WARNING |   ✗ LLM parsing failed: Extra data: line 4 column 1 (char 23)
+2025-12-21 17:50:00 | WARNING |   ✗ Failed to generate scores
+2025-12-21 17:50:00 | INFO | [19/30] cola - 836
+2025-12-21 17:50:00 | INFO |   Text: We relied above Leslie....
+2025-12-21 17:50:00 | INFO |   Words: 4 tokens
+2025-12-21 17:50:10 | INFO |   ✓ LIME-LLM scores generated (4 tokens)
+2025-12-21 17:50:10 | INFO | [20/30] cola - 880
+2025-12-21 17:50:10 | INFO |   Text: I enjoy yourself....
+2025-12-21 17:50:10 | INFO |   Words: 3 tokens
+2025-12-21 17:50:19 | WARNING |   ✗ LLM parsing failed: Extra data: line 4 column 1 (char 23)
+2025-12-21 17:50:19 | WARNING |   ✗ Failed to generate scores
+2025-12-21 17:50:20 | WARNING | 
+✓ Results saved: results.csv
+2025-12-21 17:50:20 | INFO | 
+Generating evaluation plots...
+2025-12-21 17:50:20 | INFO |   Processing cola...
+2025-12-21 17:50:21 | INFO |   ✓ Saved curves: curves_cola.png
+2025-12-21 17:50:21 | INFO | 
+================================================================================
+2025-12-21 17:50:21 | INFO | AGGREGATE METRICS
+2025-12-21 17:50:21 | INFO | ================================================================================
+2025-12-21 17:50:21 | INFO | 
+cola:
+2025-12-21 17:50:21 | INFO |   Partition SHAP      : ROC-AUC=0.4554, PR-AUC=0.2398 (n=55)
+2025-12-21 17:50:21 | INFO |   LIME                : ROC-AUC=0.4554, PR-AUC=0.2286 (n=55)
+2025-12-21 17:50:21 | INFO |   Integrated Gradient : ROC-AUC=0.5368, PR-AUC=0.3208 (n=55)
+2025-12-21 17:50:21 | INFO |   LIME-LLM            : ROC-AUC=0.7083, PR-AUC=0.3556 (n=15)
+2025-12-21 17:50:21 | INFO | 
+================================================================================
+2025-12-21 17:50:21 | INFO | ✓ PIPELINE COMPLETE
+2025-12-21 17:50:21 | INFO | Saved: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/aggregate_metrics.json
+2025-12-21 17:50:21 | INFO | ================================================================================
+
+2025-12-21 17:50:21 | WARNING | Failed examples 0/30
+[]
+2025-12-21 17:52:03 | INFO | 
+================================================================================
+2025-12-21 17:52:03 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-21 17:52:03 | INFO | Mode: FULL
+2025-12-21 17:52:03 | INFO | Provider: ANTHROPIC
+2025-12-21 17:52:03 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-21 17:52:03 | INFO | ================================================================================
+
+2025-12-21 17:52:52 | INFO | Processing 30 examples
+2025-12-21 17:52:52 | INFO | Total rows: 496
+2025-12-21 17:52:52 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2025-12-21 17:52:53 | INFO | [11/30] cola - 1017
+2025-12-21 17:52:53 | INFO |   Text: It is the problem that he is here....
+2025-12-21 17:52:53 | INFO |   Words: 8 tokens
+2025-12-21 17:53:05 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2025-12-21 17:53:05 | INFO | [12/30] cola - 23
+2025-12-21 17:53:05 | INFO |   Text: Mickey looked up it....
+2025-12-21 17:53:05 | INFO |   Words: 4 tokens
+2025-12-21 17:53:16 | INFO |   ✓ LIME-LLM scores generated (4 tokens)
+2025-12-21 17:53:16 | INFO | [13/30] cola - 354
+2025-12-21 17:53:16 | INFO |   Text: the panther's the coat is dark black....
+2025-12-21 17:53:16 | INFO |   Words: 7 tokens
+2025-12-21 17:53:27 | INFO |   ✓ LIME-LLM scores generated (7 tokens)
+2025-12-21 17:53:27 | INFO | [14/30] cola - 191
+2025-12-21 17:53:27 | INFO |   Text: I shaped a loaf....
+2025-12-21 17:53:27 | INFO |   Words: 4 tokens
+2025-12-21 17:53:39 | INFO |   ✓ LIME-LLM scores generated (4 tokens)
+2025-12-21 17:53:39 | INFO | [15/30] cola - 170
+2025-12-21 17:53:39 | INFO |   Text: Carla slid at the book....
+2025-12-21 17:53:39 | INFO |   Words: 5 tokens
+2025-12-21 17:53:51 | INFO |   ✓ LIME-LLM scores generated (5 tokens)
+2025-12-21 17:53:51 | INFO | [16/30] cola - 384
+2025-12-21 17:53:51 | INFO |   Text: John thinks that Mary loves himself....
+2025-12-21 17:53:51 | INFO |   Words: 6 tokens
+2025-12-21 17:54:04 | INFO |   ✓ LIME-LLM scores generated (6 tokens)
+2025-12-21 17:54:04 | INFO | [17/30] cola - 733
+2025-12-21 17:54:04 | INFO |   Text: Who for Sandy to talk to is still enrolled in the class?...
+2025-12-21 17:54:04 | INFO |   Words: 12 tokens
+2025-12-21 17:54:19 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2025-12-21 17:54:19 | INFO | [18/30] cola - 813
+2025-12-21 17:54:19 | INFO |   Text: Birds sings....
+2025-12-21 17:54:19 | INFO |   Words: 2 tokens
+2025-12-21 17:54:29 | INFO |   ✓ LIME-LLM scores generated (2 tokens)
+2025-12-21 17:54:29 | INFO | [19/30] cola - 836
+2025-12-21 17:54:29 | INFO |   Text: We relied above Leslie....
+2025-12-21 17:54:29 | INFO |   Words: 4 tokens
+2025-12-21 17:54:39 | INFO |   ✓ LIME-LLM scores generated (4 tokens)
+2025-12-21 17:54:39 | INFO | [20/30] cola - 880
+2025-12-21 17:54:39 | INFO |   Text: I enjoy yourself....
+2025-12-21 17:54:39 | INFO |   Words: 3 tokens
+2025-12-21 17:54:49 | INFO |   ✓ LIME-LLM scores generated (3 tokens)
+2025-12-21 17:54:49 | WARNING | 
+✓ Results saved: results.csv
+2025-12-21 17:54:50 | INFO | 
+Generating evaluation plots...
+2025-12-21 17:54:50 | INFO |   Processing cola...
+2025-12-21 17:54:51 | INFO |   ✓ Saved curves: curves_cola.png
+2025-12-21 17:54:52 | INFO | 
+================================================================================
+2025-12-21 17:54:52 | INFO | AGGREGATE METRICS
+2025-12-21 17:54:52 | INFO | ================================================================================
+2025-12-21 17:54:52 | INFO | 
+cola:
+2025-12-21 17:54:52 | INFO |   Partition SHAP      : ROC-AUC=0.4554, PR-AUC=0.2398 (n=55)
+2025-12-21 17:54:52 | INFO |   LIME                : ROC-AUC=0.4554, PR-AUC=0.2286 (n=55)
+2025-12-21 17:54:52 | INFO |   Integrated Gradient : ROC-AUC=0.5368, PR-AUC=0.3208 (n=55)
+2025-12-21 17:54:52 | INFO |   LIME-LLM            : ROC-AUC=0.6337, PR-AUC=0.3235 (n=55)
+2025-12-21 17:54:52 | INFO | 
+================================================================================
+2025-12-21 17:54:52 | INFO | ✓ PIPELINE COMPLETE
+2025-12-21 17:54:52 | INFO | Saved: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/aggregate_metrics.json
+2025-12-21 17:54:52 | INFO | ================================================================================
+
+2025-12-21 17:54:52 | WARNING | Failed examples 0/30
+[]
+2025-12-21 19:26:00 | INFO | 
+================================================================================
+2025-12-21 19:26:00 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-21 19:26:00 | INFO | Mode: FULL
+2025-12-21 19:26:00 | INFO | Provider: ANTHROPIC
+2025-12-21 19:26:00 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-21 19:26:00 | INFO | ================================================================================
+
+2025-12-21 19:26:04 | INFO | Processing 30 examples
+2025-12-21 19:26:04 | INFO | Total rows: 496
+2025-12-21 19:26:04 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2025-12-21 19:26:04 | INFO | [11/30] cola - 1017
+2025-12-21 19:26:04 | INFO |   Text: It is the problem that he is here....
+2025-12-21 19:26:04 | INFO |   Words: 8 tokens
+2025-12-21 19:26:17 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2025-12-21 19:26:17 | INFO | [12/30] cola - 23
+2025-12-21 19:26:17 | INFO |   Text: Mickey looked up it....
+2025-12-21 19:26:17 | INFO |   Words: 4 tokens
+2025-12-21 19:26:28 | INFO |   ✓ LIME-LLM scores generated (4 tokens)
+2025-12-21 19:26:28 | INFO | [13/30] cola - 354
+2025-12-21 19:26:28 | INFO |   Text: the panther's the coat is dark black....
+2025-12-21 19:26:28 | INFO |   Words: 7 tokens
+2025-12-21 19:26:40 | INFO |   ✓ LIME-LLM scores generated (7 tokens)
+2025-12-21 19:26:40 | INFO | [14/30] cola - 191
+2025-12-21 19:26:40 | INFO |   Text: I shaped a loaf....
+2025-12-21 19:26:40 | INFO |   Words: 4 tokens
+2025-12-21 19:26:52 | INFO |   ✓ LIME-LLM scores generated (4 tokens)
+2025-12-21 19:26:52 | INFO | [15/30] cola - 170
+2025-12-21 19:26:52 | INFO |   Text: Carla slid at the book....
+2025-12-21 19:26:52 | INFO |   Words: 5 tokens
+2025-12-21 19:27:04 | INFO |   ✓ LIME-LLM scores generated (5 tokens)
+2025-12-21 19:27:04 | INFO | [16/30] cola - 384
+2025-12-21 19:27:04 | INFO |   Text: John thinks that Mary loves himself....
+2025-12-21 19:27:04 | INFO |   Words: 6 tokens
+2025-12-21 19:27:17 | INFO |   ✓ LIME-LLM scores generated (6 tokens)
+2025-12-21 19:27:17 | INFO | [17/30] cola - 733
+2025-12-21 19:27:17 | INFO |   Text: Who for Sandy to talk to is still enrolled in the class?...
+2025-12-21 19:27:17 | INFO |   Words: 12 tokens
+2025-12-21 19:27:30 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2025-12-21 19:27:30 | INFO | [18/30] cola - 813
+2025-12-21 19:27:30 | INFO |   Text: Birds sings....
+2025-12-21 19:27:30 | INFO |   Words: 2 tokens
+2025-12-21 19:27:40 | INFO |   ✓ LIME-LLM scores generated (2 tokens)
+2025-12-21 19:27:40 | INFO | [19/30] cola - 836
+2025-12-21 19:27:40 | INFO |   Text: We relied above Leslie....
+2025-12-21 19:27:40 | INFO |   Words: 4 tokens
+2025-12-21 19:27:51 | INFO |   ✓ LIME-LLM scores generated (4 tokens)
+2025-12-21 19:27:51 | INFO | [20/30] cola - 880
+2025-12-21 19:27:51 | INFO |   Text: I enjoy yourself....
+2025-12-21 19:27:51 | INFO |   Words: 3 tokens
+2025-12-21 19:28:01 | INFO |   ✓ LIME-LLM scores generated (3 tokens)
+2025-12-21 19:28:01 | WARNING | 
+✓ Results saved: results.csv
+2025-12-21 19:28:02 | INFO | 
+Generating evaluation plots...
+2025-12-21 19:28:02 | INFO |   Processing cola...
+2025-12-21 19:28:03 | INFO |   ✓ Saved curves: curves_cola.png
+2025-12-21 19:28:04 | INFO | 
+================================================================================
+2025-12-21 19:28:04 | INFO | AGGREGATE METRICS
+2025-12-21 19:28:04 | INFO | ================================================================================
+2025-12-21 19:28:04 | INFO | 
+cola:
+2025-12-21 19:28:04 | INFO |   Partition SHAP      : ROC-AUC=0.4554, PR-AUC=0.2398 (n=55)
+2025-12-21 19:28:04 | INFO |   LIME                : ROC-AUC=0.4554, PR-AUC=0.2286 (n=55)
+2025-12-21 19:28:04 | INFO |   Integrated Gradient : ROC-AUC=0.5368, PR-AUC=0.3208 (n=55)
+2025-12-21 19:28:04 | INFO |   LIME-LLM            : ROC-AUC=0.6657, PR-AUC=0.3294 (n=55)
+2025-12-21 19:28:04 | INFO | 
+================================================================================
+2025-12-21 19:28:04 | INFO | ✓ PIPELINE COMPLETE
+2025-12-21 19:28:04 | INFO | Saved: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/aggregate_metrics.json
+2025-12-21 19:28:04 | INFO | ================================================================================
+
+2025-12-21 19:28:04 | WARNING | Failed examples 0/30
+[]
+2025-12-22 09:36:26 | INFO | 
+================================================================================
+2025-12-22 09:36:26 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-22 09:36:26 | INFO | Mode: FULL
+2025-12-22 09:36:26 | INFO | Provider: ANTHROPIC
+2025-12-22 09:36:26 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-22 09:36:26 | INFO | ================================================================================
+
+2025-12-22 09:36:48 | INFO | Processing 30 examples
+2025-12-22 09:36:48 | INFO | Total rows: 496
+2025-12-22 09:36:48 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2025-12-22 09:36:48 | INFO | [1/30] sst2 - 506
+2025-12-22 09:36:48 | INFO |   Text: crackerjack entertainment -- nonstop romance , music , suspense and action ....
+2025-12-22 09:36:48 | INFO |   Words: 12 tokens
+2025-12-22 09:37:03 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2025-12-22 09:37:03 | INFO | [2/30] sst2 - 742
+2025-12-22 09:37:03 | INFO |   Text: it 's a demented kitsch mess ( although the smeary digital video does match the ...
+2025-12-22 09:37:03 | INFO |   Words: 40 tokens
+2025-12-22 09:37:34 | INFO |   ✓ LIME-LLM scores generated (40 tokens)
+2025-12-22 09:37:34 | INFO | [3/30] sst2 - 170
+2025-12-22 09:37:34 | INFO |   Text: it 's also , clearly , great fun ....
+2025-12-22 09:37:34 | INFO |   Words: 9 tokens
+2025-12-22 09:37:49 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2025-12-22 09:37:49 | INFO | [4/30] sst2 - 602
+2025-12-22 09:37:49 | INFO |   Text: instead , he shows them the respect they are due ....
+2025-12-22 09:37:49 | INFO |   Words: 11 tokens
+2025-12-22 09:38:03 | INFO |   ✓ LIME-LLM scores generated (11 tokens)
+2025-12-22 09:38:03 | INFO | [5/30] sst2 - 287
+2025-12-22 09:38:03 | INFO |   Text: it 's a much more emotional journey than what shyamalan has given us in his past...
+2025-12-22 09:38:03 | INFO |   Words: 39 tokens
+2025-12-22 09:38:27 | INFO |   ✓ LIME-LLM scores generated (39 tokens)
+2025-12-22 09:38:27 | INFO | [6/30] sst2 - 302
+2025-12-22 09:38:27 | INFO |   Text: the wild thornberrys movie is a jolly surprise ....
+2025-12-22 09:38:27 | INFO |   Words: 9 tokens
+2025-12-22 09:38:42 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2025-12-22 09:38:42 | INFO | [7/30] sst2 - 148
+2025-12-22 09:38:42 | INFO |   Text: feels too formulaic and too familiar to produce the transgressive thrills of ear...
+2025-12-22 09:38:42 | INFO |   Words: 16 tokens
+2025-12-22 09:39:00 | INFO |   ✓ LIME-LLM scores generated (16 tokens)
+2025-12-22 09:39:00 | INFO | [8/30] sst2 - 835
+2025-12-22 09:39:00 | INFO |   Text: a giggle-inducing comedy with snappy dialogue and winning performances by an unl...
+2025-12-22 09:39:00 | INFO |   Words: 22 tokens
+2025-12-22 09:39:20 | INFO |   ✓ LIME-LLM scores generated (22 tokens)
+2025-12-22 09:39:20 | INFO | [9/30] sst2 - 345
+2025-12-22 09:39:20 | INFO |   Text: this tenth feature is a big deal , indeed -- at least the third-best , and maybe...
+2025-12-22 09:39:20 | INFO |   Words: 36 tokens
+2025-12-22 09:39:58 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2025-12-22 09:39:58 | INFO | [10/30] sst2 - 387
+2025-12-22 09:39:58 | INFO |   Text: director andrew niccol ... demonstrates a wry understanding of the quirks of fam...
+2025-12-22 09:39:58 | INFO |   Words: 14 tokens
+2025-12-22 09:40:13 | INFO |   ✓ LIME-LLM scores generated (14 tokens)
+2025-12-22 09:40:13 | WARNING | 
+✓ Results saved: results.csv
+2025-12-22 09:40:14 | INFO | 
+Generating evaluation plots...
+2025-12-22 09:40:14 | INFO |   Processing sst2...
+2025-12-22 09:40:15 | INFO |   ✓ Saved curves: curves_sst2.png
+2025-12-22 09:40:15 | INFO | 
+================================================================================
+2025-12-22 09:40:15 | INFO | AGGREGATE METRICS
+2025-12-22 09:40:15 | INFO | ================================================================================
+2025-12-22 09:40:15 | INFO | 
+sst2:
+2025-12-22 09:40:15 | INFO |   Partition SHAP      : ROC-AUC=0.6751, PR-AUC=0.4564 (n=208)
+2025-12-22 09:40:15 | INFO |   LIME                : ROC-AUC=0.7284, PR-AUC=0.5766 (n=208)
+2025-12-22 09:40:15 | INFO |   Integrated Gradient : ROC-AUC=0.5184, PR-AUC=0.3052 (n=208)
+2025-12-22 09:40:15 | INFO |   LIME-LLM            : ROC-AUC=0.7592, PR-AUC=0.3486 (n=208)
+2025-12-22 09:40:15 | INFO | 
+================================================================================
+2025-12-22 09:40:15 | INFO | ✓ PIPELINE COMPLETE
+2025-12-22 09:40:15 | INFO | Saved: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/aggregate_metrics.json
+2025-12-22 09:40:15 | INFO | ================================================================================
+
+2025-12-22 09:40:15 | WARNING | Failed examples 0/30
+[]
+2025-12-22 10:20:22 | INFO | 
+================================================================================
+2025-12-22 10:20:22 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-22 10:20:22 | INFO | Mode: FULL
+2025-12-22 10:20:22 | INFO | Provider: ANTHROPIC
+2025-12-22 10:20:22 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-22 10:20:22 | INFO | ================================================================================
+
+2025-12-22 10:21:10 | INFO | Processing 30 examples
+2025-12-22 10:21:10 | INFO | Total rows: 496
+2025-12-22 10:21:10 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2025-12-22 10:21:10 | INFO | [1/30] sst2 - 506
+2025-12-22 10:21:10 | INFO |   Text: crackerjack entertainment -- nonstop romance , music , suspense and action ....
+2025-12-22 10:21:10 | INFO |   Words: 12 tokens
+2025-12-22 10:21:28 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2025-12-22 10:21:28 | INFO | [2/30] sst2 - 742
+2025-12-22 10:21:28 | INFO |   Text: it 's a demented kitsch mess ( although the smeary digital video does match the ...
+2025-12-22 10:21:28 | INFO |   Words: 40 tokens
+2025-12-22 10:21:58 | INFO |   ✓ LIME-LLM scores generated (40 tokens)
+2025-12-22 10:21:58 | INFO | [3/30] sst2 - 170
+2025-12-22 10:21:58 | INFO |   Text: it 's also , clearly , great fun ....
+2025-12-22 10:21:58 | INFO |   Words: 9 tokens
+2025-12-22 10:22:11 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2025-12-22 10:22:11 | INFO | [4/30] sst2 - 602
+2025-12-22 10:22:11 | INFO |   Text: instead , he shows them the respect they are due ....
+2025-12-22 10:22:11 | INFO |   Words: 11 tokens
+2025-12-22 10:22:26 | INFO |   ✓ LIME-LLM scores generated (11 tokens)
+2025-12-22 10:22:26 | INFO | [5/30] sst2 - 287
+2025-12-22 10:22:26 | INFO |   Text: it 's a much more emotional journey than what shyamalan has given us in his past...
+2025-12-22 10:22:26 | INFO |   Words: 39 tokens
+2025-12-22 10:22:54 | INFO |   ✓ LIME-LLM scores generated (39 tokens)
+2025-12-22 10:22:54 | INFO | [6/30] sst2 - 302
+2025-12-22 10:22:54 | INFO |   Text: the wild thornberrys movie is a jolly surprise ....
+2025-12-22 10:22:54 | INFO |   Words: 9 tokens
+2025-12-22 10:23:07 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2025-12-22 10:23:07 | INFO | [7/30] sst2 - 148
+2025-12-22 10:23:07 | INFO |   Text: feels too formulaic and too familiar to produce the transgressive thrills of ear...
+2025-12-22 10:23:07 | INFO |   Words: 16 tokens
+2025-12-22 10:23:26 | INFO |   ✓ LIME-LLM scores generated (16 tokens)
+2025-12-22 10:23:26 | INFO | [8/30] sst2 - 835
+2025-12-22 10:23:26 | INFO |   Text: a giggle-inducing comedy with snappy dialogue and winning performances by an unl...
+2025-12-22 10:23:26 | INFO |   Words: 22 tokens
+2025-12-22 10:23:47 | INFO |   ✓ LIME-LLM scores generated (22 tokens)
+2025-12-22 10:23:47 | INFO | [9/30] sst2 - 345
+2025-12-22 10:23:47 | INFO |   Text: this tenth feature is a big deal , indeed -- at least the third-best , and maybe...
+2025-12-22 10:23:47 | INFO |   Words: 36 tokens
+2025-12-22 10:24:10 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2025-12-22 10:24:10 | INFO | [10/30] sst2 - 387
+2025-12-22 10:24:10 | INFO |   Text: director andrew niccol ... demonstrates a wry understanding of the quirks of fam...
+2025-12-22 10:24:10 | INFO |   Words: 14 tokens
+2025-12-22 10:24:27 | INFO |   ✓ LIME-LLM scores generated (14 tokens)
+2025-12-22 10:24:27 | WARNING | 
+✓ Results saved: results.csv
+2025-12-22 10:24:28 | INFO | 
+Generating evaluation plots...
+2025-12-22 10:24:28 | INFO |   Processing sst2...
+2025-12-22 10:24:28 | INFO |   ✓ Saved curves: curves_sst2.png
+2025-12-22 10:24:29 | INFO | 
+================================================================================
+2025-12-22 10:24:29 | INFO | AGGREGATE METRICS
+2025-12-22 10:24:29 | INFO | ================================================================================
+2025-12-22 10:24:29 | INFO | 
+sst2:
+2025-12-22 10:24:29 | INFO |   Partition SHAP      : ROC-AUC=0.6751, PR-AUC=0.4564 (n=208)
+2025-12-22 10:24:29 | INFO |   LIME                : ROC-AUC=0.7284, PR-AUC=0.5766 (n=208)
+2025-12-22 10:24:29 | INFO |   Integrated Gradient : ROC-AUC=0.5184, PR-AUC=0.3052 (n=208)
+2025-12-22 10:24:29 | INFO |   LIME-LLM            : ROC-AUC=0.7195, PR-AUC=0.3279 (n=208)
+2025-12-22 10:24:29 | INFO | 
+================================================================================
+2025-12-22 10:24:29 | INFO | ✓ PIPELINE COMPLETE
+2025-12-22 10:24:29 | INFO | Saved: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/aggregate_metrics.json
+2025-12-22 10:24:29 | INFO | ================================================================================
+
+2025-12-22 10:24:29 | WARNING | Failed examples 0/30
+[]
+2025-12-22 10:27:29 | INFO | 
+================================================================================
+2025-12-22 10:27:29 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-22 10:27:29 | INFO | Mode: FULL
+2025-12-22 10:27:29 | INFO | Provider: ANTHROPIC
+2025-12-22 10:27:29 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-22 10:27:29 | INFO | ================================================================================
+
+2025-12-22 10:27:32 | INFO | Processing 30 examples
+2025-12-22 10:27:32 | INFO | Total rows: 496
+2025-12-22 10:27:32 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2025-12-22 10:27:33 | INFO | [1/30] sst2 - 506
+2025-12-22 10:27:33 | INFO |   Text: crackerjack entertainment -- nonstop romance , music , suspense and action ....
+2025-12-22 10:27:33 | INFO |   Words: 12 tokens
+2025-12-22 10:27:49 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2025-12-22 10:27:49 | INFO | [2/30] sst2 - 742
+2025-12-22 10:27:49 | INFO |   Text: it 's a demented kitsch mess ( although the smeary digital video does match the ...
+2025-12-22 10:27:49 | INFO |   Words: 40 tokens
+2025-12-22 10:28:14 | INFO |   ✓ LIME-LLM scores generated (40 tokens)
+2025-12-22 10:28:14 | INFO | [3/30] sst2 - 170
+2025-12-22 10:28:14 | INFO |   Text: it 's also , clearly , great fun ....
+2025-12-22 10:28:14 | INFO |   Words: 9 tokens
+2025-12-22 10:28:28 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2025-12-22 10:28:28 | INFO | [4/30] sst2 - 602
+2025-12-22 10:28:28 | INFO |   Text: instead , he shows them the respect they are due ....
+2025-12-22 10:28:28 | INFO |   Words: 11 tokens
+2025-12-22 10:28:42 | INFO |   ✓ LIME-LLM scores generated (11 tokens)
+2025-12-22 10:28:42 | INFO | [5/30] sst2 - 287
+2025-12-22 10:28:42 | INFO |   Text: it 's a much more emotional journey than what shyamalan has given us in his past...
+2025-12-22 10:28:42 | INFO |   Words: 39 tokens
+2025-12-22 10:29:10 | INFO |   ✓ LIME-LLM scores generated (39 tokens)
+2025-12-22 10:29:10 | INFO | [6/30] sst2 - 302
+2025-12-22 10:29:10 | INFO |   Text: the wild thornberrys movie is a jolly surprise ....
+2025-12-22 10:29:10 | INFO |   Words: 9 tokens
+2025-12-22 10:29:23 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2025-12-22 10:29:23 | INFO | [7/30] sst2 - 148
+2025-12-22 10:29:23 | INFO |   Text: feels too formulaic and too familiar to produce the transgressive thrills of ear...
+2025-12-22 10:29:23 | INFO |   Words: 16 tokens
+2025-12-22 10:29:42 | INFO |   ✓ LIME-LLM scores generated (16 tokens)
+2025-12-22 10:29:42 | INFO | [8/30] sst2 - 835
+2025-12-22 10:29:42 | INFO |   Text: a giggle-inducing comedy with snappy dialogue and winning performances by an unl...
+2025-12-22 10:29:42 | INFO |   Words: 22 tokens
+2025-12-22 10:30:02 | INFO |   ✓ LIME-LLM scores generated (22 tokens)
+2025-12-22 10:30:02 | INFO | [9/30] sst2 - 345
+2025-12-22 10:30:02 | INFO |   Text: this tenth feature is a big deal , indeed -- at least the third-best , and maybe...
+2025-12-22 10:30:02 | INFO |   Words: 36 tokens
+2025-12-22 10:30:28 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2025-12-22 10:30:28 | INFO | [10/30] sst2 - 387
+2025-12-22 10:30:28 | INFO |   Text: director andrew niccol ... demonstrates a wry understanding of the quirks of fam...
+2025-12-22 10:30:28 | INFO |   Words: 14 tokens
+2025-12-22 10:30:44 | INFO |   ✓ LIME-LLM scores generated (14 tokens)
+2025-12-22 10:30:44 | WARNING | 
+✓ Results saved: results.csv
+2025-12-22 10:30:45 | INFO | 
+Generating evaluation plots...
+2025-12-22 10:30:45 | INFO |   Processing sst2...
+2025-12-22 10:30:45 | INFO |   ✓ Saved curves: curves_sst2.png
+2025-12-22 10:30:46 | INFO | 
+================================================================================
+2025-12-22 10:30:46 | INFO | AGGREGATE METRICS
+2025-12-22 10:30:46 | INFO | ================================================================================
+2025-12-22 10:30:46 | INFO | 
+sst2:
+2025-12-22 10:30:46 | INFO |   Partition SHAP      : ROC-AUC=0.6751, PR-AUC=0.4564 (n=208)
+2025-12-22 10:30:46 | INFO |   LIME                : ROC-AUC=0.7284, PR-AUC=0.5766 (n=208)
+2025-12-22 10:30:46 | INFO |   Integrated Gradient : ROC-AUC=0.5184, PR-AUC=0.3052 (n=208)
+2025-12-22 10:30:46 | INFO |   LIME-LLM            : ROC-AUC=0.6146, PR-AUC=0.2935 (n=208)
+2025-12-22 10:30:46 | INFO | 
+================================================================================
+2025-12-22 10:30:46 | INFO | ✓ PIPELINE COMPLETE
+2025-12-22 10:30:46 | INFO | Saved: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/aggregate_metrics.json
+2025-12-22 10:30:46 | INFO | ================================================================================
+
+2025-12-22 10:30:46 | WARNING | Failed examples 0/30
+[]
+2025-12-22 11:49:46 | INFO | 
+================================================================================
+2025-12-22 11:49:46 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-22 11:49:46 | INFO | Mode: FULL
+2025-12-22 11:49:46 | INFO | Provider: ANTHROPIC
+2025-12-22 11:49:46 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-22 11:49:46 | INFO | ================================================================================
+
+2025-12-22 11:49:51 | INFO | Processing 30 examples
+2025-12-22 11:49:51 | INFO | Total rows: 496
+2025-12-22 11:49:51 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2025-12-22 11:49:51 | INFO | [1/30] sst2 - 506
+2025-12-22 11:49:51 | INFO |   Text: crackerjack entertainment -- nonstop romance , music , suspense and action ....
+2025-12-22 11:49:51 | INFO |   Words: 12 tokens
+2025-12-22 11:51:29 | INFO | 
+================================================================================
+2025-12-22 11:51:29 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-22 11:51:29 | INFO | Mode: FULL
+2025-12-22 11:51:29 | INFO | Provider: ANTHROPIC
+2025-12-22 11:51:29 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-22 11:51:29 | INFO | ================================================================================
+
+2025-12-22 11:51:34 | INFO | Processing 30 examples
+2025-12-22 11:51:34 | INFO | Total rows: 496
+2025-12-22 11:51:34 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2025-12-22 11:51:34 | INFO | [1/30] sst2 - 506
+2025-12-22 11:51:34 | INFO |   Text: crackerjack entertainment -- nonstop romance , music , suspense and action ....
+2025-12-22 11:51:34 | INFO |   Words: 12 tokens
+2025-12-22 11:51:34 | WARNING |   ✗ Error: 'predicted_label'
+2025-12-22 11:52:31 | INFO | 
+================================================================================
+2025-12-22 11:52:31 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-22 11:52:31 | INFO | Mode: FULL
+2025-12-22 11:52:31 | INFO | Provider: ANTHROPIC
+2025-12-22 11:52:31 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-22 11:52:31 | INFO | ================================================================================
+
+2025-12-22 11:52:34 | INFO | Processing 30 examples
+2025-12-22 11:52:34 | INFO | Total rows: 496
+2025-12-22 11:52:34 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2025-12-22 11:52:35 | INFO | [1/30] sst2 - 506
+2025-12-22 11:52:35 | INFO |   Text: crackerjack entertainment -- nonstop romance , music , suspense and action ....
+2025-12-22 11:52:35 | INFO |   Words: 12 tokens
+2025-12-22 12:47:15 | INFO | 
+================================================================================
+2025-12-22 12:47:15 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-22 12:47:15 | INFO | Mode: FULL
+2025-12-22 12:47:15 | INFO | Provider: ANTHROPIC
+2025-12-22 12:47:15 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-22 12:47:15 | INFO | ================================================================================
+
+2025-12-22 12:47:19 | INFO | Processing 30 examples
+2025-12-22 12:47:19 | INFO | Total rows: 496
+2025-12-22 12:47:19 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2025-12-22 12:47:19 | INFO | [1/30] sst2 - 506
+2025-12-22 12:47:19 | INFO |   Text: crackerjack entertainment -- nonstop romance , music , suspense and action ....
+2025-12-22 12:47:19 | INFO |   Words: 12 tokens
+2025-12-22 12:47:20 | INFO | n_per_strategy=10
+total_samples=20
+2025-12-22 13:47:01 | INFO | 
+================================================================================
+2025-12-22 13:47:01 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-22 13:47:01 | INFO | Mode: FULL
+2025-12-22 13:47:01 | INFO | Provider: ANTHROPIC
+2025-12-22 13:47:01 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-22 13:47:01 | INFO | ================================================================================
+
+2025-12-22 13:48:17 | INFO | Processing 30 examples
+2025-12-22 13:48:17 | INFO | Total rows: 496
+2025-12-22 13:48:17 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2025-12-22 13:48:17 | INFO | [1/30] sst2 - 506
+2025-12-22 13:48:17 | INFO |   Text: crackerjack entertainment -- nonstop romance , music , suspense and action ....
+2025-12-22 13:48:17 | INFO |   Words: 12 tokens
+2025-12-22 13:48:18 | INFO | n_per_strategy=10
+total_samples=20
+2025-12-22 13:48:36 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2025-12-22 13:48:36 | INFO | [2/30] sst2 - 742
+2025-12-22 13:48:36 | INFO |   Text: it 's a demented kitsch mess ( although the smeary digital video does match the ...
+2025-12-22 13:48:36 | INFO |   Words: 40 tokens
+2025-12-22 13:48:37 | INFO | n_per_strategy=10
+total_samples=20
+2025-12-22 13:49:17 | INFO |   ✓ LIME-LLM scores generated (40 tokens)
+2025-12-22 13:49:17 | INFO | [3/30] sst2 - 170
+2025-12-22 13:49:17 | INFO |   Text: it 's also , clearly , great fun ....
+2025-12-22 13:49:17 | INFO |   Words: 9 tokens
+2025-12-22 13:49:18 | INFO | n_per_strategy=10
+total_samples=20
+2025-12-22 13:49:35 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2025-12-22 13:49:35 | INFO | [4/30] sst2 - 602
+2025-12-22 13:49:35 | INFO |   Text: instead , he shows them the respect they are due ....
+2025-12-22 13:49:35 | INFO |   Words: 11 tokens
+2025-12-22 13:49:35 | INFO | n_per_strategy=10
+total_samples=20
+2025-12-22 13:49:53 | INFO |   ✓ LIME-LLM scores generated (11 tokens)
+2025-12-22 13:49:53 | INFO | [5/30] sst2 - 287
+2025-12-22 13:49:53 | INFO |   Text: it 's a much more emotional journey than what shyamalan has given us in his past...
+2025-12-22 13:49:53 | INFO |   Words: 39 tokens
+2025-12-22 13:49:53 | INFO | n_per_strategy=10
+total_samples=20
+2025-12-22 13:50:25 | INFO |   ✓ LIME-LLM scores generated (39 tokens)
+2025-12-22 13:50:25 | INFO | [6/30] sst2 - 302
+2025-12-22 13:50:25 | INFO |   Text: the wild thornberrys movie is a jolly surprise ....
+2025-12-22 13:50:25 | INFO |   Words: 9 tokens
+2025-12-22 13:50:25 | INFO | n_per_strategy=10
+total_samples=20
+2025-12-22 13:50:55 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2025-12-22 13:50:55 | INFO | [7/30] sst2 - 148
+2025-12-22 13:50:55 | INFO |   Text: feels too formulaic and too familiar to produce the transgressive thrills of ear...
+2025-12-22 13:50:55 | INFO |   Words: 16 tokens
+2025-12-22 13:50:55 | INFO | n_per_strategy=10
+total_samples=20
+2025-12-22 13:51:16 | INFO |   ✓ LIME-LLM scores generated (16 tokens)
+2025-12-22 13:51:16 | INFO | [8/30] sst2 - 835
+2025-12-22 13:51:16 | INFO |   Text: a giggle-inducing comedy with snappy dialogue and winning performances by an unl...
+2025-12-22 13:51:16 | INFO |   Words: 22 tokens
+2025-12-22 13:51:17 | INFO | n_per_strategy=10
+total_samples=20
+2025-12-22 13:51:44 | INFO |   ✓ LIME-LLM scores generated (22 tokens)
+2025-12-22 13:51:44 | INFO | [9/30] sst2 - 345
+2025-12-22 13:51:44 | INFO |   Text: this tenth feature is a big deal , indeed -- at least the third-best , and maybe...
+2025-12-22 13:51:44 | INFO |   Words: 36 tokens
+2025-12-22 13:51:45 | INFO | n_per_strategy=10
+total_samples=20
+2025-12-22 13:52:11 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2025-12-22 13:52:11 | INFO | [10/30] sst2 - 387
+2025-12-22 13:52:11 | INFO |   Text: director andrew niccol ... demonstrates a wry understanding of the quirks of fam...
+2025-12-22 13:52:11 | INFO |   Words: 14 tokens
+2025-12-22 13:52:12 | INFO | n_per_strategy=10
+total_samples=20
+2025-12-22 13:52:31 | INFO |   ✓ LIME-LLM scores generated (14 tokens)
+2025-12-22 13:52:31 | WARNING | 
+✓ Results saved: results.csv
+2025-12-22 13:52:31 | INFO | 
+Generating evaluation plots...
+2025-12-22 13:52:31 | INFO |   Processing sst2...
+2025-12-22 13:52:32 | INFO |   ✓ Saved curves: curves_sst2.png
+2025-12-22 13:52:33 | INFO | 
+================================================================================
+2025-12-22 13:52:33 | INFO | AGGREGATE METRICS
+2025-12-22 13:52:33 | INFO | ================================================================================
+2025-12-22 13:52:33 | INFO | 
+sst2:
+2025-12-22 13:52:33 | INFO |   Partition SHAP      : ROC-AUC=0.6751, PR-AUC=0.4564 (n=208)
+2025-12-22 13:52:33 | INFO |   LIME                : ROC-AUC=0.7284, PR-AUC=0.5766 (n=208)
+2025-12-22 13:52:33 | INFO |   Integrated Gradient : ROC-AUC=0.5184, PR-AUC=0.3052 (n=208)
+2025-12-22 13:52:33 | INFO |   LIME-LLM            : ROC-AUC=0.7993, PR-AUC=0.4017 (n=208)
+2025-12-22 13:52:33 | INFO | 
+================================================================================
+2025-12-22 13:52:33 | INFO | ✓ PIPELINE COMPLETE
+2025-12-22 13:52:33 | INFO | Saved: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/aggregate_metrics.json
+2025-12-22 13:52:33 | INFO | ================================================================================
+
+2025-12-22 13:52:33 | WARNING | Failed examples 0/30
+[]
+2025-12-22 14:04:27 | INFO | 
+================================================================================
+2025-12-22 14:04:27 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-22 14:04:27 | INFO | Mode: FULL
+2025-12-22 14:04:27 | INFO | Provider: ANTHROPIC
+2025-12-22 14:04:27 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-22 14:04:27 | INFO | ================================================================================
+
+2025-12-22 14:04:40 | INFO | Processing 30 examples
+2025-12-22 14:04:40 | INFO | Total rows: 496
+2025-12-22 14:04:40 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2025-12-22 14:04:40 | INFO | [1/30] sst2 - 506
+2025-12-22 14:04:40 | INFO |   Text: crackerjack entertainment -- nonstop romance , music , suspense and action ....
+2025-12-22 14:04:40 | INFO |   Words: 12 tokens
+2025-12-22 14:05:03 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2025-12-22 14:05:03 | INFO | [2/30] sst2 - 742
+2025-12-22 14:05:03 | INFO |   Text: it 's a demented kitsch mess ( although the smeary digital video does match the ...
+2025-12-22 14:05:03 | INFO |   Words: 40 tokens
+2025-12-22 14:05:34 | INFO |   ✓ LIME-LLM scores generated (40 tokens)
+2025-12-22 14:05:34 | INFO | [3/30] sst2 - 170
+2025-12-22 14:05:34 | INFO |   Text: it 's also , clearly , great fun ....
+2025-12-22 14:05:34 | INFO |   Words: 9 tokens
+2025-12-22 14:05:50 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2025-12-22 14:05:50 | INFO | [4/30] sst2 - 602
+2025-12-22 14:05:50 | INFO |   Text: instead , he shows them the respect they are due ....
+2025-12-22 14:05:50 | INFO |   Words: 11 tokens
+2025-12-22 14:06:09 | INFO |   ✓ LIME-LLM scores generated (11 tokens)
+2025-12-22 14:06:09 | INFO | [5/30] sst2 - 287
+2025-12-22 14:06:09 | INFO |   Text: it 's a much more emotional journey than what shyamalan has given us in his past...
+2025-12-22 14:06:09 | INFO |   Words: 39 tokens
+2025-12-22 14:06:37 | INFO |   ✓ LIME-LLM scores generated (39 tokens)
+2025-12-22 14:06:37 | INFO | [6/30] sst2 - 302
+2025-12-22 14:06:37 | INFO |   Text: the wild thornberrys movie is a jolly surprise ....
+2025-12-22 14:06:37 | INFO |   Words: 9 tokens
+2025-12-22 14:06:55 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2025-12-22 14:06:55 | INFO | [7/30] sst2 - 148
+2025-12-22 14:06:55 | INFO |   Text: feels too formulaic and too familiar to produce the transgressive thrills of ear...
+2025-12-22 14:06:55 | INFO |   Words: 16 tokens
+2025-12-22 14:07:16 | INFO |   ✓ LIME-LLM scores generated (16 tokens)
+2025-12-22 14:07:16 | INFO | [8/30] sst2 - 835
+2025-12-22 14:07:16 | INFO |   Text: a giggle-inducing comedy with snappy dialogue and winning performances by an unl...
+2025-12-22 14:07:16 | INFO |   Words: 22 tokens
+2025-12-22 14:07:43 | INFO |   ✓ LIME-LLM scores generated (22 tokens)
+2025-12-22 14:07:43 | INFO | [9/30] sst2 - 345
+2025-12-22 14:07:43 | INFO |   Text: this tenth feature is a big deal , indeed -- at least the third-best , and maybe...
+2025-12-22 14:07:43 | INFO |   Words: 36 tokens
+2025-12-22 14:08:37 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2025-12-22 14:08:37 | INFO | [10/30] sst2 - 387
+2025-12-22 14:08:37 | INFO |   Text: director andrew niccol ... demonstrates a wry understanding of the quirks of fam...
+2025-12-22 14:08:37 | INFO |   Words: 14 tokens
+2025-12-22 14:09:13 | INFO |   ✓ LIME-LLM scores generated (14 tokens)
+2025-12-22 14:09:13 | WARNING | 
+✓ Results saved: results.csv
+2025-12-22 14:09:13 | INFO | 
+Generating evaluation plots...
+2025-12-22 14:09:13 | INFO |   Processing sst2...
+2025-12-22 14:09:14 | INFO |   ✓ Saved curves: curves_sst2.png
+2025-12-22 14:09:15 | INFO | 
+================================================================================
+2025-12-22 14:09:15 | INFO | AGGREGATE METRICS
+2025-12-22 14:09:15 | INFO | ================================================================================
+2025-12-22 14:09:15 | INFO | 
+sst2:
+2025-12-22 14:09:15 | INFO |   Partition SHAP      : ROC-AUC=0.6751, PR-AUC=0.4564 (n=208)
+2025-12-22 14:09:15 | INFO |   LIME                : ROC-AUC=0.7284, PR-AUC=0.5766 (n=208)
+2025-12-22 14:09:15 | INFO |   Integrated Gradient : ROC-AUC=0.5184, PR-AUC=0.3052 (n=208)
+2025-12-22 14:09:15 | INFO |   LIME-LLM            : ROC-AUC=0.7986, PR-AUC=0.4068 (n=208)
+2025-12-22 14:09:15 | INFO | 
+================================================================================
+2025-12-22 14:09:15 | INFO | ✓ PIPELINE COMPLETE
+2025-12-22 14:09:15 | INFO | Saved: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/aggregate_metrics.json
+2025-12-22 14:09:15 | INFO | ================================================================================
+
+2025-12-22 14:09:15 | WARNING | Failed examples 0/30
+[]
+2025-12-22 14:11:01 | INFO | 
+================================================================================
+2025-12-22 14:11:01 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-22 14:11:01 | INFO | Mode: FULL
+2025-12-22 14:11:01 | INFO | Provider: ANTHROPIC
+2025-12-22 14:11:01 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-22 14:11:01 | INFO | ================================================================================
+
+2025-12-22 14:11:06 | INFO | Processing 30 examples
+2025-12-22 14:11:06 | INFO | Total rows: 496
+2025-12-22 14:11:06 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2025-12-22 14:11:06 | INFO | [1/30] sst2 - 506
+2025-12-22 14:11:06 | INFO |   Text: crackerjack entertainment -- nonstop romance , music , suspense and action ....
+2025-12-22 14:11:06 | INFO |   Words: 12 tokens
+2025-12-22 14:11:41 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2025-12-22 14:11:41 | INFO | [2/30] sst2 - 742
+2025-12-22 14:11:41 | INFO |   Text: it 's a demented kitsch mess ( although the smeary digital video does match the ...
+2025-12-22 14:11:41 | INFO |   Words: 40 tokens
+2025-12-22 14:12:26 | INFO |   ✓ LIME-LLM scores generated (40 tokens)
+2025-12-22 14:12:26 | INFO | [3/30] sst2 - 170
+2025-12-22 14:12:26 | INFO |   Text: it 's also , clearly , great fun ....
+2025-12-22 14:12:26 | INFO |   Words: 9 tokens
+2025-12-22 14:12:48 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2025-12-22 14:12:48 | INFO | [4/30] sst2 - 602
+2025-12-22 14:12:48 | INFO |   Text: instead , he shows them the respect they are due ....
+2025-12-22 14:12:48 | INFO |   Words: 11 tokens
+2025-12-22 14:13:07 | INFO |   ✓ LIME-LLM scores generated (11 tokens)
+2025-12-22 14:13:07 | INFO | [5/30] sst2 - 287
+2025-12-22 14:13:07 | INFO |   Text: it 's a much more emotional journey than what shyamalan has given us in his past...
+2025-12-22 14:13:07 | INFO |   Words: 39 tokens
+2025-12-22 14:13:40 | INFO |   ✓ LIME-LLM scores generated (39 tokens)
+2025-12-22 14:13:40 | INFO | [6/30] sst2 - 302
+2025-12-22 14:13:40 | INFO |   Text: the wild thornberrys movie is a jolly surprise ....
+2025-12-22 14:13:40 | INFO |   Words: 9 tokens
+2025-12-22 14:14:02 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2025-12-22 14:14:02 | INFO | [7/30] sst2 - 148
+2025-12-22 14:14:02 | INFO |   Text: feels too formulaic and too familiar to produce the transgressive thrills of ear...
+2025-12-22 14:14:02 | INFO |   Words: 16 tokens
+2025-12-22 14:14:30 | INFO |   ✓ LIME-LLM scores generated (16 tokens)
+2025-12-22 14:14:30 | INFO | [8/30] sst2 - 835
+2025-12-22 14:14:30 | INFO |   Text: a giggle-inducing comedy with snappy dialogue and winning performances by an unl...
+2025-12-22 14:14:30 | INFO |   Words: 22 tokens
+2025-12-22 14:15:00 | INFO |   ✓ LIME-LLM scores generated (22 tokens)
+2025-12-22 14:15:00 | INFO | [9/30] sst2 - 345
+2025-12-22 14:15:00 | INFO |   Text: this tenth feature is a big deal , indeed -- at least the third-best , and maybe...
+2025-12-22 14:15:00 | INFO |   Words: 36 tokens
+2025-12-22 14:15:40 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2025-12-22 14:15:40 | INFO | [10/30] sst2 - 387
+2025-12-22 14:15:40 | INFO |   Text: director andrew niccol ... demonstrates a wry understanding of the quirks of fam...
+2025-12-22 14:15:40 | INFO |   Words: 14 tokens
+2025-12-22 14:16:07 | INFO |   ✓ LIME-LLM scores generated (14 tokens)
+2025-12-22 14:16:07 | WARNING | 
+✓ Results saved: results.csv
+2025-12-22 14:16:08 | INFO | 
+Generating evaluation plots...
+2025-12-22 14:16:08 | INFO |   Processing sst2...
+2025-12-22 14:16:08 | INFO |   ✓ Saved curves: curves_sst2.png
+2025-12-22 14:16:09 | INFO | 
+================================================================================
+2025-12-22 14:16:09 | INFO | AGGREGATE METRICS
+2025-12-22 14:16:09 | INFO | ================================================================================
+2025-12-22 14:16:09 | INFO | 
+sst2:
+2025-12-22 14:16:09 | INFO |   Partition SHAP      : ROC-AUC=0.6751, PR-AUC=0.4564 (n=208)
+2025-12-22 14:16:09 | INFO |   LIME                : ROC-AUC=0.7284, PR-AUC=0.5766 (n=208)
+2025-12-22 14:16:09 | INFO |   Integrated Gradient : ROC-AUC=0.5184, PR-AUC=0.3052 (n=208)
+2025-12-22 14:16:09 | INFO |   LIME-LLM            : ROC-AUC=0.7768, PR-AUC=0.4380 (n=208)
+2025-12-22 14:16:09 | INFO | 
+================================================================================
+2025-12-22 14:16:09 | INFO | ✓ PIPELINE COMPLETE
+2025-12-22 14:16:09 | INFO | Saved: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/aggregate_metrics.json
+2025-12-22 14:16:09 | INFO | ================================================================================
+
+2025-12-22 14:16:09 | WARNING | Failed examples 0/30
+[]
+2025-12-22 14:32:45 | INFO | 
+================================================================================
+2025-12-22 14:32:45 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-22 14:32:45 | INFO | Mode: FULL
+2025-12-22 14:32:45 | INFO | Provider: ANTHROPIC
+2025-12-22 14:32:45 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-22 14:32:45 | INFO | ================================================================================
+
+2025-12-22 14:32:49 | INFO | Processing 30 examples
+2025-12-22 14:32:49 | INFO | Total rows: 496
+2025-12-22 14:32:49 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2025-12-22 14:32:49 | INFO | [1/30] sst2 - 506
+2025-12-22 14:32:49 | INFO |   Text: crackerjack entertainment -- nonstop romance , music , suspense and action ....
+2025-12-22 14:32:49 | INFO |   Words: 12 tokens
+2025-12-22 14:33:12 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2025-12-22 14:33:12 | INFO | [2/30] sst2 - 742
+2025-12-22 14:33:12 | INFO |   Text: it 's a demented kitsch mess ( although the smeary digital video does match the ...
+2025-12-22 14:33:12 | INFO |   Words: 40 tokens
+2025-12-22 14:33:54 | WARNING |   ✗ LLM parsing failed: Unterminated string starting at: line 148 column 7 (char 9783)
+2025-12-22 14:33:54 | WARNING |   ✗ Failed to generate scores
+2025-12-22 14:33:54 | INFO | [3/30] sst2 - 170
+2025-12-22 14:33:54 | INFO |   Text: it 's also , clearly , great fun ....
+2025-12-22 14:33:54 | INFO |   Words: 9 tokens
+2025-12-22 14:34:18 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2025-12-22 14:34:18 | INFO | [4/30] sst2 - 602
+2025-12-22 14:34:18 | INFO |   Text: instead , he shows them the respect they are due ....
+2025-12-22 14:34:18 | INFO |   Words: 11 tokens
+2025-12-22 14:34:49 | INFO |   ✓ LIME-LLM scores generated (11 tokens)
+2025-12-22 14:34:49 | INFO | [5/30] sst2 - 287
+2025-12-22 14:34:49 | INFO |   Text: it 's a much more emotional journey than what shyamalan has given us in his past...
+2025-12-22 14:34:49 | INFO |   Words: 39 tokens
+2025-12-22 14:35:32 | INFO |   ✓ LIME-LLM scores generated (39 tokens)
+2025-12-22 14:35:32 | INFO | [6/30] sst2 - 302
+2025-12-22 14:35:32 | INFO |   Text: the wild thornberrys movie is a jolly surprise ....
+2025-12-22 14:35:32 | INFO |   Words: 9 tokens
+2025-12-22 14:36:03 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2025-12-22 14:36:03 | INFO | [7/30] sst2 - 148
+2025-12-22 14:36:03 | INFO |   Text: feels too formulaic and too familiar to produce the transgressive thrills of ear...
+2025-12-22 14:36:03 | INFO |   Words: 16 tokens
+2025-12-22 14:36:32 | INFO |   ✓ LIME-LLM scores generated (16 tokens)
+2025-12-22 14:36:32 | INFO | [8/30] sst2 - 835
+2025-12-22 14:36:32 | INFO |   Text: a giggle-inducing comedy with snappy dialogue and winning performances by an unl...
+2025-12-22 14:36:32 | INFO |   Words: 22 tokens
+2025-12-22 14:37:12 | INFO |   ✓ LIME-LLM scores generated (22 tokens)
+2025-12-22 14:37:12 | INFO | [9/30] sst2 - 345
+2025-12-22 14:37:12 | INFO |   Text: this tenth feature is a big deal , indeed -- at least the third-best , and maybe...
+2025-12-22 14:37:12 | INFO |   Words: 36 tokens
+2025-12-22 14:37:51 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2025-12-22 14:37:51 | INFO | [10/30] sst2 - 387
+2025-12-22 14:37:51 | INFO |   Text: director andrew niccol ... demonstrates a wry understanding of the quirks of fam...
+2025-12-22 14:37:51 | INFO |   Words: 14 tokens
+2025-12-22 14:38:21 | INFO |   ✓ LIME-LLM scores generated (14 tokens)
+2025-12-22 14:38:21 | WARNING | 
+✓ Results saved: results.csv
+2025-12-22 14:38:21 | INFO | 
+Generating evaluation plots...
+2025-12-22 14:38:21 | INFO |   Processing sst2...
+2025-12-22 14:38:22 | INFO |   ✓ Saved curves: curves_sst2.png
+2025-12-22 14:38:23 | INFO | 
+================================================================================
+2025-12-22 14:38:23 | INFO | AGGREGATE METRICS
+2025-12-22 14:38:23 | INFO | ================================================================================
+2025-12-22 14:38:23 | INFO | 
+sst2:
+2025-12-22 14:38:23 | INFO |   Partition SHAP      : ROC-AUC=0.6751, PR-AUC=0.4564 (n=208)
+2025-12-22 14:38:23 | INFO |   LIME                : ROC-AUC=0.7284, PR-AUC=0.5766 (n=208)
+2025-12-22 14:38:23 | INFO |   Integrated Gradient : ROC-AUC=0.5184, PR-AUC=0.3052 (n=208)
+2025-12-22 14:38:23 | INFO |   LIME-LLM            : ROC-AUC=0.8147, PR-AUC=0.4695 (n=168)
+2025-12-22 14:38:23 | INFO | 
+================================================================================
+2025-12-22 14:38:23 | INFO | ✓ PIPELINE COMPLETE
+2025-12-22 14:38:23 | INFO | Saved: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/aggregate_metrics.json
+2025-12-22 14:38:23 | INFO | ================================================================================
+
+2025-12-22 14:38:23 | WARNING | Failed examples 0/30
+[]
+2025-12-22 14:58:02 | INFO | 
+================================================================================
+2025-12-22 14:58:02 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-22 14:58:02 | INFO | Mode: FULL
+2025-12-22 14:58:02 | INFO | Provider: ANTHROPIC
+2025-12-22 14:58:02 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-22 14:58:02 | INFO | ================================================================================
+
+2025-12-22 14:58:07 | INFO | Processing 30 examples
+2025-12-22 14:58:07 | INFO | Total rows: 496
+2025-12-22 14:58:07 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2025-12-22 14:58:07 | INFO | [1/30] sst2 - 506
+2025-12-22 14:58:07 | INFO |   Text: crackerjack entertainment -- nonstop romance , music , suspense and action ....
+2025-12-22 14:58:07 | INFO |   Words: 12 tokens
+2025-12-22 14:58:48 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2025-12-22 14:58:48 | INFO | [2/30] sst2 - 742
+2025-12-22 14:58:48 | INFO |   Text: it 's a demented kitsch mess ( although the smeary digital video does match the ...
+2025-12-22 14:58:48 | INFO |   Words: 40 tokens
+2025-12-22 14:59:25 | WARNING |   ✗ LLM parsing failed: Unterminated string starting at: line 143 column 15 (char 9746)
+2025-12-22 14:59:25 | WARNING |   ✗ Failed to generate scores
+2025-12-22 14:59:25 | INFO | [3/30] sst2 - 170
+2025-12-22 14:59:25 | INFO |   Text: it 's also , clearly , great fun ....
+2025-12-22 14:59:25 | INFO |   Words: 9 tokens
+2025-12-22 15:00:00 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2025-12-22 15:00:00 | INFO | [4/30] sst2 - 602
+2025-12-22 15:00:00 | INFO |   Text: instead , he shows them the respect they are due ....
+2025-12-22 15:00:00 | INFO |   Words: 11 tokens
+2025-12-22 15:00:34 | INFO |   ✓ LIME-LLM scores generated (11 tokens)
+2025-12-22 15:00:34 | INFO | [5/30] sst2 - 287
+2025-12-22 15:00:34 | INFO |   Text: it 's a much more emotional journey than what shyamalan has given us in his past...
+2025-12-22 15:00:34 | INFO |   Words: 39 tokens
+2025-12-22 15:01:10 | WARNING |   ✗ LLM parsing failed: Expecting value: line 156 column 44 (char 9606)
+2025-12-22 15:01:10 | WARNING |   ✗ Failed to generate scores
+2025-12-22 15:01:10 | INFO | [6/30] sst2 - 302
+2025-12-22 15:01:10 | INFO |   Text: the wild thornberrys movie is a jolly surprise ....
+2025-12-22 15:01:10 | INFO |   Words: 9 tokens
+2025-12-22 15:01:40 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2025-12-22 15:01:40 | INFO | [7/30] sst2 - 148
+2025-12-22 15:01:40 | INFO |   Text: feels too formulaic and too familiar to produce the transgressive thrills of ear...
+2025-12-22 15:01:40 | INFO |   Words: 16 tokens
+2025-12-22 15:02:16 | INFO |   ✓ LIME-LLM scores generated (16 tokens)
+2025-12-22 15:02:16 | INFO | [8/30] sst2 - 835
+2025-12-22 15:02:16 | INFO |   Text: a giggle-inducing comedy with snappy dialogue and winning performances by an unl...
+2025-12-22 15:02:16 | INFO |   Words: 22 tokens
+2025-12-22 15:02:57 | WARNING |   ✗ LLM parsing failed: Expecting ',' delimiter: line 196 column 23 (char 10221)
+2025-12-22 15:02:57 | WARNING |   ✗ Failed to generate scores
+2025-12-22 15:02:57 | INFO | [9/30] sst2 - 345
+2025-12-22 15:02:57 | INFO |   Text: this tenth feature is a big deal , indeed -- at least the third-best , and maybe...
+2025-12-22 15:02:57 | INFO |   Words: 36 tokens
+2025-12-22 15:03:36 | WARNING |   ✗ LLM parsing failed: Expecting property name enclosed in double quotes: line 166 column 75 (char 9962)
+2025-12-22 15:03:36 | WARNING |   ✗ Failed to generate scores
+2025-12-22 15:03:36 | INFO | [10/30] sst2 - 387
+2025-12-22 15:03:36 | INFO |   Text: director andrew niccol ... demonstrates a wry understanding of the quirks of fam...
+2025-12-22 15:03:36 | INFO |   Words: 14 tokens
+2025-12-22 15:04:13 | INFO |   ✓ LIME-LLM scores generated (14 tokens)
+2025-12-22 15:04:13 | WARNING | 
+✓ Results saved: results.csv
+2025-12-22 15:04:13 | INFO | 
+Generating evaluation plots...
+2025-12-22 15:04:13 | INFO |   Processing sst2...
+2025-12-22 15:04:14 | INFO |   ✓ Saved curves: curves_sst2.png
+2025-12-22 15:04:15 | INFO | 
+================================================================================
+2025-12-22 15:04:15 | INFO | AGGREGATE METRICS
+2025-12-22 15:04:15 | INFO | ================================================================================
+2025-12-22 15:04:15 | INFO | 
+sst2:
+2025-12-22 15:04:15 | INFO |   Partition SHAP      : ROC-AUC=0.6751, PR-AUC=0.4564 (n=208)
+2025-12-22 15:04:15 | INFO |   LIME                : ROC-AUC=0.7284, PR-AUC=0.5766 (n=208)
+2025-12-22 15:04:15 | INFO |   Integrated Gradient : ROC-AUC=0.5184, PR-AUC=0.3052 (n=208)
+2025-12-22 15:04:15 | INFO |   LIME-LLM            : ROC-AUC=0.7642, PR-AUC=0.4705 (n=71)
+2025-12-22 15:04:15 | INFO | 
+================================================================================
+2025-12-22 15:04:15 | INFO | ✓ PIPELINE COMPLETE
+2025-12-22 15:04:15 | INFO | Saved: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/aggregate_metrics.json
+2025-12-22 15:04:15 | INFO | ================================================================================
+
+2025-12-22 15:04:15 | WARNING | Failed examples 0/30
+[]
+2025-12-22 15:04:51 | INFO | 
+================================================================================
+2025-12-22 15:04:51 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-22 15:04:51 | INFO | Mode: FULL
+2025-12-22 15:04:51 | INFO | Provider: ANTHROPIC
+2025-12-22 15:04:51 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-22 15:04:51 | INFO | ================================================================================
+
+2025-12-22 15:05:40 | INFO | Processing 30 examples
+2025-12-22 15:05:40 | INFO | Total rows: 496
+2025-12-22 15:05:40 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2025-12-22 15:05:40 | INFO | [1/30] sst2 - 506
+2025-12-22 15:05:40 | INFO |   Text: crackerjack entertainment -- nonstop romance , music , suspense and action ....
+2025-12-22 15:05:40 | INFO |   Words: 12 tokens
+2025-12-22 15:06:07 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2025-12-22 15:06:07 | INFO | [2/30] sst2 - 742
+2025-12-22 15:06:07 | INFO |   Text: it 's a demented kitsch mess ( although the smeary digital video does match the ...
+2025-12-22 15:06:07 | INFO |   Words: 40 tokens
+2025-12-22 15:06:40 | INFO |   ✓ LIME-LLM scores generated (40 tokens)
+2025-12-22 15:06:40 | INFO | [3/30] sst2 - 170
+2025-12-22 15:06:40 | INFO |   Text: it 's also , clearly , great fun ....
+2025-12-22 15:06:40 | INFO |   Words: 9 tokens
+2025-12-22 15:06:56 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2025-12-22 15:06:56 | INFO | [4/30] sst2 - 602
+2025-12-22 15:06:56 | INFO |   Text: instead , he shows them the respect they are due ....
+2025-12-22 15:06:56 | INFO |   Words: 11 tokens
+2025-12-22 15:07:15 | INFO |   ✓ LIME-LLM scores generated (11 tokens)
+2025-12-22 15:07:15 | INFO | [5/30] sst2 - 287
+2025-12-22 15:07:15 | INFO |   Text: it 's a much more emotional journey than what shyamalan has given us in his past...
+2025-12-22 15:07:15 | INFO |   Words: 39 tokens
+2025-12-22 15:07:45 | INFO |   ✓ LIME-LLM scores generated (39 tokens)
+2025-12-22 15:07:45 | INFO | [6/30] sst2 - 302
+2025-12-22 15:07:45 | INFO |   Text: the wild thornberrys movie is a jolly surprise ....
+2025-12-22 15:07:45 | INFO |   Words: 9 tokens
+2025-12-22 15:08:03 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2025-12-22 15:08:03 | INFO | [7/30] sst2 - 148
+2025-12-22 15:08:03 | INFO |   Text: feels too formulaic and too familiar to produce the transgressive thrills of ear...
+2025-12-22 15:08:03 | INFO |   Words: 16 tokens
+2025-12-22 15:08:27 | INFO |   ✓ LIME-LLM scores generated (16 tokens)
+2025-12-22 15:08:27 | INFO | [8/30] sst2 - 835
+2025-12-22 15:08:27 | INFO |   Text: a giggle-inducing comedy with snappy dialogue and winning performances by an unl...
+2025-12-22 15:08:27 | INFO |   Words: 22 tokens
+2025-12-22 15:08:54 | WARNING | ⚠️Found invalid strategy: neutral_infil - it should be ['neutral_infill', 'boundary_infill']
+2025-12-22 15:08:57 | INFO |   ✓ LIME-LLM scores generated (22 tokens)
+2025-12-22 15:08:57 | INFO | [9/30] sst2 - 345
+2025-12-22 15:08:57 | INFO |   Text: this tenth feature is a big deal , indeed -- at least the third-best , and maybe...
+2025-12-22 15:08:57 | INFO |   Words: 36 tokens
+2025-12-22 15:09:28 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2025-12-22 15:09:28 | INFO | [10/30] sst2 - 387
+2025-12-22 15:09:28 | INFO |   Text: director andrew niccol ... demonstrates a wry understanding of the quirks of fam...
+2025-12-22 15:09:28 | INFO |   Words: 14 tokens
+2025-12-22 15:09:49 | INFO |   ✓ LIME-LLM scores generated (14 tokens)
+2025-12-22 15:09:49 | WARNING | 
+✓ Results saved: results.csv
+2025-12-22 15:09:50 | INFO | 
+Generating evaluation plots...
+2025-12-22 15:09:50 | INFO |   Processing sst2...
+2025-12-22 15:09:50 | INFO |   ✓ Saved curves: curves_sst2.png
+2025-12-22 15:09:51 | INFO | 
+================================================================================
+2025-12-22 15:09:51 | INFO | AGGREGATE METRICS
+2025-12-22 15:09:51 | INFO | ================================================================================
+2025-12-22 15:09:51 | INFO | 
+sst2:
+2025-12-22 15:09:51 | INFO |   Partition SHAP      : ROC-AUC=0.6751, PR-AUC=0.4564 (n=208)
+2025-12-22 15:09:51 | INFO |   LIME                : ROC-AUC=0.7284, PR-AUC=0.5766 (n=208)
+2025-12-22 15:09:51 | INFO |   Integrated Gradient : ROC-AUC=0.5184, PR-AUC=0.3052 (n=208)
+2025-12-22 15:09:51 | INFO |   LIME-LLM            : ROC-AUC=0.7829, PR-AUC=0.3713 (n=208)
+2025-12-22 15:09:51 | INFO | 
+================================================================================
+2025-12-22 15:09:51 | INFO | ✓ PIPELINE COMPLETE
+2025-12-22 15:09:51 | INFO | Saved: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/aggregate_metrics.json
+2025-12-22 15:09:51 | INFO | ================================================================================
+
+2025-12-22 15:09:51 | WARNING | Failed examples 0/30
+[]
+2025-12-22 15:14:24 | INFO | 
+================================================================================
+2025-12-22 15:14:24 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-22 15:14:24 | INFO | Mode: FULL
+2025-12-22 15:14:24 | INFO | Provider: ANTHROPIC
+2025-12-22 15:14:24 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-22 15:14:24 | INFO | ================================================================================
+
+2025-12-22 15:14:27 | INFO | Processing 30 examples
+2025-12-22 15:14:27 | INFO | Total rows: 496
+2025-12-22 15:14:27 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2025-12-22 15:14:27 | INFO | [1/30] sst2 - 506
+2025-12-22 15:14:27 | INFO |   Text: crackerjack entertainment -- nonstop romance , music , suspense and action ....
+2025-12-22 15:14:27 | INFO |   Words: 12 tokens
+2025-12-22 15:14:50 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2025-12-22 15:14:50 | INFO | [2/30] sst2 - 742
+2025-12-22 15:14:50 | INFO |   Text: it 's a demented kitsch mess ( although the smeary digital video does match the ...
+2025-12-22 15:14:50 | INFO |   Words: 40 tokens
+2025-12-22 15:15:29 | INFO |   ✓ LIME-LLM scores generated (40 tokens)
+2025-12-22 15:15:29 | INFO | [3/30] sst2 - 170
+2025-12-22 15:15:29 | INFO |   Text: it 's also , clearly , great fun ....
+2025-12-22 15:15:29 | INFO |   Words: 9 tokens
+2025-12-22 15:15:46 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2025-12-22 15:15:46 | INFO | [4/30] sst2 - 602
+2025-12-22 15:15:46 | INFO |   Text: instead , he shows them the respect they are due ....
+2025-12-22 15:15:46 | INFO |   Words: 11 tokens
+2025-12-22 15:16:04 | INFO |   ✓ LIME-LLM scores generated (11 tokens)
+2025-12-22 15:16:04 | INFO | [5/30] sst2 - 287
+2025-12-22 15:16:04 | INFO |   Text: it 's a much more emotional journey than what shyamalan has given us in his past...
+2025-12-22 15:16:04 | INFO |   Words: 39 tokens
+2025-12-22 15:16:37 | INFO |   ✓ LIME-LLM scores generated (39 tokens)
+2025-12-22 15:16:37 | INFO | [6/30] sst2 - 302
+2025-12-22 15:16:37 | INFO |   Text: the wild thornberrys movie is a jolly surprise ....
+2025-12-22 15:16:37 | INFO |   Words: 9 tokens
+2025-12-22 15:16:56 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2025-12-22 15:16:56 | INFO | [7/30] sst2 - 148
+2025-12-22 15:16:56 | INFO |   Text: feels too formulaic and too familiar to produce the transgressive thrills of ear...
+2025-12-22 15:16:56 | INFO |   Words: 16 tokens
+2025-12-22 15:17:19 | INFO |   ✓ LIME-LLM scores generated (16 tokens)
+2025-12-22 15:17:19 | INFO | [8/30] sst2 - 835
+2025-12-22 15:17:19 | INFO |   Text: a giggle-inducing comedy with snappy dialogue and winning performances by an unl...
+2025-12-22 15:17:19 | INFO |   Words: 22 tokens
+2025-12-22 15:17:48 | INFO |   ✓ LIME-LLM scores generated (22 tokens)
+2025-12-22 15:17:48 | INFO | [9/30] sst2 - 345
+2025-12-22 15:17:48 | INFO |   Text: this tenth feature is a big deal , indeed -- at least the third-best , and maybe...
+2025-12-22 15:17:48 | INFO |   Words: 36 tokens
+2025-12-22 15:18:18 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2025-12-22 15:18:18 | INFO | [10/30] sst2 - 387
+2025-12-22 15:18:18 | INFO |   Text: director andrew niccol ... demonstrates a wry understanding of the quirks of fam...
+2025-12-22 15:18:18 | INFO |   Words: 14 tokens
+2025-12-22 15:18:39 | INFO |   ✓ LIME-LLM scores generated (14 tokens)
+2025-12-22 15:18:39 | WARNING | 
+✓ Results saved: results.csv
+2025-12-22 15:18:39 | INFO | 
+Generating evaluation plots...
+2025-12-22 15:18:39 | INFO |   Processing sst2...
+2025-12-22 15:18:40 | INFO |   ✓ Saved curves: curves_sst2.png
+2025-12-22 15:18:41 | INFO | 
+================================================================================
+2025-12-22 15:18:41 | INFO | AGGREGATE METRICS
+2025-12-22 15:18:41 | INFO | ================================================================================
+2025-12-22 15:18:41 | INFO | 
+sst2:
+2025-12-22 15:18:41 | INFO |   Partition SHAP      : ROC-AUC=0.6751, PR-AUC=0.4564 (n=208)
+2025-12-22 15:18:41 | INFO |   LIME                : ROC-AUC=0.7284, PR-AUC=0.5766 (n=208)
+2025-12-22 15:18:41 | INFO |   Integrated Gradient : ROC-AUC=0.5184, PR-AUC=0.3052 (n=208)
+2025-12-22 15:18:41 | INFO |   LIME-LLM            : ROC-AUC=0.7713, PR-AUC=0.3928 (n=208)
+2025-12-22 15:18:41 | INFO | 
+================================================================================
+2025-12-22 15:18:41 | INFO | ✓ PIPELINE COMPLETE
+2025-12-22 15:18:41 | INFO | Saved: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/aggregate_metrics.json
+2025-12-22 15:18:41 | INFO | ================================================================================
+
+2025-12-22 15:18:41 | WARNING | Failed examples 0/30
+[]
+2025-12-22 15:31:28 | INFO | 
+================================================================================
+2025-12-22 15:31:28 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-22 15:31:28 | INFO | Mode: FULL
+2025-12-22 15:31:28 | INFO | Provider: ANTHROPIC
+2025-12-22 15:31:28 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-22 15:31:28 | INFO | ================================================================================
+
+2025-12-22 15:32:49 | INFO | Processing 30 examples
+2025-12-22 15:32:49 | INFO | Total rows: 496
+2025-12-22 15:32:49 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2025-12-22 15:32:49 | INFO | [1/30] sst2 - 506
+2025-12-22 15:32:49 | INFO |   Text: crackerjack entertainment -- nonstop romance , music , suspense and action ....
+2025-12-22 15:32:49 | INFO |   Words: 12 tokens
+2025-12-22 15:33:21 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2025-12-22 15:33:21 | INFO | [2/30] sst2 - 742
+2025-12-22 15:33:21 | INFO |   Text: it 's a demented kitsch mess ( although the smeary digital video does match the ...
+2025-12-22 15:33:21 | INFO |   Words: 40 tokens
+2025-12-22 15:34:04 | WARNING |   ✗ LLM parsing failed: Expecting value: line 151 column 24 (char 9885)
+2025-12-22 15:34:04 | WARNING |   ✗ Failed to generate scores
+2025-12-22 15:34:04 | INFO | [3/30] sst2 - 170
+2025-12-22 15:34:04 | INFO |   Text: it 's also , clearly , great fun ....
+2025-12-22 15:34:04 | INFO |   Words: 9 tokens
+2025-12-22 15:34:30 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2025-12-22 15:34:30 | INFO | [4/30] sst2 - 602
+2025-12-22 15:34:30 | INFO |   Text: instead , he shows them the respect they are due ....
+2025-12-22 15:34:30 | INFO |   Words: 11 tokens
+2025-12-22 15:35:03 | INFO |   ✓ LIME-LLM scores generated (11 tokens)
+2025-12-22 15:35:03 | INFO | [5/30] sst2 - 287
+2025-12-22 15:35:03 | INFO |   Text: it 's a much more emotional journey than what shyamalan has given us in his past...
+2025-12-22 15:35:03 | INFO |   Words: 39 tokens
+2025-12-22 15:35:40 | WARNING |   ✗ LLM parsing failed: Expecting value: line 126 column 84 (char 8485)
+2025-12-22 15:35:40 | WARNING |   ✗ Failed to generate scores
+2025-12-22 15:35:40 | INFO | [6/30] sst2 - 302
+2025-12-22 15:35:40 | INFO |   Text: the wild thornberrys movie is a jolly surprise ....
+2025-12-22 15:35:40 | INFO |   Words: 9 tokens
+2025-12-22 15:36:10 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2025-12-22 15:36:10 | INFO | [7/30] sst2 - 148
+2025-12-22 15:36:10 | INFO |   Text: feels too formulaic and too familiar to produce the transgressive thrills of ear...
+2025-12-22 15:36:10 | INFO |   Words: 16 tokens
+2025-12-22 15:36:42 | INFO |   ✓ LIME-LLM scores generated (16 tokens)
+2025-12-22 15:36:42 | INFO | [8/30] sst2 - 835
+2025-12-22 15:36:42 | INFO |   Text: a giggle-inducing comedy with snappy dialogue and winning performances by an unl...
+2025-12-22 15:36:42 | INFO |   Words: 22 tokens
+2025-12-22 15:37:19 | INFO |   ✓ LIME-LLM scores generated (22 tokens)
+2025-12-22 15:37:19 | INFO | [9/30] sst2 - 345
+2025-12-22 15:37:19 | INFO |   Text: this tenth feature is a big deal , indeed -- at least the third-best , and maybe...
+2025-12-22 15:37:19 | INFO |   Words: 36 tokens
+2025-12-22 15:37:57 | WARNING |   ✗ LLM parsing failed: Expecting value: line 136 column 72 (char 8857)
+2025-12-22 15:37:57 | WARNING |   ✗ Failed to generate scores
+2025-12-22 15:37:57 | INFO | [10/30] sst2 - 387
+2025-12-22 15:37:57 | INFO |   Text: director andrew niccol ... demonstrates a wry understanding of the quirks of fam...
+2025-12-22 15:37:57 | INFO |   Words: 14 tokens
+2025-12-22 15:38:27 | INFO |   ✓ LIME-LLM scores generated (14 tokens)
+2025-12-22 15:38:27 | WARNING | 
+✓ Results saved: results.csv
+2025-12-22 15:38:28 | INFO | 
+Generating evaluation plots...
+2025-12-22 15:38:28 | INFO |   Processing sst2...
+2025-12-22 15:38:28 | INFO |   ✓ Saved curves: curves_sst2.png
+2025-12-22 15:38:29 | INFO | 
+================================================================================
+2025-12-22 15:38:29 | INFO | AGGREGATE METRICS
+2025-12-22 15:38:29 | INFO | ================================================================================
+2025-12-22 15:38:29 | INFO | 
+sst2:
+2025-12-22 15:38:29 | INFO |   Partition SHAP      : ROC-AUC=0.6751, PR-AUC=0.4564 (n=208)
+2025-12-22 15:38:29 | INFO |   LIME                : ROC-AUC=0.7284, PR-AUC=0.5766 (n=208)
+2025-12-22 15:38:29 | INFO |   Integrated Gradient : ROC-AUC=0.5184, PR-AUC=0.3052 (n=208)
+2025-12-22 15:38:29 | INFO |   LIME-LLM            : ROC-AUC=0.7388, PR-AUC=0.4587 (n=93)
+2025-12-22 15:38:29 | INFO | 
+================================================================================
+2025-12-22 15:38:29 | INFO | ✓ PIPELINE COMPLETE
+2025-12-22 15:38:29 | INFO | Saved: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/aggregate_metrics.json
+2025-12-22 15:38:29 | INFO | ================================================================================
+
+2025-12-22 15:38:29 | WARNING | Failed examples 0/30
+[]

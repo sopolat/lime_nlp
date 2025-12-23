@@ -1,0 +1,176 @@
+2025-12-19 18:04:10 | INFO | 
+================================================================================
+2025-12-19 18:04:10 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-19 18:04:10 | INFO | Mode: TEST (1 example per dataset)
+2025-12-19 18:04:10 | INFO | Provider: ANTHROPIC
+2025-12-19 18:04:10 | INFO | Output: outputs/test_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-19 18:04:10 | INFO | ================================================================================
+
+2025-12-19 18:04:10 | INFO | RUNNING LLM 💸💸
+2025-12-19 18:04:11 | INFO | Processing 3 examples
+2025-12-19 18:04:11 | INFO | Total rows: 56
+2025-12-19 18:04:11 | INFO | Datasets: {'cola': 1, 'hatexplain': 1, 'sst2': 1}
+
+2025-12-19 18:04:11 | INFO | [3/3] hatexplain - 4701852_gab
+2025-12-19 18:04:11 | INFO |   Text: fanbloodytastic by time these leeches are held to account especially the muzzie ...
+2025-12-19 18:04:11 | INFO |   Words: 36 tokens
+2025-12-19 18:04:41 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2025-12-19 18:04:41 | WARNING | 
+✓ Results saved: results.csv
+2025-12-19 18:04:42 | INFO | 
+Generating evaluation plots...
+2025-12-19 18:04:42 | INFO |   Processing hatexplain...
+2025-12-19 18:04:42 | INFO |   ✓ Saved curves: curves_hatexplain.png
+2025-12-19 18:04:44 | INFO | 
+================================================================================
+2025-12-19 18:04:44 | INFO | AGGREGATE METRICS
+2025-12-19 18:04:44 | INFO | ================================================================================
+2025-12-19 18:04:44 | INFO | 
+hatexplain:
+2025-12-19 18:04:44 | INFO |   Partition SHAP      : ROC-AUC=0.0294, PR-AUC=0.0429 (n=36)
+2025-12-19 18:04:44 | INFO |   LIME                : ROC-AUC=0.0000, PR-AUC=0.0421 (n=36)
+2025-12-19 18:04:44 | INFO |   Integrated Gradient : ROC-AUC=0.9559, PR-AUC=0.5000 (n=36)
+2025-12-19 18:04:44 | INFO |   LIME-LLM            : ROC-AUC=1.0000, PR-AUC=1.0000 (n=36)
+2025-12-19 18:04:44 | INFO | 
+================================================================================
+2025-12-19 18:04:44 | INFO | ✓ PIPELINE COMPLETE
+2025-12-19 18:04:44 | INFO | Saved: outputs/test_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/aggregate_metrics.json
+2025-12-19 18:04:44 | INFO | ================================================================================
+
+2025-12-19 18:04:44 | WARNING | Failed examples 0/3
+[]
+2025-12-22 13:30:18 | INFO | 
+================================================================================
+2025-12-22 13:30:18 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-22 13:30:18 | INFO | Mode: TEST (1 example per dataset)
+2025-12-22 13:30:18 | INFO | Provider: ANTHROPIC
+2025-12-22 13:30:18 | INFO | Output: outputs/test_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-22 13:30:18 | INFO | ================================================================================
+
+2025-12-22 13:30:18 | INFO | RUNNING LLM 💸💸
+2025-12-22 13:30:19 | INFO | Processing 3 examples
+2025-12-22 13:30:19 | INFO | Total rows: 56
+2025-12-22 13:30:19 | INFO | Datasets: {'cola': 1, 'hatexplain': 1, 'sst2': 1}
+
+2025-12-22 13:30:19 | INFO | [1/3] sst2 - 506
+2025-12-22 13:30:19 | INFO |   Text: crackerjack entertainment -- nonstop romance , music , suspense and action ....
+2025-12-22 13:30:19 | INFO |   Words: 12 tokens
+2025-12-22 13:30:19 | INFO | n_per_strategy=10
+total_samples=20
+2025-12-22 13:30:38 | WARNING |   ✗ Error: list index out of range
+2025-12-22 13:31:26 | INFO | 
+================================================================================
+2025-12-22 13:31:26 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-22 13:31:26 | INFO | Mode: TEST (1 example per dataset)
+2025-12-22 13:31:26 | INFO | Provider: ANTHROPIC
+2025-12-22 13:31:26 | INFO | Output: outputs/test_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-22 13:31:26 | INFO | ================================================================================
+
+2025-12-22 13:31:26 | INFO | RUNNING LLM 💸💸
+2025-12-22 13:31:27 | INFO | Processing 3 examples
+2025-12-22 13:31:27 | INFO | Total rows: 56
+2025-12-22 13:31:27 | INFO | Datasets: {'cola': 1, 'hatexplain': 1, 'sst2': 1}
+
+2025-12-22 13:31:28 | INFO | [1/3] sst2 - 506
+2025-12-22 13:31:28 | INFO |   Text: crackerjack entertainment -- nonstop romance , music , suspense and action ....
+2025-12-22 13:31:28 | INFO |   Words: 12 tokens
+2025-12-22 13:31:53 | INFO | n_per_strategy=10
+total_samples=20
+2025-12-22 13:38:53 | INFO | 
+================================================================================
+2025-12-22 13:38:53 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-22 13:38:53 | INFO | Mode: TEST (1 example per dataset)
+2025-12-22 13:38:53 | INFO | Provider: ANTHROPIC
+2025-12-22 13:38:53 | INFO | Output: outputs/test_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-22 13:38:53 | INFO | ================================================================================
+
+2025-12-22 13:38:53 | INFO | RUNNING LLM 💸💸
+2025-12-22 13:38:54 | INFO | Processing 3 examples
+2025-12-22 13:38:54 | INFO | Total rows: 56
+2025-12-22 13:38:54 | INFO | Datasets: {'cola': 1, 'hatexplain': 1, 'sst2': 1}
+
+2025-12-22 13:38:54 | INFO | [1/3] sst2 - 506
+2025-12-22 13:38:54 | INFO |   Text: crackerjack entertainment -- nonstop romance , music , suspense and action ....
+2025-12-22 13:38:54 | INFO |   Words: 12 tokens
+2025-12-22 13:38:57 | INFO | n_per_strategy=10
+total_samples=20
+2025-12-22 13:39:40 | WARNING | ⚠️Found 20 of samples - required ['neutral_infill', 'boundary_infill', 'neutral_infill', 'boundary_infill', 'neutral_infill', 'boundary_infill', 'neutral_infill', 'boundary_infill', 'neutral_infill', 'boundary_infill', 'neutral_infill', 'boundary_infill', 'neutral_infill', 'boundary_infill', 'neutral_infill', 'boundary_infill', 'neutral_infill', 'boundary_infill', 'neutral_infill', 'boundary_infill']
+2025-12-22 13:40:38 | INFO | 
+================================================================================
+2025-12-22 13:40:38 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-22 13:40:38 | INFO | Mode: TEST (1 example per dataset)
+2025-12-22 13:40:38 | INFO | Provider: ANTHROPIC
+2025-12-22 13:40:38 | INFO | Output: outputs/test_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-22 13:40:38 | INFO | ================================================================================
+
+2025-12-22 13:40:38 | INFO | RUNNING LLM 💸💸
+2025-12-22 13:40:39 | INFO | Processing 3 examples
+2025-12-22 13:40:39 | INFO | Total rows: 56
+2025-12-22 13:40:39 | INFO | Datasets: {'cola': 1, 'hatexplain': 1, 'sst2': 1}
+
+2025-12-22 13:40:39 | INFO | [1/3] sst2 - 506
+2025-12-22 13:40:39 | INFO |   Text: crackerjack entertainment -- nonstop romance , music , suspense and action ....
+2025-12-22 13:40:39 | INFO |   Words: 12 tokens
+2025-12-22 13:40:52 | INFO | n_per_strategy=10
+total_samples=20
+2025-12-22 13:42:47 | INFO | 
+================================================================================
+2025-12-22 13:42:47 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-22 13:42:47 | INFO | Mode: TEST (1 example per dataset)
+2025-12-22 13:42:47 | INFO | Provider: ANTHROPIC
+2025-12-22 13:42:47 | INFO | Output: outputs/test_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-22 13:42:47 | INFO | ================================================================================
+
+2025-12-22 13:42:47 | INFO | RUNNING LLM 💸💸
+2025-12-22 13:42:48 | INFO | Processing 3 examples
+2025-12-22 13:42:48 | INFO | Total rows: 56
+2025-12-22 13:42:48 | INFO | Datasets: {'cola': 1, 'hatexplain': 1, 'sst2': 1}
+
+2025-12-22 13:42:48 | INFO | [1/3] sst2 - 506
+2025-12-22 13:42:48 | INFO |   Text: crackerjack entertainment -- nonstop romance , music , suspense and action ....
+2025-12-22 13:42:48 | INFO |   Words: 12 tokens
+2025-12-22 13:42:52 | INFO | n_per_strategy=10
+total_samples=20
+2025-12-22 13:45:25 | INFO | 
+================================================================================
+2025-12-22 13:45:25 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-22 13:45:25 | INFO | Mode: TEST (1 example per dataset)
+2025-12-22 13:45:25 | INFO | Provider: ANTHROPIC
+2025-12-22 13:45:25 | INFO | Output: outputs/test_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-22 13:45:25 | INFO | ================================================================================
+
+2025-12-22 13:45:25 | INFO | RUNNING LLM 💸💸
+2025-12-22 13:45:26 | INFO | Processing 3 examples
+2025-12-22 13:45:26 | INFO | Total rows: 56
+2025-12-22 13:45:26 | INFO | Datasets: {'cola': 1, 'hatexplain': 1, 'sst2': 1}
+
+2025-12-22 13:45:26 | INFO | [1/3] sst2 - 506
+2025-12-22 13:45:26 | INFO |   Text: crackerjack entertainment -- nonstop romance , music , suspense and action ....
+2025-12-22 13:45:26 | INFO |   Words: 12 tokens
+2025-12-22 13:45:27 | INFO | n_per_strategy=10
+total_samples=20
+2025-12-22 13:45:45 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2025-12-22 13:45:45 | WARNING | 
+✓ Results saved: results.csv
+2025-12-22 13:45:46 | INFO | 
+Generating evaluation plots...
+2025-12-22 13:45:46 | INFO |   Processing sst2...
+2025-12-22 13:45:47 | INFO |   ✓ Saved curves: curves_sst2.png
+2025-12-22 13:45:48 | INFO | 
+================================================================================
+2025-12-22 13:45:48 | INFO | AGGREGATE METRICS
+2025-12-22 13:45:48 | INFO | ================================================================================
+2025-12-22 13:45:48 | INFO | 
+sst2:
+2025-12-22 13:45:48 | INFO |   Partition SHAP      : ROC-AUC=0.8148, PR-AUC=0.7917 (n=12)
+2025-12-22 13:45:48 | INFO |   LIME                : ROC-AUC=0.8148, PR-AUC=0.6984 (n=12)
+2025-12-22 13:45:48 | INFO |   Integrated Gradient : ROC-AUC=0.7407, PR-AUC=0.4444 (n=12)
+2025-12-22 13:45:48 | INFO |   LIME-LLM            : ROC-AUC=0.8519, PR-AUC=0.7222 (n=12)
+2025-12-22 13:45:48 | INFO | 
+================================================================================
+2025-12-22 13:45:48 | INFO | ✓ PIPELINE COMPLETE
+2025-12-22 13:45:48 | INFO | Saved: outputs/test_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/aggregate_metrics.json
+2025-12-22 13:45:48 | INFO | ================================================================================
+
+2025-12-22 13:45:48 | WARNING | Failed examples 0/3
+[]

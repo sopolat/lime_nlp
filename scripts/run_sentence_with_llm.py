@@ -43,6 +43,7 @@ class Args(object):
     SENTENCE_TRANSFORMER_MODEL = "all-mpnet-base-v2"
     TEMPERATURE = 0.0
     DATA_SAMPLES = 30  # 30 60 150
+    PERTURBATION_TYPE_SAMPLES = 10  # 30 TOTAL samples is ideal
     WANDB_ENABLED = True
     WANDB_PROJECT = "lime-nlp"
     WANDB_ENTITY = os.getenv("WANDB_ENTITY")  # optional
@@ -165,16 +166,16 @@ def wandb_log_curves(df_results: pd.DataFrame, dataset: str, run, methods, n_gri
     return (fpr_grid, ys_roc, keys), (rec_grid, ys_pr, keys)
 
 
-def get_prompts(dataset: str, text: str, vocab: list, predicted_label: str, n_samples: int = 10) -> tuple:
+def get_prompts(dataset: str, text: str, vocab: list, predicted_label: str, n_per_strategy: int, total_samples: int) -> tuple:
     """Generate dataset-specific prompts with all required parameters."""
-    system = SYSTEM_PROMPT_VERSIONS[args.SYSTEM_PROMPT_USE_VERSION].format(n_samples=n_samples, )
+    system = SYSTEM_PROMPT_VERSIONS[args.SYSTEM_PROMPT_USE_VERSION]
     user = USER_PROMPT_VERSIONS[args.USER_PROMPT_USE_VERSION]["user_prompt"].format(
         text=text,
-        text_length=len(text.split()),
         predicted_label=predicted_label,
         vocab=list(vocab),
         vocab_count=len(list(vocab)),
-        n_samples=n_samples,  # 10 is optimal trade-off based on LLiMe paper
+        n_per_strategy=n_per_strategy,
+        total_samples=total_samples,
         dataset_description=DATASET_DESCRIPTION[args.DATASET_DESCRIPTION_VERSION][dataset],
     )
     return system, user
@@ -260,15 +261,20 @@ def parse_llm_response(response: str) -> dict:
     clean = re.sub(r"^```(?:json)?\s*|\s*```$", "", response.strip())
     data = json.loads(clean)
     if data.get("status") != "OK":
-        raise ValueError(f"LLM error: {data.get('error', 'Unknown')}")
+        raise ValueError(f"LLM error: {data.get('error', 'Unknown')}\nLLM OUTPUT: {response}")
 
+    n_required_samples = len(USER_PROMPT_VERSIONS[args.USER_PROMPT_USE_VERSION]["key_outputs"])*args.PERTURBATION_TYPE_SAMPLES
+    n_found_samples = len(data.get("samples", []))
+    if n_found_samples != n_required_samples:
+        LOG.warning(f"⚠️Found {n_found_samples} of samples - required {n_required_samples}")
     texts, masks = [], []
     for sample in data.get("samples", []):
-        mask = sample.get("mask", [])
-        for key_output in USER_PROMPT_VERSIONS[args.USER_PROMPT_USE_VERSION]["key_outputs"]:
-            if key_output in sample:
-                texts.append(sample[key_output]["text"])  # Needs added.
-                masks.append(mask)
+        if sample["strategy"] in USER_PROMPT_VERSIONS[args.USER_PROMPT_USE_VERSION]["key_outputs"]:
+            texts.append(sample["text"])
+            masks.append(sample["mask"])
+        else:
+            LOG.warning(f"⚠️Found invalid strategy: {sample["strategy"]} "
+                        f"- it should be {str(USER_PROMPT_VERSIONS[args.USER_PROMPT_USE_VERSION]["key_outputs"])}")
 
     return {"text": texts, "mask": masks}
 
@@ -308,7 +314,14 @@ def get_lime_llm_scores(text: str, dataset: str, model_path: str, llm_client, id
     vocab = [str(val) for val in indexed_string.inverse_vocab]
 
     # Get dataset-specific prompts
-    system_msg, user_msg = get_prompts(dataset, text, vocab, predicted_label, n_samples=10)
+    total_samples = (len(USER_PROMPT_VERSIONS[args.USER_PROMPT_USE_VERSION]["key_outputs"])
+                     * args.PERTURBATION_TYPE_SAMPLES)
+    system_msg, user_msg = get_prompts(dataset=dataset,
+                                       text=text,
+                                       vocab=vocab,
+                                       predicted_label=predicted_label,
+                                       n_per_strategy=args.PERTURBATION_TYPE_SAMPLES,
+                                       total_samples=total_samples)
 
     # Get LLM perturbations
     response = call_llm(system_msg, user_msg, llm_client)
@@ -556,9 +569,9 @@ def main():
     for example_idx, (group_key, example_data) in enumerate(example_groups):
         dataset, idx = group_key
 
-        # Debug SST2
-        # if dataset != "sst2":
-        #     continue
+        # DEBUG DATASET
+        if dataset != "sst2":   # "hatexplain" "cola" "sst2"
+            continue
 
         # Get text from first row (all rows have same text for an example)
         text = " ".join(example_data["words"])
@@ -666,9 +679,8 @@ def main():
 
         run.log_artifact(art)
 
-        p = Path("prompts.py")
         art = wandb.Artifact(name="prompts", type="code")
-        art.add_file(str(p))  # logs the actual .py file
+        art.add_file("scripts/prompts.py")  # logs the actual .py file
         run.log_artifact(art)
 
         run.finish()
