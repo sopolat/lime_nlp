@@ -1,0 +1,521 @@
+2026-01-02 13:29:29 | INFO | 
+================================================================================
+2026-01-02 13:29:29 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2026-01-02 13:29:29 | INFO | Mode: FULL
+2026-01-02 13:29:29 | INFO | Provider: ANTHROPIC
+2026-01-02 13:29:29 | INFO | Output: outputs/run_sonnet45_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9
+2026-01-02 13:29:29 | INFO | ================================================================================
+
+2026-01-02 13:29:29 | INFO | df_sample: 2415
+2026-01-02 13:29:35 | INFO | Processing 150 examples
+2026-01-02 13:29:35 | INFO | Total rows: 2415
+2026-01-02 13:29:35 | INFO | Datasets: {'cola': 50, 'hatexplain': 50, 'sst2': 50}
+
+2026-01-02 13:29:35 | INFO | [1/150] cola - 534
+2026-01-02 13:29:35 | INFO |   Text: She mailed John a letter, but I don't know to whom....
+2026-01-02 13:29:35 | INFO |   Words: 11 tokens
+2026-01-02 13:29:36 | INFO | Use pytorch device_name: mps
+2026-01-02 13:29:53 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:29:53 | INFO | Use pytorch device_name: mps
+2026-01-02 13:29:53 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:29:55 | INFO |   ✓ LIME-LLM scores generated (11 tokens)
+2026-01-02 13:29:55 | INFO | [2/150] cola - 224
+2026-01-02 13:29:55 | INFO |   Text: They have no in....
+2026-01-02 13:29:55 | INFO |   Words: 4 tokens
+2026-01-02 13:29:56 | INFO | Use pytorch device_name: mps
+2026-01-02 13:30:06 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:30:06 | INFO | Use pytorch device_name: mps
+2026-01-02 13:30:06 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:30:08 | INFO |   ✓ LIME-LLM scores generated (4 tokens)
+2026-01-02 13:30:08 | INFO | [3/150] cola - 836
+2026-01-02 13:30:08 | INFO |   Text: We relied above Leslie....
+2026-01-02 13:30:08 | INFO |   Words: 4 tokens
+2026-01-02 13:30:08 | INFO | Use pytorch device_name: mps
+2026-01-02 13:30:20 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:30:20 | INFO | Use pytorch device_name: mps
+2026-01-02 13:30:20 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:30:22 | INFO |   ✓ LIME-LLM scores generated (4 tokens)
+2026-01-02 13:30:22 | INFO | [4/150] cola - 384
+2026-01-02 13:30:22 | INFO |   Text: John thinks that Mary loves himself....
+2026-01-02 13:30:22 | INFO |   Words: 6 tokens
+2026-01-02 13:30:22 | INFO | Use pytorch device_name: mps
+2026-01-02 13:30:36 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:30:36 | INFO | Use pytorch device_name: mps
+2026-01-02 13:30:36 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:30:38 | INFO |   ✓ LIME-LLM scores generated (6 tokens)
+2026-01-02 13:30:38 | INFO | [5/150] cola - 990
+2026-01-02 13:30:38 | INFO |   Text: It was hated for John to leave....
+2026-01-02 13:30:38 | INFO |   Words: 7 tokens
+2026-01-02 13:30:38 | INFO | Use pytorch device_name: mps
+2026-01-02 13:30:56 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:30:56 | INFO | Use pytorch device_name: mps
+2026-01-02 13:30:56 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:30:58 | INFO |   ✓ LIME-LLM scores generated (7 tokens)
+2026-01-02 13:30:58 | INFO | [6/150] cola - 740
+2026-01-02 13:30:58 | INFO |   Text: Leslie likes ourselves....
+2026-01-02 13:30:58 | INFO |   Words: 3 tokens
+2026-01-02 13:30:58 | INFO | Use pytorch device_name: mps
+2026-01-02 13:31:09 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:31:09 | INFO | Use pytorch device_name: mps
+2026-01-02 13:31:09 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:31:10 | INFO |   ✓ LIME-LLM scores generated (3 tokens)
+2026-01-02 13:31:10 | INFO | [7/150] cola - 191
+2026-01-02 13:31:10 | INFO |   Text: I shaped a loaf....
+2026-01-02 13:31:10 | INFO |   Words: 4 tokens
+2026-01-02 13:31:11 | INFO | Use pytorch device_name: mps
+2026-01-02 13:31:23 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:31:23 | INFO | Use pytorch device_name: mps
+2026-01-02 13:31:23 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:31:24 | INFO |   ✓ LIME-LLM scores generated (4 tokens)
+2026-01-02 13:31:24 | INFO | [8/150] cola - 880
+2026-01-02 13:31:24 | INFO |   Text: I enjoy yourself....
+2026-01-02 13:31:24 | INFO |   Words: 3 tokens
+2026-01-02 13:31:24 | INFO | Use pytorch device_name: mps
+2026-01-02 13:31:36 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:31:36 | INFO | Use pytorch device_name: mps
+2026-01-02 13:31:36 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:31:38 | INFO |   ✓ LIME-LLM scores generated (3 tokens)
+2026-01-02 13:31:38 | INFO | [9/150] cola - 921
+2026-01-02 13:31:38 | INFO |   Text: The patient was died....
+2026-01-02 13:31:38 | INFO |   Words: 4 tokens
+2026-01-02 13:31:38 | INFO | Use pytorch device_name: mps
+2026-01-02 13:31:51 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:31:51 | INFO | Use pytorch device_name: mps
+2026-01-02 13:31:51 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:31:52 | INFO |   ✓ LIME-LLM scores generated (4 tokens)
+2026-01-02 13:31:52 | INFO | [10/150] cola - 860
+2026-01-02 13:31:52 | INFO |   Text: Few dog barked....
+2026-01-02 13:31:52 | INFO |   Words: 3 tokens
+2026-01-02 13:31:53 | INFO | Use pytorch device_name: mps
+2026-01-02 13:32:03 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:32:03 | INFO | Use pytorch device_name: mps
+2026-01-02 13:32:03 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:32:05 | INFO |   ✓ LIME-LLM scores generated (3 tokens)
+2026-01-02 13:32:05 | INFO | [11/150] cola - 695
+2026-01-02 13:32:05 | INFO |   Text: Bother you that Kim left!...
+2026-01-02 13:32:05 | INFO |   Words: 5 tokens
+2026-01-02 13:32:05 | INFO | Use pytorch device_name: mps
+2026-01-02 13:32:18 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:32:18 | INFO | Use pytorch device_name: mps
+2026-01-02 13:32:18 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:32:20 | INFO |   ✓ LIME-LLM scores generated (5 tokens)
+2026-01-02 13:32:20 | INFO | [12/150] cola - 230
+2026-01-02 13:32:20 | INFO |   Text: John sounded very....
+2026-01-02 13:32:20 | INFO |   Words: 3 tokens
+2026-01-02 13:32:20 | INFO | Use pytorch device_name: mps
+2026-01-02 13:32:31 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:32:31 | INFO | Use pytorch device_name: mps
+2026-01-02 13:32:31 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:32:32 | INFO |   ✓ LIME-LLM scores generated (3 tokens)
+2026-01-02 13:32:32 | INFO | [13/150] cola - 206
+2026-01-02 13:32:32 | INFO |   Text: I squeaked the door....
+2026-01-02 13:32:32 | INFO |   Words: 4 tokens
+2026-01-02 13:32:32 | INFO | Use pytorch device_name: mps
+2026-01-02 13:32:45 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:32:45 | INFO | Use pytorch device_name: mps
+2026-01-02 13:32:45 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:32:47 | INFO |   ✓ LIME-LLM scores generated (4 tokens)
+2026-01-02 13:32:47 | INFO | [14/150] cola - 192
+2026-01-02 13:32:47 | INFO |   Text: The children amused....
+2026-01-02 13:32:47 | INFO |   Words: 3 tokens
+2026-01-02 13:32:48 | INFO | Use pytorch device_name: mps
+2026-01-02 13:32:59 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:32:59 | INFO | Use pytorch device_name: mps
+2026-01-02 13:32:59 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:33:00 | INFO |   ✓ LIME-LLM scores generated (3 tokens)
+2026-01-02 13:33:00 | INFO | [15/150] cola - 813
+2026-01-02 13:33:00 | INFO |   Text: Birds sings....
+2026-01-02 13:33:00 | INFO |   Words: 2 tokens
+2026-01-02 13:33:01 | INFO | Use pytorch device_name: mps
+2026-01-02 13:33:11 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:33:11 | INFO | Use pytorch device_name: mps
+2026-01-02 13:33:11 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:33:12 | INFO |   ✓ LIME-LLM scores generated (2 tokens)
+2026-01-02 13:33:12 | INFO | [16/150] cola - 111
+2026-01-02 13:33:12 | INFO |   Text: The socks are ready for for you to put on to be planned....
+2026-01-02 13:33:12 | INFO |   Words: 13 tokens
+2026-01-02 13:33:13 | INFO | Use pytorch device_name: mps
+2026-01-02 13:33:30 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:33:30 | INFO | Use pytorch device_name: mps
+2026-01-02 13:33:30 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:33:32 | INFO |   ✓ LIME-LLM scores generated (13 tokens)
+2026-01-02 13:33:32 | INFO | [17/150] cola - 828
+2026-01-02 13:33:32 | INFO |   Text: The defendants walks....
+2026-01-02 13:33:32 | INFO |   Words: 3 tokens
+2026-01-02 13:33:33 | INFO | Use pytorch device_name: mps
+2026-01-02 13:33:43 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:33:43 | INFO | Use pytorch device_name: mps
+2026-01-02 13:33:43 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:33:45 | INFO |   ✓ LIME-LLM scores generated (3 tokens)
+2026-01-02 13:33:45 | INFO | [18/150] cola - 29
+2026-01-02 13:33:45 | INFO |   Text: The tube was escaped by gas....
+2026-01-02 13:33:45 | INFO |   Words: 6 tokens
+2026-01-02 13:33:46 | INFO | Use pytorch device_name: mps
+2026-01-02 13:33:59 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:33:59 | INFO | Use pytorch device_name: mps
+2026-01-02 13:33:59 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:34:00 | INFO |   ✓ LIME-LLM scores generated (6 tokens)
+2026-01-02 13:34:00 | INFO | [19/150] cola - 458
+2026-01-02 13:34:00 | INFO |   Text: Mary revealed himself to John....
+2026-01-02 13:34:00 | INFO |   Words: 5 tokens
+2026-01-02 13:34:03 | INFO | Use pytorch device_name: mps
+2026-01-02 13:34:16 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:34:16 | INFO | Use pytorch device_name: mps
+2026-01-02 13:34:16 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:34:18 | INFO |   ✓ LIME-LLM scores generated (5 tokens)
+2026-01-02 13:34:18 | INFO | [20/150] cola - 367
+2026-01-02 13:34:18 | INFO |   Text: If I am a rich man, I'd buy a diamond ring....
+2026-01-02 13:34:18 | INFO |   Words: 11 tokens
+2026-01-02 13:34:19 | INFO | Use pytorch device_name: mps
+2026-01-02 13:34:36 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:34:36 | INFO | Use pytorch device_name: mps
+2026-01-02 13:34:36 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:34:38 | INFO |   ✓ LIME-LLM scores generated (11 tokens)
+2026-01-02 13:34:38 | INFO | [21/150] cola - 827
+2026-01-02 13:34:38 | INFO |   Text: The defendant walk....
+2026-01-02 13:34:38 | INFO |   Words: 3 tokens
+2026-01-02 13:34:39 | INFO | Use pytorch device_name: mps
+2026-01-02 13:34:50 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:34:50 | INFO | Use pytorch device_name: mps
+2026-01-02 13:34:50 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:34:51 | INFO |   ✓ LIME-LLM scores generated (3 tokens)
+2026-01-02 13:34:51 | INFO | [22/150] cola - 1012
+2026-01-02 13:34:51 | INFO |   Text: John is aware of it that Bill is here....
+2026-01-02 13:34:51 | INFO |   Words: 9 tokens
+2026-01-02 13:34:52 | INFO | Use pytorch device_name: mps
+2026-01-02 13:35:07 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:35:07 | INFO | Use pytorch device_name: mps
+2026-01-02 13:35:07 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:35:09 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2026-01-02 13:35:09 | INFO | [23/150] cola - 500
+2026-01-02 13:35:09 | INFO |   Text: Gilgamesh is having fought the dragon....
+2026-01-02 13:35:09 | INFO |   Words: 6 tokens
+2026-01-02 13:35:09 | INFO | Use pytorch device_name: mps
+2026-01-02 13:35:23 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:35:23 | INFO | Use pytorch device_name: mps
+2026-01-02 13:35:23 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:35:25 | INFO |   ✓ LIME-LLM scores generated (6 tokens)
+2026-01-02 13:35:25 | INFO | [24/150] cola - 60
+2026-01-02 13:35:25 | INFO |   Text: I know which book Mag read, and which book Bob read my report that you hadn't....
+2026-01-02 13:35:25 | INFO |   Words: 16 tokens
+2026-01-02 13:35:26 | INFO | Use pytorch device_name: mps
+2026-01-02 13:35:44 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:35:44 | INFO | Use pytorch device_name: mps
+2026-01-02 13:35:44 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:35:46 | INFO |   ✓ LIME-LLM scores generated (16 tokens)
+2026-01-02 13:35:46 | INFO | [25/150] cola - 80
+2026-01-02 13:35:46 | INFO |   Text: Himself is understood by Rutherford....
+2026-01-02 13:35:46 | INFO |   Words: 5 tokens
+2026-01-02 13:35:47 | INFO | Use pytorch device_name: mps
+2026-01-02 13:36:00 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:36:00 | INFO | Use pytorch device_name: mps
+2026-01-02 13:36:00 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:36:01 | INFO |   ✓ LIME-LLM scores generated (5 tokens)
+2026-01-02 13:36:01 | INFO | [26/150] cola - 362
+2026-01-02 13:36:01 | INFO |   Text: Heidi thinks that Andy to eat salmon flavored candy bars....
+2026-01-02 13:36:01 | INFO |   Words: 10 tokens
+2026-01-02 13:36:02 | INFO | Use pytorch device_name: mps
+2026-01-02 13:36:20 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:36:20 | INFO | Use pytorch device_name: mps
+2026-01-02 13:36:20 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:36:22 | INFO |   ✓ LIME-LLM scores generated (10 tokens)
+2026-01-02 13:36:22 | INFO | [27/150] cola - 73
+2026-01-02 13:36:22 | INFO |   Text: A proof that the claim had been. made was giver that John had lied....
+2026-01-02 13:36:22 | INFO |   Words: 14 tokens
+2026-01-02 13:36:23 | INFO | Use pytorch device_name: mps
+2026-01-02 13:36:41 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:36:41 | INFO | Use pytorch device_name: mps
+2026-01-02 13:36:41 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:36:43 | INFO |   ✓ LIME-LLM scores generated (14 tokens)
+2026-01-02 13:36:43 | INFO | [28/150] cola - 338
+2026-01-02 13:36:43 | INFO |   Text: Sally kissed himself....
+2026-01-02 13:36:43 | INFO |   Words: 3 tokens
+2026-01-02 13:36:44 | INFO | Use pytorch device_name: mps
+2026-01-02 13:36:54 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:36:55 | INFO | Use pytorch device_name: mps
+2026-01-02 13:36:55 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:36:56 | INFO |   ✓ LIME-LLM scores generated (3 tokens)
+2026-01-02 13:36:56 | INFO | [29/150] cola - 630
+2026-01-02 13:36:56 | INFO |   Text: The magazines were sent to herself by Mary....
+2026-01-02 13:36:56 | INFO |   Words: 8 tokens
+2026-01-02 13:36:57 | INFO | Use pytorch device_name: mps
+2026-01-02 13:37:14 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:37:14 | INFO | Use pytorch device_name: mps
+2026-01-02 13:37:14 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:37:15 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2026-01-02 13:37:15 | INFO | [30/150] cola - 746
+2026-01-02 13:37:15 | INFO |   Text: We gave us to the cause....
+2026-01-02 13:37:15 | INFO |   Words: 6 tokens
+2026-01-02 13:37:16 | INFO | Use pytorch device_name: mps
+2026-01-02 13:37:28 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:37:28 | INFO | Use pytorch device_name: mps
+2026-01-02 13:37:28 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:37:30 | INFO |   ✓ LIME-LLM scores generated (6 tokens)
+2026-01-02 13:37:30 | INFO | [31/150] cola - 540
+2026-01-02 13:37:30 | INFO |   Text: The ship sank, but I don't know with what....
+2026-01-02 13:37:30 | INFO |   Words: 9 tokens
+2026-01-02 13:37:31 | INFO | Use pytorch device_name: mps
+2026-01-02 13:37:48 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:37:48 | INFO | Use pytorch device_name: mps
+2026-01-02 13:37:48 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:37:49 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2026-01-02 13:37:49 | INFO | [32/150] cola - 129
+2026-01-02 13:37:49 | INFO |   Text: Sam offered the ball out of the basket....
+2026-01-02 13:37:49 | INFO |   Words: 8 tokens
+2026-01-02 13:37:50 | INFO | Use pytorch device_name: mps
+2026-01-02 13:38:04 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:38:04 | INFO | Use pytorch device_name: mps
+2026-01-02 13:38:04 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:38:06 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2026-01-02 13:38:06 | INFO | [33/150] cola - 457
+2026-01-02 13:38:06 | INFO |   Text: John's mother likes himself....
+2026-01-02 13:38:06 | INFO |   Words: 4 tokens
+2026-01-02 13:38:07 | INFO | Use pytorch device_name: mps
+2026-01-02 13:38:19 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:38:19 | INFO | Use pytorch device_name: mps
+2026-01-02 13:38:19 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:38:21 | INFO |   ✓ LIME-LLM scores generated (4 tokens)
+2026-01-02 13:38:21 | INFO | [34/150] cola - 464
+2026-01-02 13:38:21 | INFO |   Text: You should sit before there....
+2026-01-02 13:38:21 | INFO |   Words: 5 tokens
+2026-01-02 13:38:21 | INFO | Use pytorch device_name: mps
+2026-01-02 13:38:34 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:38:34 | INFO | Use pytorch device_name: mps
+2026-01-02 13:38:34 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:38:36 | INFO |   ✓ LIME-LLM scores generated (5 tokens)
+2026-01-02 13:38:36 | INFO | [35/150] cola - 501
+2026-01-02 13:38:36 | INFO |   Text: Anson thought that himself was happy....
+2026-01-02 13:38:36 | INFO |   Words: 6 tokens
+2026-01-02 13:38:37 | INFO | Use pytorch device_name: mps
+2026-01-02 13:38:51 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:38:51 | INFO | Use pytorch device_name: mps
+2026-01-02 13:38:51 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:38:53 | INFO |   ✓ LIME-LLM scores generated (6 tokens)
+2026-01-02 13:38:53 | INFO | [36/150] cola - 504
+2026-01-02 13:38:53 | INFO |   Text: I thought he liked myself...
+2026-01-02 13:38:53 | INFO |   Words: 5 tokens
+2026-01-02 13:38:54 | INFO | Use pytorch device_name: mps
+2026-01-02 13:39:06 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:39:06 | INFO | Use pytorch device_name: mps
+2026-01-02 13:39:06 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:39:08 | INFO |   ✓ LIME-LLM scores generated (5 tokens)
+2026-01-02 13:39:08 | INFO | [37/150] cola - 1014
+2026-01-02 13:39:08 | INFO |   Text: John believed it that Bill was tardy....
+2026-01-02 13:39:08 | INFO |   Words: 7 tokens
+2026-01-02 13:39:09 | INFO | Use pytorch device_name: mps
+2026-01-02 13:39:22 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:39:22 | INFO | Use pytorch device_name: mps
+2026-01-02 13:39:22 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:39:26 | INFO |   ✓ LIME-LLM scores generated (7 tokens)
+2026-01-02 13:39:26 | INFO | [38/150] cola - 685
+2026-01-02 13:39:26 | INFO |   Text: The book what inspired them was very long....
+2026-01-02 13:39:26 | INFO |   Words: 8 tokens
+2026-01-02 13:39:26 | INFO | Use pytorch device_name: mps
+2026-01-02 13:39:41 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:39:41 | INFO | Use pytorch device_name: mps
+2026-01-02 13:39:41 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:39:42 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2026-01-02 13:39:42 | INFO | [39/150] cola - 342
+2026-01-02 13:39:42 | INFO |   Text: Blue leather shows herself that Betsy is pretty....
+2026-01-02 13:39:42 | INFO |   Words: 8 tokens
+2026-01-02 13:39:43 | INFO | Use pytorch device_name: mps
+2026-01-02 13:40:00 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:40:00 | INFO | Use pytorch device_name: mps
+2026-01-02 13:40:00 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:40:02 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2026-01-02 13:40:02 | INFO | [40/150] cola - 137
+2026-01-02 13:40:02 | INFO |   Text: The farmer dumped the cart with apples....
+2026-01-02 13:40:02 | INFO |   Words: 7 tokens
+2026-01-02 13:40:03 | INFO | Use pytorch device_name: mps
+2026-01-02 13:40:17 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:40:17 | INFO | Use pytorch device_name: mps
+2026-01-02 13:40:17 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:40:19 | INFO |   ✓ LIME-LLM scores generated (7 tokens)
+2026-01-02 13:40:19 | INFO | [41/150] cola - 329
+2026-01-02 13:40:19 | INFO |   Text: 1 gave Mary after the party a book....
+2026-01-02 13:40:19 | INFO |   Words: 8 tokens
+2026-01-02 13:40:19 | INFO | Use pytorch device_name: mps
+2026-01-02 13:40:34 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:40:34 | INFO | Use pytorch device_name: mps
+2026-01-02 13:40:34 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:40:36 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2026-01-02 13:40:36 | INFO | [42/150] cola - 23
+2026-01-02 13:40:36 | INFO |   Text: Mickey looked up it....
+2026-01-02 13:40:36 | INFO |   Words: 4 tokens
+2026-01-02 13:40:36 | INFO | Use pytorch device_name: mps
+2026-01-02 13:40:48 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:40:48 | INFO | Use pytorch device_name: mps
+2026-01-02 13:40:48 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:40:50 | INFO |   ✓ LIME-LLM scores generated (4 tokens)
+2026-01-02 13:40:50 | INFO | [43/150] cola - 707
+2026-01-02 13:40:50 | INFO |   Text: I wonder in whom them to place their trust....
+2026-01-02 13:40:50 | INFO |   Words: 9 tokens
+2026-01-02 13:40:51 | INFO | Use pytorch device_name: mps
+2026-01-02 13:41:06 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:41:06 | INFO | Use pytorch device_name: mps
+2026-01-02 13:41:06 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:41:09 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2026-01-02 13:41:09 | INFO | [44/150] cola - 1020
+2026-01-02 13:41:09 | INFO |   Text: It is to give up to leave....
+2026-01-02 13:41:09 | INFO |   Words: 7 tokens
+2026-01-02 13:41:10 | INFO | Use pytorch device_name: mps
+2026-01-02 13:41:25 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:41:25 | INFO | Use pytorch device_name: mps
+2026-01-02 13:41:25 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:41:27 | INFO |   ✓ LIME-LLM scores generated (7 tokens)
+2026-01-02 13:41:27 | INFO | [45/150] cola - 252
+2026-01-02 13:41:27 | INFO |   Text: Kim put in the box....
+2026-01-02 13:41:27 | INFO |   Words: 5 tokens
+2026-01-02 13:41:28 | INFO | Use pytorch device_name: mps
+2026-01-02 13:41:44 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:41:44 | INFO | Use pytorch device_name: mps
+2026-01-02 13:41:44 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:41:46 | INFO |   ✓ LIME-LLM scores generated (5 tokens)
+2026-01-02 13:41:46 | INFO | [46/150] cola - 708
+2026-01-02 13:41:46 | INFO |   Text: I wonder whom us to trust....
+2026-01-02 13:41:46 | INFO |   Words: 6 tokens
+2026-01-02 13:41:47 | INFO | Use pytorch device_name: mps
+2026-01-02 13:42:00 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:42:00 | INFO | Use pytorch device_name: mps
+2026-01-02 13:42:00 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:42:02 | INFO |   ✓ LIME-LLM scores generated (6 tokens)
+2026-01-02 13:42:02 | INFO | [47/150] cola - 430
+2026-01-02 13:42:02 | INFO |   Text: Which article did Terry file papers without reading?...
+2026-01-02 13:42:02 | INFO |   Words: 8 tokens
+2026-01-02 13:42:03 | INFO | Use pytorch device_name: mps
+2026-01-02 13:42:18 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:42:18 | INFO | Use pytorch device_name: mps
+2026-01-02 13:42:18 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:42:20 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2026-01-02 13:42:20 | INFO | [48/150] cola - 451
+2026-01-02 13:42:20 | INFO |   Text: John whispered Mary left....
+2026-01-02 13:42:20 | INFO |   Words: 4 tokens
+2026-01-02 13:42:21 | INFO | Use pytorch device_name: mps
+2026-01-02 13:42:33 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:42:33 | INFO | Use pytorch device_name: mps
+2026-01-02 13:42:33 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:42:36 | INFO |   ✓ LIME-LLM scores generated (4 tokens)
+2026-01-02 13:42:36 | INFO | [49/150] cola - 567
+2026-01-02 13:42:36 | INFO |   Text: John likes some students, but I don't know who John likes some students....
+2026-01-02 13:42:36 | INFO |   Words: 13 tokens
+2026-01-02 13:42:37 | INFO | Use pytorch device_name: mps
+2026-01-02 13:42:53 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:42:53 | INFO | Use pytorch device_name: mps
+2026-01-02 13:42:53 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:42:55 | INFO |   ✓ LIME-LLM scores generated (13 tokens)
+2026-01-02 13:42:55 | INFO | [50/150] cola - 114
+2026-01-02 13:42:55 | INFO |   Text: My mother is easy to please my father and....
+2026-01-02 13:42:55 | INFO |   Words: 9 tokens
+2026-01-02 13:42:56 | INFO | Use pytorch device_name: mps
+2026-01-02 13:43:11 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:43:11 | INFO | Use pytorch device_name: mps
+2026-01-02 13:43:11 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:43:13 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2026-01-02 13:43:13 | INFO | [51/150] sst2 - 48
+2026-01-02 13:43:13 | INFO |   Text: has a lot of the virtues of eastwood at his best ....
+2026-01-02 13:43:13 | INFO |   Words: 12 tokens
+2026-01-02 13:43:15 | INFO | Use pytorch device_name: mps
+2026-01-02 13:43:31 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:43:31 | INFO | Use pytorch device_name: mps
+2026-01-02 13:43:31 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:43:34 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2026-01-02 13:43:34 | INFO | [52/150] sst2 - 372
+2026-01-02 13:43:34 | INFO |   Text: the special effects and many scenes of weightlessness look as good or better tha...
+2026-01-02 13:43:34 | INFO |   Words: 37 tokens
+2026-01-02 13:43:35 | INFO | Use pytorch device_name: mps
+2026-01-02 13:44:02 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:44:02 | INFO | Use pytorch device_name: mps
+2026-01-02 13:44:02 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:44:05 | INFO |   ✓ LIME-LLM scores generated (37 tokens)
+2026-01-02 13:44:05 | INFO | [53/150] sst2 - 729
+2026-01-02 13:44:05 | INFO |   Text: the piece plays as well as it does thanks in large measure to anspaugh 's three ...
+2026-01-02 13:44:05 | INFO |   Words: 19 tokens
+2026-01-02 13:44:06 | INFO | Use pytorch device_name: mps
+2026-01-02 13:44:27 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:44:27 | INFO | Use pytorch device_name: mps
+2026-01-02 13:44:27 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:44:28 | INFO |   ✓ LIME-LLM scores generated (19 tokens)
+2026-01-02 13:44:28 | INFO | [54/150] sst2 - 323
+2026-01-02 13:44:28 | INFO |   Text: a painfully funny ode to bad behavior ....
+2026-01-02 13:44:28 | INFO |   Words: 8 tokens
+2026-01-02 13:44:29 | INFO | Use pytorch device_name: mps
+2026-01-02 13:44:45 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:44:45 | INFO | Use pytorch device_name: mps
+2026-01-02 13:44:45 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:44:46 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2026-01-02 13:44:46 | INFO | [55/150] sst2 - 128
+2026-01-02 13:44:46 | INFO |   Text: montias ... pumps a lot of energy into his nicely nuanced narrative and surround...
+2026-01-02 13:44:46 | INFO |   Words: 28 tokens
+2026-01-02 13:44:47 | INFO | Use pytorch device_name: mps
+2026-01-02 13:45:12 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:45:12 | INFO | Use pytorch device_name: mps
+2026-01-02 13:45:12 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:45:14 | INFO |   ✓ LIME-LLM scores generated (28 tokens)
+2026-01-02 13:45:14 | INFO | [56/150] sst2 - 166
+2026-01-02 13:45:14 | INFO |   Text: characters still need to function according to some set of believable and compre...
+2026-01-02 13:45:14 | INFO |   Words: 30 tokens
+2026-01-02 13:45:15 | INFO | Use pytorch device_name: mps
+2026-01-02 13:45:44 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:45:44 | INFO | Use pytorch device_name: mps
+2026-01-02 13:45:44 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:45:46 | INFO |   ✓ LIME-LLM scores generated (30 tokens)
+2026-01-02 13:45:46 | INFO | [57/150] sst2 - 598
+2026-01-02 13:45:46 | INFO |   Text: nonsensical , dull `` cyber-horror '' flick is a grim , hollow exercise in flat ...
+2026-01-02 13:45:46 | INFO |   Words: 20 tokens
+2026-01-02 13:45:46 | INFO | Use pytorch device_name: mps
+2026-01-02 13:46:12 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:46:12 | INFO | Use pytorch device_name: mps
+2026-01-02 13:46:12 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:46:13 | INFO |   ✓ LIME-LLM scores generated (20 tokens)
+2026-01-02 13:46:13 | INFO | [58/150] sst2 - 100
+2026-01-02 13:46:13 | INFO |   Text: neither parker nor donovan is a typical romantic lead , but they bring a fresh ,...
+2026-01-02 13:46:13 | INFO |   Words: 22 tokens
+2026-01-02 13:46:14 | INFO | Use pytorch device_name: mps
+2026-01-02 13:46:37 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:46:37 | INFO | Use pytorch device_name: mps
+2026-01-02 13:46:37 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:46:38 | INFO |   ✓ LIME-LLM scores generated (22 tokens)
+2026-01-02 13:46:38 | INFO | [59/150] sst2 - 181
+2026-01-02 13:46:38 | INFO |   Text: it 's a bad thing when a movie has about as much substance as its end credits bl...
+2026-01-02 13:46:38 | INFO |   Words: 20 tokens
+2026-01-02 13:46:39 | INFO | Use pytorch device_name: mps
+2026-01-02 13:47:01 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:47:01 | INFO | Use pytorch device_name: mps
+2026-01-02 13:47:01 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:47:02 | INFO |   ✓ LIME-LLM scores generated (20 tokens)
+2026-01-02 13:47:02 | INFO | [60/150] sst2 - 560
+2026-01-02 13:47:02 | INFO |   Text: do n't be fooled by the impressive cast list - eye see you is pure junk ....
+2026-01-02 13:47:02 | INFO |   Words: 17 tokens
+2026-01-02 13:47:03 | INFO | Use pytorch device_name: mps
+2026-01-02 13:47:26 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:47:26 | INFO | Use pytorch device_name: mps
+2026-01-02 13:47:26 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:47:28 | INFO |   ✓ LIME-LLM scores generated (17 tokens)
+2026-01-02 13:47:28 | INFO | [61/150] sst2 - 596
+2026-01-02 13:47:28 | INFO |   Text: the director knows how to apply textural gloss , but his portrait of sex-as-war ...
+2026-01-02 13:47:28 | INFO |   Words: 18 tokens
+2026-01-02 13:47:29 | INFO | Use pytorch device_name: mps
+2026-01-02 13:47:51 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:47:51 | INFO | Use pytorch device_name: mps
+2026-01-02 13:47:51 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:47:53 | INFO |   ✓ LIME-LLM scores generated (18 tokens)
+2026-01-02 13:47:53 | INFO | [62/150] sst2 - 489
+2026-01-02 13:47:53 | INFO |   Text: it 's dumb , but more importantly , it 's just not scary ....
+2026-01-02 13:47:53 | INFO |   Words: 14 tokens
+2026-01-02 13:47:53 | INFO | Use pytorch device_name: mps
+2026-01-02 13:48:11 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:48:11 | INFO | Use pytorch device_name: mps
+2026-01-02 13:48:11 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:48:13 | INFO |   ✓ LIME-LLM scores generated (14 tokens)
+2026-01-02 13:48:13 | INFO | [63/150] sst2 - 763
+2026-01-02 13:48:13 | INFO |   Text: there 's something auspicious , and daring , too , about the artistic instinct t...
+2026-01-02 13:48:13 | INFO |   Words: 36 tokens
+2026-01-02 13:48:14 | INFO | Use pytorch device_name: mps
+2026-01-02 13:48:43 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:48:43 | INFO | Use pytorch device_name: mps
+2026-01-02 13:48:43 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:48:45 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2026-01-02 13:48:45 | INFO | [64/150] sst2 - 345
+2026-01-02 13:48:45 | INFO |   Text: this tenth feature is a big deal , indeed -- at least the third-best , and maybe...
+2026-01-02 13:48:45 | INFO |   Words: 36 tokens
+2026-01-02 13:48:46 | INFO | Use pytorch device_name: mps

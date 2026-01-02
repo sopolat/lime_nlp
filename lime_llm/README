@@ -1,0 +1,24 @@
+# Lime NLP
+
+Make sure to be in `/lime_llm` (`cd lime_llm`)
+
+
+## For LIME-LLM
+Create the environment
+`conda env create -f environment.yml`
+
+Activate the environment
+`conda activate lime_nlp`
+Conda update
+`conda env`
+
+## For Baselines (Isolate LIME local package)
+
+`conda create --name lime_nlp_baselines python=3.12.12 lime==0.2.0.1 shap==0.50.0 captum==0.7.0 python-dotenv transformers==4.57.3 sentence-transformers==5.2.0 --y`
+
+
+For `script_lime_nlp_baselines_with_seed.py`.
+
+### To remove the env:
+
+`conda env remove --name lime_nlp_baselines --y`

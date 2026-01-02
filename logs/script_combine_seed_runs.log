@@ -1,0 +1,16 @@
+2025-12-31 12:55:09 | WARNING | 2 has incorrect lengths: 10 compared to 2628
+2025-12-31 12:55:22 | WARNING | 2 has incorrect lengths: 10 compared to 2628
+2025-12-31 13:01:14 | INFO | Starting safe merge of LIME datasets...
+2025-12-31 13:01:14 | INFO | Initialized base dataframe with 2628 rows from seed 0
+2025-12-31 13:01:14 | ERROR | Merge failed for seed 0. Likely duplicate keys in files: Merge keys are not unique in either left or right dataset; not a one-to-one merge
+2025-12-31 13:03:14 | WARNING | Found 2628 duplicate rows in seed 0
+2025-12-31 13:03:14 | WARNING | Example duplicates:
+  dataset_name  idx
+0         sst2  506
+1         sst2  506
+2         sst2  506
+3         sst2  506
+4         sst2  506
+2025-12-31 13:04:26 | WARNING | THE ORDER OF THE DATAFRAMES IS EXPECTED TO BE SAME WITHIN ALL FILES.
+2025-12-31 13:06:43 | WARNING | THE ORDER OF THE DATAFRAMES IS EXPECTED TO BE SAME WITHIN ALL FILES.
+2025-12-31 13:06:43 | INFO | Saved: ../data/updated_baselines/xai_combined_df_150_examples_lime_seeds.csv

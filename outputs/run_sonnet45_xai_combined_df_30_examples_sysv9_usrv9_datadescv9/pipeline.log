@@ -2372,3 +2372,1827 @@ sst2:
 
 2025-12-22 15:38:29 | WARNING | Failed examples 0/30
 []
+2025-12-29 13:40:47 | INFO | 
+================================================================================
+2025-12-29 13:40:47 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-29 13:40:47 | INFO | Mode: FULL
+2025-12-29 13:42:06 | INFO | 
+================================================================================
+2025-12-29 13:42:06 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-29 13:42:06 | INFO | Mode: FULL
+2025-12-29 13:42:06 | INFO | Provider: ANTHROPIC
+2025-12-29 13:42:06 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-29 13:44:08 | INFO | 
+================================================================================
+2025-12-29 13:44:08 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-29 13:44:08 | INFO | Mode: FULL
+2025-12-29 13:44:08 | INFO | Provider: ANTHROPIC
+2025-12-29 13:44:08 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-29 13:44:08 | INFO | ================================================================================
+
+2025-12-29 13:44:32 | INFO | 
+================================================================================
+2025-12-29 13:44:32 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-29 13:44:32 | INFO | Mode: FULL
+2025-12-29 13:44:32 | INFO | Provider: ANTHROPIC
+2025-12-29 13:44:32 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-29 13:44:32 | INFO | ================================================================================
+
+2025-12-29 13:45:37 | INFO | 
+================================================================================
+2025-12-29 13:45:37 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-29 13:45:37 | INFO | Mode: FULL
+2025-12-29 13:45:37 | INFO | Provider: ANTHROPIC
+2025-12-29 13:45:37 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-29 13:45:37 | INFO | ================================================================================
+
+2025-12-29 13:47:59 | INFO | 
+================================================================================
+2025-12-29 13:47:59 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-29 13:47:59 | INFO | Mode: FULL
+2025-12-29 13:47:59 | INFO | Provider: ANTHROPIC
+2025-12-29 13:47:59 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-29 13:47:59 | INFO | ================================================================================
+
+2025-12-29 13:49:13 | INFO | 
+================================================================================
+2025-12-29 13:49:13 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-29 13:49:13 | INFO | Mode: FULL
+2025-12-29 13:49:13 | INFO | Provider: ANTHROPIC
+2025-12-29 13:49:13 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-29 13:49:13 | INFO | ================================================================================
+
+2025-12-29 13:50:14 | INFO | 
+================================================================================
+2025-12-29 13:50:14 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-29 13:50:14 | INFO | Mode: FULL
+2025-12-29 13:50:14 | INFO | Provider: ANTHROPIC
+2025-12-29 13:50:14 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-29 13:50:14 | INFO | ================================================================================
+
+2025-12-29 13:56:47 | INFO | 
+================================================================================
+2025-12-29 13:56:47 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-29 13:56:47 | INFO | Mode: FULL
+2025-12-29 13:56:47 | INFO | Provider: ANTHROPIC
+2025-12-29 13:56:47 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-29 13:56:47 | INFO | ================================================================================
+
+2025-12-29 13:57:46 | INFO | 
+================================================================================
+2025-12-29 13:57:46 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-29 13:57:46 | INFO | Mode: FULL
+2025-12-29 13:57:46 | INFO | Provider: ANTHROPIC
+2025-12-29 13:57:46 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-29 13:57:46 | INFO | ================================================================================
+
+2025-12-29 13:58:31 | INFO | 
+================================================================================
+2025-12-29 13:58:31 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-29 13:58:31 | INFO | Mode: FULL
+2025-12-29 13:58:31 | INFO | Provider: ANTHROPIC
+2025-12-29 13:58:31 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-29 13:58:31 | INFO | ================================================================================
+
+2025-12-29 13:59:15 | INFO | 
+================================================================================
+2025-12-29 13:59:15 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-29 13:59:15 | INFO | Mode: FULL
+2025-12-29 13:59:15 | INFO | Provider: ANTHROPIC
+2025-12-29 13:59:15 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-29 13:59:15 | INFO | ================================================================================
+
+2025-12-29 13:59:35 | INFO | Processing 30 examples
+2025-12-29 13:59:35 | INFO | Total rows: 496
+2025-12-29 13:59:35 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2025-12-29 14:05:01 | INFO | 
+================================================================================
+2025-12-29 14:05:01 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-29 14:05:01 | INFO | Mode: FULL
+2025-12-29 14:05:01 | INFO | Provider: ANTHROPIC
+2025-12-29 14:05:01 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-29 14:05:01 | INFO | ================================================================================
+
+2025-12-29 14:05:01 | INFO | Processing 30 examples
+2025-12-29 14:05:01 | INFO | Total rows: 496
+2025-12-29 14:05:01 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2025-12-29 14:05:23 | INFO | 
+================================================================================
+2025-12-29 14:05:23 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-29 14:05:23 | INFO | Mode: FULL
+2025-12-29 14:05:23 | INFO | Provider: ANTHROPIC
+2025-12-29 14:05:23 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-29 14:05:23 | INFO | ================================================================================
+
+2025-12-29 14:05:23 | INFO | Processing 30 examples
+2025-12-29 14:05:23 | INFO | Total rows: 496
+2025-12-29 14:05:23 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2025-12-29 14:09:30 | INFO | 
+================================================================================
+2025-12-29 14:09:30 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-29 14:09:30 | INFO | Mode: FULL
+2025-12-29 14:09:30 | INFO | Provider: ANTHROPIC
+2025-12-29 14:09:30 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-29 14:09:30 | INFO | ================================================================================
+
+2025-12-29 14:14:30 | INFO | 
+================================================================================
+2025-12-29 14:14:30 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-29 14:14:30 | INFO | Mode: FULL
+2025-12-29 14:14:30 | INFO | Provider: ANTHROPIC
+2025-12-29 14:14:30 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-29 14:14:30 | INFO | ================================================================================
+
+2025-12-29 14:19:42 | INFO | 
+================================================================================
+2025-12-29 14:19:42 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-29 14:19:42 | INFO | Mode: FULL
+2025-12-29 14:19:42 | INFO | Provider: ANTHROPIC
+2025-12-29 14:19:42 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-29 14:19:42 | INFO | ================================================================================
+
+2025-12-29 14:19:42 | INFO | 
+================================================================================
+2025-12-29 14:19:42 | INFO | AGGREGATE METRICS
+2025-12-29 14:19:42 | INFO | ================================================================================
+2025-12-29 14:19:42 | INFO | 
+sst2:
+2025-12-29 14:19:42 | INFO |   Partition SHAP      : ROC-AUC=0.6473, PR-AUC=0.4821 (n=103)
+2025-12-29 14:19:42 | INFO |   LIME                : ROC-AUC=0.6674, PR-AUC=0.6122 (n=103)
+2025-12-29 14:19:42 | INFO |   Integrated Gradient : ROC-AUC=0.5609, PR-AUC=0.4396 (n=103)
+2025-12-29 14:19:42 | INFO |   LIME-LLM            : ROC-AUC=0.7598, PR-AUC=0.4710 (n=103)
+2025-12-29 14:19:42 | INFO | 
+================================================================================
+2025-12-29 14:19:42 | INFO | ✓ PIPELINE COMPLETE
+2025-12-29 14:19:42 | INFO | Saved: aggregate_metrics.json
+2025-12-29 14:19:42 | INFO | ================================================================================
+
+2025-12-29 14:20:37 | INFO | 
+================================================================================
+2025-12-29 14:20:37 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-29 14:20:37 | INFO | Mode: FULL
+2025-12-29 14:20:37 | INFO | Provider: ANTHROPIC
+2025-12-29 14:20:37 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-29 14:20:37 | INFO | ================================================================================
+
+2025-12-29 14:20:37 | INFO | 
+================================================================================
+2025-12-29 14:20:37 | INFO | AGGREGATE METRICS
+2025-12-29 14:20:37 | INFO | ================================================================================
+2025-12-29 14:20:37 | INFO | 
+sst2:
+2025-12-29 14:20:37 | INFO |   Partition SHAP      : ROC-AUC=0.6473, PR-AUC=0.4821 (n=103)
+2025-12-29 14:20:37 | INFO |   LIME                : ROC-AUC=0.6674, PR-AUC=0.6122 (n=103)
+2025-12-29 14:20:37 | INFO |   Integrated Gradient : ROC-AUC=0.5609, PR-AUC=0.4396 (n=103)
+2025-12-29 14:20:37 | INFO |   LIME-LLM            : ROC-AUC=0.7598, PR-AUC=0.4710 (n=103)
+2025-12-29 14:20:37 | INFO | 
+================================================================================
+2025-12-29 14:20:37 | INFO | ✓ PIPELINE COMPLETE
+2025-12-29 14:20:37 | WARNING | No outputs saved!
+2025-12-29 14:20:37 | INFO | ================================================================================
+
+2025-12-29 14:32:11 | INFO | 
+================================================================================
+2025-12-29 14:32:11 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-29 14:32:11 | INFO | Mode: FULL
+2025-12-29 14:32:11 | INFO | Provider: ANTHROPIC
+2025-12-29 14:32:11 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-29 14:32:11 | INFO | ================================================================================
+
+2025-12-29 14:32:29 | INFO | 
+================================================================================
+2025-12-29 14:32:29 | INFO | AGGREGATE METRICS
+2025-12-29 14:32:29 | INFO | ================================================================================
+2025-12-29 14:32:29 | INFO | 
+sst2:
+2025-12-29 14:32:29 | INFO |   Partition SHAP      : ROC-AUC=0.4114, PR-AUC=0.2837 (n=103)
+2025-12-29 14:32:29 | INFO |   LIME                : ROC-AUC=0.4989, PR-AUC=0.3192 (n=103)
+2025-12-29 14:32:29 | INFO |   Integrated Gradient : ROC-AUC=0.8299, PR-AUC=0.6698 (n=103)
+2025-12-29 14:32:29 | INFO |   LIME-LLM            : ROC-AUC=0.7598, PR-AUC=0.4710 (n=103)
+2025-12-29 14:32:29 | INFO | 
+================================================================================
+2025-12-29 14:32:29 | INFO | ✓ PIPELINE COMPLETE
+2025-12-29 14:32:29 | WARNING | No outputs saved!
+2025-12-29 14:32:29 | INFO | ================================================================================
+
+2025-12-29 14:35:02 | INFO | 
+================================================================================
+2025-12-29 14:35:02 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-29 14:35:02 | INFO | Mode: FULL
+2025-12-29 14:35:02 | INFO | Provider: ANTHROPIC
+2025-12-29 14:35:02 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-29 14:35:02 | INFO | ================================================================================
+
+2025-12-29 14:35:02 | INFO | 
+================================================================================
+2025-12-29 14:35:02 | INFO | AGGREGATE METRICS
+2025-12-29 14:35:02 | INFO | ================================================================================
+2025-12-29 14:35:02 | INFO | 
+sst2:
+2025-12-29 14:35:02 | INFO |   Partition SHAP      : ROC-AUC=0.6473, PR-AUC=0.4821 (n=103)
+2025-12-29 14:35:02 | INFO |   LIME                : ROC-AUC=0.6674, PR-AUC=0.6122 (n=103)
+2025-12-29 14:35:02 | INFO |   Integrated Gradient : ROC-AUC=0.5609, PR-AUC=0.4396 (n=103)
+2025-12-29 14:35:02 | INFO |   LIME-LLM            : ROC-AUC=0.7598, PR-AUC=0.4710 (n=103)
+2025-12-29 14:35:02 | INFO | 
+================================================================================
+2025-12-29 14:35:02 | INFO | ✓ PIPELINE COMPLETE
+2025-12-29 14:35:02 | WARNING | No outputs saved!
+2025-12-29 14:35:02 | INFO | ================================================================================
+
+2025-12-29 14:35:43 | INFO | 
+================================================================================
+2025-12-29 14:35:43 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-29 14:35:43 | INFO | Mode: FULL
+2025-12-29 14:35:43 | INFO | Provider: ANTHROPIC
+2025-12-29 14:35:43 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-29 14:35:43 | INFO | ================================================================================
+
+2025-12-29 14:35:43 | INFO | 
+================================================================================
+2025-12-29 14:35:43 | INFO | AGGREGATE METRICS
+2025-12-29 14:35:43 | INFO | ================================================================================
+2025-12-29 14:35:43 | INFO | 
+sst2:
+2025-12-29 14:35:43 | INFO |   Partition SHAP      : ROC-AUC=0.4114, PR-AUC=0.2837 (n=103)
+2025-12-29 14:35:43 | INFO |   LIME                : ROC-AUC=0.4989, PR-AUC=0.3192 (n=103)
+2025-12-29 14:35:43 | INFO |   Integrated Gradient : ROC-AUC=0.8299, PR-AUC=0.6698 (n=103)
+2025-12-29 14:35:43 | INFO |   LIME-LLM            : ROC-AUC=0.7598, PR-AUC=0.4710 (n=103)
+2025-12-29 14:35:43 | INFO | 
+================================================================================
+2025-12-29 14:35:43 | INFO | ✓ PIPELINE COMPLETE
+2025-12-29 14:35:43 | WARNING | No outputs saved!
+2025-12-29 14:35:43 | INFO | ================================================================================
+
+2025-12-29 14:53:23 | INFO | 
+================================================================================
+2025-12-29 14:53:23 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-29 14:53:23 | INFO | Mode: FULL
+2025-12-29 14:53:23 | INFO | Provider: ANTHROPIC
+2025-12-29 14:53:23 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-29 14:53:23 | INFO | ================================================================================
+
+2025-12-29 14:53:28 | INFO | Processing 30 examples
+2025-12-29 14:53:28 | INFO | Total rows: 496
+2025-12-29 14:53:28 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2025-12-29 14:53:29 | INFO | [1/30] sst2 - 506
+2025-12-29 14:53:29 | INFO |   Text: crackerjack entertainment -- nonstop romance , music , suspense and action ....
+2025-12-29 14:53:29 | INFO |   Words: 12 tokens
+2025-12-29 14:53:49 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2025-12-29 14:53:49 | INFO | [2/30] sst2 - 742
+2025-12-29 14:53:49 | INFO |   Text: it 's a demented kitsch mess ( although the smeary digital video does match the ...
+2025-12-29 14:53:49 | INFO |   Words: 40 tokens
+2025-12-29 14:54:26 | INFO |   ✓ LIME-LLM scores generated (40 tokens)
+2025-12-29 14:54:26 | INFO | [3/30] sst2 - 170
+2025-12-29 14:54:26 | INFO |   Text: it 's also , clearly , great fun ....
+2025-12-29 14:54:26 | INFO |   Words: 9 tokens
+2025-12-29 14:54:47 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2025-12-29 14:54:47 | INFO | [4/30] sst2 - 602
+2025-12-29 14:54:47 | INFO |   Text: instead , he shows them the respect they are due ....
+2025-12-29 14:54:47 | INFO |   Words: 11 tokens
+2025-12-29 14:55:04 | INFO |   ✓ LIME-LLM scores generated (11 tokens)
+2025-12-29 14:55:04 | INFO | [5/30] sst2 - 287
+2025-12-29 14:55:04 | INFO |   Text: it 's a much more emotional journey than what shyamalan has given us in his past...
+2025-12-29 14:55:04 | INFO |   Words: 39 tokens
+2025-12-29 14:55:35 | INFO |   ✓ LIME-LLM scores generated (39 tokens)
+2025-12-29 14:55:35 | INFO | [6/30] sst2 - 302
+2025-12-29 14:55:35 | INFO |   Text: the wild thornberrys movie is a jolly surprise ....
+2025-12-29 14:55:35 | INFO |   Words: 9 tokens
+2025-12-29 14:55:54 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2025-12-29 14:55:54 | INFO | [7/30] sst2 - 148
+2025-12-29 14:55:54 | INFO |   Text: feels too formulaic and too familiar to produce the transgressive thrills of ear...
+2025-12-29 14:55:54 | INFO |   Words: 16 tokens
+2025-12-29 14:56:16 | INFO |   ✓ LIME-LLM scores generated (16 tokens)
+2025-12-29 14:56:16 | INFO | [8/30] sst2 - 835
+2025-12-29 14:56:16 | INFO |   Text: a giggle-inducing comedy with snappy dialogue and winning performances by an unl...
+2025-12-29 14:56:16 | INFO |   Words: 22 tokens
+2025-12-29 14:56:44 | INFO |   ✓ LIME-LLM scores generated (22 tokens)
+2025-12-29 14:56:44 | INFO | [9/30] sst2 - 345
+2025-12-29 14:56:44 | INFO |   Text: this tenth feature is a big deal , indeed -- at least the third-best , and maybe...
+2025-12-29 14:56:44 | INFO |   Words: 36 tokens
+2025-12-29 14:57:13 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2025-12-29 14:57:13 | INFO | [10/30] sst2 - 387
+2025-12-29 14:57:13 | INFO |   Text: director andrew niccol ... demonstrates a wry understanding of the quirks of fam...
+2025-12-29 14:57:13 | INFO |   Words: 14 tokens
+2025-12-29 14:57:34 | INFO |   ✓ LIME-LLM scores generated (14 tokens)
+2025-12-29 14:57:34 | WARNING | 
+✓ Results saved: results.csv
+2025-12-29 14:57:34 | INFO | 
+Generating evaluation plots...
+2025-12-29 14:57:34 | INFO |   Processing sst2...
+2025-12-29 14:57:35 | INFO |   ✓ Saved curves: curves_sst2.png
+2025-12-29 14:57:36 | INFO | 
+================================================================================
+2025-12-29 14:57:36 | INFO | AGGREGATE METRICS
+2025-12-29 14:57:36 | INFO | ================================================================================
+2025-12-29 14:57:36 | INFO | 
+sst2:
+2025-12-29 14:57:36 | INFO |   Partition SHAP      : ROC-AUC=0.6751, PR-AUC=0.4564 (n=208)
+2025-12-29 14:57:36 | INFO |   LIME                : ROC-AUC=0.7284, PR-AUC=0.5766 (n=208)
+2025-12-29 14:57:36 | INFO |   Integrated Gradient : ROC-AUC=0.5184, PR-AUC=0.3052 (n=208)
+2025-12-29 14:57:36 | INFO |   LIME-LLM            : ROC-AUC=0.7797, PR-AUC=0.3953 (n=208)
+2025-12-29 14:57:36 | INFO | 
+================================================================================
+2025-12-29 14:57:36 | INFO | ✓ PIPELINE COMPLETE
+2025-12-29 14:57:36 | INFO | Saved: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/aggregate_metrics.json
+2025-12-29 14:57:36 | INFO | ================================================================================
+
+2025-12-29 14:57:36 | WARNING | Failed examples 0/30
+[]
+2025-12-29 14:58:51 | INFO | 
+================================================================================
+2025-12-29 14:58:51 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-29 14:58:51 | INFO | Mode: FULL
+2025-12-29 14:58:51 | INFO | Provider: ANTHROPIC
+2025-12-29 14:58:51 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-29 14:58:51 | INFO | ================================================================================
+
+2025-12-29 14:58:56 | INFO | Processing 30 examples
+2025-12-29 14:58:56 | INFO | Total rows: 496
+2025-12-29 14:58:56 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2025-12-29 14:58:56 | INFO | [1/30] sst2 - 506
+2025-12-29 14:58:56 | INFO |   Text: crackerjack entertainment -- nonstop romance , music , suspense and action ....
+2025-12-29 14:58:56 | INFO |   Words: 12 tokens
+2025-12-29 14:59:14 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2025-12-29 14:59:14 | INFO | [2/30] sst2 - 742
+2025-12-29 14:59:14 | INFO |   Text: it 's a demented kitsch mess ( although the smeary digital video does match the ...
+2025-12-29 14:59:14 | INFO |   Words: 40 tokens
+2025-12-29 14:59:50 | INFO |   ✓ LIME-LLM scores generated (40 tokens)
+2025-12-29 14:59:50 | INFO | [3/30] sst2 - 170
+2025-12-29 14:59:50 | INFO |   Text: it 's also , clearly , great fun ....
+2025-12-29 14:59:50 | INFO |   Words: 9 tokens
+2025-12-29 15:00:06 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2025-12-29 15:00:06 | INFO | [4/30] sst2 - 602
+2025-12-29 15:00:06 | INFO |   Text: instead , he shows them the respect they are due ....
+2025-12-29 15:00:06 | INFO |   Words: 11 tokens
+2025-12-29 15:00:23 | INFO |   ✓ LIME-LLM scores generated (11 tokens)
+2025-12-29 15:00:23 | INFO | [5/30] sst2 - 287
+2025-12-29 15:00:23 | INFO |   Text: it 's a much more emotional journey than what shyamalan has given us in his past...
+2025-12-29 15:00:23 | INFO |   Words: 39 tokens
+2025-12-29 15:00:55 | INFO |   ✓ LIME-LLM scores generated (39 tokens)
+2025-12-29 15:00:55 | INFO | [6/30] sst2 - 302
+2025-12-29 15:00:55 | INFO |   Text: the wild thornberrys movie is a jolly surprise ....
+2025-12-29 15:00:55 | INFO |   Words: 9 tokens
+2025-12-29 15:01:12 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2025-12-29 15:01:12 | INFO | [7/30] sst2 - 148
+2025-12-29 15:01:12 | INFO |   Text: feels too formulaic and too familiar to produce the transgressive thrills of ear...
+2025-12-29 15:01:12 | INFO |   Words: 16 tokens
+2025-12-29 15:01:36 | INFO |   ✓ LIME-LLM scores generated (16 tokens)
+2025-12-29 15:01:36 | INFO | [8/30] sst2 - 835
+2025-12-29 15:01:36 | INFO |   Text: a giggle-inducing comedy with snappy dialogue and winning performances by an unl...
+2025-12-29 15:01:36 | INFO |   Words: 22 tokens
+2025-12-29 15:02:03 | INFO |   ✓ LIME-LLM scores generated (22 tokens)
+2025-12-29 15:02:03 | INFO | [9/30] sst2 - 345
+2025-12-29 15:02:03 | INFO |   Text: this tenth feature is a big deal , indeed -- at least the third-best , and maybe...
+2025-12-29 15:02:03 | INFO |   Words: 36 tokens
+2025-12-29 15:02:32 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2025-12-29 15:02:32 | INFO | [10/30] sst2 - 387
+2025-12-29 15:02:32 | INFO |   Text: director andrew niccol ... demonstrates a wry understanding of the quirks of fam...
+2025-12-29 15:02:32 | INFO |   Words: 14 tokens
+2025-12-29 15:02:52 | INFO |   ✓ LIME-LLM scores generated (14 tokens)
+2025-12-29 15:02:52 | WARNING | 
+✓ Results saved: results.csv
+2025-12-29 15:02:53 | INFO | 
+Generating evaluation plots...
+2025-12-29 15:02:53 | INFO |   Processing sst2...
+2025-12-29 15:02:53 | INFO |   ✓ Saved curves: curves_sst2.png
+2025-12-29 15:02:54 | INFO | 
+================================================================================
+2025-12-29 15:02:54 | INFO | AGGREGATE METRICS
+2025-12-29 15:02:54 | INFO | ================================================================================
+2025-12-29 15:02:54 | INFO | 
+sst2:
+2025-12-29 15:02:54 | INFO |   Partition SHAP      : ROC-AUC=0.6751, PR-AUC=0.4564 (n=208)
+2025-12-29 15:02:54 | INFO |   LIME                : ROC-AUC=0.7284, PR-AUC=0.5766 (n=208)
+2025-12-29 15:02:54 | INFO |   Integrated Gradient : ROC-AUC=0.5184, PR-AUC=0.3052 (n=208)
+2025-12-29 15:02:54 | INFO |   LIME-LLM            : ROC-AUC=0.7896, PR-AUC=0.3840 (n=208)
+2025-12-29 15:02:54 | INFO | 
+================================================================================
+2025-12-29 15:02:54 | INFO | ✓ PIPELINE COMPLETE
+2025-12-29 15:02:54 | INFO | Saved: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/aggregate_metrics.json
+2025-12-29 15:02:54 | INFO | ================================================================================
+
+2025-12-29 15:02:54 | WARNING | Failed examples 0/30
+[]
+2025-12-29 15:30:52 | INFO | 
+================================================================================
+2025-12-29 15:30:52 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-29 15:30:52 | INFO | Mode: FULL
+2025-12-29 15:30:52 | INFO | Provider: ANTHROPIC
+2025-12-29 15:30:52 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-29 15:30:52 | INFO | ================================================================================
+
+2025-12-29 15:30:55 | INFO | Exiting...
+2025-12-29 15:33:34 | INFO | 
+================================================================================
+2025-12-29 15:33:34 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-29 15:33:34 | INFO | Mode: FULL
+2025-12-29 15:33:34 | INFO | Provider: ANTHROPIC
+2025-12-29 15:33:34 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-29 15:33:34 | INFO | ================================================================================
+
+2025-12-29 15:33:36 | INFO | Exiting...
+2025-12-29 15:42:06 | INFO | 
+================================================================================
+2025-12-29 15:42:06 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-29 15:42:06 | INFO | Mode: FULL
+2025-12-29 15:42:06 | INFO | Provider: ANTHROPIC
+2025-12-29 15:42:06 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-29 15:42:06 | INFO | ================================================================================
+
+2025-12-29 15:42:10 | INFO | Exiting...
+2025-12-29 15:50:13 | INFO | 
+================================================================================
+2025-12-29 15:50:13 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-29 15:50:13 | INFO | Mode: FULL
+2025-12-29 15:50:13 | INFO | Provider: ANTHROPIC
+2025-12-29 15:50:13 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-29 15:50:13 | INFO | ================================================================================
+
+2025-12-29 15:50:17 | INFO | Processing 30 examples
+2025-12-29 15:50:17 | INFO | Total rows: 496
+2025-12-29 15:50:17 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2025-12-29 15:50:17 | INFO | [1/30] sst2 - 506
+2025-12-29 15:50:17 | INFO |   Text: crackerjack entertainment -- nonstop romance , music , suspense and action ....
+2025-12-29 15:50:17 | INFO |   Words: 12 tokens
+2025-12-29 15:50:18 | WARNING |   ✗ Error: get_prompts() missing 1 required positional argument: 'args'
+2025-12-29 15:51:23 | INFO | 
+================================================================================
+2025-12-29 15:51:23 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-29 15:51:23 | INFO | Mode: FULL
+2025-12-29 15:51:23 | INFO | Provider: ANTHROPIC
+2025-12-29 15:51:23 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-29 15:51:23 | INFO | ================================================================================
+
+2025-12-29 15:51:27 | INFO | Processing 30 examples
+2025-12-29 15:51:27 | INFO | Total rows: 496
+2025-12-29 15:51:27 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2025-12-29 15:51:27 | INFO | [1/30] sst2 - 506
+2025-12-29 15:51:27 | INFO |   Text: crackerjack entertainment -- nonstop romance , music , suspense and action ....
+2025-12-29 15:51:27 | INFO |   Words: 12 tokens
+2025-12-29 15:51:27 | WARNING |   ✗ Error: call_llm() missing 1 required positional argument: 'args'
+2025-12-29 15:52:16 | INFO | 
+================================================================================
+2025-12-29 15:52:16 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-29 15:52:16 | INFO | Mode: FULL
+2025-12-29 15:52:16 | INFO | Provider: ANTHROPIC
+2025-12-29 15:52:16 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-29 15:52:16 | INFO | ================================================================================
+
+2025-12-29 15:52:20 | INFO | Processing 30 examples
+2025-12-29 15:52:20 | INFO | Total rows: 496
+2025-12-29 15:52:20 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2025-12-29 15:52:20 | INFO | [1/30] sst2 - 506
+2025-12-29 15:52:20 | INFO |   Text: crackerjack entertainment -- nonstop romance , music , suspense and action ....
+2025-12-29 15:52:20 | INFO |   Words: 12 tokens
+2025-12-29 15:52:37 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2025-12-29 15:52:37 | INFO | [2/30] sst2 - 742
+2025-12-29 15:52:37 | INFO |   Text: it 's a demented kitsch mess ( although the smeary digital video does match the ...
+2025-12-29 15:52:37 | INFO |   Words: 40 tokens
+2025-12-29 15:53:14 | INFO |   ✓ LIME-LLM scores generated (40 tokens)
+2025-12-29 15:53:14 | INFO | [3/30] sst2 - 170
+2025-12-29 15:53:14 | INFO |   Text: it 's also , clearly , great fun ....
+2025-12-29 15:53:14 | INFO |   Words: 9 tokens
+2025-12-29 15:53:30 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2025-12-29 15:53:30 | INFO | [4/30] sst2 - 602
+2025-12-29 15:53:30 | INFO |   Text: instead , he shows them the respect they are due ....
+2025-12-29 15:53:30 | INFO |   Words: 11 tokens
+2025-12-29 15:53:47 | INFO |   ✓ LIME-LLM scores generated (11 tokens)
+2025-12-29 15:53:47 | INFO | [5/30] sst2 - 287
+2025-12-29 15:53:47 | INFO |   Text: it 's a much more emotional journey than what shyamalan has given us in his past...
+2025-12-29 15:53:47 | INFO |   Words: 39 tokens
+2025-12-29 15:54:18 | INFO |   ✓ LIME-LLM scores generated (39 tokens)
+2025-12-29 15:54:18 | INFO | [6/30] sst2 - 302
+2025-12-29 15:54:18 | INFO |   Text: the wild thornberrys movie is a jolly surprise ....
+2025-12-29 15:54:18 | INFO |   Words: 9 tokens
+2025-12-29 15:54:37 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2025-12-29 15:54:37 | INFO | [7/30] sst2 - 148
+2025-12-29 15:54:37 | INFO |   Text: feels too formulaic and too familiar to produce the transgressive thrills of ear...
+2025-12-29 15:54:37 | INFO |   Words: 16 tokens
+2025-12-29 15:54:59 | INFO |   ✓ LIME-LLM scores generated (16 tokens)
+2025-12-29 15:54:59 | INFO | [8/30] sst2 - 835
+2025-12-29 15:54:59 | INFO |   Text: a giggle-inducing comedy with snappy dialogue and winning performances by an unl...
+2025-12-29 15:54:59 | INFO |   Words: 22 tokens
+2025-12-29 15:55:16 | INFO | 
+================================================================================
+2025-12-29 15:55:16 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-29 15:55:16 | INFO | Mode: FULL
+2025-12-29 15:55:16 | INFO | Provider: ANTHROPIC
+2025-12-29 15:55:16 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-29 15:55:16 | INFO | ================================================================================
+
+2025-12-29 15:55:28 | INFO |   ✓ LIME-LLM scores generated (22 tokens)
+2025-12-29 15:55:28 | INFO | [9/30] sst2 - 345
+2025-12-29 15:55:28 | INFO |   Text: this tenth feature is a big deal , indeed -- at least the third-best , and maybe...
+2025-12-29 15:55:28 | INFO |   Words: 36 tokens
+2025-12-29 15:55:57 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2025-12-29 15:55:57 | INFO | [10/30] sst2 - 387
+2025-12-29 15:55:57 | INFO |   Text: director andrew niccol ... demonstrates a wry understanding of the quirks of fam...
+2025-12-29 15:55:57 | INFO |   Words: 14 tokens
+2025-12-29 15:56:17 | INFO |   ✓ LIME-LLM scores generated (14 tokens)
+2025-12-29 15:56:17 | WARNING | 
+✓ Results saved: results.csv
+2025-12-29 15:56:18 | INFO | 
+Generating evaluation plots...
+2025-12-29 15:56:18 | INFO |   Processing sst2...
+2025-12-29 15:56:19 | WARNING | Failed examples 0/30
+[]
+2025-12-29 16:33:25 | INFO | 
+================================================================================
+2025-12-29 16:33:25 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-29 16:33:25 | INFO | Mode: FULL
+2025-12-29 16:33:25 | INFO | Provider: ANTHROPIC
+2025-12-29 16:33:25 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-29 16:33:25 | INFO | ================================================================================
+
+2025-12-29 16:35:02 | INFO | 
+================================================================================
+2025-12-29 16:35:02 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-29 16:35:02 | INFO | Mode: FULL
+2025-12-29 16:35:02 | INFO | Provider: ANTHROPIC
+2025-12-29 16:35:02 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-29 16:35:02 | INFO | ================================================================================
+
+2025-12-29 16:35:08 | INFO | Processing 30 examples
+2025-12-29 16:35:08 | INFO | Total rows: 496
+2025-12-29 16:35:08 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2025-12-29 16:35:08 | INFO | [1/30] sst2 - 506
+2025-12-29 16:35:08 | INFO |   Text: crackerjack entertainment -- nonstop romance , music , suspense and action ....
+2025-12-29 16:35:08 | INFO |   Words: 12 tokens
+2025-12-29 16:35:26 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2025-12-29 16:35:26 | INFO | [2/30] sst2 - 742
+2025-12-29 16:35:26 | INFO |   Text: it 's a demented kitsch mess ( although the smeary digital video does match the ...
+2025-12-29 16:35:26 | INFO |   Words: 40 tokens
+2025-12-29 16:36:03 | INFO |   ✓ LIME-LLM scores generated (40 tokens)
+2025-12-29 16:36:03 | INFO | [3/30] sst2 - 170
+2025-12-29 16:36:03 | INFO |   Text: it 's also , clearly , great fun ....
+2025-12-29 16:36:03 | INFO |   Words: 9 tokens
+2025-12-29 16:36:20 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2025-12-29 16:36:20 | INFO | [4/30] sst2 - 602
+2025-12-29 16:36:20 | INFO |   Text: instead , he shows them the respect they are due ....
+2025-12-29 16:36:20 | INFO |   Words: 11 tokens
+2025-12-29 16:36:36 | INFO |   ✓ LIME-LLM scores generated (11 tokens)
+2025-12-29 16:36:36 | INFO | [5/30] sst2 - 287
+2025-12-29 16:36:36 | INFO |   Text: it 's a much more emotional journey than what shyamalan has given us in his past...
+2025-12-29 16:36:36 | INFO |   Words: 39 tokens
+2025-12-29 16:37:08 | INFO |   ✓ LIME-LLM scores generated (39 tokens)
+2025-12-29 16:37:08 | INFO | [6/30] sst2 - 302
+2025-12-29 16:37:08 | INFO |   Text: the wild thornberrys movie is a jolly surprise ....
+2025-12-29 16:37:08 | INFO |   Words: 9 tokens
+2025-12-29 16:37:26 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2025-12-29 16:37:26 | INFO | [7/30] sst2 - 148
+2025-12-29 16:37:26 | INFO |   Text: feels too formulaic and too familiar to produce the transgressive thrills of ear...
+2025-12-29 16:37:26 | INFO |   Words: 16 tokens
+2025-12-29 16:37:49 | INFO |   ✓ LIME-LLM scores generated (16 tokens)
+2025-12-29 16:37:49 | INFO | [8/30] sst2 - 835
+2025-12-29 16:37:49 | INFO |   Text: a giggle-inducing comedy with snappy dialogue and winning performances by an unl...
+2025-12-29 16:37:49 | INFO |   Words: 22 tokens
+2025-12-29 16:38:16 | INFO |   ✓ LIME-LLM scores generated (22 tokens)
+2025-12-29 16:38:16 | INFO | [9/30] sst2 - 345
+2025-12-29 16:38:16 | INFO |   Text: this tenth feature is a big deal , indeed -- at least the third-best , and maybe...
+2025-12-29 16:38:16 | INFO |   Words: 36 tokens
+2025-12-29 16:38:47 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2025-12-29 16:38:47 | INFO | [10/30] sst2 - 387
+2025-12-29 16:38:47 | INFO |   Text: director andrew niccol ... demonstrates a wry understanding of the quirks of fam...
+2025-12-29 16:38:47 | INFO |   Words: 14 tokens
+2025-12-29 16:39:07 | INFO |   ✓ LIME-LLM scores generated (14 tokens)
+2025-12-29 16:39:07 | WARNING | 
+✓ Results saved: results.csv
+2025-12-29 16:39:08 | INFO | 
+Generating evaluation plots...
+2025-12-29 16:39:08 | INFO |   Processing sst2...
+2025-12-29 16:43:07 | INFO | 
+================================================================================
+2025-12-29 16:43:07 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-29 16:43:07 | INFO | Mode: FULL
+2025-12-29 16:43:07 | INFO | Provider: ANTHROPIC
+2025-12-29 16:43:07 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-29 16:43:07 | INFO | ================================================================================
+
+2025-12-29 16:51:49 | INFO | Processing 30 examples
+2025-12-29 16:51:49 | INFO | Total rows: 496
+2025-12-29 16:51:49 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2025-12-29 16:51:49 | INFO | [1/30] sst2 - 506
+2025-12-29 16:51:49 | INFO |   Text: crackerjack entertainment -- nonstop romance , music , suspense and action ....
+2025-12-29 16:51:49 | INFO |   Words: 12 tokens
+2025-12-29 16:52:06 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2025-12-29 16:52:06 | INFO | [2/30] sst2 - 742
+2025-12-29 16:52:06 | INFO |   Text: it 's a demented kitsch mess ( although the smeary digital video does match the ...
+2025-12-29 16:52:06 | INFO |   Words: 40 tokens
+2025-12-29 16:52:45 | INFO |   ✓ LIME-LLM scores generated (40 tokens)
+2025-12-29 16:52:45 | INFO | [3/30] sst2 - 170
+2025-12-29 16:52:45 | INFO |   Text: it 's also , clearly , great fun ....
+2025-12-29 16:52:45 | INFO |   Words: 9 tokens
+2025-12-29 16:53:02 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2025-12-29 16:53:02 | INFO | [4/30] sst2 - 602
+2025-12-29 16:53:02 | INFO |   Text: instead , he shows them the respect they are due ....
+2025-12-29 16:53:02 | INFO |   Words: 11 tokens
+2025-12-29 16:53:19 | INFO |   ✓ LIME-LLM scores generated (11 tokens)
+2025-12-29 16:53:19 | INFO | [5/30] sst2 - 287
+2025-12-29 16:53:19 | INFO |   Text: it 's a much more emotional journey than what shyamalan has given us in his past...
+2025-12-29 16:53:19 | INFO |   Words: 39 tokens
+2025-12-29 16:53:50 | INFO |   ✓ LIME-LLM scores generated (39 tokens)
+2025-12-29 16:53:50 | INFO | [6/30] sst2 - 302
+2025-12-29 16:53:50 | INFO |   Text: the wild thornberrys movie is a jolly surprise ....
+2025-12-29 16:53:50 | INFO |   Words: 9 tokens
+2025-12-29 16:54:08 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2025-12-29 16:54:08 | INFO | [7/30] sst2 - 148
+2025-12-29 16:54:08 | INFO |   Text: feels too formulaic and too familiar to produce the transgressive thrills of ear...
+2025-12-29 16:54:08 | INFO |   Words: 16 tokens
+2025-12-29 16:54:31 | INFO |   ✓ LIME-LLM scores generated (16 tokens)
+2025-12-29 16:54:31 | INFO | [8/30] sst2 - 835
+2025-12-29 16:54:31 | INFO |   Text: a giggle-inducing comedy with snappy dialogue and winning performances by an unl...
+2025-12-29 16:54:31 | INFO |   Words: 22 tokens
+2025-12-29 16:54:58 | INFO |   ✓ LIME-LLM scores generated (22 tokens)
+2025-12-29 16:54:58 | INFO | [9/30] sst2 - 345
+2025-12-29 16:54:58 | INFO |   Text: this tenth feature is a big deal , indeed -- at least the third-best , and maybe...
+2025-12-29 16:54:58 | INFO |   Words: 36 tokens
+2025-12-29 16:55:28 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2025-12-29 16:55:28 | INFO | [10/30] sst2 - 387
+2025-12-29 16:55:28 | INFO |   Text: director andrew niccol ... demonstrates a wry understanding of the quirks of fam...
+2025-12-29 16:55:28 | INFO |   Words: 14 tokens
+2025-12-29 16:55:48 | INFO |   ✓ LIME-LLM scores generated (14 tokens)
+2025-12-29 16:55:48 | WARNING | 
+✓ Results saved: results.csv
+2025-12-29 16:55:48 | INFO | 
+Generating evaluation plots...
+2025-12-29 16:55:48 | INFO |   Processing sst2...
+2025-12-29 16:55:49 | WARNING | Failed examples 0/30
+[]
+2025-12-31 14:03:44 | INFO | 
+================================================================================
+2025-12-31 14:03:44 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-31 14:03:44 | INFO | Mode: FULL
+2025-12-31 14:03:44 | INFO | Provider: ANTHROPIC
+2025-12-31 14:03:44 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-31 14:03:44 | INFO | ================================================================================
+
+2025-12-31 14:03:44 | INFO | df_sample: 496
+2025-12-31 14:03:53 | INFO | Processing 30 examples
+2025-12-31 14:03:53 | INFO | Total rows: 496
+2025-12-31 14:03:53 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2025-12-31 14:03:53 | INFO | [1/30] sst2 - 506
+2025-12-31 14:03:53 | INFO |   Text: crackerjack entertainment -- nonstop romance , music , suspense and action ....
+2025-12-31 14:03:53 | INFO |   Words: 12 tokens
+2025-12-31 14:04:11 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2025-12-31 14:04:11 | INFO | [2/30] sst2 - 742
+2025-12-31 14:04:11 | INFO |   Text: it 's a demented kitsch mess ( although the smeary digital video does match the ...
+2025-12-31 14:04:11 | INFO |   Words: 40 tokens
+2025-12-31 14:04:47 | INFO |   ✓ LIME-LLM scores generated (40 tokens)
+2025-12-31 14:04:47 | INFO | [3/30] sst2 - 170
+2025-12-31 14:04:47 | INFO |   Text: it 's also , clearly , great fun ....
+2025-12-31 14:04:47 | INFO |   Words: 9 tokens
+2025-12-31 14:05:04 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2025-12-31 14:05:04 | INFO | [4/30] sst2 - 602
+2025-12-31 14:05:04 | INFO |   Text: instead , he shows them the respect they are due ....
+2025-12-31 14:05:04 | INFO |   Words: 11 tokens
+2025-12-31 14:05:21 | INFO |   ✓ LIME-LLM scores generated (11 tokens)
+2025-12-31 14:05:21 | INFO | [5/30] sst2 - 287
+2025-12-31 14:05:21 | INFO |   Text: it 's a much more emotional journey than what shyamalan has given us in his past...
+2025-12-31 14:05:21 | INFO |   Words: 39 tokens
+2025-12-31 14:05:53 | INFO |   ✓ LIME-LLM scores generated (39 tokens)
+2025-12-31 14:05:53 | INFO | [6/30] sst2 - 302
+2025-12-31 14:05:53 | INFO |   Text: the wild thornberrys movie is a jolly surprise ....
+2025-12-31 14:05:53 | INFO |   Words: 9 tokens
+2025-12-31 14:06:11 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2025-12-31 14:06:11 | INFO | [7/30] sst2 - 148
+2025-12-31 14:06:11 | INFO |   Text: feels too formulaic and too familiar to produce the transgressive thrills of ear...
+2025-12-31 14:06:11 | INFO |   Words: 16 tokens
+2025-12-31 14:06:35 | INFO |   ✓ LIME-LLM scores generated (16 tokens)
+2025-12-31 14:06:35 | INFO | [8/30] sst2 - 835
+2025-12-31 14:06:35 | INFO |   Text: a giggle-inducing comedy with snappy dialogue and winning performances by an unl...
+2025-12-31 14:06:35 | INFO |   Words: 22 tokens
+2025-12-31 14:07:03 | INFO |   ✓ LIME-LLM scores generated (22 tokens)
+2025-12-31 14:07:03 | INFO | [9/30] sst2 - 345
+2025-12-31 14:07:03 | INFO |   Text: this tenth feature is a big deal , indeed -- at least the third-best , and maybe...
+2025-12-31 14:07:03 | INFO |   Words: 36 tokens
+2025-12-31 14:07:34 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2025-12-31 14:07:34 | INFO | [10/30] sst2 - 387
+2025-12-31 14:07:34 | INFO |   Text: director andrew niccol ... demonstrates a wry understanding of the quirks of fam...
+2025-12-31 14:07:34 | INFO |   Words: 14 tokens
+2025-12-31 14:07:54 | INFO |   ✓ LIME-LLM scores generated (14 tokens)
+2025-12-31 14:18:10 | INFO | 
+================================================================================
+2025-12-31 14:18:10 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2025-12-31 14:18:10 | INFO | Mode: FULL
+2025-12-31 14:18:10 | INFO | Provider: ANTHROPIC
+2025-12-31 14:18:10 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2025-12-31 14:18:10 | INFO | ================================================================================
+
+2025-12-31 14:18:10 | INFO | df_sample: 496
+2025-12-31 14:18:14 | INFO | Processing 30 examples
+2025-12-31 14:18:14 | INFO | Total rows: 496
+2025-12-31 14:18:14 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2025-12-31 14:18:14 | INFO | [1/30] sst2 - 506
+2025-12-31 14:18:14 | INFO |   Text: crackerjack entertainment -- nonstop romance , music , suspense and action ....
+2025-12-31 14:18:14 | INFO |   Words: 12 tokens
+2025-12-31 14:18:32 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2025-12-31 14:18:32 | INFO | [2/30] sst2 - 742
+2025-12-31 14:18:32 | INFO |   Text: it 's a demented kitsch mess ( although the smeary digital video does match the ...
+2025-12-31 14:18:32 | INFO |   Words: 40 tokens
+2025-12-31 14:19:09 | INFO |   ✓ LIME-LLM scores generated (40 tokens)
+2025-12-31 14:19:09 | INFO | [3/30] sst2 - 170
+2025-12-31 14:19:09 | INFO |   Text: it 's also , clearly , great fun ....
+2025-12-31 14:19:09 | INFO |   Words: 9 tokens
+2025-12-31 14:19:25 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2025-12-31 14:19:25 | INFO | [4/30] sst2 - 602
+2025-12-31 14:19:25 | INFO |   Text: instead , he shows them the respect they are due ....
+2025-12-31 14:19:25 | INFO |   Words: 11 tokens
+2025-12-31 14:19:43 | INFO |   ✓ LIME-LLM scores generated (11 tokens)
+2025-12-31 14:19:43 | INFO | [5/30] sst2 - 287
+2025-12-31 14:19:43 | INFO |   Text: it 's a much more emotional journey than what shyamalan has given us in his past...
+2025-12-31 14:19:43 | INFO |   Words: 39 tokens
+2025-12-31 14:20:14 | INFO |   ✓ LIME-LLM scores generated (39 tokens)
+2025-12-31 14:20:14 | INFO | [6/30] sst2 - 302
+2025-12-31 14:20:14 | INFO |   Text: the wild thornberrys movie is a jolly surprise ....
+2025-12-31 14:20:14 | INFO |   Words: 9 tokens
+2025-12-31 14:20:32 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2025-12-31 14:20:32 | INFO | [7/30] sst2 - 148
+2025-12-31 14:20:32 | INFO |   Text: feels too formulaic and too familiar to produce the transgressive thrills of ear...
+2025-12-31 14:20:32 | INFO |   Words: 16 tokens
+2025-12-31 14:20:56 | INFO |   ✓ LIME-LLM scores generated (16 tokens)
+2025-12-31 14:20:56 | INFO | [8/30] sst2 - 835
+2025-12-31 14:20:56 | INFO |   Text: a giggle-inducing comedy with snappy dialogue and winning performances by an unl...
+2025-12-31 14:20:56 | INFO |   Words: 22 tokens
+2025-12-31 14:21:23 | INFO |   ✓ LIME-LLM scores generated (22 tokens)
+2025-12-31 14:21:23 | INFO | [9/30] sst2 - 345
+2025-12-31 14:21:23 | INFO |   Text: this tenth feature is a big deal , indeed -- at least the third-best , and maybe...
+2025-12-31 14:21:23 | INFO |   Words: 36 tokens
+2025-12-31 14:21:53 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2025-12-31 14:21:53 | INFO | [10/30] sst2 - 387
+2025-12-31 14:21:53 | INFO |   Text: director andrew niccol ... demonstrates a wry understanding of the quirks of fam...
+2025-12-31 14:21:53 | INFO |   Words: 14 tokens
+2025-12-31 14:22:12 | INFO |   ✓ LIME-LLM scores generated (14 tokens)
+2025-12-31 14:22:12 | WARNING | 
+✓ Results saved: results.csv
+2025-12-31 14:22:13 | INFO | 
+Generating evaluation plots...
+2025-12-31 14:22:13 | INFO |   Processing sst2...
+2025-12-31 14:22:14 | WARNING | Failed examples 0/30
+[]
+2026-01-01 17:09:32 | INFO | 
+================================================================================
+2026-01-01 17:09:32 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2026-01-01 17:09:32 | INFO | Mode: FULL
+2026-01-01 17:09:32 | INFO | Provider: ANTHROPIC
+2026-01-01 17:09:32 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2026-01-01 17:09:32 | INFO | ================================================================================
+
+2026-01-01 17:09:32 | INFO | df_sample: 496
+2026-01-01 17:10:04 | INFO | Processing 30 examples
+2026-01-01 17:10:04 | INFO | Total rows: 496
+2026-01-01 17:10:04 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2026-01-01 17:10:05 | INFO | [1/30] sst2 - 506
+2026-01-01 17:10:05 | INFO |   Text: crackerjack entertainment -- nonstop romance , music , suspense and action ....
+2026-01-01 17:10:05 | INFO |   Words: 12 tokens
+2026-01-01 17:10:23 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2026-01-01 17:10:23 | INFO | [2/30] sst2 - 742
+2026-01-01 17:10:23 | INFO |   Text: it 's a demented kitsch mess ( although the smeary digital video does match the ...
+2026-01-01 17:10:23 | INFO |   Words: 40 tokens
+2026-01-01 17:11:01 | INFO |   ✓ LIME-LLM scores generated (40 tokens)
+2026-01-01 17:11:01 | INFO | [3/30] sst2 - 170
+2026-01-01 17:11:01 | INFO |   Text: it 's also , clearly , great fun ....
+2026-01-01 17:11:01 | INFO |   Words: 9 tokens
+2026-01-01 17:11:18 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2026-01-01 17:11:18 | INFO | [4/30] sst2 - 602
+2026-01-01 17:11:18 | INFO |   Text: instead , he shows them the respect they are due ....
+2026-01-01 17:11:18 | INFO |   Words: 11 tokens
+2026-01-01 17:11:35 | INFO |   ✓ LIME-LLM scores generated (11 tokens)
+2026-01-01 17:11:35 | INFO | [5/30] sst2 - 287
+2026-01-01 17:11:35 | INFO |   Text: it 's a much more emotional journey than what shyamalan has given us in his past...
+2026-01-01 17:11:35 | INFO |   Words: 39 tokens
+2026-01-01 17:12:06 | INFO |   ✓ LIME-LLM scores generated (39 tokens)
+2026-01-01 17:12:06 | INFO | [6/30] sst2 - 302
+2026-01-01 17:12:06 | INFO |   Text: the wild thornberrys movie is a jolly surprise ....
+2026-01-01 17:12:06 | INFO |   Words: 9 tokens
+2026-01-01 17:12:25 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2026-01-01 17:12:25 | INFO | [7/30] sst2 - 148
+2026-01-01 17:12:25 | INFO |   Text: feels too formulaic and too familiar to produce the transgressive thrills of ear...
+2026-01-01 17:12:25 | INFO |   Words: 16 tokens
+2026-01-01 17:12:48 | INFO |   ✓ LIME-LLM scores generated (16 tokens)
+2026-01-01 17:12:48 | INFO | [8/30] sst2 - 835
+2026-01-01 17:12:48 | INFO |   Text: a giggle-inducing comedy with snappy dialogue and winning performances by an unl...
+2026-01-01 17:12:48 | INFO |   Words: 22 tokens
+2026-01-01 17:13:16 | INFO |   ✓ LIME-LLM scores generated (22 tokens)
+2026-01-01 17:13:16 | INFO | [9/30] sst2 - 345
+2026-01-01 17:13:16 | INFO |   Text: this tenth feature is a big deal , indeed -- at least the third-best , and maybe...
+2026-01-01 17:13:16 | INFO |   Words: 36 tokens
+2026-01-01 17:13:47 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2026-01-01 17:13:47 | INFO | [10/30] sst2 - 387
+2026-01-01 17:13:47 | INFO |   Text: director andrew niccol ... demonstrates a wry understanding of the quirks of fam...
+2026-01-01 17:13:47 | INFO |   Words: 14 tokens
+2026-01-01 17:14:07 | INFO |   ✓ LIME-LLM scores generated (14 tokens)
+2026-01-01 17:14:07 | WARNING | 
+✓ Results saved: results.csv
+2026-01-01 17:14:08 | INFO | 
+Generating evaluation plots...
+2026-01-01 17:14:08 | INFO |   Processing sst2...
+2026-01-02 11:06:29 | INFO | 
+================================================================================
+2026-01-02 11:06:29 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2026-01-02 11:06:29 | INFO | Mode: FULL
+2026-01-02 11:06:29 | INFO | Provider: ANTHROPIC
+2026-01-02 11:06:29 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2026-01-02 11:06:29 | INFO | ================================================================================
+
+2026-01-02 11:06:29 | INFO | df_sample: 496
+2026-01-02 11:06:56 | INFO | Processing 30 examples
+2026-01-02 11:06:56 | INFO | Total rows: 496
+2026-01-02 11:06:56 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2026-01-02 11:06:57 | INFO | [1/30] sst2 - 506
+2026-01-02 11:06:57 | INFO |   Text: crackerjack entertainment -- nonstop romance , music , suspense and action ....
+2026-01-02 11:06:57 | INFO |   Words: 12 tokens
+2026-01-02 11:06:57 | INFO | Use pytorch device_name: mps
+2026-01-02 11:07:14 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 11:07:14 | INFO | Use pytorch device_name: mps
+2026-01-02 11:07:14 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 11:07:16 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2026-01-02 11:07:16 | INFO | [2/30] sst2 - 742
+2026-01-02 11:07:16 | INFO |   Text: it 's a demented kitsch mess ( although the smeary digital video does match the ...
+2026-01-02 11:07:16 | INFO |   Words: 40 tokens
+2026-01-02 11:07:16 | INFO | Use pytorch device_name: mps
+2026-01-02 11:07:51 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 11:07:51 | INFO | Use pytorch device_name: mps
+2026-01-02 11:07:51 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 11:07:53 | INFO |   ✓ LIME-LLM scores generated (40 tokens)
+2026-01-02 11:07:53 | INFO | [3/30] sst2 - 170
+2026-01-02 11:07:53 | INFO |   Text: it 's also , clearly , great fun ....
+2026-01-02 11:07:53 | INFO |   Words: 9 tokens
+2026-01-02 11:07:53 | INFO | Use pytorch device_name: mps
+2026-01-02 11:08:08 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 11:08:08 | INFO | Use pytorch device_name: mps
+2026-01-02 11:08:08 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 11:08:09 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2026-01-02 11:08:09 | INFO | [4/30] sst2 - 602
+2026-01-02 11:08:09 | INFO |   Text: instead , he shows them the respect they are due ....
+2026-01-02 11:08:09 | INFO |   Words: 11 tokens
+2026-01-02 11:08:09 | INFO | Use pytorch device_name: mps
+2026-01-02 11:08:24 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 11:08:24 | INFO | Use pytorch device_name: mps
+2026-01-02 11:08:24 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 11:08:26 | INFO |   ✓ LIME-LLM scores generated (11 tokens)
+2026-01-02 11:08:26 | INFO | [5/30] sst2 - 287
+2026-01-02 11:08:26 | INFO |   Text: it 's a much more emotional journey than what shyamalan has given us in his past...
+2026-01-02 11:08:26 | INFO |   Words: 39 tokens
+2026-01-02 11:08:26 | INFO | Use pytorch device_name: mps
+2026-01-02 11:08:56 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 11:08:56 | INFO | Use pytorch device_name: mps
+2026-01-02 11:08:56 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 11:08:57 | INFO |   ✓ LIME-LLM scores generated (39 tokens)
+2026-01-02 11:08:57 | INFO | [6/30] sst2 - 302
+2026-01-02 11:08:57 | INFO |   Text: the wild thornberrys movie is a jolly surprise ....
+2026-01-02 11:08:57 | INFO |   Words: 9 tokens
+2026-01-02 11:08:58 | INFO | Use pytorch device_name: mps
+2026-01-02 11:09:14 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 11:09:14 | INFO | Use pytorch device_name: mps
+2026-01-02 11:09:14 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 11:09:15 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2026-01-02 11:09:15 | INFO | [7/30] sst2 - 148
+2026-01-02 11:09:15 | INFO |   Text: feels too formulaic and too familiar to produce the transgressive thrills of ear...
+2026-01-02 11:09:15 | INFO |   Words: 16 tokens
+2026-01-02 11:09:16 | INFO | Use pytorch device_name: mps
+2026-01-02 11:09:37 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 11:09:37 | INFO | Use pytorch device_name: mps
+2026-01-02 11:09:37 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 11:09:39 | INFO |   ✓ LIME-LLM scores generated (16 tokens)
+2026-01-02 11:09:39 | INFO | [8/30] sst2 - 835
+2026-01-02 11:09:39 | INFO |   Text: a giggle-inducing comedy with snappy dialogue and winning performances by an unl...
+2026-01-02 11:09:39 | INFO |   Words: 22 tokens
+2026-01-02 11:09:39 | INFO | Use pytorch device_name: mps
+2026-01-02 11:10:05 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 11:10:05 | INFO | Use pytorch device_name: mps
+2026-01-02 11:10:05 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 11:10:07 | INFO |   ✓ LIME-LLM scores generated (22 tokens)
+2026-01-02 11:10:07 | INFO | [9/30] sst2 - 345
+2026-01-02 11:10:07 | INFO |   Text: this tenth feature is a big deal , indeed -- at least the third-best , and maybe...
+2026-01-02 11:10:07 | INFO |   Words: 36 tokens
+2026-01-02 11:10:07 | INFO | Use pytorch device_name: mps
+2026-01-02 11:10:36 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 11:10:36 | INFO | Use pytorch device_name: mps
+2026-01-02 11:10:36 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 11:10:37 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2026-01-02 11:10:37 | INFO | [10/30] sst2 - 387
+2026-01-02 11:10:37 | INFO |   Text: director andrew niccol ... demonstrates a wry understanding of the quirks of fam...
+2026-01-02 11:10:37 | INFO |   Words: 14 tokens
+2026-01-02 11:10:38 | INFO | Use pytorch device_name: mps
+2026-01-02 11:10:55 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 11:10:55 | INFO | Use pytorch device_name: mps
+2026-01-02 11:10:55 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 11:10:57 | INFO |   ✓ LIME-LLM scores generated (14 tokens)
+2026-01-02 11:10:57 | WARNING | 
+✓ Results saved: results.csv
+2026-01-02 11:10:58 | INFO | 
+Generating evaluation plots...
+2026-01-02 11:10:58 | INFO |   Processing sst2...
+2026-01-02 11:10:59 | INFO |   ✓ Saved curves: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/curves_sst2.png
+2026-01-02 11:11:00 | INFO | 
+================================================================================
+2026-01-02 11:11:00 | INFO | AGGREGATE METRICS (Multi-Seed Analysis)
+2026-01-02 11:11:00 | INFO | ================================================================================
+2026-01-02 11:11:00 | INFO | 
+sst2:
+2026-01-02 11:11:08 | INFO |   LIME                : ROC_AUC=0.6043±0.0128 PR_AUC=0.3281±0.0078 (seeds=22)
+2026-01-02 11:11:11 | INFO |   LIME                : ROC_AUC=0.6043±0.0128 PR_AUC=0.3281±0.0078 (seeds=22)
+2026-01-02 11:11:13 | INFO |   LIME                : ROC_AUC=0.6043±0.0128 PR_AUC=0.3281±0.0078 (seeds=22)
+2026-01-02 11:11:17 | INFO | ✓ PIPELINE COMPLETE
+2026-01-02 11:11:21 | INFO |   LIME                : ROC_AUC=0.6043±0.0128 PR_AUC=0.3281±0.0078 (seeds=22)
+2026-01-02 11:11:21 | INFO |   Partition SHAP      : ROC_AUC=0.5203 PR_AUC=0.3011 (seeds=1)
+2026-01-02 11:11:21 | INFO |   Integrated Gradient : ROC_AUC=0.7687 PR_AUC=0.5748 (seeds=1)
+2026-01-02 11:11:21 | INFO |   LIME-LLM            : ROC_AUC=0.7782 PR_AUC=0.3702 (seeds=1)
+2026-01-02 11:11:21 | INFO | 
+================================================================================
+2026-01-02 11:11:21 | INFO | ✓ PIPELINE COMPLETE
+2026-01-02 11:11:21 | INFO | Saved: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/aggregate_metrics.json
+2026-01-02 11:11:21 | INFO | ================================================================================
+
+2026-01-02 11:11:21 | WARNING | Failed examples 0/30
+[]
+2026-01-02 11:50:50 | INFO | 
+================================================================================
+2026-01-02 11:50:50 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2026-01-02 11:50:50 | INFO | Mode: FULL
+2026-01-02 11:50:50 | INFO | Provider: ANTHROPIC
+2026-01-02 11:50:50 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2026-01-02 11:50:50 | INFO | ================================================================================
+
+2026-01-02 11:50:50 | INFO | df_sample: 496
+2026-01-02 11:50:55 | INFO | Processing 30 examples
+2026-01-02 11:50:55 | INFO | Total rows: 496
+2026-01-02 11:50:55 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2026-01-02 11:50:55 | INFO | [11/30] cola - 1017
+2026-01-02 11:50:55 | INFO |   Text: It is the problem that he is here....
+2026-01-02 11:50:55 | INFO |   Words: 8 tokens
+2026-01-02 11:50:56 | INFO | Use pytorch device_name: mps
+2026-01-02 11:51:10 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 11:51:10 | INFO | Use pytorch device_name: mps
+2026-01-02 11:51:10 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 11:51:11 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2026-01-02 11:51:11 | INFO | [12/30] cola - 23
+2026-01-02 11:51:11 | INFO |   Text: Mickey looked up it....
+2026-01-02 11:51:11 | INFO |   Words: 4 tokens
+2026-01-02 11:51:12 | INFO | Use pytorch device_name: mps
+2026-01-02 11:51:24 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 11:51:24 | INFO | Use pytorch device_name: mps
+2026-01-02 11:51:24 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 11:51:25 | INFO |   ✓ LIME-LLM scores generated (4 tokens)
+2026-01-02 11:51:25 | INFO | [13/30] cola - 354
+2026-01-02 11:51:25 | INFO |   Text: the panther's the coat is dark black....
+2026-01-02 11:51:25 | INFO |   Words: 7 tokens
+2026-01-02 11:51:25 | INFO | Use pytorch device_name: mps
+2026-01-02 11:51:39 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 11:51:39 | INFO | Use pytorch device_name: mps
+2026-01-02 11:51:39 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 11:51:41 | INFO |   ✓ LIME-LLM scores generated (7 tokens)
+2026-01-02 11:51:41 | INFO | [14/30] cola - 191
+2026-01-02 11:51:41 | INFO |   Text: I shaped a loaf....
+2026-01-02 11:51:41 | INFO |   Words: 4 tokens
+2026-01-02 11:51:42 | INFO | Use pytorch device_name: mps
+2026-01-02 11:51:53 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 11:51:53 | INFO | Use pytorch device_name: mps
+2026-01-02 11:51:53 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 11:51:55 | INFO |   ✓ LIME-LLM scores generated (4 tokens)
+2026-01-02 11:51:55 | INFO | [15/30] cola - 170
+2026-01-02 11:51:55 | INFO |   Text: Carla slid at the book....
+2026-01-02 11:51:55 | INFO |   Words: 5 tokens
+2026-01-02 11:51:55 | INFO | Use pytorch device_name: mps
+2026-01-02 11:52:08 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 11:52:08 | INFO | Use pytorch device_name: mps
+2026-01-02 11:52:08 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 11:52:09 | INFO |   ✓ LIME-LLM scores generated (5 tokens)
+2026-01-02 11:52:09 | INFO | [16/30] cola - 384
+2026-01-02 11:52:09 | INFO |   Text: John thinks that Mary loves himself....
+2026-01-02 11:52:09 | INFO |   Words: 6 tokens
+2026-01-02 11:52:10 | INFO | Use pytorch device_name: mps
+2026-01-02 11:52:23 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 11:52:23 | INFO | Use pytorch device_name: mps
+2026-01-02 11:52:23 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 11:52:25 | INFO |   ✓ LIME-LLM scores generated (6 tokens)
+2026-01-02 11:52:25 | INFO | [17/30] cola - 733
+2026-01-02 11:52:25 | INFO |   Text: Who for Sandy to talk to is still enrolled in the class?...
+2026-01-02 11:52:25 | INFO |   Words: 12 tokens
+2026-01-02 11:52:25 | INFO | Use pytorch device_name: mps
+2026-01-02 11:52:41 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 11:52:41 | INFO | Use pytorch device_name: mps
+2026-01-02 11:52:41 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 11:52:42 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2026-01-02 11:52:42 | INFO | [18/30] cola - 813
+2026-01-02 11:52:42 | INFO |   Text: Birds sings....
+2026-01-02 11:52:42 | INFO |   Words: 2 tokens
+2026-01-02 11:52:43 | INFO | Use pytorch device_name: mps
+2026-01-02 11:52:53 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 11:52:53 | INFO | Use pytorch device_name: mps
+2026-01-02 11:52:53 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 11:52:55 | INFO |   ✓ LIME-LLM scores generated (2 tokens)
+2026-01-02 11:52:55 | INFO | [19/30] cola - 836
+2026-01-02 11:52:55 | INFO |   Text: We relied above Leslie....
+2026-01-02 11:52:55 | INFO |   Words: 4 tokens
+2026-01-02 11:52:55 | INFO | Use pytorch device_name: mps
+2026-01-02 11:53:08 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 11:53:08 | INFO | Use pytorch device_name: mps
+2026-01-02 11:53:08 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 11:53:09 | INFO |   ✓ LIME-LLM scores generated (4 tokens)
+2026-01-02 11:53:09 | INFO | [20/30] cola - 880
+2026-01-02 11:53:09 | INFO |   Text: I enjoy yourself....
+2026-01-02 11:53:09 | INFO |   Words: 3 tokens
+2026-01-02 11:53:09 | INFO | Use pytorch device_name: mps
+2026-01-02 11:53:20 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 11:53:20 | INFO | Use pytorch device_name: mps
+2026-01-02 11:53:20 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 11:53:21 | INFO |   ✓ LIME-LLM scores generated (3 tokens)
+2026-01-02 11:53:21 | WARNING | 
+✓ Results saved: results.csv
+2026-01-02 11:53:22 | INFO | 
+Generating evaluation plots...
+2026-01-02 11:53:22 | INFO |   Processing cola...
+2026-01-02 11:53:23 | INFO |   ✓ Saved curves: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/curves_cola.png
+2026-01-02 11:53:23 | INFO | 
+================================================================================
+2026-01-02 11:53:23 | INFO | AGGREGATE METRICS (Multi-Seed Analysis)
+2026-01-02 11:53:23 | INFO | ================================================================================
+2026-01-02 11:53:23 | INFO | 
+cola:
+2026-01-02 11:53:23 | INFO |   LIME                : ROC_AUC=0.1732±0.0037 PR_AUC=0.1429±0.0007 (seeds=22)
+2026-01-02 11:53:23 | INFO |   Partition SHAP      : ROC_AUC=0.4167 PR_AUC=0.3239 (seeds=1)
+2026-01-02 11:53:23 | INFO |   Integrated Gradient : ROC_AUC=0.6337 PR_AUC=0.4830 (seeds=1)
+2026-01-02 11:53:23 | INFO |   LIME-LLM            : ROC_AUC=0.6609 PR_AUC=0.5047 (seeds=1)
+2026-01-02 11:53:23 | INFO | 
+================================================================================
+2026-01-02 11:53:23 | INFO | ✓ PIPELINE COMPLETE
+2026-01-02 11:53:23 | INFO | Saved: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/aggregate_metrics.json
+2026-01-02 11:53:23 | INFO | ================================================================================
+
+2026-01-02 11:53:23 | WARNING | Failed examples 0/30
+[]
+2026-01-02 12:00:01 | INFO | 
+================================================================================
+2026-01-02 12:00:01 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2026-01-02 12:00:01 | INFO | Mode: FULL
+2026-01-02 12:00:01 | INFO | Provider: ANTHROPIC
+2026-01-02 12:00:01 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2026-01-02 12:00:01 | INFO | ================================================================================
+
+2026-01-02 12:00:01 | INFO | df_sample: 496
+2026-01-02 12:00:17 | INFO | Processing 30 examples
+2026-01-02 12:00:17 | INFO | Total rows: 496
+2026-01-02 12:00:17 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2026-01-02 12:00:17 | INFO | [21/30] hatexplain - 4701852_gab
+2026-01-02 12:00:17 | INFO |   Text: fanbloodytastic by time these leeches are held to account especially the muzzie ...
+2026-01-02 12:00:17 | INFO |   Words: 36 tokens
+2026-01-02 12:00:18 | INFO | Use pytorch device_name: mps
+2026-01-02 12:00:49 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:00:49 | INFO | Use pytorch device_name: mps
+2026-01-02 12:00:49 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:00:51 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2026-01-02 12:00:51 | INFO | [22/30] hatexplain - 21242245_gab
+2026-01-02 12:00:51 | INFO |   Text: hm [UNK] maybe if i survive my chemo and grow up i could be a lifeguard at a nig...
+2026-01-02 12:00:51 | INFO |   Words: 22 tokens
+2026-01-02 12:00:52 | INFO | Use pytorch device_name: mps
+2026-01-02 12:01:15 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:01:15 | INFO | Use pytorch device_name: mps
+2026-01-02 12:01:15 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:01:17 | INFO |   ✓ LIME-LLM scores generated (22 tokens)
+2026-01-02 12:01:17 | INFO | [23/30] hatexplain - 3Z8UJEJOCZEG603II1EL4BE4QZH93Z_nf_4
+2026-01-02 12:01:17 | INFO |   Text: then an older nigger wearing an apron dressed like a kitchen staff member and ho...
+2026-01-02 12:01:17 | INFO |   Words: 36 tokens
+2026-01-02 12:01:18 | INFO | Use pytorch device_name: mps
+2026-01-02 12:01:48 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:01:48 | INFO | Use pytorch device_name: mps
+2026-01-02 12:01:48 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:01:52 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2026-01-02 12:01:52 | INFO | [24/30] hatexplain - 21112613_gab
+2026-01-02 12:01:52 | INFO |   Text: trudeau is a muzzie loving faggot he loves the goathumpers at the expense of can...
+2026-01-02 12:01:52 | INFO |   Words: 25 tokens
+2026-01-02 12:01:53 | INFO | Use pytorch device_name: mps
+2026-01-02 12:02:17 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:02:17 | INFO | Use pytorch device_name: mps
+2026-01-02 12:02:17 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:02:19 | INFO |   ✓ LIME-LLM scores generated (25 tokens)
+2026-01-02 12:02:19 | INFO | [25/30] hatexplain - 15132440_gab
+2026-01-02 12:02:19 | INFO |   Text: tfw you are vice provost of diversity nigger equity vp of difference sameness at...
+2026-01-02 12:02:19 | INFO |   Words: 18 tokens
+2026-01-02 12:02:20 | INFO | Use pytorch device_name: mps
+2026-01-02 12:02:42 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:02:42 | INFO | Use pytorch device_name: mps
+2026-01-02 12:02:42 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:02:45 | INFO |   ✓ LIME-LLM scores generated (18 tokens)
+2026-01-02 12:02:45 | INFO | [26/30] hatexplain - 15430511_gab
+2026-01-02 12:02:45 | INFO |   Text: hey nazi dirtbag is your black bull keeping you occupied...
+2026-01-02 12:02:45 | INFO |   Words: 10 tokens
+2026-01-02 12:02:45 | INFO | Use pytorch device_name: mps
+2026-01-02 12:03:02 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:03:02 | INFO | Use pytorch device_name: mps
+2026-01-02 12:03:02 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:03:03 | INFO |   ✓ LIME-LLM scores generated (10 tokens)
+2026-01-02 12:03:03 | INFO | [27/30] hatexplain - 15292851_gab
+2026-01-02 12:03:03 | INFO |   Text: really i have seen men come together that we are atheist buddast odinist christi...
+2026-01-02 12:03:03 | INFO |   Words: 43 tokens
+2026-01-02 12:03:04 | INFO | Use pytorch device_name: mps
+2026-01-02 12:03:42 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:03:42 | WARNING |   ✗ LLM parsing failed: Expecting ',' delimiter: line 104 column 6 (char 8766)
+2026-01-02 12:03:42 | WARNING |   ✗ Failed to generate scores
+2026-01-02 12:03:42 | INFO | [28/30] hatexplain - 1107036788005179392_twitter
+2026-01-02 12:03:42 | INFO |   Text: <user> <user> are you retarded...
+2026-01-02 12:03:42 | INFO |   Words: 5 tokens
+2026-01-02 12:03:43 | INFO | Use pytorch device_name: mps
+2026-01-02 12:03:55 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:03:55 | INFO | Use pytorch device_name: mps
+2026-01-02 12:03:55 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:03:58 | INFO |   ✓ LIME-LLM scores generated (5 tokens)
+2026-01-02 12:03:58 | INFO | [29/30] hatexplain - 12666909_gab
+2026-01-02 12:03:58 | INFO |   Text: damn he a homo too not surprising israel is full of queers...
+2026-01-02 12:03:58 | INFO |   Words: 12 tokens
+2026-01-02 12:03:58 | INFO | Use pytorch device_name: mps
+2026-01-02 12:04:18 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:04:18 | INFO | Use pytorch device_name: mps
+2026-01-02 12:04:18 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:04:20 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2026-01-02 12:04:20 | INFO | [30/30] hatexplain - 20501519_gab
+2026-01-02 12:04:20 | INFO |   Text: only boer farmers are welcome the suburban white population initiated this holoc...
+2026-01-02 12:04:20 | INFO |   Words: 26 tokens
+2026-01-02 12:04:21 | INFO | Use pytorch device_name: mps
+2026-01-02 12:04:49 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:04:49 | INFO | Use pytorch device_name: mps
+2026-01-02 12:04:49 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:04:51 | INFO |   ✓ LIME-LLM scores generated (26 tokens)
+2026-01-02 12:04:51 | WARNING | 
+✓ Results saved: results.csv
+2026-01-02 12:04:52 | INFO | 
+Generating evaluation plots...
+2026-01-02 12:04:52 | INFO |   Processing hatexplain...
+2026-01-02 12:04:52 | INFO |   ✓ Saved curves: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/curves_hatexplain.png
+2026-01-02 12:04:53 | INFO | 
+================================================================================
+2026-01-02 12:04:53 | INFO | AGGREGATE METRICS (Multi-Seed Analysis)
+2026-01-02 12:04:53 | INFO | ================================================================================
+2026-01-02 12:04:53 | INFO | 
+hatexplain:
+2026-01-02 12:04:53 | INFO |   LIME                : ROC_AUC=0.3086±0.0117 PR_AUC=0.2343±0.0060 (seeds=22)
+2026-01-02 12:04:53 | INFO |   Partition SHAP      : ROC_AUC=0.4749 PR_AUC=0.4078 (seeds=1)
+2026-01-02 12:04:53 | INFO |   Integrated Gradient : ROC_AUC=0.6201 PR_AUC=0.5210 (seeds=1)
+2026-01-02 12:04:53 | INFO |   LIME-LLM            : ROC_AUC=0.6749 PR_AUC=0.4682 (seeds=1)
+2026-01-02 12:04:53 | INFO | 
+================================================================================
+2026-01-02 12:04:53 | INFO | ✓ PIPELINE COMPLETE
+2026-01-02 12:04:53 | INFO | Saved: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/aggregate_metrics.json
+2026-01-02 12:04:53 | INFO | ================================================================================
+
+2026-01-02 12:04:53 | WARNING | Failed examples 0/30
+[]
+2026-01-02 12:08:52 | INFO | 
+================================================================================
+2026-01-02 12:08:52 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2026-01-02 12:08:52 | INFO | Mode: FULL
+2026-01-02 12:08:52 | INFO | Provider: ANTHROPIC
+2026-01-02 12:08:52 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2026-01-02 12:08:52 | INFO | ================================================================================
+
+2026-01-02 12:08:52 | INFO | df_sample: 496
+2026-01-02 12:08:59 | INFO | Processing 30 examples
+2026-01-02 12:08:59 | INFO | Total rows: 496
+2026-01-02 12:08:59 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2026-01-02 12:08:59 | INFO | [21/30] hatexplain - 4701852_gab
+2026-01-02 12:08:59 | INFO |   Text: fanbloodytastic by time these leeches are held to account especially the muzzie ...
+2026-01-02 12:08:59 | INFO |   Words: 36 tokens
+2026-01-02 12:09:00 | INFO | Use pytorch device_name: mps
+2026-01-02 12:10:07 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:10:07 | INFO | Use pytorch device_name: mps
+2026-01-02 12:10:07 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:10:10 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2026-01-02 12:10:10 | INFO | [22/30] hatexplain - 21242245_gab
+2026-01-02 12:10:10 | INFO |   Text: hm [UNK] maybe if i survive my chemo and grow up i could be a lifeguard at a nig...
+2026-01-02 12:10:10 | INFO |   Words: 22 tokens
+2026-01-02 12:10:11 | INFO | Use pytorch device_name: mps
+2026-01-02 12:10:35 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:10:35 | INFO | Use pytorch device_name: mps
+2026-01-02 12:10:35 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:10:37 | INFO |   ✓ LIME-LLM scores generated (22 tokens)
+2026-01-02 12:10:37 | INFO | [23/30] hatexplain - 3Z8UJEJOCZEG603II1EL4BE4QZH93Z_nf_4
+2026-01-02 12:10:37 | INFO |   Text: then an older nigger wearing an apron dressed like a kitchen staff member and ho...
+2026-01-02 12:10:37 | INFO |   Words: 36 tokens
+2026-01-02 12:10:39 | INFO | Use pytorch device_name: mps
+2026-01-02 12:11:06 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:11:06 | INFO | Use pytorch device_name: mps
+2026-01-02 12:11:06 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:11:10 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2026-01-02 12:11:10 | INFO | [24/30] hatexplain - 21112613_gab
+2026-01-02 12:11:10 | INFO |   Text: trudeau is a muzzie loving faggot he loves the goathumpers at the expense of can...
+2026-01-02 12:11:10 | INFO |   Words: 25 tokens
+2026-01-02 12:11:10 | INFO | Use pytorch device_name: mps
+2026-01-02 12:11:35 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:11:35 | INFO | Use pytorch device_name: mps
+2026-01-02 12:11:35 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:11:38 | INFO |   ✓ LIME-LLM scores generated (25 tokens)
+2026-01-02 12:11:38 | INFO | [25/30] hatexplain - 15132440_gab
+2026-01-02 12:11:38 | INFO |   Text: tfw you are vice provost of diversity nigger equity vp of difference sameness at...
+2026-01-02 12:11:38 | INFO |   Words: 18 tokens
+2026-01-02 12:11:39 | INFO | Use pytorch device_name: mps
+2026-01-02 12:12:01 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:12:01 | INFO | Use pytorch device_name: mps
+2026-01-02 12:12:01 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:12:03 | INFO |   ✓ LIME-LLM scores generated (18 tokens)
+2026-01-02 12:12:03 | INFO | [26/30] hatexplain - 15430511_gab
+2026-01-02 12:12:03 | INFO |   Text: hey nazi dirtbag is your black bull keeping you occupied...
+2026-01-02 12:12:03 | INFO |   Words: 10 tokens
+2026-01-02 12:12:04 | INFO | Use pytorch device_name: mps
+2026-01-02 12:12:20 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:12:20 | INFO | Use pytorch device_name: mps
+2026-01-02 12:12:20 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:12:23 | INFO |   ✓ LIME-LLM scores generated (10 tokens)
+2026-01-02 12:12:23 | INFO | [27/30] hatexplain - 15292851_gab
+2026-01-02 12:12:23 | INFO |   Text: really i have seen men come together that we are atheist buddast odinist christi...
+2026-01-02 12:12:23 | INFO |   Words: 43 tokens
+2026-01-02 12:12:25 | INFO | Use pytorch device_name: mps
+2026-01-02 12:12:56 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:12:56 | INFO | Use pytorch device_name: mps
+2026-01-02 12:12:56 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:12:59 | INFO |   ✓ LIME-LLM scores generated (43 tokens)
+2026-01-02 12:12:59 | INFO | [28/30] hatexplain - 1107036788005179392_twitter
+2026-01-02 12:12:59 | INFO |   Text: <user> <user> are you retarded...
+2026-01-02 12:12:59 | INFO |   Words: 5 tokens
+2026-01-02 12:13:00 | INFO | Use pytorch device_name: mps
+2026-01-02 12:13:13 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:13:13 | INFO | Use pytorch device_name: mps
+2026-01-02 12:13:13 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:13:15 | INFO |   ✓ LIME-LLM scores generated (5 tokens)
+2026-01-02 12:13:15 | INFO | [29/30] hatexplain - 12666909_gab
+2026-01-02 12:13:15 | INFO |   Text: damn he a homo too not surprising israel is full of queers...
+2026-01-02 12:13:15 | INFO |   Words: 12 tokens
+2026-01-02 12:13:15 | INFO | Use pytorch device_name: mps
+2026-01-02 12:13:35 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:13:35 | INFO | Use pytorch device_name: mps
+2026-01-02 12:13:35 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:13:37 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2026-01-02 12:13:37 | INFO | [30/30] hatexplain - 20501519_gab
+2026-01-02 12:13:37 | INFO |   Text: only boer farmers are welcome the suburban white population initiated this holoc...
+2026-01-02 12:13:37 | INFO |   Words: 26 tokens
+2026-01-02 12:13:37 | INFO | Use pytorch device_name: mps
+2026-01-02 12:14:10 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:14:10 | INFO | Use pytorch device_name: mps
+2026-01-02 12:14:10 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:14:13 | INFO |   ✓ LIME-LLM scores generated (26 tokens)
+2026-01-02 12:14:13 | WARNING | 
+✓ Results saved: results.csv
+2026-01-02 12:14:13 | INFO | 
+Generating evaluation plots...
+2026-01-02 12:14:13 | INFO |   Processing hatexplain...
+2026-01-02 12:14:14 | INFO |   ✓ Saved curves: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/curves_hatexplain.png
+2026-01-02 12:14:14 | INFO | 
+================================================================================
+2026-01-02 12:14:14 | INFO | AGGREGATE METRICS (Multi-Seed Analysis)
+2026-01-02 12:14:14 | INFO | ================================================================================
+2026-01-02 12:14:14 | INFO | 
+hatexplain:
+2026-01-02 12:14:14 | INFO |   LIME                : ROC_AUC=0.3086±0.0117 PR_AUC=0.2343±0.0060 (seeds=22)
+2026-01-02 12:14:14 | INFO |   Partition SHAP      : ROC_AUC=0.4749 PR_AUC=0.4078 (seeds=1)
+2026-01-02 12:14:14 | INFO |   Integrated Gradient : ROC_AUC=0.6201 PR_AUC=0.5210 (seeds=1)
+2026-01-02 12:14:14 | INFO |   LIME-LLM            : ROC_AUC=0.5900 PR_AUC=0.4051 (seeds=1)
+2026-01-02 12:14:14 | INFO | 
+================================================================================
+2026-01-02 12:14:14 | INFO | ✓ PIPELINE COMPLETE
+2026-01-02 12:14:15 | INFO | Saved: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/aggregate_metrics.json
+2026-01-02 12:14:15 | INFO | ================================================================================
+
+2026-01-02 12:14:15 | WARNING | Failed examples 0/30
+[]
+2026-01-02 12:27:44 | INFO | 
+================================================================================
+2026-01-02 12:27:44 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2026-01-02 12:27:44 | INFO | Mode: FULL
+2026-01-02 12:27:44 | INFO | Provider: ANTHROPIC
+2026-01-02 12:27:44 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2026-01-02 12:27:44 | INFO | ================================================================================
+
+2026-01-02 12:27:44 | INFO | df_sample: 496
+2026-01-02 12:27:55 | INFO | Processing 30 examples
+2026-01-02 12:27:55 | INFO | Total rows: 496
+2026-01-02 12:27:55 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2026-01-02 12:27:56 | INFO | [21/30] hatexplain - 4701852_gab
+2026-01-02 12:27:56 | INFO |   Text: fanbloodytastic by time these leeches are held to account especially the muzzie ...
+2026-01-02 12:27:56 | INFO |   Words: 36 tokens
+2026-01-02 12:27:57 | INFO | Use pytorch device_name: mps
+2026-01-02 12:28:29 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:28:29 | INFO | Use pytorch device_name: mps
+2026-01-02 12:28:29 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:28:32 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2026-01-02 12:28:32 | INFO | [22/30] hatexplain - 21242245_gab
+2026-01-02 12:28:32 | INFO |   Text: hm [UNK] maybe if i survive my chemo and grow up i could be a lifeguard at a nig...
+2026-01-02 12:28:32 | INFO |   Words: 22 tokens
+2026-01-02 12:28:33 | INFO | Use pytorch device_name: mps
+2026-01-02 12:28:56 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:28:56 | INFO | Use pytorch device_name: mps
+2026-01-02 12:28:56 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:28:59 | INFO |   ✓ LIME-LLM scores generated (22 tokens)
+2026-01-02 12:28:59 | INFO | [23/30] hatexplain - 3Z8UJEJOCZEG603II1EL4BE4QZH93Z_nf_4
+2026-01-02 12:28:59 | INFO |   Text: then an older nigger wearing an apron dressed like a kitchen staff member and ho...
+2026-01-02 12:28:59 | INFO |   Words: 36 tokens
+2026-01-02 12:29:01 | INFO | Use pytorch device_name: mps
+2026-01-02 12:29:32 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:29:32 | INFO | Use pytorch device_name: mps
+2026-01-02 12:29:32 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:29:35 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2026-01-02 12:29:35 | INFO | [24/30] hatexplain - 21112613_gab
+2026-01-02 12:29:35 | INFO |   Text: trudeau is a muzzie loving faggot he loves the goathumpers at the expense of can...
+2026-01-02 12:29:35 | INFO |   Words: 25 tokens
+2026-01-02 12:29:37 | INFO | Use pytorch device_name: mps
+2026-01-02 12:30:01 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:30:01 | INFO | Use pytorch device_name: mps
+2026-01-02 12:30:01 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:30:04 | INFO |   ✓ LIME-LLM scores generated (25 tokens)
+2026-01-02 12:30:04 | INFO | [25/30] hatexplain - 15132440_gab
+2026-01-02 12:30:04 | INFO |   Text: tfw you are vice provost of diversity nigger equity vp of difference sameness at...
+2026-01-02 12:30:04 | INFO |   Words: 18 tokens
+2026-01-02 12:30:05 | INFO | Use pytorch device_name: mps
+2026-01-02 12:30:26 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:30:26 | INFO | Use pytorch device_name: mps
+2026-01-02 12:30:26 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:30:29 | INFO |   ✓ LIME-LLM scores generated (18 tokens)
+2026-01-02 12:30:29 | INFO | [26/30] hatexplain - 15430511_gab
+2026-01-02 12:30:29 | INFO |   Text: hey nazi dirtbag is your black bull keeping you occupied...
+2026-01-02 12:30:29 | INFO |   Words: 10 tokens
+2026-01-02 12:30:29 | INFO | Use pytorch device_name: mps
+2026-01-02 12:30:48 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:30:48 | INFO | Use pytorch device_name: mps
+2026-01-02 12:30:48 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:30:50 | INFO |   ✓ LIME-LLM scores generated (10 tokens)
+2026-01-02 12:30:50 | INFO | [27/30] hatexplain - 15292851_gab
+2026-01-02 12:30:50 | INFO |   Text: really i have seen men come together that we are atheist buddast odinist christi...
+2026-01-02 12:30:50 | INFO |   Words: 43 tokens
+2026-01-02 12:30:52 | INFO | Use pytorch device_name: mps
+2026-01-02 12:31:30 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:31:30 | INFO | Use pytorch device_name: mps
+2026-01-02 12:31:30 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:31:32 | INFO |   ✓ LIME-LLM scores generated (43 tokens)
+2026-01-02 12:31:32 | INFO | [28/30] hatexplain - 1107036788005179392_twitter
+2026-01-02 12:31:32 | INFO |   Text: <user> <user> are you retarded...
+2026-01-02 12:31:32 | INFO |   Words: 5 tokens
+2026-01-02 12:31:32 | INFO | Use pytorch device_name: mps
+2026-01-02 12:31:45 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:31:45 | INFO | Use pytorch device_name: mps
+2026-01-02 12:31:45 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:31:46 | INFO |   ✓ LIME-LLM scores generated (5 tokens)
+2026-01-02 12:31:46 | INFO | [29/30] hatexplain - 12666909_gab
+2026-01-02 12:31:46 | INFO |   Text: damn he a homo too not surprising israel is full of queers...
+2026-01-02 12:31:46 | INFO |   Words: 12 tokens
+2026-01-02 12:31:48 | INFO | Use pytorch device_name: mps
+2026-01-02 12:32:10 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:32:10 | INFO | Use pytorch device_name: mps
+2026-01-02 12:32:10 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:32:12 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2026-01-02 12:32:12 | INFO | [30/30] hatexplain - 20501519_gab
+2026-01-02 12:32:12 | INFO |   Text: only boer farmers are welcome the suburban white population initiated this holoc...
+2026-01-02 12:32:12 | INFO |   Words: 26 tokens
+2026-01-02 12:32:13 | INFO | Use pytorch device_name: mps
+2026-01-02 12:32:40 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:32:40 | INFO | Use pytorch device_name: mps
+2026-01-02 12:32:40 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:32:44 | INFO |   ✓ LIME-LLM scores generated (26 tokens)
+2026-01-02 12:32:44 | WARNING | 
+✓ Results saved: results.csv
+2026-01-02 12:32:44 | INFO | 
+Generating evaluation plots...
+2026-01-02 12:32:44 | INFO |   Processing hatexplain...
+2026-01-02 12:32:45 | INFO |   ✓ Saved curves: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/curves_hatexplain.png
+2026-01-02 12:32:45 | INFO | 
+================================================================================
+2026-01-02 12:32:45 | INFO | AGGREGATE METRICS (Multi-Seed Analysis)
+2026-01-02 12:32:45 | INFO | ================================================================================
+2026-01-02 12:32:45 | INFO | 
+hatexplain:
+2026-01-02 12:32:45 | INFO |   LIME                : ROC_AUC=0.3086±0.0117 PR_AUC=0.2343±0.0060 (seeds=22)
+2026-01-02 12:32:45 | INFO |   Partition SHAP      : ROC_AUC=0.4749 PR_AUC=0.4078 (seeds=1)
+2026-01-02 12:32:45 | INFO |   Integrated Gradient : ROC_AUC=0.6201 PR_AUC=0.5210 (seeds=1)
+2026-01-02 12:32:45 | INFO |   LIME-LLM            : ROC_AUC=0.7839 PR_AUC=0.6017 (seeds=1)
+2026-01-02 12:32:45 | INFO | 
+================================================================================
+2026-01-02 12:32:45 | INFO | ✓ PIPELINE COMPLETE
+2026-01-02 12:32:45 | INFO | Saved: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/aggregate_metrics.json
+2026-01-02 12:32:45 | INFO | ================================================================================
+
+2026-01-02 12:32:45 | WARNING | Failed examples 0/30
+[]
+2026-01-02 12:36:45 | INFO | 
+================================================================================
+2026-01-02 12:36:45 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2026-01-02 12:36:45 | INFO | Mode: FULL
+2026-01-02 12:36:45 | INFO | Provider: ANTHROPIC
+2026-01-02 12:36:45 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2026-01-02 12:36:45 | INFO | ================================================================================
+
+2026-01-02 12:36:45 | INFO | df_sample: 496
+2026-01-02 12:37:01 | INFO | Processing 30 examples
+2026-01-02 12:37:01 | INFO | Total rows: 496
+2026-01-02 12:37:01 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2026-01-02 12:37:02 | INFO | [11/30] cola - 1017
+2026-01-02 12:37:02 | INFO |   Text: It is the problem that he is here....
+2026-01-02 12:37:02 | INFO |   Words: 8 tokens
+2026-01-02 12:37:02 | INFO | Use pytorch device_name: mps
+2026-01-02 12:37:16 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:37:16 | INFO | Use pytorch device_name: mps
+2026-01-02 12:37:16 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:37:18 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2026-01-02 12:37:18 | INFO | [12/30] cola - 23
+2026-01-02 12:37:18 | INFO |   Text: Mickey looked up it....
+2026-01-02 12:37:18 | INFO |   Words: 4 tokens
+2026-01-02 12:37:19 | INFO | Use pytorch device_name: mps
+2026-01-02 12:37:30 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:37:30 | INFO | Use pytorch device_name: mps
+2026-01-02 12:37:30 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:37:32 | INFO |   ✓ LIME-LLM scores generated (4 tokens)
+2026-01-02 12:37:32 | INFO | [13/30] cola - 354
+2026-01-02 12:37:32 | INFO |   Text: the panther's the coat is dark black....
+2026-01-02 12:37:32 | INFO |   Words: 7 tokens
+2026-01-02 12:37:33 | INFO | Use pytorch device_name: mps
+2026-01-02 12:37:46 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:37:46 | INFO | Use pytorch device_name: mps
+2026-01-02 12:37:46 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:37:48 | INFO |   ✓ LIME-LLM scores generated (7 tokens)
+2026-01-02 12:37:48 | INFO | [14/30] cola - 191
+2026-01-02 12:37:48 | INFO |   Text: I shaped a loaf....
+2026-01-02 12:37:48 | INFO |   Words: 4 tokens
+2026-01-02 12:37:49 | INFO | Use pytorch device_name: mps
+2026-01-02 12:38:01 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:38:01 | INFO | Use pytorch device_name: mps
+2026-01-02 12:38:01 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:38:03 | INFO |   ✓ LIME-LLM scores generated (4 tokens)
+2026-01-02 12:38:03 | INFO | [15/30] cola - 170
+2026-01-02 12:38:03 | INFO |   Text: Carla slid at the book....
+2026-01-02 12:38:03 | INFO |   Words: 5 tokens
+2026-01-02 12:38:04 | INFO | Use pytorch device_name: mps
+2026-01-02 12:38:16 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:38:16 | INFO | Use pytorch device_name: mps
+2026-01-02 12:38:16 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:38:18 | INFO |   ✓ LIME-LLM scores generated (5 tokens)
+2026-01-02 12:38:18 | INFO | [16/30] cola - 384
+2026-01-02 12:38:18 | INFO |   Text: John thinks that Mary loves himself....
+2026-01-02 12:38:18 | INFO |   Words: 6 tokens
+2026-01-02 12:38:19 | INFO | Use pytorch device_name: mps
+2026-01-02 12:38:32 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:38:32 | INFO | Use pytorch device_name: mps
+2026-01-02 12:38:32 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:38:34 | INFO |   ✓ LIME-LLM scores generated (6 tokens)
+2026-01-02 12:38:34 | INFO | [17/30] cola - 733
+2026-01-02 12:38:34 | INFO |   Text: Who for Sandy to talk to is still enrolled in the class?...
+2026-01-02 12:38:34 | INFO |   Words: 12 tokens
+2026-01-02 12:38:34 | INFO | Use pytorch device_name: mps
+2026-01-02 12:38:50 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:38:50 | INFO | Use pytorch device_name: mps
+2026-01-02 12:38:50 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:38:52 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2026-01-02 12:38:52 | INFO | [18/30] cola - 813
+2026-01-02 12:38:52 | INFO |   Text: Birds sings....
+2026-01-02 12:38:52 | INFO |   Words: 2 tokens
+2026-01-02 12:38:53 | INFO | Use pytorch device_name: mps
+2026-01-02 12:39:02 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:39:02 | INFO | Use pytorch device_name: mps
+2026-01-02 12:39:02 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:39:04 | INFO |   ✓ LIME-LLM scores generated (2 tokens)
+2026-01-02 12:39:04 | INFO | [19/30] cola - 836
+2026-01-02 12:39:04 | INFO |   Text: We relied above Leslie....
+2026-01-02 12:39:04 | INFO |   Words: 4 tokens
+2026-01-02 12:39:05 | INFO | Use pytorch device_name: mps
+2026-01-02 12:39:16 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:39:16 | INFO | Use pytorch device_name: mps
+2026-01-02 12:39:16 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:39:18 | INFO |   ✓ LIME-LLM scores generated (4 tokens)
+2026-01-02 12:39:18 | INFO | [20/30] cola - 880
+2026-01-02 12:39:18 | INFO |   Text: I enjoy yourself....
+2026-01-02 12:39:18 | INFO |   Words: 3 tokens
+2026-01-02 12:39:19 | INFO | Use pytorch device_name: mps
+2026-01-02 12:39:30 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 12:39:30 | INFO | Use pytorch device_name: mps
+2026-01-02 12:39:30 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 12:39:32 | INFO |   ✓ LIME-LLM scores generated (3 tokens)
+2026-01-02 12:39:32 | WARNING | 
+✓ Results saved: results.csv
+2026-01-02 12:39:33 | INFO | 
+Generating evaluation plots...
+2026-01-02 12:39:33 | INFO |   Processing cola...
+2026-01-02 12:39:34 | INFO |   ✓ Saved curves: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/curves_cola.png
+2026-01-02 12:39:34 | INFO | 
+================================================================================
+2026-01-02 12:39:34 | INFO | AGGREGATE METRICS (Multi-Seed Analysis)
+2026-01-02 12:39:34 | INFO | ================================================================================
+2026-01-02 12:39:34 | INFO | 
+cola:
+2026-01-02 12:39:34 | INFO |   LIME                : ROC_AUC=0.1732±0.0037 PR_AUC=0.1429±0.0007 (seeds=22)
+2026-01-02 12:39:34 | INFO |   Partition SHAP      : ROC_AUC=0.4167 PR_AUC=0.3239 (seeds=1)
+2026-01-02 12:39:34 | INFO |   Integrated Gradient : ROC_AUC=0.6337 PR_AUC=0.4830 (seeds=1)
+2026-01-02 12:39:34 | INFO |   LIME-LLM            : ROC_AUC=0.7171 PR_AUC=0.4211 (seeds=1)
+2026-01-02 12:39:34 | INFO | 
+================================================================================
+2026-01-02 12:39:34 | INFO | ✓ PIPELINE COMPLETE
+2026-01-02 12:39:34 | INFO | Saved: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/aggregate_metrics.json
+2026-01-02 12:39:34 | INFO | ================================================================================
+
+2026-01-02 12:39:34 | WARNING | Failed examples 0/30
+[]
+2026-01-02 12:58:35 | INFO | 
+================================================================================
+2026-01-02 12:58:35 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2026-01-02 12:58:35 | INFO | Mode: FULL
+2026-01-02 12:58:35 | INFO | Provider: ANTHROPIC
+2026-01-02 12:58:35 | INFO | Output: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9
+2026-01-02 12:58:35 | INFO | ================================================================================
+
+2026-01-02 12:58:35 | INFO | df_sample: 496
+2026-01-02 13:00:59 | INFO | Processing 30 examples
+2026-01-02 13:00:59 | INFO | Total rows: 496
+2026-01-02 13:00:59 | INFO | Datasets: {'cola': 10, 'hatexplain': 10, 'sst2': 10}
+
+2026-01-02 13:00:59 | INFO | [1/30] sst2 - 506
+2026-01-02 13:00:59 | INFO |   Text: crackerjack entertainment -- nonstop romance , music , suspense and action ....
+2026-01-02 13:00:59 | INFO |   Words: 12 tokens
+2026-01-02 13:01:00 | INFO | Use pytorch device_name: mps
+2026-01-02 13:01:15 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:01:15 | INFO | Use pytorch device_name: mps
+2026-01-02 13:01:15 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:01:18 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2026-01-02 13:01:18 | INFO | [2/30] sst2 - 742
+2026-01-02 13:01:18 | INFO |   Text: it 's a demented kitsch mess ( although the smeary digital video does match the ...
+2026-01-02 13:01:18 | INFO |   Words: 40 tokens
+2026-01-02 13:01:19 | INFO | Use pytorch device_name: mps
+2026-01-02 13:01:55 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:01:55 | INFO | Use pytorch device_name: mps
+2026-01-02 13:01:55 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:01:57 | INFO |   ✓ LIME-LLM scores generated (40 tokens)
+2026-01-02 13:01:57 | INFO | [3/30] sst2 - 170
+2026-01-02 13:01:57 | INFO |   Text: it 's also , clearly , great fun ....
+2026-01-02 13:01:57 | INFO |   Words: 9 tokens
+2026-01-02 13:01:58 | INFO | Use pytorch device_name: mps
+2026-01-02 13:02:15 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:02:15 | INFO | Use pytorch device_name: mps
+2026-01-02 13:02:15 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:02:17 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2026-01-02 13:02:17 | INFO | [4/30] sst2 - 602
+2026-01-02 13:02:17 | INFO |   Text: instead , he shows them the respect they are due ....
+2026-01-02 13:02:17 | INFO |   Words: 11 tokens
+2026-01-02 13:02:18 | INFO | Use pytorch device_name: mps
+2026-01-02 13:02:33 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:02:33 | INFO | Use pytorch device_name: mps
+2026-01-02 13:02:33 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:02:35 | INFO |   ✓ LIME-LLM scores generated (11 tokens)
+2026-01-02 13:02:35 | INFO | [5/30] sst2 - 287
+2026-01-02 13:02:35 | INFO |   Text: it 's a much more emotional journey than what shyamalan has given us in his past...
+2026-01-02 13:02:35 | INFO |   Words: 39 tokens
+2026-01-02 13:02:36 | INFO | Use pytorch device_name: mps
+2026-01-02 13:03:05 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:03:05 | INFO | Use pytorch device_name: mps
+2026-01-02 13:03:05 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:03:07 | INFO |   ✓ LIME-LLM scores generated (39 tokens)
+2026-01-02 13:03:07 | INFO | [6/30] sst2 - 302
+2026-01-02 13:03:07 | INFO |   Text: the wild thornberrys movie is a jolly surprise ....
+2026-01-02 13:03:07 | INFO |   Words: 9 tokens
+2026-01-02 13:03:08 | INFO | Use pytorch device_name: mps
+2026-01-02 13:03:26 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:03:26 | INFO | Use pytorch device_name: mps
+2026-01-02 13:03:26 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:03:29 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2026-01-02 13:03:29 | INFO | [7/30] sst2 - 148
+2026-01-02 13:03:29 | INFO |   Text: feels too formulaic and too familiar to produce the transgressive thrills of ear...
+2026-01-02 13:03:29 | INFO |   Words: 16 tokens
+2026-01-02 13:03:31 | INFO | Use pytorch device_name: mps
+2026-01-02 13:03:52 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:03:52 | INFO | Use pytorch device_name: mps
+2026-01-02 13:03:52 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:03:54 | INFO |   ✓ LIME-LLM scores generated (16 tokens)
+2026-01-02 13:03:54 | INFO | [8/30] sst2 - 835
+2026-01-02 13:03:54 | INFO |   Text: a giggle-inducing comedy with snappy dialogue and winning performances by an unl...
+2026-01-02 13:03:54 | INFO |   Words: 22 tokens
+2026-01-02 13:03:55 | INFO | Use pytorch device_name: mps
+2026-01-02 13:04:21 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:04:21 | INFO | Use pytorch device_name: mps
+2026-01-02 13:04:21 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:04:22 | INFO |   ✓ LIME-LLM scores generated (22 tokens)
+2026-01-02 13:04:22 | INFO | [9/30] sst2 - 345
+2026-01-02 13:04:22 | INFO |   Text: this tenth feature is a big deal , indeed -- at least the third-best , and maybe...
+2026-01-02 13:04:22 | INFO |   Words: 36 tokens
+2026-01-02 13:04:23 | INFO | Use pytorch device_name: mps
+2026-01-02 13:04:50 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:04:50 | INFO | Use pytorch device_name: mps
+2026-01-02 13:04:50 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:04:53 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2026-01-02 13:04:53 | INFO | [10/30] sst2 - 387
+2026-01-02 13:04:53 | INFO |   Text: director andrew niccol ... demonstrates a wry understanding of the quirks of fam...
+2026-01-02 13:04:53 | INFO |   Words: 14 tokens
+2026-01-02 13:04:53 | INFO | Use pytorch device_name: mps
+2026-01-02 13:05:11 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:05:11 | INFO | Use pytorch device_name: mps
+2026-01-02 13:05:11 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:05:13 | INFO |   ✓ LIME-LLM scores generated (14 tokens)
+2026-01-02 13:05:13 | INFO | [11/30] cola - 1017
+2026-01-02 13:05:13 | INFO |   Text: It is the problem that he is here....
+2026-01-02 13:05:13 | INFO |   Words: 8 tokens
+2026-01-02 13:05:16 | INFO | Use pytorch device_name: mps
+2026-01-02 13:05:29 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:05:29 | INFO | Use pytorch device_name: mps
+2026-01-02 13:05:29 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:05:31 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2026-01-02 13:05:31 | INFO | [12/30] cola - 23
+2026-01-02 13:05:31 | INFO |   Text: Mickey looked up it....
+2026-01-02 13:05:31 | INFO |   Words: 4 tokens
+2026-01-02 13:05:32 | INFO | Use pytorch device_name: mps
+2026-01-02 13:05:44 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:05:44 | INFO | Use pytorch device_name: mps
+2026-01-02 13:05:44 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:05:46 | INFO |   ✓ LIME-LLM scores generated (4 tokens)
+2026-01-02 13:05:46 | INFO | [13/30] cola - 354
+2026-01-02 13:05:46 | INFO |   Text: the panther's the coat is dark black....
+2026-01-02 13:05:46 | INFO |   Words: 7 tokens
+2026-01-02 13:05:47 | INFO | Use pytorch device_name: mps
+2026-01-02 13:06:01 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:06:01 | INFO | Use pytorch device_name: mps
+2026-01-02 13:06:01 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:06:03 | INFO |   ✓ LIME-LLM scores generated (7 tokens)
+2026-01-02 13:06:03 | INFO | [14/30] cola - 191
+2026-01-02 13:06:03 | INFO |   Text: I shaped a loaf....
+2026-01-02 13:06:03 | INFO |   Words: 4 tokens
+2026-01-02 13:06:03 | INFO | Use pytorch device_name: mps
+2026-01-02 13:06:15 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:06:15 | INFO | Use pytorch device_name: mps
+2026-01-02 13:06:15 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:06:17 | INFO |   ✓ LIME-LLM scores generated (4 tokens)
+2026-01-02 13:06:17 | INFO | [15/30] cola - 170
+2026-01-02 13:06:17 | INFO |   Text: Carla slid at the book....
+2026-01-02 13:06:17 | INFO |   Words: 5 tokens
+2026-01-02 13:06:18 | INFO | Use pytorch device_name: mps
+2026-01-02 13:06:31 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:06:31 | INFO | Use pytorch device_name: mps
+2026-01-02 13:06:31 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:06:33 | INFO |   ✓ LIME-LLM scores generated (5 tokens)
+2026-01-02 13:06:33 | INFO | [16/30] cola - 384
+2026-01-02 13:06:33 | INFO |   Text: John thinks that Mary loves himself....
+2026-01-02 13:06:33 | INFO |   Words: 6 tokens
+2026-01-02 13:06:34 | INFO | Use pytorch device_name: mps
+2026-01-02 13:06:47 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:06:47 | INFO | Use pytorch device_name: mps
+2026-01-02 13:06:47 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:06:48 | INFO |   ✓ LIME-LLM scores generated (6 tokens)
+2026-01-02 13:06:48 | INFO | [17/30] cola - 733
+2026-01-02 13:06:48 | INFO |   Text: Who for Sandy to talk to is still enrolled in the class?...
+2026-01-02 13:06:48 | INFO |   Words: 12 tokens
+2026-01-02 13:06:49 | INFO | Use pytorch device_name: mps
+2026-01-02 13:07:05 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:07:05 | INFO | Use pytorch device_name: mps
+2026-01-02 13:07:05 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:07:07 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2026-01-02 13:07:07 | INFO | [18/30] cola - 813
+2026-01-02 13:07:07 | INFO |   Text: Birds sings....
+2026-01-02 13:07:07 | INFO |   Words: 2 tokens
+2026-01-02 13:07:07 | INFO | Use pytorch device_name: mps
+2026-01-02 13:07:17 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:07:17 | INFO | Use pytorch device_name: mps
+2026-01-02 13:07:17 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:07:19 | INFO |   ✓ LIME-LLM scores generated (2 tokens)
+2026-01-02 13:07:19 | INFO | [19/30] cola - 836
+2026-01-02 13:07:19 | INFO |   Text: We relied above Leslie....
+2026-01-02 13:07:19 | INFO |   Words: 4 tokens
+2026-01-02 13:07:19 | INFO | Use pytorch device_name: mps
+2026-01-02 13:07:31 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:07:31 | INFO | Use pytorch device_name: mps
+2026-01-02 13:07:31 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:07:33 | INFO |   ✓ LIME-LLM scores generated (4 tokens)
+2026-01-02 13:07:33 | INFO | [20/30] cola - 880
+2026-01-02 13:07:33 | INFO |   Text: I enjoy yourself....
+2026-01-02 13:07:33 | INFO |   Words: 3 tokens
+2026-01-02 13:07:34 | INFO | Use pytorch device_name: mps
+2026-01-02 13:07:45 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:07:45 | INFO | Use pytorch device_name: mps
+2026-01-02 13:07:45 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:07:48 | INFO |   ✓ LIME-LLM scores generated (3 tokens)
+2026-01-02 13:07:48 | INFO | [21/30] hatexplain - 4701852_gab
+2026-01-02 13:07:48 | INFO |   Text: fanbloodytastic by time these leeches are held to account especially the muzzie ...
+2026-01-02 13:07:48 | INFO |   Words: 36 tokens
+2026-01-02 13:07:49 | INFO | Use pytorch device_name: mps
+2026-01-02 13:08:21 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:08:21 | INFO | Use pytorch device_name: mps
+2026-01-02 13:08:21 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:08:24 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2026-01-02 13:08:24 | INFO | [22/30] hatexplain - 21242245_gab
+2026-01-02 13:08:24 | INFO |   Text: hm [UNK] maybe if i survive my chemo and grow up i could be a lifeguard at a nig...
+2026-01-02 13:08:24 | INFO |   Words: 22 tokens
+2026-01-02 13:08:25 | INFO | Use pytorch device_name: mps
+2026-01-02 13:08:49 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:08:49 | INFO | Use pytorch device_name: mps
+2026-01-02 13:08:49 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:08:51 | INFO |   ✓ LIME-LLM scores generated (22 tokens)
+2026-01-02 13:08:51 | INFO | [23/30] hatexplain - 3Z8UJEJOCZEG603II1EL4BE4QZH93Z_nf_4
+2026-01-02 13:08:51 | INFO |   Text: then an older nigger wearing an apron dressed like a kitchen staff member and ho...
+2026-01-02 13:08:51 | INFO |   Words: 36 tokens
+2026-01-02 13:08:53 | INFO | Use pytorch device_name: mps
+2026-01-02 13:09:23 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:09:23 | INFO | Use pytorch device_name: mps
+2026-01-02 13:09:23 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:09:26 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2026-01-02 13:09:26 | INFO | [24/30] hatexplain - 21112613_gab
+2026-01-02 13:09:26 | INFO |   Text: trudeau is a muzzie loving faggot he loves the goathumpers at the expense of can...
+2026-01-02 13:09:26 | INFO |   Words: 25 tokens
+2026-01-02 13:09:27 | INFO | Use pytorch device_name: mps
+2026-01-02 13:09:52 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:09:52 | INFO | Use pytorch device_name: mps
+2026-01-02 13:09:52 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:09:55 | INFO |   ✓ LIME-LLM scores generated (25 tokens)
+2026-01-02 13:09:55 | INFO | [25/30] hatexplain - 15132440_gab
+2026-01-02 13:09:55 | INFO |   Text: tfw you are vice provost of diversity nigger equity vp of difference sameness at...
+2026-01-02 13:09:55 | INFO |   Words: 18 tokens
+2026-01-02 13:09:55 | INFO | Use pytorch device_name: mps
+2026-01-02 13:10:17 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:10:17 | INFO | Use pytorch device_name: mps
+2026-01-02 13:10:17 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:10:20 | INFO |   ✓ LIME-LLM scores generated (18 tokens)
+2026-01-02 13:10:20 | INFO | [26/30] hatexplain - 15430511_gab
+2026-01-02 13:10:20 | INFO |   Text: hey nazi dirtbag is your black bull keeping you occupied...
+2026-01-02 13:10:20 | INFO |   Words: 10 tokens
+2026-01-02 13:10:21 | INFO | Use pytorch device_name: mps
+2026-01-02 13:10:40 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:10:40 | INFO | Use pytorch device_name: mps
+2026-01-02 13:10:40 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:10:43 | INFO |   ✓ LIME-LLM scores generated (10 tokens)
+2026-01-02 13:10:43 | INFO | [27/30] hatexplain - 15292851_gab
+2026-01-02 13:10:43 | INFO |   Text: really i have seen men come together that we are atheist buddast odinist christi...
+2026-01-02 13:10:43 | INFO |   Words: 43 tokens
+2026-01-02 13:10:44 | INFO | Use pytorch device_name: mps
+2026-01-02 13:11:22 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:11:22 | WARNING |   ✗ LLM parsing failed: Expecting ',' delimiter: line 105 column 4 (char 8674)
+2026-01-02 13:11:22 | WARNING |   ✗ Failed to generate scores
+2026-01-02 13:11:22 | INFO | [28/30] hatexplain - 1107036788005179392_twitter
+2026-01-02 13:11:22 | INFO |   Text: <user> <user> are you retarded...
+2026-01-02 13:11:22 | INFO |   Words: 5 tokens
+2026-01-02 13:11:23 | INFO | Use pytorch device_name: mps
+2026-01-02 13:11:35 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:11:35 | INFO | Use pytorch device_name: mps
+2026-01-02 13:11:35 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:11:37 | INFO |   ✓ LIME-LLM scores generated (5 tokens)
+2026-01-02 13:11:37 | INFO | [29/30] hatexplain - 12666909_gab
+2026-01-02 13:11:37 | INFO |   Text: damn he a homo too not surprising israel is full of queers...
+2026-01-02 13:11:37 | INFO |   Words: 12 tokens
+2026-01-02 13:11:38 | INFO | Use pytorch device_name: mps
+2026-01-02 13:11:59 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:11:59 | INFO | Use pytorch device_name: mps
+2026-01-02 13:11:59 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:12:01 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2026-01-02 13:12:01 | INFO | [30/30] hatexplain - 20501519_gab
+2026-01-02 13:12:01 | INFO |   Text: only boer farmers are welcome the suburban white population initiated this holoc...
+2026-01-02 13:12:01 | INFO |   Words: 26 tokens
+2026-01-02 13:12:02 | INFO | Use pytorch device_name: mps
+2026-01-02 13:12:29 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 13:12:29 | INFO | Use pytorch device_name: mps
+2026-01-02 13:12:29 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 13:12:32 | INFO |   ✓ LIME-LLM scores generated (26 tokens)
+2026-01-02 13:12:32 | WARNING | 
+✓ Results saved: results.csv
+2026-01-02 13:12:33 | INFO | 
+Generating evaluation plots...
+2026-01-02 13:12:33 | INFO |   Processing sst2...
+2026-01-02 13:12:34 | INFO |   ✓ Saved curves: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/curves_sst2.png
+2026-01-02 13:12:34 | INFO |   Processing cola...
+2026-01-02 13:12:34 | INFO |   ✓ Saved curves: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/curves_cola.png
+2026-01-02 13:12:35 | INFO |   Processing hatexplain...
+2026-01-02 13:12:35 | INFO |   ✓ Saved curves: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/curves_hatexplain.png
+2026-01-02 13:12:36 | INFO | 
+================================================================================
+2026-01-02 13:12:36 | INFO | AGGREGATE METRICS (Multi-Seed Analysis)
+2026-01-02 13:12:36 | INFO | ================================================================================
+2026-01-02 13:12:36 | INFO | 
+cola:
+2026-01-02 13:12:36 | INFO |   LIME                : ROC_AUC=0.1732±0.0037 PR_AUC=0.1429±0.0007 (seeds=22)
+2026-01-02 13:12:36 | INFO |   Partition SHAP      : ROC_AUC=0.4167 PR_AUC=0.3239 (seeds=1)
+2026-01-02 13:12:36 | INFO |   Integrated Gradient : ROC_AUC=0.6337 PR_AUC=0.4830 (seeds=1)
+2026-01-02 13:12:36 | INFO |   LIME-LLM            : ROC_AUC=0.6492 PR_AUC=0.4447 (seeds=1)
+2026-01-02 13:12:36 | INFO | 
+hatexplain:
+2026-01-02 13:12:36 | INFO |   LIME                : ROC_AUC=0.3086±0.0117 PR_AUC=0.2343±0.0060 (seeds=22)
+2026-01-02 13:12:36 | INFO |   Partition SHAP      : ROC_AUC=0.4749 PR_AUC=0.4078 (seeds=1)
+2026-01-02 13:12:36 | INFO |   Integrated Gradient : ROC_AUC=0.6201 PR_AUC=0.5210 (seeds=1)
+2026-01-02 13:12:36 | INFO |   LIME-LLM            : ROC_AUC=0.7783 PR_AUC=0.5882 (seeds=1)
+2026-01-02 13:12:36 | INFO | 
+sst2:
+2026-01-02 13:12:36 | INFO |   LIME                : ROC_AUC=0.6043±0.0128 PR_AUC=0.3281±0.0078 (seeds=22)
+2026-01-02 13:12:36 | INFO |   Partition SHAP      : ROC_AUC=0.5203 PR_AUC=0.3011 (seeds=1)
+2026-01-02 13:12:36 | INFO |   Integrated Gradient : ROC_AUC=0.7687 PR_AUC=0.5748 (seeds=1)
+2026-01-02 13:12:36 | INFO |   LIME-LLM            : ROC_AUC=0.7477 PR_AUC=0.3782 (seeds=1)
+2026-01-02 13:12:36 | INFO | 
+================================================================================
+2026-01-02 13:12:36 | INFO | ✓ PIPELINE COMPLETE
+2026-01-02 13:12:36 | INFO | Saved: outputs/run_sonnet45_xai_combined_df_30_examples_sysv9_usrv9_datadescv9/aggregate_metrics.json
+2026-01-02 13:12:36 | INFO | ================================================================================
+
+2026-01-02 13:12:36 | WARNING | Failed examples 0/30
+[]
