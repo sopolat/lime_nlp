@@ -514,3 +514,195 @@ Generating evaluation plots...
 2025-12-31 14:01:25 | INFO | 
 Generating evaluation plots...
 2025-12-31 14:01:25 | INFO |   Processing sst2...
+2026-01-05 09:23:26 | INFO | 
+================================================================================
+2026-01-05 09:23:26 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2026-01-05 09:23:26 | INFO | Mode: FULL
+2026-01-05 09:23:26 | INFO | Provider: ANTHROPIC
+2026-01-05 09:23:26 | INFO | Output: outputs/run_sonnet45_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9
+2026-01-05 09:23:26 | INFO | ================================================================================
+
+2026-01-05 09:23:26 | INFO | llm_calls: 2415
+2026-01-05 09:23:26 | INFO | df_sample: 2415
+2026-01-05 09:23:26 | INFO | 
+================================================================================
+2026-01-05 09:23:26 | INFO | AGGREGATE METRICS (Multi-Seed Analysis)
+2026-01-05 09:23:26 | INFO | ================================================================================
+2026-01-05 09:23:26 | INFO | 
+cola:
+2026-01-05 09:23:26 | INFO |   LIME                : ROC_AUC=0.2484±0.0026 PR_AUC=0.2052±0.0007 (seeds=30)
+2026-01-05 09:23:26 | INFO |   Partition SHAP      : ROC_AUC=0.5508 PR_AUC=0.3940 (seeds=1)
+2026-01-05 09:23:26 | INFO |   Integrated Gradient : ROC_AUC=0.5374 PR_AUC=0.3944 (seeds=1)
+2026-01-05 09:23:26 | INFO |   LIME-LLM            : ROC_AUC=0.5957 PR_AUC=0.3932 (seeds=1)
+2026-01-05 09:23:26 | INFO | 
+hatexplain:
+2026-01-05 09:23:26 | INFO |   LIME                : ROC_AUC=0.3183±0.0040 PR_AUC=0.2520±0.0023 (seeds=30)
+2026-01-05 09:23:26 | INFO |   Partition SHAP      : ROC_AUC=0.5847 PR_AUC=0.4864 (seeds=1)
+2026-01-05 09:23:26 | INFO |   Integrated Gradient : ROC_AUC=0.5815 PR_AUC=0.5008 (seeds=1)
+2026-01-05 09:23:26 | INFO |   LIME-LLM            : ROC_AUC=0.5981 PR_AUC=0.4396 (seeds=1)
+2026-01-05 09:23:26 | INFO | 
+sst2:
+2026-01-05 09:23:26 | INFO |   LIME                : ROC_AUC=0.4948±0.0032 PR_AUC=0.3284±0.0031 (seeds=30)
+2026-01-05 09:23:26 | INFO |   Partition SHAP      : ROC_AUC=0.5219 PR_AUC=0.4311 (seeds=1)
+2026-01-05 09:23:26 | INFO |   Integrated Gradient : ROC_AUC=0.6658 PR_AUC=0.4553 (seeds=1)
+2026-01-05 09:23:26 | INFO |   LIME-LLM            : ROC_AUC=0.7191 PR_AUC=0.3683 (seeds=1)
+2026-01-05 09:23:26 | INFO | 
+================================================================================
+2026-01-05 09:23:26 | INFO | ✓ PIPELINE COMPLETE
+2026-01-05 09:23:26 | WARNING | No outputs saved!
+2026-01-05 09:23:26 | INFO | ================================================================================
+
+2026-01-05 09:23:26 | INFO | 
+Generating evaluation plots...
+2026-01-05 09:23:26 | INFO |   Processing cola...
+2026-01-05 09:23:26 | INFO |   ✓ Saved curves: outputs/test-run/curves_cola.png
+2026-01-05 09:23:26 | INFO |   Processing sst2...
+2026-01-05 09:23:27 | INFO |   ✓ Saved curves: outputs/test-run/curves_sst2.png
+2026-01-05 09:23:27 | INFO |   Processing hatexplain...
+2026-01-05 09:23:27 | INFO |   ✓ Saved curves: outputs/test-run/curves_hatexplain.png
+2026-01-05 09:27:45 | INFO | 
+================================================================================
+2026-01-05 09:27:45 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2026-01-05 09:27:45 | INFO | Mode: FULL
+2026-01-05 09:27:45 | INFO | Provider: OPENAI
+2026-01-05 09:27:45 | INFO | Output: outputs/run_gpt41_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9
+2026-01-05 09:27:45 | INFO | ================================================================================
+
+2026-01-05 09:27:45 | INFO | llm_calls: 2415
+2026-01-05 09:27:45 | INFO | df_sample: 2415
+2026-01-05 09:27:45 | INFO | 
+================================================================================
+2026-01-05 09:27:45 | INFO | AGGREGATE METRICS (Multi-Seed Analysis)
+2026-01-05 09:27:45 | INFO | ================================================================================
+2026-01-05 09:27:45 | INFO | 
+cola:
+2026-01-05 09:27:45 | INFO |   LIME                : ROC_AUC=0.2834±0.0042 PR_AUC=0.2003±0.0013 (seeds=30)
+2026-01-05 09:27:45 | INFO |   Partition SHAP      : ROC_AUC=0.6009 PR_AUC=0.3418 (seeds=1)
+2026-01-05 09:27:45 | INFO |   Integrated Gradient : ROC_AUC=0.5453 PR_AUC=0.3510 (seeds=1)
+2026-01-05 09:27:45 | INFO |   LIME-LLM            : ROC_AUC=0.5784 PR_AUC=0.3831 (seeds=1)
+2026-01-05 09:27:45 | INFO | 
+hatexplain:
+2026-01-05 09:27:45 | INFO |   LIME                : ROC_AUC=0.3376±0.0041 PR_AUC=0.2579±0.0024 (seeds=30)
+2026-01-05 09:27:45 | INFO |   Partition SHAP      : ROC_AUC=0.5965 PR_AUC=0.4892 (seeds=1)
+2026-01-05 09:27:45 | INFO |   Integrated Gradient : ROC_AUC=0.5613 PR_AUC=0.4789 (seeds=1)
+2026-01-05 09:27:45 | INFO |   LIME-LLM            : ROC_AUC=0.5496 PR_AUC=0.3572 (seeds=1)
+2026-01-05 09:27:45 | INFO | 
+sst2:
+2026-01-05 09:27:45 | INFO |   LIME                : ROC_AUC=0.4842±0.0037 PR_AUC=0.3249±0.0037 (seeds=30)
+2026-01-05 09:27:45 | INFO |   Partition SHAP      : ROC_AUC=0.5374 PR_AUC=0.4429 (seeds=1)
+2026-01-05 09:27:45 | INFO |   Integrated Gradient : ROC_AUC=0.6719 PR_AUC=0.4615 (seeds=1)
+2026-01-05 09:27:45 | INFO |   LIME-LLM            : ROC_AUC=0.5784 PR_AUC=0.2503 (seeds=1)
+2026-01-05 09:27:45 | INFO | 
+================================================================================
+2026-01-05 09:27:45 | INFO | ✓ PIPELINE COMPLETE
+2026-01-05 09:27:45 | WARNING | No outputs saved!
+2026-01-05 09:27:45 | INFO | ================================================================================
+
+2026-01-05 09:27:45 | INFO | 
+Generating evaluation plots...
+2026-01-05 09:27:45 | INFO |   Processing cola...
+2026-01-05 09:27:46 | INFO |   ✓ Saved curves: outputs/test-run/curves_cola.png
+2026-01-05 09:27:46 | INFO |   Processing sst2...
+2026-01-05 09:27:46 | INFO |   ✓ Saved curves: outputs/test-run/curves_sst2.png
+2026-01-05 09:27:46 | INFO |   Processing hatexplain...
+2026-01-05 09:27:47 | INFO |   ✓ Saved curves: outputs/test-run/curves_hatexplain.png
+2026-01-05 09:28:10 | INFO | 
+================================================================================
+2026-01-05 09:28:10 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2026-01-05 09:28:10 | INFO | Mode: FULL
+2026-01-05 09:28:10 | INFO | Provider: ANTHROPIC
+2026-01-05 09:28:10 | INFO | Output: outputs/run_sonnet45_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9
+2026-01-05 09:28:10 | INFO | ================================================================================
+
+2026-01-05 09:28:10 | INFO | llm_calls: 2415
+2026-01-05 09:28:10 | INFO | df_sample: 2415
+2026-01-05 09:28:10 | INFO | 
+================================================================================
+2026-01-05 09:28:10 | INFO | AGGREGATE METRICS (Multi-Seed Analysis)
+2026-01-05 09:28:10 | INFO | ================================================================================
+2026-01-05 09:28:10 | INFO | 
+cola:
+2026-01-05 09:28:10 | INFO |   LIME                : ROC_AUC=0.2484±0.0026 PR_AUC=0.2052±0.0007 (seeds=30)
+2026-01-05 09:28:10 | INFO |   Partition SHAP      : ROC_AUC=0.5508 PR_AUC=0.3940 (seeds=1)
+2026-01-05 09:28:10 | INFO |   Integrated Gradient : ROC_AUC=0.5374 PR_AUC=0.3944 (seeds=1)
+2026-01-05 09:28:10 | INFO |   LIME-LLM            : ROC_AUC=0.5957 PR_AUC=0.3932 (seeds=1)
+2026-01-05 09:28:10 | INFO | 
+hatexplain:
+2026-01-05 09:28:10 | INFO |   LIME                : ROC_AUC=0.3183±0.0040 PR_AUC=0.2520±0.0023 (seeds=30)
+2026-01-05 09:28:10 | INFO |   Partition SHAP      : ROC_AUC=0.5847 PR_AUC=0.4864 (seeds=1)
+2026-01-05 09:28:10 | INFO |   Integrated Gradient : ROC_AUC=0.5815 PR_AUC=0.5008 (seeds=1)
+2026-01-05 09:28:10 | INFO |   LIME-LLM            : ROC_AUC=0.5981 PR_AUC=0.4396 (seeds=1)
+2026-01-05 09:28:10 | INFO | 
+sst2:
+2026-01-05 09:28:10 | INFO |   LIME                : ROC_AUC=0.4948±0.0032 PR_AUC=0.3284±0.0031 (seeds=30)
+2026-01-05 09:28:10 | INFO |   Partition SHAP      : ROC_AUC=0.5219 PR_AUC=0.4311 (seeds=1)
+2026-01-05 09:28:10 | INFO |   Integrated Gradient : ROC_AUC=0.6658 PR_AUC=0.4553 (seeds=1)
+2026-01-05 09:28:10 | INFO |   LIME-LLM            : ROC_AUC=0.7191 PR_AUC=0.3683 (seeds=1)
+2026-01-05 09:28:10 | INFO | 
+================================================================================
+2026-01-05 09:28:10 | INFO | ✓ PIPELINE COMPLETE
+2026-01-05 09:28:10 | WARNING | No outputs saved!
+2026-01-05 09:28:10 | INFO | ================================================================================
+
+2026-01-05 09:28:10 | INFO | 
+Generating evaluation plots...
+2026-01-05 09:28:10 | INFO |   Processing cola...
+2026-01-05 09:28:10 | INFO |   ✓ Saved curves: outputs/test-run/curves_cola.png
+2026-01-05 09:28:10 | INFO |   Processing sst2...
+2026-01-05 09:28:11 | INFO |   ✓ Saved curves: outputs/test-run/curves_sst2.png
+2026-01-05 09:28:11 | INFO |   Processing hatexplain...
+2026-01-05 09:28:11 | INFO |   ✓ Saved curves: outputs/test-run/curves_hatexplain.png
+2026-01-05 09:29:14 | INFO | 
+================================================================================
+2026-01-05 09:29:14 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2026-01-05 09:29:14 | INFO | Mode: FULL
+2026-01-05 09:29:14 | INFO | Provider: OPENAI
+2026-01-05 09:29:14 | INFO | Output: outputs/run_gpt41_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9
+2026-01-05 09:29:14 | INFO | ================================================================================
+
+2026-01-05 09:29:14 | INFO | llm_calls: 2415
+2026-01-05 09:29:14 | INFO | df_sample: 2415
+2026-01-05 09:29:14 | INFO | 
+================================================================================
+2026-01-05 09:29:14 | INFO | AGGREGATE METRICS (Multi-Seed Analysis)
+2026-01-05 09:29:14 | INFO | ================================================================================
+2026-01-05 09:29:14 | INFO | 
+cola:
+2026-01-05 09:29:14 | INFO |   LIME                : ROC_AUC=0.2834±0.0042 PR_AUC=0.2003±0.0013 (seeds=30)
+2026-01-05 09:29:14 | INFO |   Partition SHAP      : ROC_AUC=0.6009 PR_AUC=0.3418 (seeds=1)
+2026-01-05 09:29:14 | INFO |   Integrated Gradient : ROC_AUC=0.5453 PR_AUC=0.3510 (seeds=1)
+2026-01-05 09:29:14 | INFO |   LIME-LLM            : ROC_AUC=0.5784 PR_AUC=0.3831 (seeds=1)
+2026-01-05 09:29:14 | INFO | 
+hatexplain:
+2026-01-05 09:29:14 | INFO |   LIME                : ROC_AUC=0.3376±0.0041 PR_AUC=0.2579±0.0024 (seeds=30)
+2026-01-05 09:29:14 | INFO |   Partition SHAP      : ROC_AUC=0.5965 PR_AUC=0.4892 (seeds=1)
+2026-01-05 09:29:14 | INFO |   Integrated Gradient : ROC_AUC=0.5613 PR_AUC=0.4789 (seeds=1)
+2026-01-05 09:29:14 | INFO |   LIME-LLM            : ROC_AUC=0.5496 PR_AUC=0.3572 (seeds=1)
+2026-01-05 09:29:14 | INFO | 
+sst2:
+2026-01-05 09:29:14 | INFO |   LIME                : ROC_AUC=0.4842±0.0037 PR_AUC=0.3249±0.0037 (seeds=30)
+2026-01-05 09:29:14 | INFO |   Partition SHAP      : ROC_AUC=0.5374 PR_AUC=0.4429 (seeds=1)
+2026-01-05 09:29:14 | INFO |   Integrated Gradient : ROC_AUC=0.6719 PR_AUC=0.4615 (seeds=1)
+2026-01-05 09:29:14 | INFO |   LIME-LLM            : ROC_AUC=0.5784 PR_AUC=0.2503 (seeds=1)
+2026-01-05 09:29:14 | INFO | 
+================================================================================
+2026-01-05 09:29:14 | INFO | ✓ PIPELINE COMPLETE
+2026-01-05 09:29:14 | WARNING | No outputs saved!
+2026-01-05 09:29:14 | INFO | ================================================================================
+
+2026-01-05 09:29:14 | INFO | 
+Generating evaluation plots...
+2026-01-05 09:29:14 | INFO |   Processing cola...
+2026-01-05 09:29:14 | INFO |   ✓ Saved curves: outputs/test-run/curves_cola.png
+2026-01-05 09:29:14 | INFO |   Processing sst2...
+2026-01-05 09:29:15 | INFO |   ✓ Saved curves: outputs/test-run/curves_sst2.png
+2026-01-05 09:29:15 | INFO |   Processing hatexplain...
+2026-01-05 09:29:15 | INFO |   ✓ Saved curves: outputs/test-run/curves_hatexplain.png
+2026-01-05 09:29:56 | INFO | 
+================================================================================
+2026-01-05 09:29:56 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2026-01-05 09:29:56 | INFO | Mode: FULL
+2026-01-05 09:29:56 | INFO | Provider: OPENAI
+2026-01-05 09:29:56 | INFO | Output: outputs/run_gpt5_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9
+2026-01-05 09:29:56 | INFO | ================================================================================
+

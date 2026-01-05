@@ -1,0 +1,1245 @@
+2026-01-02 15:35:01 | INFO | 
+================================================================================
+2026-01-02 15:35:01 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2026-01-02 15:35:01 | INFO | Mode: FULL
+2026-01-02 15:35:01 | INFO | Provider: OPENAI
+2026-01-02 15:35:01 | INFO | Output: outputs/run_gpt41_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9
+2026-01-02 15:35:01 | INFO | ================================================================================
+
+2026-01-02 15:35:01 | INFO | df_sample: 2415
+2026-01-02 15:35:22 | INFO | Processing 150 examples
+2026-01-02 15:35:22 | INFO | Total rows: 2415
+2026-01-02 15:35:22 | INFO | Datasets: {'cola': 50, 'hatexplain': 50, 'sst2': 50}
+
+2026-01-02 15:35:23 | INFO | [1/150] cola - 534
+2026-01-02 15:35:23 | INFO |   Text: She mailed John a letter, but I don't know to whom....
+2026-01-02 15:35:23 | INFO |   Words: 11 tokens
+2026-01-02 15:35:23 | INFO | Use pytorch device_name: mps
+2026-01-02 15:35:39 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:35:39 | INFO | Use pytorch device_name: mps
+2026-01-02 15:35:39 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:35:41 | INFO |   ✓ LIME-LLM scores generated (11 tokens)
+2026-01-02 15:35:41 | INFO | [2/150] cola - 224
+2026-01-02 15:35:41 | INFO |   Text: They have no in....
+2026-01-02 15:35:41 | INFO |   Words: 4 tokens
+2026-01-02 15:35:42 | INFO | Use pytorch device_name: mps
+2026-01-02 15:35:48 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:35:48 | WARNING |   ✗ LLM parsing failed: Expecting value: line 5 column 5 (char 61)
+2026-01-02 15:35:48 | WARNING |   ✗ Failed to generate scores
+2026-01-02 15:35:48 | INFO | [3/150] cola - 836
+2026-01-02 15:35:48 | INFO |   Text: We relied above Leslie....
+2026-01-02 15:35:48 | INFO |   Words: 4 tokens
+2026-01-02 15:35:49 | INFO | Use pytorch device_name: mps
+2026-01-02 15:35:57 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:35:57 | WARNING |   ✗ LLM parsing failed: Expecting value: line 6 column 5 (char 62)
+2026-01-02 15:35:57 | WARNING |   ✗ Failed to generate scores
+2026-01-02 15:35:57 | INFO | [4/150] cola - 384
+2026-01-02 15:35:57 | INFO |   Text: John thinks that Mary loves himself....
+2026-01-02 15:35:57 | INFO |   Words: 6 tokens
+2026-01-02 15:35:57 | INFO | Use pytorch device_name: mps
+2026-01-02 15:36:08 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:36:08 | WARNING |   ✗ LLM parsing failed: Expecting value: line 5 column 5 (char 61)
+2026-01-02 15:36:08 | WARNING |   ✗ Failed to generate scores
+2026-01-02 15:36:08 | INFO | [5/150] cola - 990
+2026-01-02 15:36:08 | INFO |   Text: It was hated for John to leave....
+2026-01-02 15:36:08 | INFO |   Words: 7 tokens
+2026-01-02 15:36:09 | INFO | Use pytorch device_name: mps
+2026-01-02 15:36:19 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:36:19 | WARNING |   ✗ LLM parsing failed: Expecting value: line 5 column 5 (char 61)
+2026-01-02 15:36:19 | WARNING |   ✗ Failed to generate scores
+2026-01-02 15:36:19 | INFO | [6/150] cola - 740
+2026-01-02 15:36:19 | INFO |   Text: Leslie likes ourselves....
+2026-01-02 15:36:19 | INFO |   Words: 3 tokens
+2026-01-02 15:36:20 | INFO | Use pytorch device_name: mps
+2026-01-02 15:36:29 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:36:29 | WARNING |   ✗ LLM parsing failed: Expecting value: line 5 column 5 (char 61)
+2026-01-02 15:36:29 | WARNING |   ✗ Failed to generate scores
+2026-01-02 15:36:29 | INFO | [7/150] cola - 191
+2026-01-02 15:36:29 | INFO |   Text: I shaped a loaf....
+2026-01-02 15:36:29 | INFO |   Words: 4 tokens
+2026-01-02 15:36:30 | INFO | Use pytorch device_name: mps
+2026-01-02 15:36:38 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:36:38 | WARNING |   ✗ LLM parsing failed: Expecting value: line 5 column 5 (char 61)
+2026-01-02 15:36:38 | WARNING |   ✗ Failed to generate scores
+2026-01-02 15:36:38 | INFO | [8/150] cola - 880
+2026-01-02 15:36:38 | INFO |   Text: I enjoy yourself....
+2026-01-02 15:36:38 | INFO |   Words: 3 tokens
+2026-01-02 15:36:39 | INFO | Use pytorch device_name: mps
+2026-01-02 15:36:50 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:36:50 | WARNING |   ✗ LLM parsing failed: Expecting value: line 5 column 5 (char 61)
+2026-01-02 15:36:50 | WARNING |   ✗ Failed to generate scores
+2026-01-02 15:36:50 | INFO | [9/150] cola - 921
+2026-01-02 15:36:50 | INFO |   Text: The patient was died....
+2026-01-02 15:36:50 | INFO |   Words: 4 tokens
+2026-01-02 15:36:51 | INFO | Use pytorch device_name: mps
+2026-01-02 15:36:58 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:36:58 | WARNING |   ✗ LLM parsing failed: Expecting value: line 5 column 5 (char 61)
+2026-01-02 15:36:58 | WARNING |   ✗ Failed to generate scores
+2026-01-02 15:36:58 | INFO | [10/150] cola - 860
+2026-01-02 15:36:58 | INFO |   Text: Few dog barked....
+2026-01-02 15:36:58 | INFO |   Words: 3 tokens
+2026-01-02 15:36:59 | INFO | Use pytorch device_name: mps
+2026-01-02 15:37:06 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:37:06 | INFO | Use pytorch device_name: mps
+2026-01-02 15:37:06 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:37:08 | INFO |   ✓ LIME-LLM scores generated (3 tokens)
+2026-01-02 15:37:08 | INFO | [11/150] cola - 695
+2026-01-02 15:37:08 | INFO |   Text: Bother you that Kim left!...
+2026-01-02 15:37:08 | INFO |   Words: 5 tokens
+2026-01-02 15:37:09 | INFO | Use pytorch device_name: mps
+2026-01-02 15:37:23 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:37:23 | WARNING |   ✗ LLM parsing failed: Expecting value: line 5 column 5 (char 61)
+2026-01-02 15:37:23 | WARNING |   ✗ Failed to generate scores
+2026-01-02 15:37:23 | INFO | [12/150] cola - 230
+2026-01-02 15:37:23 | INFO |   Text: John sounded very....
+2026-01-02 15:37:23 | INFO |   Words: 3 tokens
+2026-01-02 15:37:23 | INFO | Use pytorch device_name: mps
+2026-01-02 15:37:30 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:37:30 | WARNING |   ✗ LLM parsing failed: Expecting value: line 5 column 5 (char 61)
+2026-01-02 15:37:30 | WARNING |   ✗ Failed to generate scores
+2026-01-02 15:37:30 | INFO | [13/150] cola - 206
+2026-01-02 15:37:30 | INFO |   Text: I squeaked the door....
+2026-01-02 15:37:30 | INFO |   Words: 4 tokens
+2026-01-02 15:37:31 | INFO | Use pytorch device_name: mps
+2026-01-02 15:37:45 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:37:45 | WARNING |   ✗ LLM parsing failed: Expecting value: line 5 column 5 (char 61)
+2026-01-02 15:37:45 | WARNING |   ✗ Failed to generate scores
+2026-01-02 15:37:45 | INFO | [14/150] cola - 192
+2026-01-02 15:37:45 | INFO |   Text: The children amused....
+2026-01-02 15:37:45 | INFO |   Words: 3 tokens
+2026-01-02 15:37:45 | INFO | Use pytorch device_name: mps
+2026-01-02 15:38:01 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:38:01 | WARNING |   ✗ LLM parsing failed: Expecting value: line 5 column 5 (char 61)
+2026-01-02 15:38:01 | WARNING |   ✗ Failed to generate scores
+2026-01-02 15:38:01 | INFO | [15/150] cola - 813
+2026-01-02 15:38:01 | INFO |   Text: Birds sings....
+2026-01-02 15:38:01 | INFO |   Words: 2 tokens
+2026-01-02 15:38:01 | INFO | Use pytorch device_name: mps
+2026-01-02 15:38:12 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:38:12 | WARNING |   ✗ LLM parsing failed: Expecting value: line 5 column 5 (char 61)
+2026-01-02 15:38:12 | WARNING |   ✗ Failed to generate scores
+2026-01-02 15:38:12 | INFO | [16/150] cola - 111
+2026-01-02 15:38:12 | INFO |   Text: The socks are ready for for you to put on to be planned....
+2026-01-02 15:38:12 | INFO |   Words: 13 tokens
+2026-01-02 15:38:13 | INFO | Use pytorch device_name: mps
+2026-01-02 15:38:25 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:38:25 | INFO | Use pytorch device_name: mps
+2026-01-02 15:38:25 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:38:27 | INFO |   ✓ LIME-LLM scores generated (13 tokens)
+2026-01-02 15:38:27 | INFO | [17/150] cola - 828
+2026-01-02 15:38:27 | INFO |   Text: The defendants walks....
+2026-01-02 15:38:27 | INFO |   Words: 3 tokens
+2026-01-02 15:38:27 | INFO | Use pytorch device_name: mps
+2026-01-02 15:38:37 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:38:37 | WARNING |   ✗ LLM parsing failed: Expecting value: line 5 column 5 (char 61)
+2026-01-02 15:38:37 | WARNING |   ✗ Failed to generate scores
+2026-01-02 15:38:37 | INFO | [18/150] cola - 29
+2026-01-02 15:38:37 | INFO |   Text: The tube was escaped by gas....
+2026-01-02 15:38:37 | INFO |   Words: 6 tokens
+2026-01-02 15:38:38 | INFO | Use pytorch device_name: mps
+2026-01-02 15:38:50 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:38:50 | WARNING |   ✗ LLM parsing failed: Expecting value: line 5 column 5 (char 61)
+2026-01-02 15:38:50 | WARNING |   ✗ Failed to generate scores
+2026-01-02 15:38:50 | INFO | [19/150] cola - 458
+2026-01-02 15:38:50 | INFO |   Text: Mary revealed himself to John....
+2026-01-02 15:38:50 | INFO |   Words: 5 tokens
+2026-01-02 15:38:51 | INFO | Use pytorch device_name: mps
+2026-01-02 15:39:01 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:39:01 | WARNING |   ✗ LLM parsing failed: Expecting value: line 5 column 5 (char 61)
+2026-01-02 15:39:01 | WARNING |   ✗ Failed to generate scores
+2026-01-02 15:39:01 | INFO | [20/150] cola - 367
+2026-01-02 15:39:01 | INFO |   Text: If I am a rich man, I'd buy a diamond ring....
+2026-01-02 15:39:01 | INFO |   Words: 11 tokens
+2026-01-02 15:39:02 | INFO | Use pytorch device_name: mps
+2026-01-02 15:39:17 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:39:17 | INFO | Use pytorch device_name: mps
+2026-01-02 15:39:17 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:39:19 | INFO |   ✓ LIME-LLM scores generated (11 tokens)
+2026-01-02 15:39:19 | INFO | [21/150] cola - 827
+2026-01-02 15:39:19 | INFO |   Text: The defendant walk....
+2026-01-02 15:39:19 | INFO |   Words: 3 tokens
+2026-01-02 15:39:20 | INFO | Use pytorch device_name: mps
+2026-01-02 15:39:26 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:39:26 | WARNING |   ✗ LLM parsing failed: Expecting value: line 5 column 5 (char 61)
+2026-01-02 15:39:26 | WARNING |   ✗ Failed to generate scores
+2026-01-02 15:39:26 | INFO | [22/150] cola - 1012
+2026-01-02 15:39:26 | INFO |   Text: John is aware of it that Bill is here....
+2026-01-02 15:39:26 | INFO |   Words: 9 tokens
+2026-01-02 15:39:27 | INFO | Use pytorch device_name: mps
+2026-01-02 15:39:50 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:39:50 | WARNING |   ✗ LLM parsing failed: Expecting value: line 5 column 5 (char 61)
+2026-01-02 15:39:50 | WARNING |   ✗ Failed to generate scores
+2026-01-02 15:39:50 | INFO | [23/150] cola - 500
+2026-01-02 15:39:50 | INFO |   Text: Gilgamesh is having fought the dragon....
+2026-01-02 15:39:50 | INFO |   Words: 6 tokens
+2026-01-02 15:39:50 | INFO | Use pytorch device_name: mps
+2026-01-02 15:40:01 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:40:01 | INFO | Use pytorch device_name: mps
+2026-01-02 15:40:01 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:40:03 | INFO |   ✓ LIME-LLM scores generated (6 tokens)
+2026-01-02 15:40:03 | INFO | [24/150] cola - 60
+2026-01-02 15:40:03 | INFO |   Text: I know which book Mag read, and which book Bob read my report that you hadn't....
+2026-01-02 15:40:03 | INFO |   Words: 16 tokens
+2026-01-02 15:40:03 | INFO | Use pytorch device_name: mps
+2026-01-02 15:40:23 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:40:23 | INFO | Use pytorch device_name: mps
+2026-01-02 15:40:23 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:40:25 | INFO |   ✓ LIME-LLM scores generated (16 tokens)
+2026-01-02 15:40:25 | INFO | [25/150] cola - 80
+2026-01-02 15:40:25 | INFO |   Text: Himself is understood by Rutherford....
+2026-01-02 15:40:25 | INFO |   Words: 5 tokens
+2026-01-02 15:40:26 | INFO | Use pytorch device_name: mps
+2026-01-02 15:40:32 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:40:32 | INFO | Use pytorch device_name: mps
+2026-01-02 15:40:32 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:40:34 | INFO |   ✓ LIME-LLM scores generated (5 tokens)
+2026-01-02 15:40:34 | INFO | [26/150] cola - 362
+2026-01-02 15:40:34 | INFO |   Text: Heidi thinks that Andy to eat salmon flavored candy bars....
+2026-01-02 15:40:34 | INFO |   Words: 10 tokens
+2026-01-02 15:40:35 | INFO | Use pytorch device_name: mps
+2026-01-02 15:40:52 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:40:52 | INFO | Use pytorch device_name: mps
+2026-01-02 15:40:52 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:40:54 | INFO |   ✓ LIME-LLM scores generated (10 tokens)
+2026-01-02 15:40:54 | INFO | [27/150] cola - 73
+2026-01-02 15:40:54 | INFO |   Text: A proof that the claim had been. made was giver that John had lied....
+2026-01-02 15:40:54 | INFO |   Words: 14 tokens
+2026-01-02 15:40:55 | INFO | Use pytorch device_name: mps
+2026-01-02 15:41:13 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:41:13 | INFO | Use pytorch device_name: mps
+2026-01-02 15:41:13 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:41:15 | INFO |   ✓ LIME-LLM scores generated (14 tokens)
+2026-01-02 15:41:15 | INFO | [28/150] cola - 338
+2026-01-02 15:41:15 | INFO |   Text: Sally kissed himself....
+2026-01-02 15:41:15 | INFO |   Words: 3 tokens
+2026-01-02 15:41:16 | INFO | Use pytorch device_name: mps
+2026-01-02 15:41:25 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:41:25 | WARNING |   ✗ LLM parsing failed: Expecting value: line 5 column 5 (char 61)
+2026-01-02 15:41:25 | WARNING |   ✗ Failed to generate scores
+2026-01-02 15:41:25 | INFO | [29/150] cola - 630
+2026-01-02 15:41:25 | INFO |   Text: The magazines were sent to herself by Mary....
+2026-01-02 15:41:25 | INFO |   Words: 8 tokens
+2026-01-02 15:41:26 | INFO | Use pytorch device_name: mps
+2026-01-02 15:41:35 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:41:35 | INFO | Use pytorch device_name: mps
+2026-01-02 15:41:35 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:41:37 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2026-01-02 15:41:37 | INFO | [30/150] cola - 746
+2026-01-02 15:41:37 | INFO |   Text: We gave us to the cause....
+2026-01-02 15:41:37 | INFO |   Words: 6 tokens
+2026-01-02 15:41:37 | INFO | Use pytorch device_name: mps
+2026-01-02 15:41:50 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:41:50 | INFO | Use pytorch device_name: mps
+2026-01-02 15:41:50 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:41:53 | INFO |   ✓ LIME-LLM scores generated (6 tokens)
+2026-01-02 15:41:53 | INFO | [31/150] cola - 540
+2026-01-02 15:41:53 | INFO |   Text: The ship sank, but I don't know with what....
+2026-01-02 15:41:53 | INFO |   Words: 9 tokens
+2026-01-02 15:41:54 | INFO | Use pytorch device_name: mps
+2026-01-02 15:42:07 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:42:07 | INFO | Use pytorch device_name: mps
+2026-01-02 15:42:07 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:42:09 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2026-01-02 15:42:09 | INFO | [32/150] cola - 129
+2026-01-02 15:42:09 | INFO |   Text: Sam offered the ball out of the basket....
+2026-01-02 15:42:09 | INFO |   Words: 8 tokens
+2026-01-02 15:42:10 | INFO | Use pytorch device_name: mps
+2026-01-02 15:42:27 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:42:27 | WARNING |   ✗ LLM parsing failed: Expecting value: line 5 column 5 (char 61)
+2026-01-02 15:42:27 | WARNING |   ✗ Failed to generate scores
+2026-01-02 15:42:27 | INFO | [33/150] cola - 457
+2026-01-02 15:42:27 | INFO |   Text: John's mother likes himself....
+2026-01-02 15:42:27 | INFO |   Words: 4 tokens
+2026-01-02 15:42:28 | INFO | Use pytorch device_name: mps
+2026-01-02 15:42:35 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:42:35 | WARNING |   ✗ LLM parsing failed: Expecting value: line 5 column 5 (char 61)
+2026-01-02 15:42:35 | WARNING |   ✗ Failed to generate scores
+2026-01-02 15:42:35 | INFO | [34/150] cola - 464
+2026-01-02 15:42:35 | INFO |   Text: You should sit before there....
+2026-01-02 15:42:35 | INFO |   Words: 5 tokens
+2026-01-02 15:42:36 | INFO | Use pytorch device_name: mps
+2026-01-02 15:42:46 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:42:46 | WARNING | ⚠️Found 21 of samples - required 20
+2026-01-02 15:42:46 | INFO | Use pytorch device_name: mps
+2026-01-02 15:42:46 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:42:48 | INFO |   ✓ LIME-LLM scores generated (5 tokens)
+2026-01-02 15:42:48 | INFO | [35/150] cola - 501
+2026-01-02 15:42:48 | INFO |   Text: Anson thought that himself was happy....
+2026-01-02 15:42:48 | INFO |   Words: 6 tokens
+2026-01-02 15:42:49 | INFO | Use pytorch device_name: mps
+2026-01-02 15:43:06 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:43:06 | WARNING | ⚠️Found 30 of samples - required 20
+2026-01-02 15:43:06 | INFO | Use pytorch device_name: mps
+2026-01-02 15:43:06 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:43:08 | INFO |   ✓ LIME-LLM scores generated (6 tokens)
+2026-01-02 15:43:08 | INFO | [36/150] cola - 504
+2026-01-02 15:43:08 | INFO |   Text: I thought he liked myself...
+2026-01-02 15:43:08 | INFO |   Words: 5 tokens
+2026-01-02 15:43:08 | INFO | Use pytorch device_name: mps
+2026-01-02 15:43:16 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:43:16 | WARNING |   ✗ LLM parsing failed: Expecting value: line 5 column 5 (char 61)
+2026-01-02 15:43:16 | WARNING |   ✗ Failed to generate scores
+2026-01-02 15:43:16 | INFO | [37/150] cola - 1014
+2026-01-02 15:43:16 | INFO |   Text: John believed it that Bill was tardy....
+2026-01-02 15:43:16 | INFO |   Words: 7 tokens
+2026-01-02 15:43:17 | INFO | Use pytorch device_name: mps
+2026-01-02 15:43:26 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:43:26 | INFO | Use pytorch device_name: mps
+2026-01-02 15:43:26 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:43:27 | INFO |   ✓ LIME-LLM scores generated (7 tokens)
+2026-01-02 15:43:27 | INFO | [38/150] cola - 685
+2026-01-02 15:43:27 | INFO |   Text: The book what inspired them was very long....
+2026-01-02 15:43:27 | INFO |   Words: 8 tokens
+2026-01-02 15:43:28 | INFO | Use pytorch device_name: mps
+2026-01-02 15:43:39 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:43:39 | INFO | Use pytorch device_name: mps
+2026-01-02 15:43:39 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:43:41 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2026-01-02 15:43:41 | INFO | [39/150] cola - 342
+2026-01-02 15:43:41 | INFO |   Text: Blue leather shows herself that Betsy is pretty....
+2026-01-02 15:43:41 | INFO |   Words: 8 tokens
+2026-01-02 15:43:41 | INFO | Use pytorch device_name: mps
+2026-01-02 15:43:51 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:43:51 | INFO | Use pytorch device_name: mps
+2026-01-02 15:43:51 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:43:53 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2026-01-02 15:43:53 | INFO | [40/150] cola - 137
+2026-01-02 15:43:53 | INFO |   Text: The farmer dumped the cart with apples....
+2026-01-02 15:43:53 | INFO |   Words: 7 tokens
+2026-01-02 15:43:53 | INFO | Use pytorch device_name: mps
+2026-01-02 15:44:07 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:44:07 | INFO | Use pytorch device_name: mps
+2026-01-02 15:44:07 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:44:09 | INFO |   ✓ LIME-LLM scores generated (7 tokens)
+2026-01-02 15:44:09 | INFO | [41/150] cola - 329
+2026-01-02 15:44:09 | INFO |   Text: 1 gave Mary after the party a book....
+2026-01-02 15:44:09 | INFO |   Words: 8 tokens
+2026-01-02 15:44:10 | INFO | Use pytorch device_name: mps
+2026-01-02 15:44:22 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:44:22 | WARNING |   ✗ LLM parsing failed: Expecting value: line 5 column 5 (char 61)
+2026-01-02 15:44:22 | WARNING |   ✗ Failed to generate scores
+2026-01-02 15:44:22 | INFO | [42/150] cola - 23
+2026-01-02 15:44:22 | INFO |   Text: Mickey looked up it....
+2026-01-02 15:44:22 | INFO |   Words: 4 tokens
+2026-01-02 15:44:23 | INFO | Use pytorch device_name: mps
+2026-01-02 15:44:36 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:44:36 | WARNING |   ✗ LLM parsing failed: Expecting ',' delimiter: line 88 column 40 (char 1976)
+2026-01-02 15:44:36 | WARNING |   ✗ Failed to generate scores
+2026-01-02 15:44:36 | INFO | [43/150] cola - 707
+2026-01-02 15:44:36 | INFO |   Text: I wonder in whom them to place their trust....
+2026-01-02 15:44:36 | INFO |   Words: 9 tokens
+2026-01-02 15:44:37 | INFO | Use pytorch device_name: mps
+2026-01-02 15:45:04 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:45:04 | WARNING | ⚠️Found 34 of samples - required 20
+2026-01-02 15:45:04 | INFO | Use pytorch device_name: mps
+2026-01-02 15:45:04 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:45:06 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2026-01-02 15:45:06 | INFO | [44/150] cola - 1020
+2026-01-02 15:45:06 | INFO |   Text: It is to give up to leave....
+2026-01-02 15:45:06 | INFO |   Words: 7 tokens
+2026-01-02 15:45:07 | INFO | Use pytorch device_name: mps
+2026-01-02 15:45:21 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:45:21 | INFO | Use pytorch device_name: mps
+2026-01-02 15:45:21 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:45:23 | INFO |   ✓ LIME-LLM scores generated (7 tokens)
+2026-01-02 15:45:23 | INFO | [45/150] cola - 252
+2026-01-02 15:45:23 | INFO |   Text: Kim put in the box....
+2026-01-02 15:45:23 | INFO |   Words: 5 tokens
+2026-01-02 15:45:23 | INFO | Use pytorch device_name: mps
+2026-01-02 15:45:30 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:45:30 | INFO | Use pytorch device_name: mps
+2026-01-02 15:45:30 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:45:32 | INFO |   ✓ LIME-LLM scores generated (5 tokens)
+2026-01-02 15:45:32 | INFO | [46/150] cola - 708
+2026-01-02 15:45:32 | INFO |   Text: I wonder whom us to trust....
+2026-01-02 15:45:32 | INFO |   Words: 6 tokens
+2026-01-02 15:45:33 | INFO | Use pytorch device_name: mps
+2026-01-02 15:45:43 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:45:43 | INFO | Use pytorch device_name: mps
+2026-01-02 15:45:43 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:45:46 | INFO |   ✓ LIME-LLM scores generated (6 tokens)
+2026-01-02 15:45:46 | INFO | [47/150] cola - 430
+2026-01-02 15:45:46 | INFO |   Text: Which article did Terry file papers without reading?...
+2026-01-02 15:45:46 | INFO |   Words: 8 tokens
+2026-01-02 15:45:46 | INFO | Use pytorch device_name: mps
+2026-01-02 15:45:58 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:45:58 | INFO | Use pytorch device_name: mps
+2026-01-02 15:45:58 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:46:00 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2026-01-02 15:46:00 | INFO | [48/150] cola - 451
+2026-01-02 15:46:00 | INFO |   Text: John whispered Mary left....
+2026-01-02 15:46:00 | INFO |   Words: 4 tokens
+2026-01-02 15:46:01 | INFO | Use pytorch device_name: mps
+2026-01-02 15:46:10 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:46:10 | WARNING |   ✗ LLM parsing failed: Expecting value: line 5 column 5 (char 61)
+2026-01-02 15:46:10 | WARNING |   ✗ Failed to generate scores
+2026-01-02 15:46:10 | INFO | [49/150] cola - 567
+2026-01-02 15:46:10 | INFO |   Text: John likes some students, but I don't know who John likes some students....
+2026-01-02 15:46:10 | INFO |   Words: 13 tokens
+2026-01-02 15:46:11 | INFO | Use pytorch device_name: mps
+2026-01-02 15:46:53 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:46:53 | INFO | Use pytorch device_name: mps
+2026-01-02 15:46:53 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:46:55 | INFO |   ✓ LIME-LLM scores generated (13 tokens)
+2026-01-02 15:46:55 | INFO | [50/150] cola - 114
+2026-01-02 15:46:55 | INFO |   Text: My mother is easy to please my father and....
+2026-01-02 15:46:55 | INFO |   Words: 9 tokens
+2026-01-02 15:46:55 | INFO | Use pytorch device_name: mps
+2026-01-02 15:47:10 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:47:10 | WARNING |   ✗ LLM parsing failed: Expecting value: line 5 column 5 (char 61)
+2026-01-02 15:47:10 | WARNING |   ✗ Failed to generate scores
+2026-01-02 15:47:10 | INFO | [51/150] sst2 - 48
+2026-01-02 15:47:10 | INFO |   Text: has a lot of the virtues of eastwood at his best ....
+2026-01-02 15:47:10 | INFO |   Words: 12 tokens
+2026-01-02 15:47:11 | INFO | Use pytorch device_name: mps
+2026-01-02 15:47:25 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:47:25 | WARNING |   ✗ LLM parsing failed: Expecting value: line 5 column 5 (char 61)
+2026-01-02 15:47:25 | WARNING |   ✗ Failed to generate scores
+2026-01-02 15:47:25 | INFO | [52/150] sst2 - 372
+2026-01-02 15:47:25 | INFO |   Text: the special effects and many scenes of weightlessness look as good or better tha...
+2026-01-02 15:47:25 | INFO |   Words: 37 tokens
+2026-01-02 15:47:26 | INFO | Use pytorch device_name: mps
+2026-01-02 15:47:48 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:47:48 | WARNING | ⚠️Found 21 of samples - required 20
+2026-01-02 15:47:48 | INFO | Use pytorch device_name: mps
+2026-01-02 15:47:48 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:47:50 | INFO |   ✓ LIME-LLM scores generated (37 tokens)
+2026-01-02 15:47:50 | INFO | [53/150] sst2 - 729
+2026-01-02 15:47:50 | INFO |   Text: the piece plays as well as it does thanks in large measure to anspaugh 's three ...
+2026-01-02 15:47:50 | INFO |   Words: 19 tokens
+2026-01-02 15:47:51 | INFO | Use pytorch device_name: mps
+2026-01-02 15:48:22 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:48:22 | WARNING | ⚠️Found 21 of samples - required 20
+2026-01-02 15:48:22 | INFO | Use pytorch device_name: mps
+2026-01-02 15:48:22 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:48:25 | INFO |   ✓ LIME-LLM scores generated (19 tokens)
+2026-01-02 15:48:25 | INFO | [54/150] sst2 - 323
+2026-01-02 15:48:25 | INFO |   Text: a painfully funny ode to bad behavior ....
+2026-01-02 15:48:25 | INFO |   Words: 8 tokens
+2026-01-02 15:48:27 | INFO | Use pytorch device_name: mps
+2026-01-02 15:48:38 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:48:38 | INFO | Use pytorch device_name: mps
+2026-01-02 15:48:38 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:48:40 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2026-01-02 15:48:40 | INFO | [55/150] sst2 - 128
+2026-01-02 15:48:40 | INFO |   Text: montias ... pumps a lot of energy into his nicely nuanced narrative and surround...
+2026-01-02 15:48:40 | INFO |   Words: 28 tokens
+2026-01-02 15:48:41 | INFO | Use pytorch device_name: mps
+2026-01-02 15:49:04 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:49:04 | INFO | Use pytorch device_name: mps
+2026-01-02 15:49:04 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:49:06 | INFO |   ✓ LIME-LLM scores generated (28 tokens)
+2026-01-02 15:49:06 | INFO | [56/150] sst2 - 166
+2026-01-02 15:49:06 | INFO |   Text: characters still need to function according to some set of believable and compre...
+2026-01-02 15:49:06 | INFO |   Words: 30 tokens
+2026-01-02 15:49:07 | INFO | Use pytorch device_name: mps
+2026-01-02 15:49:30 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:49:30 | INFO | Use pytorch device_name: mps
+2026-01-02 15:49:30 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:49:32 | INFO |   ✓ LIME-LLM scores generated (30 tokens)
+2026-01-02 15:49:32 | INFO | [57/150] sst2 - 598
+2026-01-02 15:49:32 | INFO |   Text: nonsensical , dull `` cyber-horror '' flick is a grim , hollow exercise in flat ...
+2026-01-02 15:49:32 | INFO |   Words: 20 tokens
+2026-01-02 15:49:33 | INFO | Use pytorch device_name: mps
+2026-01-02 15:49:56 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:49:56 | INFO | Use pytorch device_name: mps
+2026-01-02 15:49:56 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:49:58 | INFO |   ✓ LIME-LLM scores generated (20 tokens)
+2026-01-02 15:49:58 | INFO | [58/150] sst2 - 100
+2026-01-02 15:49:58 | INFO |   Text: neither parker nor donovan is a typical romantic lead , but they bring a fresh ,...
+2026-01-02 15:49:58 | INFO |   Words: 22 tokens
+2026-01-02 15:49:59 | INFO | Use pytorch device_name: mps
+2026-01-02 15:50:18 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:50:18 | WARNING | ⚠️Found 21 of samples - required 20
+2026-01-02 15:50:18 | INFO | Use pytorch device_name: mps
+2026-01-02 15:50:18 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:50:21 | INFO |   ✓ LIME-LLM scores generated (22 tokens)
+2026-01-02 15:50:21 | INFO | [59/150] sst2 - 181
+2026-01-02 15:50:21 | INFO |   Text: it 's a bad thing when a movie has about as much substance as its end credits bl...
+2026-01-02 15:50:21 | INFO |   Words: 20 tokens
+2026-01-02 15:50:21 | INFO | Use pytorch device_name: mps
+2026-01-02 15:50:35 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:50:35 | INFO | Use pytorch device_name: mps
+2026-01-02 15:50:35 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:50:38 | INFO |   ✓ LIME-LLM scores generated (20 tokens)
+2026-01-02 15:50:38 | INFO | [60/150] sst2 - 560
+2026-01-02 15:50:38 | INFO |   Text: do n't be fooled by the impressive cast list - eye see you is pure junk ....
+2026-01-02 15:50:38 | INFO |   Words: 17 tokens
+2026-01-02 15:50:39 | INFO | Use pytorch device_name: mps
+2026-01-02 15:51:05 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:51:05 | WARNING | ⚠️Found 30 of samples - required 20
+2026-01-02 15:51:05 | INFO | Use pytorch device_name: mps
+2026-01-02 15:51:05 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:51:07 | INFO |   ✓ LIME-LLM scores generated (17 tokens)
+2026-01-02 15:51:07 | INFO | [61/150] sst2 - 596
+2026-01-02 15:51:07 | INFO |   Text: the director knows how to apply textural gloss , but his portrait of sex-as-war ...
+2026-01-02 15:51:07 | INFO |   Words: 18 tokens
+2026-01-02 15:51:08 | INFO | Use pytorch device_name: mps
+2026-01-02 15:51:25 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:51:25 | INFO | Use pytorch device_name: mps
+2026-01-02 15:51:25 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:51:27 | INFO |   ✓ LIME-LLM scores generated (18 tokens)
+2026-01-02 15:51:27 | INFO | [62/150] sst2 - 489
+2026-01-02 15:51:27 | INFO |   Text: it 's dumb , but more importantly , it 's just not scary ....
+2026-01-02 15:51:27 | INFO |   Words: 14 tokens
+2026-01-02 15:51:28 | INFO | Use pytorch device_name: mps
+2026-01-02 15:51:46 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:51:46 | INFO | Use pytorch device_name: mps
+2026-01-02 15:51:46 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:51:48 | INFO |   ✓ LIME-LLM scores generated (14 tokens)
+2026-01-02 15:51:48 | INFO | [63/150] sst2 - 763
+2026-01-02 15:51:48 | INFO |   Text: there 's something auspicious , and daring , too , about the artistic instinct t...
+2026-01-02 15:51:48 | INFO |   Words: 36 tokens
+2026-01-02 15:51:49 | INFO | Use pytorch device_name: mps
+2026-01-02 15:52:13 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:52:13 | INFO | Use pytorch device_name: mps
+2026-01-02 15:52:13 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:52:15 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2026-01-02 15:52:15 | INFO | [64/150] sst2 - 345
+2026-01-02 15:52:15 | INFO |   Text: this tenth feature is a big deal , indeed -- at least the third-best , and maybe...
+2026-01-02 15:52:15 | INFO |   Words: 36 tokens
+2026-01-02 15:52:16 | INFO | Use pytorch device_name: mps
+2026-01-02 15:52:56 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:52:56 | INFO | Use pytorch device_name: mps
+2026-01-02 15:52:56 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:52:58 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2026-01-02 15:52:58 | INFO | [65/150] sst2 - 251
+2026-01-02 15:52:58 | INFO |   Text: the film tries too hard to be funny and tries too hard to be hip ....
+2026-01-02 15:52:58 | INFO |   Words: 16 tokens
+2026-01-02 15:52:59 | INFO | Use pytorch device_name: mps
+2026-01-02 15:53:11 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:53:11 | INFO | Use pytorch device_name: mps
+2026-01-02 15:53:11 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:53:13 | INFO |   ✓ LIME-LLM scores generated (16 tokens)
+2026-01-02 15:53:13 | INFO | [66/150] sst2 - 838
+2026-01-02 15:53:13 | INFO |   Text: sometimes seems less like storytelling than something the otherwise compelling d...
+2026-01-02 15:53:13 | INFO |   Words: 18 tokens
+2026-01-02 15:53:14 | INFO | Use pytorch device_name: mps
+2026-01-02 15:53:25 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:53:25 | INFO | Use pytorch device_name: mps
+2026-01-02 15:53:25 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:53:28 | INFO |   ✓ LIME-LLM scores generated (18 tokens)
+2026-01-02 15:53:28 | INFO | [67/150] sst2 - 254
+2026-01-02 15:53:28 | INFO |   Text: attempts by this ensemble film to impart a message are so heavy-handed that they...
+2026-01-02 15:53:28 | INFO |   Words: 19 tokens
+2026-01-02 15:53:28 | INFO | Use pytorch device_name: mps
+2026-01-02 15:53:46 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:53:46 | INFO | Use pytorch device_name: mps
+2026-01-02 15:53:46 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:53:48 | INFO |   ✓ LIME-LLM scores generated (19 tokens)
+2026-01-02 15:53:48 | INFO | [68/150] sst2 - 435
+2026-01-02 15:53:48 | INFO |   Text: a marvel like none you 've seen ....
+2026-01-02 15:53:48 | INFO |   Words: 8 tokens
+2026-01-02 15:53:49 | INFO | Use pytorch device_name: mps
+2026-01-02 15:54:02 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:54:02 | WARNING |   ✗ LLM parsing failed: Expecting value: line 5 column 5 (char 61)
+2026-01-02 15:54:02 | WARNING |   ✗ Failed to generate scores
+2026-01-02 15:54:02 | INFO | [69/150] sst2 - 325
+2026-01-02 15:54:02 | INFO |   Text: liotta put on 30 pounds for the role , and has completely transformed himself fr...
+2026-01-02 15:54:02 | INFO |   Words: 21 tokens
+2026-01-02 15:54:03 | INFO | Use pytorch device_name: mps
+2026-01-02 15:54:23 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:54:23 | INFO | Use pytorch device_name: mps
+2026-01-02 15:54:23 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:54:25 | INFO |   ✓ LIME-LLM scores generated (21 tokens)
+2026-01-02 15:54:25 | INFO | [70/150] sst2 - 488
+2026-01-02 15:54:25 | INFO |   Text: a cartoon that 's truly cinematic in scope , and a story that 's compelling and ...
+2026-01-02 15:54:25 | INFO |   Words: 30 tokens
+2026-01-02 15:54:26 | INFO | Use pytorch device_name: mps
+2026-01-02 15:54:47 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:54:47 | WARNING |   ✗ LLM parsing failed: Expecting value: line 5 column 5 (char 61)
+2026-01-02 15:54:47 | WARNING |   ✗ Failed to generate scores
+2026-01-02 15:54:47 | INFO | [71/150] sst2 - 99
+2026-01-02 15:54:47 | INFO |   Text: why make a documentary about these marginal historical figures ?...
+2026-01-02 15:54:47 | INFO |   Words: 10 tokens
+2026-01-02 15:54:48 | INFO | Use pytorch device_name: mps
+2026-01-02 15:55:43 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:55:43 | INFO | Use pytorch device_name: mps
+2026-01-02 15:55:43 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:55:45 | INFO |   ✓ LIME-LLM scores generated (10 tokens)
+2026-01-02 15:55:45 | INFO | [72/150] sst2 - 870
+2026-01-02 15:55:45 | INFO |   Text: ... is an arthritic attempt at directing by callie khouri ....
+2026-01-02 15:55:45 | INFO |   Words: 11 tokens
+2026-01-02 15:55:45 | INFO | Use pytorch device_name: mps
+2026-01-02 15:55:55 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:55:55 | WARNING |   ✗ LLM parsing failed: Expecting value: line 6 column 5 (char 62)
+2026-01-02 15:55:55 | WARNING |   ✗ Failed to generate scores
+2026-01-02 15:55:55 | INFO | [73/150] sst2 - 258
+2026-01-02 15:55:55 | INFO |   Text: `` the time machine '' is a movie that has no interest in itself ....
+2026-01-02 15:55:55 | INFO |   Words: 15 tokens
+2026-01-02 15:55:56 | INFO | Use pytorch device_name: mps
+2026-01-02 15:56:14 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:56:14 | WARNING | ⚠️Found 21 of samples - required 20
+2026-01-02 15:56:14 | INFO | Use pytorch device_name: mps
+2026-01-02 15:56:14 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:56:16 | INFO |   ✓ LIME-LLM scores generated (15 tokens)
+2026-01-02 15:56:16 | INFO | [74/150] sst2 - 785
+2026-01-02 15:56:16 | INFO |   Text: aside from minor tinkering , this is the same movie you probably loved in 1994 ,...
+2026-01-02 15:56:16 | INFO |   Words: 23 tokens
+2026-01-02 15:56:17 | INFO | Use pytorch device_name: mps
+2026-01-02 15:56:36 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:56:36 | INFO | Use pytorch device_name: mps
+2026-01-02 15:56:36 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:56:38 | INFO |   ✓ LIME-LLM scores generated (23 tokens)
+2026-01-02 15:56:38 | INFO | [75/150] sst2 - 859
+2026-01-02 15:56:38 | INFO |   Text: add yet another hat to a talented head , clooney 's a good director ....
+2026-01-02 15:56:38 | INFO |   Words: 15 tokens
+2026-01-02 15:56:39 | INFO | Use pytorch device_name: mps
+2026-01-02 15:56:50 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:56:50 | INFO | Use pytorch device_name: mps
+2026-01-02 15:56:50 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:56:53 | INFO |   ✓ LIME-LLM scores generated (15 tokens)
+2026-01-02 15:56:53 | INFO | [76/150] sst2 - 149
+2026-01-02 15:56:53 | INFO |   Text: the volatile dynamics of female friendship is the subject of this unhurried , lo...
+2026-01-02 15:56:53 | INFO |   Words: 30 tokens
+2026-01-02 15:56:53 | INFO | Use pytorch device_name: mps
+2026-01-02 15:57:14 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:57:14 | INFO | Use pytorch device_name: mps
+2026-01-02 15:57:14 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:57:16 | INFO |   ✓ LIME-LLM scores generated (30 tokens)
+2026-01-02 15:57:16 | INFO | [77/150] sst2 - 113
+2026-01-02 15:57:16 | INFO |   Text: this movie is maddening ....
+2026-01-02 15:57:16 | INFO |   Words: 5 tokens
+2026-01-02 15:57:17 | INFO | Use pytorch device_name: mps
+2026-01-02 15:57:30 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:57:30 | WARNING |   ✗ LLM parsing failed: Expecting value: line 5 column 5 (char 61)
+2026-01-02 15:57:30 | WARNING |   ✗ Failed to generate scores
+2026-01-02 15:57:30 | INFO | [78/150] sst2 - 571
+2026-01-02 15:57:30 | INFO |   Text: passable entertainment , but it 's the kind of motion picture that wo n't make m...
+2026-01-02 15:57:30 | INFO |   Words: 32 tokens
+2026-01-02 15:57:30 | INFO | Use pytorch device_name: mps
+2026-01-02 15:58:09 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:58:09 | WARNING | ⚠️Found 23 of samples - required 20
+2026-01-02 15:58:09 | INFO | Use pytorch device_name: mps
+2026-01-02 15:58:09 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:58:11 | INFO |   ✓ LIME-LLM scores generated (32 tokens)
+2026-01-02 15:58:11 | INFO | [79/150] sst2 - 109
+2026-01-02 15:58:11 | INFO |   Text: it 's great escapist fun that recreates a place and time that will never happen ...
+2026-01-02 15:58:11 | INFO |   Words: 17 tokens
+2026-01-02 15:58:12 | INFO | Use pytorch device_name: mps
+2026-01-02 15:58:26 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:58:27 | INFO | Use pytorch device_name: mps
+2026-01-02 15:58:27 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:58:29 | INFO |   ✓ LIME-LLM scores generated (17 tokens)
+2026-01-02 15:58:29 | INFO | [80/150] sst2 - 60
+2026-01-02 15:58:29 | INFO |   Text: this is a story of two misfits who do n't stand a chance alone , but together th...
+2026-01-02 15:58:29 | INFO |   Words: 21 tokens
+2026-01-02 15:58:29 | INFO | Use pytorch device_name: mps
+2026-01-02 15:58:50 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:58:50 | INFO | Use pytorch device_name: mps
+2026-01-02 15:58:50 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:58:52 | INFO |   ✓ LIME-LLM scores generated (21 tokens)
+2026-01-02 15:58:52 | INFO | [81/150] sst2 - 212
+2026-01-02 15:58:52 | INFO |   Text: the entire movie is about a boring , sad man being boring and sad ....
+2026-01-02 15:58:52 | INFO |   Words: 15 tokens
+2026-01-02 15:58:53 | INFO | Use pytorch device_name: mps
+2026-01-02 15:59:11 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:59:11 | INFO | Use pytorch device_name: mps
+2026-01-02 15:59:11 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:59:13 | INFO |   ✓ LIME-LLM scores generated (15 tokens)
+2026-01-02 15:59:13 | INFO | [82/150] sst2 - 580
+2026-01-02 15:59:13 | INFO |   Text: it takes a certain kind of horror movie to qualify as ` worse than expected , ' ...
+2026-01-02 15:59:13 | INFO |   Words: 27 tokens
+2026-01-02 15:59:27 | INFO | Use pytorch device_name: mps
+2026-01-02 16:00:02 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:00:02 | INFO | Use pytorch device_name: mps
+2026-01-02 16:00:02 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:00:04 | INFO |   ✓ LIME-LLM scores generated (27 tokens)
+2026-01-02 16:00:04 | INFO | [83/150] sst2 - 868
+2026-01-02 16:00:04 | INFO |   Text: a movie with a real anarchic flair ....
+2026-01-02 16:00:04 | INFO |   Words: 8 tokens
+2026-01-02 16:00:05 | INFO | Use pytorch device_name: mps
+2026-01-02 16:00:18 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:00:18 | WARNING |   ✗ LLM parsing failed: Expecting value: line 5 column 5 (char 61)
+2026-01-02 16:00:18 | WARNING |   ✗ Failed to generate scores
+2026-01-02 16:00:18 | INFO | [84/150] sst2 - 539
+2026-01-02 16:00:18 | INFO |   Text: do not see this film ....
+2026-01-02 16:00:18 | INFO |   Words: 6 tokens
+2026-01-02 16:00:19 | INFO | Use pytorch device_name: mps
+2026-01-02 16:00:29 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:00:29 | WARNING |   ✗ LLM parsing failed: Expecting value: line 5 column 5 (char 61)
+2026-01-02 16:00:29 | WARNING |   ✗ Failed to generate scores
+2026-01-02 16:00:29 | INFO | [85/150] sst2 - 726
+2026-01-02 16:00:29 | INFO |   Text: it gets onto the screen just about as much of the novella as one could reasonabl...
+2026-01-02 16:00:29 | INFO |   Words: 28 tokens
+2026-01-02 16:00:30 | INFO | Use pytorch device_name: mps
+2026-01-02 16:01:03 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:01:03 | INFO | Use pytorch device_name: mps
+2026-01-02 16:01:03 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:01:05 | INFO |   ✓ LIME-LLM scores generated (28 tokens)
+2026-01-02 16:01:05 | INFO | [86/150] sst2 - 80
+2026-01-02 16:01:05 | INFO |   Text: the draw ( for `` big bad love '' ) is a solid performance by arliss howard ....
+2026-01-02 16:01:05 | INFO |   Words: 18 tokens
+2026-01-02 16:01:06 | INFO | Use pytorch device_name: mps
+2026-01-02 16:01:23 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:01:23 | INFO | Use pytorch device_name: mps
+2026-01-02 16:01:23 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:01:25 | INFO |   ✓ LIME-LLM scores generated (18 tokens)
+2026-01-02 16:01:25 | INFO | [87/150] sst2 - 225
+2026-01-02 16:01:25 | INFO |   Text: far more imaginative and ambitious than the trivial , cash-in features nickelode...
+2026-01-02 16:01:25 | INFO |   Words: 21 tokens
+2026-01-02 16:01:26 | INFO | Use pytorch device_name: mps
+2026-01-02 16:01:53 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:01:53 | WARNING |   ✗ LLM parsing failed: Expecting value: line 106 column 5 (char 5074)
+2026-01-02 16:01:53 | WARNING |   ✗ Failed to generate scores
+2026-01-02 16:01:53 | INFO | [88/150] sst2 - 189
+2026-01-02 16:01:53 | INFO |   Text: its story may be a thousand years old , but why did it have to seem like it took...
+2026-01-02 16:01:53 | INFO |   Words: 27 tokens
+2026-01-02 16:01:54 | INFO | Use pytorch device_name: mps
+2026-01-02 16:02:14 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:02:14 | INFO | Use pytorch device_name: mps
+2026-01-02 16:02:14 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:02:17 | INFO |   ✓ LIME-LLM scores generated (27 tokens)
+2026-01-02 16:02:17 | INFO | [89/150] sst2 - 134
+2026-01-02 16:02:17 | INFO |   Text: it all drags on so interminably it 's like watching a miserable relationship unf...
+2026-01-02 16:02:17 | INFO |   Words: 18 tokens
+2026-01-02 16:02:17 | INFO | Use pytorch device_name: mps
+2026-01-02 16:02:32 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:02:32 | INFO | Use pytorch device_name: mps
+2026-01-02 16:02:32 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:02:34 | INFO |   ✓ LIME-LLM scores generated (18 tokens)
+2026-01-02 16:02:34 | INFO | [90/150] sst2 - 210
+2026-01-02 16:02:34 | INFO |   Text: not only is undercover brother as funny , if not more so , than both austin powe...
+2026-01-02 16:02:34 | INFO |   Words: 37 tokens
+2026-01-02 16:02:34 | INFO | Use pytorch device_name: mps
+2026-01-02 16:03:01 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:03:01 | INFO | Use pytorch device_name: mps
+2026-01-02 16:03:01 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:03:04 | INFO |   ✓ LIME-LLM scores generated (37 tokens)
+2026-01-02 16:03:04 | INFO | [91/150] sst2 - 193
+2026-01-02 16:03:04 | INFO |   Text: morton uses her face and her body language to bring us morvern 's soul , even th...
+2026-01-02 16:03:04 | INFO |   Words: 24 tokens
+2026-01-02 16:03:05 | INFO | Use pytorch device_name: mps
+2026-01-02 16:03:30 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:03:30 | INFO | Use pytorch device_name: mps
+2026-01-02 16:03:30 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:03:32 | INFO |   ✓ LIME-LLM scores generated (24 tokens)
+2026-01-02 16:03:32 | INFO | [92/150] sst2 - 719
+2026-01-02 16:03:32 | INFO |   Text: whaley 's determination to immerse you in sheer , unrelenting wretchedness is ex...
+2026-01-02 16:03:32 | INFO |   Words: 14 tokens
+2026-01-02 16:03:33 | INFO | Use pytorch device_name: mps
+2026-01-02 16:03:48 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:03:48 | INFO | Use pytorch device_name: mps
+2026-01-02 16:03:48 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:03:51 | INFO |   ✓ LIME-LLM scores generated (14 tokens)
+2026-01-02 16:03:51 | INFO | [93/150] sst2 - 472
+2026-01-02 16:03:51 | INFO |   Text: you will emerge with a clearer view of how the gears of justice grind on and the...
+2026-01-02 16:03:51 | INFO |   Words: 28 tokens
+2026-01-02 16:03:52 | INFO | Use pytorch device_name: mps
+2026-01-02 16:04:20 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:04:20 | INFO | Use pytorch device_name: mps
+2026-01-02 16:04:20 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:04:22 | INFO |   ✓ LIME-LLM scores generated (28 tokens)
+2026-01-02 16:04:22 | INFO | [94/150] sst2 - 355
+2026-01-02 16:04:22 | INFO |   Text: there is no pleasure in watching a child suffer ....
+2026-01-02 16:04:22 | INFO |   Words: 10 tokens
+2026-01-02 16:04:23 | INFO | Use pytorch device_name: mps
+2026-01-02 16:04:32 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:04:32 | INFO | Use pytorch device_name: mps
+2026-01-02 16:04:32 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:04:34 | INFO |   ✓ LIME-LLM scores generated (10 tokens)
+2026-01-02 16:04:34 | INFO | [95/150] sst2 - 336
+2026-01-02 16:04:34 | INFO |   Text: having had the good sense to cast actors who are , generally speaking , adored b...
+2026-01-02 16:04:34 | INFO |   Words: 29 tokens
+2026-01-02 16:04:35 | INFO | Use pytorch device_name: mps
+2026-01-02 16:05:13 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:05:13 | INFO | Use pytorch device_name: mps
+2026-01-02 16:05:13 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:05:16 | INFO |   ✓ LIME-LLM scores generated (29 tokens)
+2026-01-02 16:05:16 | INFO | [96/150] sst2 - 846
+2026-01-02 16:05:16 | INFO |   Text: an absurdist comedy about alienation , separation and loss ....
+2026-01-02 16:05:16 | INFO |   Words: 10 tokens
+2026-01-02 16:05:17 | INFO | Use pytorch device_name: mps
+2026-01-02 16:05:34 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:05:34 | WARNING |   ✗ LLM parsing failed: Expecting value: line 5 column 5 (char 61)
+2026-01-02 16:05:34 | WARNING |   ✗ Failed to generate scores
+2026-01-02 16:05:34 | INFO | [97/150] sst2 - 770
+2026-01-02 16:05:34 | INFO |   Text: i do n't think i laughed out loud once ....
+2026-01-02 16:05:34 | INFO |   Words: 10 tokens
+2026-01-02 16:05:34 | INFO | Use pytorch device_name: mps
+2026-01-02 16:05:48 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:05:48 | WARNING |   ✗ LLM parsing failed: Expecting value: line 5 column 5 (char 61)
+2026-01-02 16:05:48 | WARNING |   ✗ Failed to generate scores
+2026-01-02 16:05:48 | INFO | [98/150] sst2 - 593
+2026-01-02 16:05:48 | INFO |   Text: the terrific and bewilderingly underrated campbell scott gives a star performanc...
+2026-01-02 16:05:48 | INFO |   Words: 18 tokens
+2026-01-02 16:05:49 | INFO | Use pytorch device_name: mps
+2026-01-02 16:06:07 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:06:07 | INFO | Use pytorch device_name: mps
+2026-01-02 16:06:07 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:06:10 | INFO |   ✓ LIME-LLM scores generated (18 tokens)
+2026-01-02 16:06:10 | INFO | [99/150] sst2 - 72
+2026-01-02 16:06:10 | INFO |   Text: uses high comedy to evoke surprising poignance ....
+2026-01-02 16:06:10 | INFO |   Words: 8 tokens
+2026-01-02 16:06:11 | INFO | Use pytorch device_name: mps
+2026-01-02 16:06:19 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:06:19 | INFO | Use pytorch device_name: mps
+2026-01-02 16:06:19 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:06:22 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2026-01-02 16:06:22 | INFO | [100/150] sst2 - 671
+2026-01-02 16:06:22 | INFO |   Text: two hours fly by -- opera 's a pleasure when you do n't have to endure intermiss...
+2026-01-02 16:06:22 | INFO |   Words: 29 tokens
+2026-01-02 16:06:22 | INFO | Use pytorch device_name: mps
+2026-01-02 16:06:44 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:06:44 | INFO | Use pytorch device_name: mps
+2026-01-02 16:06:44 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:06:47 | INFO |   ✓ LIME-LLM scores generated (29 tokens)
+2026-01-02 16:06:47 | INFO | [101/150] hatexplain - 1252707503441313794_twitter
+2026-01-02 16:06:47 | INFO |   Text: <user> <user> why are you repeating yourself are you a little retarded...
+2026-01-02 16:06:47 | INFO |   Words: 12 tokens
+2026-01-02 16:06:47 | INFO | Use pytorch device_name: mps
+2026-01-02 16:07:03 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:07:03 | INFO | Use pytorch device_name: mps
+2026-01-02 16:07:03 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:07:06 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2026-01-02 16:07:06 | INFO | [102/150] hatexplain - 1169443635869487105_twitter
+2026-01-02 16:07:06 | INFO |   Text: <user> lol not me i don [UNK] t deal with bms not outside children [UNK] ss i le...
+2026-01-02 16:07:06 | INFO |   Words: 27 tokens
+2026-01-02 16:07:07 | INFO | Use pytorch device_name: mps
+2026-01-02 16:07:22 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:07:22 | WARNING | ⚠️Found 23 of samples - required 20
+2026-01-02 16:07:22 | INFO | Use pytorch device_name: mps
+2026-01-02 16:07:22 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:07:24 | INFO |   ✓ LIME-LLM scores generated (27 tokens)
+2026-01-02 16:07:24 | INFO | [103/150] hatexplain - 17372469_gab
+2026-01-02 16:07:24 | INFO |   Text: an these nigger biches look like godzilla nasty...
+2026-01-02 16:07:24 | INFO |   Words: 8 tokens
+2026-01-02 16:07:25 | INFO | Use pytorch device_name: mps
+2026-01-02 16:07:43 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:07:43 | WARNING | ⚠️Found 21 of samples - required 20
+2026-01-02 16:07:43 | INFO | Use pytorch device_name: mps
+2026-01-02 16:07:43 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:07:45 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2026-01-02 16:07:45 | INFO | [104/150] hatexplain - 1168407844095483904_twitter
+2026-01-02 16:07:45 | INFO |   Text: yeah humnh what how do i use this app i [UNK] m alittle retarded [UNK]...
+2026-01-02 16:07:45 | INFO |   Words: 15 tokens
+2026-01-02 16:07:46 | INFO | Use pytorch device_name: mps
+2026-01-02 16:08:01 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:08:01 | INFO | Use pytorch device_name: mps
+2026-01-02 16:08:01 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:08:04 | INFO |   ✓ LIME-LLM scores generated (15 tokens)
+2026-01-02 16:08:04 | INFO | [105/150] hatexplain - 12643541_gab
+2026-01-02 16:08:04 | INFO |   Text: black people are oppressed by their own culture and community blacks need to wak...
+2026-01-02 16:08:04 | INFO |   Words: 49 tokens
+2026-01-02 16:08:05 | INFO | Use pytorch device_name: mps
+2026-01-02 16:08:51 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:08:51 | WARNING | ⚠️Found 21 of samples - required 20
+2026-01-02 16:08:51 | INFO | Use pytorch device_name: mps
+2026-01-02 16:08:51 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:08:55 | INFO |   ✓ LIME-LLM scores generated (49 tokens)
+2026-01-02 16:08:55 | INFO | [106/150] hatexplain - 18943330_gab
+2026-01-02 16:08:55 | INFO |   Text: the muzzie loving natsoc get the sword...
+2026-01-02 16:08:55 | INFO |   Words: 7 tokens
+2026-01-02 16:08:56 | INFO | Use pytorch device_name: mps
+2026-01-02 16:09:08 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:09:08 | WARNING | ⚠️Found 21 of samples - required 20
+2026-01-02 16:09:08 | INFO | Use pytorch device_name: mps
+2026-01-02 16:09:08 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:09:10 | INFO |   ✓ LIME-LLM scores generated (7 tokens)
+2026-01-02 16:09:10 | INFO | [107/150] hatexplain - 1077853_gab
+2026-01-02 16:09:10 | INFO |   Text: tbtc take back the country toxic masculinity patriarchy harm men noxious femalen...
+2026-01-02 16:09:10 | INFO |   Words: 38 tokens
+2026-01-02 16:09:11 | INFO | Use pytorch device_name: mps
+2026-01-02 16:09:42 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:09:42 | WARNING | ⚠️Found 21 of samples - required 20
+2026-01-02 16:09:42 | INFO | Use pytorch device_name: mps
+2026-01-02 16:09:42 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:09:45 | INFO |   ✓ LIME-LLM scores generated (38 tokens)
+2026-01-02 16:09:45 | INFO | [108/150] hatexplain - 1162547667416899586_twitter
+2026-01-02 16:09:45 | INFO |   Text: there too many wypipo asking what this is and if they can get in this is a nigge...
+2026-01-02 16:09:45 | INFO |   Words: 20 tokens
+2026-01-02 16:09:46 | INFO | Use pytorch device_name: mps
+2026-01-02 16:10:12 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:10:12 | INFO | Use pytorch device_name: mps
+2026-01-02 16:10:12 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:10:16 | INFO |   ✓ LIME-LLM scores generated (20 tokens)
+2026-01-02 16:10:16 | INFO | [109/150] hatexplain - 20989384_gab
+2026-01-02 16:10:16 | INFO |   Text: i hope there are not many of my fellow asians in sweden high chance of falling v...
+2026-01-02 16:10:16 | INFO |   Words: 24 tokens
+2026-01-02 16:10:17 | INFO | Use pytorch device_name: mps
+2026-01-02 16:10:38 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:10:38 | INFO | Use pytorch device_name: mps
+2026-01-02 16:10:38 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:10:41 | INFO |   ✓ LIME-LLM scores generated (24 tokens)
+2026-01-02 16:10:41 | INFO | [110/150] hatexplain - 1083042797995941889_twitter
+2026-01-02 16:10:41 | INFO |   Text: take drugs and rape sluts...
+2026-01-02 16:10:41 | INFO |   Words: 5 tokens
+2026-01-02 16:10:42 | INFO | Use pytorch device_name: mps
+2026-01-02 16:10:59 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:10:59 | WARNING |   ✗ LLM parsing failed: Expecting value: line 5 column 5 (char 61)
+2026-01-02 16:10:59 | WARNING |   ✗ Failed to generate scores
+2026-01-02 16:10:59 | INFO | [111/150] hatexplain - 1079795475560218626_twitter
+2026-01-02 16:10:59 | INFO |   Text: <user> <user> treat the immigrants as drug traffickers they will soon have a cha...
+2026-01-02 16:10:59 | INFO |   Words: 17 tokens
+2026-01-02 16:11:00 | INFO | Use pytorch device_name: mps
+2026-01-02 16:11:16 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:11:16 | INFO | Use pytorch device_name: mps
+2026-01-02 16:11:16 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:11:19 | INFO |   ✓ LIME-LLM scores generated (17 tokens)
+2026-01-02 16:11:19 | INFO | [112/150] hatexplain - 13948927_gab
+2026-01-02 16:11:19 | INFO |   Text: cia nigger apologizes to pol for the poz...
+2026-01-02 16:11:19 | INFO |   Words: 8 tokens
+2026-01-02 16:11:20 | INFO | Use pytorch device_name: mps
+2026-01-02 16:11:33 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:11:33 | WARNING |   ✗ LLM parsing failed: Expecting value: line 5 column 5 (char 61)
+2026-01-02 16:11:33 | WARNING |   ✗ Failed to generate scores
+2026-01-02 16:11:33 | INFO | [113/150] hatexplain - 1225858073270476800_twitter
+2026-01-02 16:11:33 | INFO |   Text: space is gay and so are you...
+2026-01-02 16:11:33 | INFO |   Words: 7 tokens
+2026-01-02 16:11:34 | INFO | Use pytorch device_name: mps
+2026-01-02 16:11:46 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:11:46 | INFO | Use pytorch device_name: mps
+2026-01-02 16:11:46 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:11:48 | INFO |   ✓ LIME-LLM scores generated (7 tokens)
+2026-01-02 16:11:48 | INFO | [114/150] hatexplain - 18529253_gab
+2026-01-02 16:11:48 | INFO |   Text: fun fact did you know kardashian is armenian for nigger lover...
+2026-01-02 16:11:48 | INFO |   Words: 11 tokens
+2026-01-02 16:11:50 | INFO | Use pytorch device_name: mps
+2026-01-02 16:12:18 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:12:18 | WARNING | ⚠️Found 34 of samples - required 20
+2026-01-02 16:12:18 | INFO | Use pytorch device_name: mps
+2026-01-02 16:12:18 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:12:22 | INFO |   ✓ LIME-LLM scores generated (11 tokens)
+2026-01-02 16:12:22 | INFO | [115/150] hatexplain - 13455893_gab
+2026-01-02 16:12:22 | INFO |   Text: new rule in all competitive shows baking dancing or other let paki or nigger tok...
+2026-01-02 16:12:22 | INFO |   Words: 36 tokens
+2026-01-02 16:12:23 | INFO | Use pytorch device_name: mps
+2026-01-02 16:12:47 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:12:47 | INFO | Use pytorch device_name: mps
+2026-01-02 16:12:47 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:12:50 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2026-01-02 16:12:50 | INFO | [116/150] hatexplain - 1100389613074558976_twitter
+2026-01-02 16:12:50 | INFO |   Text: <user> not low class they enjoy to get fucked by muslims...
+2026-01-02 16:12:50 | INFO |   Words: 11 tokens
+2026-01-02 16:12:52 | INFO | Use pytorch device_name: mps
+2026-01-02 16:13:07 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:13:07 | WARNING | ⚠️Found 21 of samples - required 20
+2026-01-02 16:13:07 | INFO | Use pytorch device_name: mps
+2026-01-02 16:13:07 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:13:10 | INFO |   ✓ LIME-LLM scores generated (11 tokens)
+2026-01-02 16:13:10 | INFO | [117/150] hatexplain - 5942714_gab
+2026-01-02 16:13:10 | INFO |   Text: are you talking about sand niggers...
+2026-01-02 16:13:10 | INFO |   Words: 6 tokens
+2026-01-02 16:13:10 | INFO | Use pytorch device_name: mps
+2026-01-02 16:13:20 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:13:20 | WARNING |   ✗ LLM parsing failed: Expecting value: line 5 column 5 (char 61)
+2026-01-02 16:13:20 | WARNING |   ✗ Failed to generate scores
+2026-01-02 16:13:20 | INFO | [118/150] hatexplain - 21217776_gab
+2026-01-02 16:13:20 | INFO |   Text: imagine being so disconnected that youd think a dickies work shirt and some blac...
+2026-01-02 16:13:20 | INFO |   Words: 50 tokens
+2026-01-02 16:13:22 | INFO | Use pytorch device_name: mps
+2026-01-02 16:14:01 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:14:01 | WARNING | ⚠️Found 25 of samples - required 20
+2026-01-02 16:14:01 | INFO | Use pytorch device_name: mps
+2026-01-02 16:14:01 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:14:04 | INFO |   ✓ LIME-LLM scores generated (50 tokens)
+2026-01-02 16:14:04 | INFO | [119/150] hatexplain - 6817112_gab
+2026-01-02 16:14:04 | INFO |   Text: sweden suicide is a foregone conclusion no amount of tweeting raging philosophiz...
+2026-01-02 16:14:04 | INFO |   Words: 38 tokens
+2026-01-02 16:14:05 | INFO | Use pytorch device_name: mps
+2026-01-02 16:14:37 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:14:37 | WARNING | ⚠️Found 22 of samples - required 20
+2026-01-02 16:14:37 | INFO | Use pytorch device_name: mps
+2026-01-02 16:14:37 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:14:41 | INFO |   ✓ LIME-LLM scores generated (38 tokens)
+2026-01-02 16:14:41 | INFO | [120/150] hatexplain - 1090673738545283074_twitter
+2026-01-02 16:14:41 | INFO |   Text: i do not listen to niggershitbullshit...
+2026-01-02 16:14:41 | INFO |   Words: 6 tokens
+2026-01-02 16:14:42 | INFO | Use pytorch device_name: mps
+2026-01-02 16:14:49 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:14:49 | INFO | Use pytorch device_name: mps
+2026-01-02 16:14:49 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:14:52 | INFO |   ✓ LIME-LLM scores generated (6 tokens)
+2026-01-02 16:14:52 | INFO | [121/150] hatexplain - 21836106_gab
+2026-01-02 16:14:52 | INFO |   Text: mfw i m trying to write an important term paper and some affirmative action ass ...
+2026-01-02 16:14:52 | INFO |   Words: 23 tokens
+2026-01-02 16:14:53 | INFO | Use pytorch device_name: mps
+2026-01-02 16:15:09 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:15:09 | WARNING |   ✗ LLM parsing failed: Expecting value: line 6 column 5 (char 62)
+2026-01-02 16:15:09 | WARNING |   ✗ Failed to generate scores
+2026-01-02 16:15:09 | INFO | [122/150] hatexplain - 17074293_gab
+2026-01-02 16:15:09 | INFO |   Text: agreed and riyadh and any another place in that cesspool they congregate as i sa...
+2026-01-02 16:15:09 | INFO |   Words: 34 tokens
+2026-01-02 16:15:11 | INFO | Use pytorch device_name: mps
+2026-01-02 16:15:41 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:15:41 | WARNING | ⚠️Found 21 of samples - required 20
+2026-01-02 16:15:41 | INFO | Use pytorch device_name: mps
+2026-01-02 16:15:41 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:15:45 | INFO |   ✓ LIME-LLM scores generated (34 tokens)
+2026-01-02 16:15:45 | INFO | [123/150] hatexplain - 1120883481549189120_twitter
+2026-01-02 16:15:45 | INFO |   Text: <user> <user> u spell it like a retard...
+2026-01-02 16:15:45 | INFO |   Words: 8 tokens
+2026-01-02 16:15:45 | INFO | Use pytorch device_name: mps
+2026-01-02 16:16:00 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:16:00 | INFO | Use pytorch device_name: mps
+2026-01-02 16:16:00 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:16:03 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2026-01-02 16:16:03 | INFO | [124/150] hatexplain - 24642826_gab
+2026-01-02 16:16:03 | INFO |   Text: as evidenced by the fact that they do not attack nigger toxic masculinity like r...
+2026-01-02 16:16:03 | INFO |   Words: 28 tokens
+2026-01-02 16:16:04 | INFO | Use pytorch device_name: mps
+2026-01-02 16:16:29 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:16:29 | INFO | Use pytorch device_name: mps
+2026-01-02 16:16:29 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:16:33 | INFO |   ✓ LIME-LLM scores generated (28 tokens)
+2026-01-02 16:16:33 | INFO | [125/150] hatexplain - 24226678_gab
+2026-01-02 16:16:33 | INFO |   Text: always thought that nigger was a faggot...
+2026-01-02 16:16:33 | INFO |   Words: 7 tokens
+2026-01-02 16:16:34 | INFO | Use pytorch device_name: mps
+2026-01-02 16:16:52 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:16:52 | WARNING |   ✗ LLM parsing failed: Expecting value: line 5 column 5 (char 61)
+2026-01-02 16:16:52 | WARNING |   ✗ Failed to generate scores
+2026-01-02 16:16:52 | INFO | [126/150] hatexplain - 14095649_gab
+2026-01-02 16:16:52 | INFO |   Text: if they are seeking asylum from a terrible mussie country why then are they work...
+2026-01-02 16:16:52 | INFO |   Words: 38 tokens
+2026-01-02 16:16:53 | INFO | Use pytorch device_name: mps
+2026-01-02 16:17:25 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:17:25 | WARNING | ⚠️Found 22 of samples - required 20
+2026-01-02 16:17:25 | INFO | Use pytorch device_name: mps
+2026-01-02 16:17:25 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:17:28 | INFO |   ✓ LIME-LLM scores generated (38 tokens)
+2026-01-02 16:17:28 | INFO | [127/150] hatexplain - 1178251992801533952_twitter
+2026-01-02 16:17:28 | INFO |   Text: mohammad bin salman al saud ordered the bone sawing of an american journalist i ...
+2026-01-02 16:17:28 | INFO |   Words: 47 tokens
+2026-01-02 16:17:29 | INFO | Use pytorch device_name: mps
+2026-01-02 16:18:06 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:18:06 | WARNING | ⚠️Found 22 of samples - required 20
+2026-01-02 16:18:06 | INFO | Use pytorch device_name: mps
+2026-01-02 16:18:06 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:18:10 | INFO |   ✓ LIME-LLM scores generated (47 tokens)
+2026-01-02 16:18:10 | INFO | [128/150] hatexplain - 18195956_gab
+2026-01-02 16:18:10 | INFO |   Text: kick all illegal immigrants out they do not belong here they have no business be...
+2026-01-02 16:18:10 | INFO |   Words: 20 tokens
+2026-01-02 16:18:12 | INFO | Use pytorch device_name: mps
+2026-01-02 16:18:30 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:18:30 | INFO | Use pytorch device_name: mps
+2026-01-02 16:18:30 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:18:32 | INFO |   ✓ LIME-LLM scores generated (20 tokens)
+2026-01-02 16:18:32 | INFO | [129/150] hatexplain - 23169645_gab
+2026-01-02 16:18:32 | INFO |   Text: idiot boy trudeau his somali moslem immigration minister ahmed hussen want to br...
+2026-01-02 16:18:32 | INFO |   Words: 33 tokens
+2026-01-02 16:18:34 | INFO | Use pytorch device_name: mps
+2026-01-02 16:19:04 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:19:04 | INFO | Use pytorch device_name: mps
+2026-01-02 16:19:04 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:19:07 | INFO |   ✓ LIME-LLM scores generated (33 tokens)
+2026-01-02 16:19:07 | INFO | [130/150] hatexplain - 1105655062599208960_twitter
+2026-01-02 16:19:07 | INFO |   Text: suck out you faggot...
+2026-01-02 16:19:07 | INFO |   Words: 4 tokens
+2026-01-02 16:19:08 | INFO | Use pytorch device_name: mps
+2026-01-02 16:19:15 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:19:15 | WARNING |   ✗ LLM parsing failed: Expecting value: line 5 column 5 (char 61)
+2026-01-02 16:19:15 | WARNING |   ✗ Failed to generate scores
+2026-01-02 16:19:15 | INFO | [131/150] hatexplain - 19792641_gab
+2026-01-02 16:19:15 | INFO |   Text: ovomits a nigger and a half nigger...
+2026-01-02 16:19:15 | INFO |   Words: 7 tokens
+2026-01-02 16:19:16 | INFO | Use pytorch device_name: mps
+2026-01-02 16:19:35 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:19:35 | WARNING |   ✗ LLM parsing failed: Expecting value: line 5 column 5 (char 61)
+2026-01-02 16:19:35 | WARNING |   ✗ Failed to generate scores
+2026-01-02 16:19:35 | INFO | [132/150] hatexplain - 15835814_gab
+2026-01-02 16:19:35 | INFO |   Text: so he admits to his inner retard that can not cope with facts not aligning with ...
+2026-01-02 16:19:35 | INFO |   Words: 19 tokens
+2026-01-02 16:19:36 | INFO | Use pytorch device_name: mps
+2026-01-02 16:19:54 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:19:54 | INFO | Use pytorch device_name: mps
+2026-01-02 16:19:54 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:19:57 | INFO |   ✓ LIME-LLM scores generated (19 tokens)
+2026-01-02 16:19:57 | INFO | [133/150] hatexplain - 17188614_gab
+2026-01-02 16:19:57 | INFO |   Text: <number> years of inbreeding make their hasbara basically retarded it a kike thi...
+2026-01-02 16:19:57 | INFO |   Words: 13 tokens
+2026-01-02 16:19:58 | INFO | Use pytorch device_name: mps
+2026-01-02 16:20:35 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:20:35 | WARNING | ⚠️Found 32 of samples - required 20
+2026-01-02 16:20:35 | INFO | Use pytorch device_name: mps
+2026-01-02 16:20:35 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:20:40 | INFO |   ✓ LIME-LLM scores generated (13 tokens)
+2026-01-02 16:20:40 | INFO | [134/150] hatexplain - 1178170242872283137_twitter
+2026-01-02 16:20:40 | INFO |   Text: <number> years ago i do not believe the best of europeans anticipated the slave ...
+2026-01-02 16:20:40 | INFO |   Words: 38 tokens
+2026-01-02 16:20:41 | INFO | Use pytorch device_name: mps
+2026-01-02 16:21:13 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:21:13 | WARNING |   ✗ LLM parsing failed: Expecting value: line 96 column 5 (char 6408)
+2026-01-02 16:21:13 | WARNING |   ✗ Failed to generate scores
+2026-01-02 16:21:13 | INFO | [135/150] hatexplain - 23877736_gab
+2026-01-02 16:21:13 | INFO |   Text: my goal on this site is expose the filthy disgusting hoodrat nigger bitch in all...
+2026-01-02 16:21:13 | INFO |   Words: 25 tokens
+2026-01-02 16:21:14 | INFO | Use pytorch device_name: mps
+2026-01-02 16:21:37 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:21:38 | INFO | Use pytorch device_name: mps
+2026-01-02 16:21:38 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:21:43 | INFO |   ✓ LIME-LLM scores generated (25 tokens)
+2026-01-02 16:21:43 | INFO | [136/150] hatexplain - 12487417_gab
+2026-01-02 16:21:43 | INFO |   Text: come on please you forgot you are from europe you think north africa is black yo...
+2026-01-02 16:21:43 | INFO |   Words: 35 tokens
+2026-01-02 16:21:45 | INFO | Use pytorch device_name: mps
+2026-01-02 16:22:11 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:22:11 | WARNING | ⚠️Found 21 of samples - required 20
+2026-01-02 16:22:11 | INFO | Use pytorch device_name: mps
+2026-01-02 16:22:11 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:22:14 | INFO |   ✓ LIME-LLM scores generated (35 tokens)
+2026-01-02 16:22:14 | INFO | [137/150] hatexplain - 13879478_gab
+2026-01-02 16:22:14 | INFO |   Text: america always was a country for by and of genetic europeans a white man born in...
+2026-01-02 16:22:14 | INFO |   Words: 33 tokens
+2026-01-02 16:22:16 | INFO | Use pytorch device_name: mps
+2026-01-02 16:22:39 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:22:39 | INFO | Use pytorch device_name: mps
+2026-01-02 16:22:39 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:22:42 | INFO |   ✓ LIME-LLM scores generated (33 tokens)
+2026-01-02 16:22:42 | INFO | [138/150] hatexplain - 21757892_gab
+2026-01-02 16:22:42 | INFO |   Text: fuck that towelhead terrorist ship him to syria and drop him off a building fuck...
+2026-01-02 16:22:42 | INFO |   Words: 16 tokens
+2026-01-02 16:22:43 | INFO | Use pytorch device_name: mps
+2026-01-02 16:23:02 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:23:02 | INFO | Use pytorch device_name: mps
+2026-01-02 16:23:02 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:23:04 | INFO |   ✓ LIME-LLM scores generated (16 tokens)
+2026-01-02 16:23:04 | INFO | [139/150] hatexplain - 1144477259425730560_twitter
+2026-01-02 16:23:04 | INFO |   Text: <user> there were also no mentions of the threats immigrants present to citizens...
+2026-01-02 16:23:04 | INFO |   Words: 15 tokens
+2026-01-02 16:23:06 | INFO | Use pytorch device_name: mps
+2026-01-02 16:23:29 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:23:29 | WARNING | ⚠️Found 30 of samples - required 20
+2026-01-02 16:23:29 | INFO | Use pytorch device_name: mps
+2026-01-02 16:23:29 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:23:32 | INFO |   ✓ LIME-LLM scores generated (15 tokens)
+2026-01-02 16:23:32 | INFO | [140/150] hatexplain - 15731682_gab
+2026-01-02 16:23:32 | INFO |   Text: besides i am irish white nigger spud nigger shamrock nigger leprechaun nigger po...
+2026-01-02 16:23:32 | INFO |   Words: 41 tokens
+2026-01-02 16:23:33 | INFO | Use pytorch device_name: mps
+2026-01-02 16:24:00 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:24:00 | WARNING | ⚠️Found 21 of samples - required 20
+2026-01-02 16:24:00 | INFO | Use pytorch device_name: mps
+2026-01-02 16:24:00 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:24:04 | INFO |   ✓ LIME-LLM scores generated (41 tokens)
+2026-01-02 16:24:04 | INFO | [141/150] hatexplain - 1081320994244055040_twitter
+2026-01-02 16:24:04 | INFO |   Text: that hoe only got time for his friends...
+2026-01-02 16:24:04 | INFO |   Words: 8 tokens
+2026-01-02 16:24:05 | INFO | Use pytorch device_name: mps
+2026-01-02 16:24:15 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:24:15 | INFO | Use pytorch device_name: mps
+2026-01-02 16:24:15 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:24:18 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2026-01-02 16:24:18 | INFO | [142/150] hatexplain - 9867117_gab
+2026-01-02 16:24:18 | INFO |   Text: well my dear lgbtq brothers and sisters i do not want to die at the hands of a m...
+2026-01-02 16:24:18 | INFO |   Words: 43 tokens
+2026-01-02 16:24:19 | INFO | Use pytorch device_name: mps
+2026-01-02 16:24:59 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:24:59 | WARNING | ⚠️Found 22 of samples - required 20
+2026-01-02 16:24:59 | INFO | Use pytorch device_name: mps
+2026-01-02 16:24:59 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:25:02 | INFO |   ✓ LIME-LLM scores generated (43 tokens)
+2026-01-02 16:25:02 | INFO | [143/150] hatexplain - 1179048638921596928_twitter
+2026-01-02 16:25:02 | INFO |   Text: <user> <user> ching chong <number>...
+2026-01-02 16:25:02 | INFO |   Words: 5 tokens
+2026-01-02 16:25:03 | INFO | Use pytorch device_name: mps
+2026-01-02 16:25:16 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:25:16 | INFO | Use pytorch device_name: mps
+2026-01-02 16:25:16 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:25:18 | INFO |   ✓ LIME-LLM scores generated (5 tokens)
+2026-01-02 16:25:18 | INFO | [144/150] hatexplain - 1178837672699269126_twitter
+2026-01-02 16:25:18 | INFO |   Text: dababy security explaining why he knocked out that dyke should not be as funny a...
+2026-01-02 16:25:18 | INFO |   Words: 17 tokens
+2026-01-02 16:25:20 | INFO | Use pytorch device_name: mps
+2026-01-02 16:25:37 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:25:37 | INFO | Use pytorch device_name: mps
+2026-01-02 16:25:37 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:25:40 | INFO |   ✓ LIME-LLM scores generated (17 tokens)
+2026-01-02 16:25:40 | INFO | [145/150] hatexplain - 4701852_gab
+2026-01-02 16:25:40 | INFO |   Text: fanbloodytastic by time these leeches are held to account especially the muzzie ...
+2026-01-02 16:25:40 | INFO |   Words: 36 tokens
+2026-01-02 16:25:41 | INFO | Use pytorch device_name: mps
+2026-01-02 16:26:12 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:26:12 | WARNING |   ✗ LLM parsing failed: Expecting value: line 57 column 5 (char 3754)
+2026-01-02 16:26:12 | WARNING |   ✗ Failed to generate scores
+2026-01-02 16:26:12 | INFO | [146/150] hatexplain - 22842291_gab
+2026-01-02 16:26:12 | INFO |   Text: i never thought i would see the day when faggots and niggers are held in a highe...
+2026-01-02 16:26:12 | INFO |   Words: 35 tokens
+2026-01-02 16:26:13 | INFO | Use pytorch device_name: mps
+2026-01-02 16:26:41 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:26:41 | WARNING | ⚠️Found 21 of samples - required 20
+2026-01-02 16:26:41 | INFO | Use pytorch device_name: mps
+2026-01-02 16:26:41 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:26:44 | INFO |   ✓ LIME-LLM scores generated (35 tokens)
+2026-01-02 16:26:44 | INFO | [147/150] hatexplain - 23834135_gab
+2026-01-02 16:26:44 | INFO |   Text: obama was ghetto bigger so yes...
+2026-01-02 16:26:44 | INFO |   Words: 6 tokens
+2026-01-02 16:26:45 | INFO | Use pytorch device_name: mps
+2026-01-02 16:26:53 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:26:53 | INFO | Use pytorch device_name: mps
+2026-01-02 16:26:53 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:26:55 | INFO |   ✓ LIME-LLM scores generated (6 tokens)
+2026-01-02 16:26:55 | INFO | [148/150] hatexplain - 25250350_gab
+2026-01-02 16:26:55 | INFO |   Text: that fat fucking dyke pos should indeed be prosecuted and campaign finance viola...
+2026-01-02 16:26:55 | INFO |   Words: 31 tokens
+2026-01-02 16:26:56 | INFO | Use pytorch device_name: mps
+2026-01-02 16:27:23 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:27:23 | WARNING | ⚠️Found 21 of samples - required 20
+2026-01-02 16:27:23 | INFO | Use pytorch device_name: mps
+2026-01-02 16:27:23 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:27:27 | INFO |   ✓ LIME-LLM scores generated (31 tokens)
+2026-01-02 16:27:27 | INFO | [149/150] hatexplain - 10088571_gab
+2026-01-02 16:27:27 | INFO |   Text: jews are the only enemy in the history of the world that resort to crying its an...
+2026-01-02 16:27:27 | INFO |   Words: 24 tokens
+2026-01-02 16:27:28 | INFO | Use pytorch device_name: mps
+2026-01-02 16:27:42 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:27:42 | WARNING |   ✗ LLM parsing failed: Expecting value: line 6 column 5 (char 62)
+2026-01-02 16:27:42 | WARNING |   ✗ Failed to generate scores
+2026-01-02 16:27:42 | INFO | [150/150] hatexplain - 18315448_gab
+2026-01-02 16:27:42 | INFO |   Text: a god dam kike only thinks about sucking babydicks and making believe they holy...
+2026-01-02 16:27:42 | INFO |   Words: 14 tokens
+2026-01-02 16:27:44 | INFO | Use pytorch device_name: mps
+2026-01-02 16:28:02 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 16:28:02 | INFO | Use pytorch device_name: mps
+2026-01-02 16:28:02 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 16:28:04 | INFO |   ✓ LIME-LLM scores generated (14 tokens)
+2026-01-02 16:28:04 | WARNING | 
+✓ Results saved: results.csv
+2026-01-02 16:28:05 | INFO | 
+Generating evaluation plots...
+2026-01-02 16:28:05 | INFO |   Processing cola...
+2026-01-02 16:28:06 | INFO |   ✓ Saved curves: outputs/run_gpt41_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9/curves_cola.png
+2026-01-02 16:28:06 | INFO |   Processing sst2...
+2026-01-02 16:28:07 | INFO |   ✓ Saved curves: outputs/run_gpt41_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9/curves_sst2.png
+2026-01-02 16:28:07 | INFO |   Processing hatexplain...
+2026-01-02 16:28:08 | INFO |   ✓ Saved curves: outputs/run_gpt41_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9/curves_hatexplain.png
+2026-01-02 16:28:08 | INFO | 
+================================================================================
+2026-01-02 16:28:08 | INFO | AGGREGATE METRICS (Multi-Seed Analysis)
+2026-01-02 16:28:08 | INFO | ================================================================================
+2026-01-02 16:28:08 | INFO | 
+cola:
+2026-01-02 16:28:08 | INFO |   LIME                : ROC_AUC=0.2553 PR_AUC=0.2100 (seeds=1)
+2026-01-02 16:28:08 | INFO |   Partition SHAP      : ROC_AUC=0.5444 PR_AUC=0.3932 (seeds=1)
+2026-01-02 16:28:08 | INFO |   Integrated Gradient : ROC_AUC=0.5397 PR_AUC=0.4016 (seeds=1)
+2026-01-02 16:28:08 | INFO |   LIME-LLM            : ROC_AUC=0.5702 PR_AUC=0.3765 (seeds=1)
+2026-01-02 16:28:08 | INFO | 
+hatexplain:
+2026-01-02 16:28:08 | INFO |   LIME                : ROC_AUC=0.3428 PR_AUC=0.2362 (seeds=1)
+2026-01-02 16:28:08 | INFO |   Partition SHAP      : ROC_AUC=0.5208 PR_AUC=0.4150 (seeds=1)
+2026-01-02 16:28:08 | INFO |   Integrated Gradient : ROC_AUC=0.5794 PR_AUC=0.4905 (seeds=1)
+2026-01-02 16:28:08 | INFO |   LIME-LLM            : ROC_AUC=0.5470 PR_AUC=0.3491 (seeds=1)
+2026-01-02 16:28:08 | INFO | 
+sst2:
+2026-01-02 16:28:08 | INFO |   LIME                : ROC_AUC=0.5114 PR_AUC=0.3685 (seeds=1)
+2026-01-02 16:28:08 | INFO |   Partition SHAP      : ROC_AUC=0.5294 PR_AUC=0.4548 (seeds=1)
+2026-01-02 16:28:08 | INFO |   Integrated Gradient : ROC_AUC=0.6655 PR_AUC=0.4834 (seeds=1)
+2026-01-02 16:28:08 | INFO |   LIME-LLM            : ROC_AUC=0.5705 PR_AUC=0.2785 (seeds=1)
+2026-01-02 16:28:08 | INFO | 
+================================================================================
+2026-01-02 16:28:08 | INFO | ✓ PIPELINE COMPLETE
+2026-01-02 16:28:08 | INFO | Saved: outputs/run_gpt41_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9/aggregate_metrics.json
+2026-01-02 16:28:08 | INFO | ================================================================================
+
+2026-01-02 16:28:08 | WARNING | Failed examples 0/150
+[]
+2026-01-05 09:43:55 | INFO | 
+================================================================================
+2026-01-05 09:43:55 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2026-01-05 09:43:55 | INFO | Mode: FULL
+2026-01-05 09:43:55 | INFO | Provider: OPENAI
+2026-01-05 09:43:55 | INFO | Output: outputs/run_gpt41_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9
+2026-01-05 09:43:55 | INFO | ================================================================================
+
+2026-01-05 09:43:55 | INFO | df_sample: 2415
+2026-01-05 09:44:25 | INFO | Exiting...

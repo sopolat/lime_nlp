@@ -1,0 +1,67 @@
+{
+  "idx": "534",
+  "dataset": "cola",
+  "text": "She mailed John a letter, but I don't know to whom.",
+  "predicted_label": "unacceptable",
+  "provider": "openai",
+  "timestamp": "2026-01-02T15:21:49.916421",
+  "vocab": [
+    "She",
+    "mailed",
+    "John",
+    "a",
+    "letter",
+    "but",
+    "I",
+    "don",
+    "t",
+    "know",
+    "to",
+    "whom"
+  ],
+  "n_vocab": 12,
+  "response": "{\n  \"status\": \"OK\",\n  \"sample_count\": 20,\n  \"samples\": [\n    {\n      \"mask\": [1,1,1,1,1,1,1,1,1,1,1,1],\n      \"strategy\": \"neutral_infill\",\n      \"text\": \"She mailed John a letter, but I don't know to whom.\"\n    },\n    {\n      \"mask\": [0,1,1,1,1,1,1,1,1,1,1,1],\n      \"strategy\": \"neutral_infill\",\n      \"text\": \"The mailed John a letter, but I don't know to whom.\"\n    },\n    {\n      \"mask\": [1,0,1,1,1,1,1,1,1,1,1,1],\n      \"strategy\": \"neutral_infill\",\n      \"text\": \"She sent John a letter, but I don't know to whom.\"\n    },\n    {\n      \"mask\": [1,1,0,1,1,1,1,1,1,1,1,1],\n      \"strategy\": \"neutral_infill\",\n      \"text\": \"She mailed Jim a letter, but I don't know to whom.\"\n    },\n    {\n      \"mask\": [1,1,1,0,1,1,1,1,1,1,1,1],\n      \"strategy\": \"neutral_infill\",\n      \"text\": \"She mailed John one letter, but I don't know to whom.\"\n    },\n    {\n      \"mask\": [1,1,1,1,0,1,1,1,1,1,1,1],\n      \"strategy\": \"neutral_infill\",\n      \"text\": \"She mailed John a parcel, but I don't know to whom.\"\n    },\n    {\n      \"mask\": [1,1,1,1,1,0,1,1,1,1,1,1],\n      \"strategy\": \"neutral_infill\",\n      \"text\": \"She mailed John a letter, yet I don't know to whom.\"\n    },\n    {\n      \"mask\": [1,1,1,1,1,1,0,1,1,1,1,1],\n      \"strategy\": \"neutral_infill\",\n      \"text\": \"She mailed John a letter, but we don't know to whom.\"\n    },\n    {\n      \"mask\": [1,1,1,1,1,1,1,0,1,1,1,1],\n      \"strategy\": \"neutral_infill\",\n      \"text\": \"She mailed John a letter, but I do not know to whom.\"\n    },\n    {\n      \"mask\": [1,1,1,1,1,1,1,1,0,1,1,1],\n      \"strategy\": \"neutral_infill\",\n      \"text\": \"She mailed John a letter, but I don't really know to whom.\"\n    },\n    {\n      \"mask\": [1,1,1,1,1,1,1,1,1,0,1,1],\n      \"strategy\": \"neutral_infill\",\n      \"text\": \"She mailed John a letter, but I don't know about whom.\"\n    },\n    {\n      \"mask\": [1,1,1,1,1,1,1,1,1,1,0,1],\n      \"strategy\": \"neutral_infill\",\n      \"text\": \"She mailed John a letter, but I don't know to whoever.\"\n    },\n    {\n      \"mask\": [1,1,1,1,1,1,1,1,1,1,1,0],\n      \"strategy\": \"neutral_infill\",\n      \"text\": \"She mailed John a letter, but I don't know to whomsoever.\"\n    },\n    {\n      \"mask\": [0,1,1,1,1,1,0,0,1,1,1,1],\n      \"strategy\": \"boundary_infill\",\n      \"text\": \"He mailed John a letter, but we are not sure to whom.\"\n    },\n    {\n      \"mask\": [1,1,0,1,1,0,1,1,1,1,1,1],\n      \"strategy\": \"boundary_infill\",\n      \"text\": \"She mailed him a letter, yet I don't know to whom.\"\n    },\n    {\n      \"mask\": [1,1,1,1,1,1,0,0,0,1,1,1],\n      \"strategy\": \"boundary_infill\",\n      \"text\": \"She mailed John a letter, but I cannot say to whom.\"\n    },\n    {\n      \"mask\": [1,1,1,1,1,1,1,1,0,0,0,1],\n      \"strategy\": \"boundary_infill\",\n      \"text\": \"She mailed John a letter, but I don't know who to.\"\n    },\n    {\n      \"mask\": [1,1,1,1,1,1,1,1,1,1,0,0],\n      \"strategy\": \"boundary_infill\",\n      \"text\": \"She mailed John a letter, but I don't know whom.\"\n    },\n    {\n      \"mask\": [1,0,1,1,1,1,1,0,1,1,1,1],\n      \"strategy\": \"boundary_infill\",\n      \"text\": \"She sent John a letter, but we don't know to whom.\"\n    },\n    {\n      \"mask\": [1,1,1,0,1,1,1,1,1,1,1,0],\n      \"strategy\": \"boundary_infill\",\n      \"text\": \"She mailed John one letter, but I don't know to whom.\"\n    }\n  ]\n}"
+}
+{
+  "idx": "48",
+  "dataset": "sst2",
+  "text": "has a lot of the virtues of eastwood at his best .",
+  "predicted_label": "positive",
+  "provider": "openai",
+  "timestamp": "2026-01-02T15:22:09.676009",
+  "vocab": [
+    "has",
+    "a",
+    "lot",
+    "of",
+    "the",
+    "virtues",
+    "eastwood",
+    "at",
+    "his",
+    "best"
+  ],
+  "n_vocab": 10,
+  "response": "{\n  \"status\": \"OK\",\n  \"sample_count\": 20,\n  \"samples\": [\n    {\n      \"mask\": [1,1,1,1,1,1,1,1,1,1],\n      \"strategy\": \"neutral_infill\",\n      \"text\": \"has a lot of the virtues of eastwood at his best.\"\n    },\n    {\n      \"mask\": [0,1,1,1,1,1,1,1,1,1],\n      \"strategy\": \"neutral_infill\",\n      \"text\": \"features a lot of the virtues of eastwood at his best.\"\n    },\n    {\n      \"mask\": [1,0,1,1,1,1,1,1,1,1],\n      \"strategy\": \"neutral_infill\",\n      \"text\": \"has many of the virtues of eastwood at his best.\"\n    },\n    {\n      \"mask\": [1,1,0,1,1,1,1,1,1,1],\n      \"strategy\": \"neutral_infill\",\n      \"text\": \"has a wealth of the virtues of eastwood at his best.\"\n    },\n    {\n      \"mask\": [1,1,1,0,1,1,1,1,1,1],\n      \"strategy\": \"neutral_infill\",\n      \"text\": \"has a lot for the virtues of eastwood at his best.\"\n    },\n    {\n      \"mask\": [1,1,1,1,0,1,1,1,1,1],\n      \"strategy\": \"neutral_infill\",\n      \"text\": \"has a lot of these virtues of eastwood at his best.\"\n    },\n    {\n      \"mask\": [1,1,1,1,1,0,1,1,1,1],\n      \"strategy\": \"neutral_infill\",\n      \"text\": \"has a lot of the strengths of eastwood at his best.\"\n    },\n    {\n      \"mask\": [1,1,1,1,1,1,0,1,1,1],\n      \"strategy\": \"neutral_infill\",\n      \"text\": \"has a lot of the virtues of Clint eastwood at his best.\"\n    },\n    {\n      \"mask\": [1,1,1,1,1,1,1,0,1,1],\n      \"strategy\": \"neutral_infill\",\n      \"text\": \"has a lot of the virtues of eastwood in his best.\"\n    },\n    {\n      \"mask\": [1,1,1,1,1,1,1,1,0,1],\n      \"strategy\": \"neutral_infill\",\n      \"text\": \"has a lot of the virtues of eastwood at the best.\"\n    },\n    {\n      \"mask\": [1,1,1,1,1,1,1,1,1,0],\n      \"strategy\": \"neutral_infill\",\n      \"text\": \"has a lot of the virtues of eastwood at his finest.\"\n    },\n    {\n      \"mask\": [0,1,1,1,0,0,1,1,1,1],\n      \"strategy\": \"boundary_infill\",\n      \"text\": \"displays a lot of the flaws of eastwood at his best.\"\n    },\n    {\n      \"mask\": [1,1,0,1,1,1,0,0,1,1],\n      \"strategy\": \"boundary_infill\",\n      \"text\": \"has a lack of the virtues of eastwood during his worst.\"\n    },\n    {\n      \"mask\": [1,1,1,0,0,1,1,1,0,1],\n      \"strategy\": \"boundary_infill\",\n      \"text\": \"has a lot without the virtues of eastwood at his worst.\"\n    },\n    {\n      \"mask\": [1,1,1,1,0,1,0,1,1,0],\n      \"strategy\": \"boundary_infill\",\n      \"text\": \"has a lot of these virtues from eastwood at his lowest.\"\n    },\n    {\n      \"mask\": [1,0,1,1,0,1,1,0,1,1],\n      \"strategy\": \"boundary_infill\",\n      \"text\": \"has little of the virtues of eastwood in his worst.\"\n    },\n    {\n      \"mask\": [1,1,1,1,1,0,0,1,1,0],\n      \"strategy\": \"boundary_infill\",\n      \"text\": \"has a lot of the weaknesses of eastwood at his worst.\"\n    },\n    {\n      \"mask\": [0,1,0,1,1,1,1,1,1,1],\n      \"strategy\": \"boundary_infill\",\n      \"text\": \"lacks a sense of the virtues of eastwood at his best.\"\n    },\n    {\n      \"mask\": [1,1,1,1,1,1,0,0,1,0],\n      \"strategy\": \"boundary_infill\",\n      \"text\": \"has a lot of the virtues of eastwood from his worst.\"\n    },\n    {\n      \"mask\": [1,1,0,1,1,0,1,0,1,1],\n      \"strategy\": \"boundary_infill\",\n      \"text\": \"has a hint of the virtues eastwood at his worst.\"\n    }\n  ]\n}"
+}
+{
+  "idx": "1252707503441313794_twitter",
+  "dataset": "hatexplain",
+  "text": "<user> <user> why are you repeating yourself are you a little retarded",
+  "predicted_label": "offensive",
+  "provider": "openai",
+  "timestamp": "2026-01-02T15:22:27.080244",
+  "vocab": [
+    "user",
+    "why",
+    "are",
+    "you",
+    "repeating",
+    "yourself",
+    "a",
+    "little",
+    "retarded"
+  ],
+  "n_vocab": 9,
+  "response": "{\n  \"status\": \"OK\",\n  \"sample_count\": 20,\n  \"samples\": [\n    {\n      \"mask\": [1,1,0,1,1,1,1,1,1],\n      \"strategy\": \"neutral_infill\",\n      \"text\": \"<user> <user> why are you repeating yourself are you a little retarded\"\n    },\n    {\n      \"mask\": [1,0,1,1,1,1,1,1,1],\n      \"strategy\": \"neutral_infill\",\n      \"text\": \"<user> why are you repeating yourself are you a little retarded\"\n    },\n    {\n      \"mask\": [1,1,1,0,1,1,1,1,1],\n      \"strategy\": \"neutral_infill\",\n      \"text\": \"<user> <user> why are you repeating yourself are you a little retarded\"\n    },\n    {\n      \"mask\": [1,1,1,1,0,1,1,1,1],\n      \"strategy\": \"neutral_infill\",\n      \"text\": \"<user> <user> why are you repeating yourself are you a little retarded\"\n    },\n    {\n      \"mask\": [1,1,1,1,1,0,1,1,1],\n      \"strategy\": \"neutral_infill\",\n      \"text\": \"<user> <user> why are you repeating yourself are you a little retarded\"\n    },\n    {\n      \"mask\": [1,1,1,1,1,1,0,1,1],\n      \"strategy\": \"neutral_infill\",\n      \"text\": \"<user> <user> why are you repeating yourself are you a little retarded\"\n    },\n    {\n      \"mask\": [1,1,1,1,1,1,1,0,1],\n      \"strategy\": \"neutral_infill\",\n      \"text\": \"<user> <user> why are you repeating yourself are you a little retarded\"\n    },\n    {\n      \"mask\": [1,1,1,1,1,1,1,1,0],\n      \"strategy\": \"neutral_infill\",\n      \"text\": \"<user> <user> why are you repeating yourself are you a little ignorant\"\n    },\n    {\n      \"mask\": [1,0,0,1,1,1,1,1,1],\n      \"strategy\": \"neutral_infill\",\n      \"text\": \"<user> why are you repeating yourself are you a little retarded\"\n    },\n    {\n      \"mask\": [1,1,0,1,0,1,1,1,1],\n      \"strategy\": \"neutral_infill\",\n      \"text\": \"<user> <user> why are you repeating yourself again, are you a little retarded\"\n    },\n    {\n      \"mask\": [1,1,1,1,1,1,1,0,0],\n      \"strategy\": \"boundary_infill\",\n      \"text\": \"<user> <user> why are you repeating yourself are you a bit slow\"\n    },\n    {\n      \"mask\": [1,1,0,1,1,1,0,1,1],\n      \"strategy\": \"boundary_infill\",\n      \"text\": \"<user> <user> why are you repeating yourself so much, are you all right\"\n    },\n    {\n      \"mask\": [1,1,1,1,1,0,0,1,1],\n      \"strategy\": \"boundary_infill\",\n      \"text\": \"<user> <user> why are you repeating yourself is everything okay\"\n    },\n    {\n      \"mask\": [0,1,1,0,1,1,1,0,1],\n      \"strategy\": \"boundary_infill\",\n      \"text\": \"Hey <user> why do you keep saying the same things, are you even noticing\"\n    },\n    {\n      \"mask\": [1,0,1,1,1,1,1,0,1],\n      \"strategy\": \"boundary_infill\",\n      \"text\": \"<user> why are you repeating yourself are you missing something\"\n    },\n    {\n      \"mask\": [0,1,1,1,1,1,0,1,1],\n      \"strategy\": \"boundary_infill\",\n      \"text\": \"Dude <user> why are you repeating yourself because you forgot\"\n    },\n    {\n      \"mask\": [1,0,1,1,0,1,0,1,1],\n      \"strategy\": \"boundary_infill\",\n      \"text\": \"<user> why are you repeating yourself again, do you realize\"\n    },\n    {\n      \"mask\": [1,1,1,1,0,1,1,0,0],\n      \"strategy\": \"boundary_infill\",\n      \"text\": \"<user> <user> why are you repeating yourself, are you confused\"\n    },\n    {\n      \"mask\": [0,1,0,1,1,1,1,1,1],\n      \"strategy\": \"boundary_infill\",\n      \"text\": \"Listen <user> why are you repeating yourself are you just bored\"\n    },\n    {\n      \"mask\": [1,1,0,1,1,0,1,1,1],\n      \"strategy\": \"boundary_infill\",\n      \"text\": \"<user> <user> why are you repeating yourself do you realize you are\"\n    }\n  ]\n}"
+}

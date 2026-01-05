@@ -24,7 +24,7 @@ load_dotenv()
 def main():
     LOG.warning("THE ORDER OF THE DATAFRAMES IS EXPECTED TO BE SAME WITHIN ALL FILES.")
 
-    data_samples_filepaths_seed = {int(path.split("seed")[0].split("_")[-1]):
+    data_samples_filepaths_seed = {int(path.split("seed.csv")[0].split("_")[-1]):
                                        os.path.join(DATA_PATH, path)
                                    for path in os.listdir(DATA_PATH)}
 

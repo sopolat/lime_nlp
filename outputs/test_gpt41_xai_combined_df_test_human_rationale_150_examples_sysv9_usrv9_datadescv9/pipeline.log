@@ -1,0 +1,78 @@
+2026-01-02 15:21:30 | INFO | 
+================================================================================
+2026-01-02 15:21:30 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2026-01-02 15:21:30 | INFO | Mode: TEST (1 example per dataset)
+2026-01-02 15:21:30 | INFO | Provider: OPENAI
+2026-01-02 15:21:30 | INFO | Output: outputs/test_gpt41_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9
+2026-01-02 15:21:30 | INFO | ================================================================================
+
+2026-01-02 15:21:30 | INFO | df_sample: 2415
+2026-01-02 15:21:30 | INFO | RUNNING LLM 💸💸
+2026-01-02 15:21:32 | INFO | Processing 3 examples
+2026-01-02 15:21:32 | INFO | Total rows: 35
+2026-01-02 15:21:32 | INFO | Datasets: {'cola': 1, 'hatexplain': 1, 'sst2': 1}
+
+2026-01-02 15:21:32 | INFO | [1/3] cola - 534
+2026-01-02 15:21:32 | INFO |   Text: She mailed John a letter, but I don't know to whom....
+2026-01-02 15:21:32 | INFO |   Words: 11 tokens
+2026-01-02 15:21:33 | INFO | Use pytorch device_name: mps
+2026-01-02 15:21:49 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:21:49 | INFO | Use pytorch device_name: mps
+2026-01-02 15:21:49 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:21:52 | INFO |   ✓ LIME-LLM scores generated (11 tokens)
+2026-01-02 15:21:52 | INFO | [2/3] sst2 - 48
+2026-01-02 15:21:52 | INFO |   Text: has a lot of the virtues of eastwood at his best ....
+2026-01-02 15:21:52 | INFO |   Words: 12 tokens
+2026-01-02 15:21:53 | INFO | Use pytorch device_name: mps
+2026-01-02 15:22:09 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:22:09 | INFO | Use pytorch device_name: mps
+2026-01-02 15:22:09 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:22:11 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2026-01-02 15:22:11 | INFO | [3/3] hatexplain - 1252707503441313794_twitter
+2026-01-02 15:22:11 | INFO |   Text: <user> <user> why are you repeating yourself are you a little retarded...
+2026-01-02 15:22:11 | INFO |   Words: 12 tokens
+2026-01-02 15:22:13 | INFO | Use pytorch device_name: mps
+2026-01-02 15:22:27 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 15:22:27 | INFO | Use pytorch device_name: mps
+2026-01-02 15:22:27 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-02 15:22:29 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2026-01-02 15:22:29 | WARNING | 
+✓ Results saved: results.csv
+2026-01-02 15:22:30 | INFO | 
+Generating evaluation plots...
+2026-01-02 15:22:30 | INFO |   Processing cola...
+2026-01-02 15:22:30 | INFO |   ✓ Saved curves: outputs/test_gpt41_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9/curves_cola.png
+2026-01-02 15:22:31 | INFO |   Processing sst2...
+2026-01-02 15:22:31 | INFO |   ✓ Saved curves: outputs/test_gpt41_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9/curves_sst2.png
+2026-01-02 15:22:32 | INFO |   Processing hatexplain...
+2026-01-02 15:22:32 | INFO |   ✓ Saved curves: outputs/test_gpt41_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9/curves_hatexplain.png
+2026-01-02 15:22:32 | INFO | 
+================================================================================
+2026-01-02 15:22:32 | INFO | AGGREGATE METRICS (Multi-Seed Analysis)
+2026-01-02 15:22:32 | INFO | ================================================================================
+2026-01-02 15:22:32 | INFO | 
+cola:
+2026-01-02 15:22:32 | INFO |   LIME                : ROC_AUC=0.1250 PR_AUC=0.2131 (seeds=1)
+2026-01-02 15:22:32 | INFO |   Partition SHAP      : ROC_AUC=0.7500 PR_AUC=0.5317 (seeds=1)
+2026-01-02 15:22:32 | INFO |   Integrated Gradient : ROC_AUC=0.2917 PR_AUC=0.2528 (seeds=1)
+2026-01-02 15:22:32 | INFO |   LIME-LLM            : ROC_AUC=0.8333 PR_AUC=0.7000 (seeds=1)
+2026-01-02 15:22:32 | INFO | 
+hatexplain:
+2026-01-02 15:22:32 | INFO |   LIME                : ROC_AUC=0.0000 PR_AUC=0.0833 (seeds=1)
+2026-01-02 15:22:32 | INFO |   Partition SHAP      : ROC_AUC=1.0000 PR_AUC=1.0000 (seeds=1)
+2026-01-02 15:22:32 | INFO |   Integrated Gradient : ROC_AUC=1.0000 PR_AUC=1.0000 (seeds=1)
+2026-01-02 15:22:32 | INFO |   LIME-LLM            : ROC_AUC=0.4091 PR_AUC=0.1250 (seeds=1)
+2026-01-02 15:22:32 | INFO | 
+sst2:
+2026-01-02 15:22:32 | INFO |   LIME                : ROC_AUC=1.0000 PR_AUC=1.0000 (seeds=1)
+2026-01-02 15:22:32 | INFO |   Partition SHAP      : ROC_AUC=0.0000 PR_AUC=0.1288 (seeds=1)
+2026-01-02 15:22:32 | INFO |   Integrated Gradient : ROC_AUC=1.0000 PR_AUC=1.0000 (seeds=1)
+2026-01-02 15:22:32 | INFO |   LIME-LLM            : ROC_AUC=0.3500 PR_AUC=0.1833 (seeds=1)
+2026-01-02 15:22:32 | INFO | 
+================================================================================
+2026-01-02 15:22:32 | INFO | ✓ PIPELINE COMPLETE
+2026-01-02 15:22:32 | INFO | Saved: outputs/test_gpt41_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9/aggregate_metrics.json
+2026-01-02 15:22:32 | INFO | ================================================================================
+
+2026-01-02 15:22:32 | WARNING | Failed examples 0/3
+[]

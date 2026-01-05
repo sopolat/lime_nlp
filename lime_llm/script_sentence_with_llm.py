@@ -36,9 +36,9 @@ class Args(BaseArgs):
     SYSTEM_PROMPT_USE_VERSION = "v9"
     USER_PROMPT_USE_VERSION = "v9"
     DATASET_DESCRIPTION_VERSION = "v9"
-    LLM_NAME = "sonnet45"  # sonnet45 gpt41
+    LLM_NAME = "gpt41"  # sonnet45 gpt5 gpt41
     SENTENCE_TRANSFORMER_MODEL = "all-mpnet-base-v2"
-    TEMPERATURE = 0.0
+    TEMPERATURE = 1  # Open AI needs to be 1 and Anthropic is 0.0
     DATA_SAMPLES = 150  # 30 60 150
     PERTURBATION_TYPE_SAMPLES = 10  # 30 TOTAL samples is ideal
     WANDB_ENABLED = True

@@ -32,12 +32,11 @@ class Args(BaseArgs):
     SYSTEM_PROMPT_USE_VERSION = "v9"
     USER_PROMPT_USE_VERSION = "v9"
     DATASET_DESCRIPTION_VERSION = "v9"
-    LLM_NAME = "sonnet45"  # sonnet45 gpt41
-    DATA_SAMPLES = 60  # 30 60 150
-    DATA_PATH = f"data/original/xai_combined_df_{DATA_SAMPLES}_examples.csv"
+    LLM_NAME = "gpt5"  # sonnet45 gpt41 gpt5
+    DATA_SAMPLES = 150  # 30 60 150
+    DATA_PATH = f"data/test/xai_combined_df_test_human_rationale_{DATA_SAMPLES}_examples.csv"
     SENTENCE_TRANSFORMER_MODEL = "all-mpnet-base-v2"
     TEMPERATURE = 0.0
-    DATA_SAMPLES = 30  # 30 60 150
     PERTURBATION_TYPE_SAMPLES = 10  # 30 TOTAL samples is ideal
     WANDB_ENABLED = False
     WANDB_PROJECT = "lime-nlp"
@@ -46,7 +45,7 @@ class Args(BaseArgs):
 
     LLM_PROVIDER = LLM_SET[LLM_NAME]["provider"]
     LLM_MODEL = LLM_SET[LLM_NAME]["model"]
-    DATA_PATH = f"data/original/xai_combined_df_{DATA_SAMPLES}_examples.csv"
+    # DATA_PATH = f"data/original/xai_combined_df_{DATA_SAMPLES}_examples.csv"
     OUTPUT_DIR = f"outputs/{'test' if TEST_MODE else 'run'}_{LLM_NAME}_{os.path.basename(DATA_PATH).removesuffix(".csv")}_sys{SYSTEM_PROMPT_USE_VERSION}_usr{USER_PROMPT_USE_VERSION}_datadesc{DATASET_DESCRIPTION_VERSION}"
     LOG_FILE = f"{OUTPUT_DIR}/llm_calls.jsonl"
     Path(OUTPUT_DIR).mkdir(parents=True, exist_ok=True)
@@ -106,7 +105,7 @@ def main():
     LOG.info(f"llm_calls: {len(llm_calls)}")
 
     # Load data
-    df_all_data = pd.read_csv('data/updated_baselines/xai_combined_df_150_examples_lime_seeds.csv')
+    df_all_data = pd.read_csv('data/updated_baselines_test/xai_combined_df_150_examples_all_explanations_lime_seeds.csv')
     df_all_data["idx"] = df_all_data["idx"].astype(str)
     df_all_data["dataset_name"] = df_all_data["dataset_name"].astype(str)
     df_all_data["words"] = df_all_data["words"].astype(str)
