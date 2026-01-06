@@ -1,0 +1,249 @@
+2026-01-05 18:24:19 | INFO | 
+================================================================================
+2026-01-05 18:24:19 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2026-01-05 18:24:19 | INFO | Mode: TEST (1 example per dataset)
+2026-01-05 18:24:19 | INFO | Provider: GEMINI
+2026-01-05 18:24:19 | INFO | Output: outputs/test_gemini3_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9
+2026-01-05 18:24:19 | INFO | ================================================================================
+
+2026-01-05 18:24:19 | INFO | df_sample: 2415
+2026-01-05 18:24:19 | INFO | RUNNING LLM 💸💸
+2026-01-05 18:24:19 | INFO | Processing 3 examples
+2026-01-05 18:24:19 | INFO | Total rows: 35
+2026-01-05 18:24:19 | INFO | Datasets: {'cola': 1, 'hatexplain': 1, 'sst2': 1}
+
+2026-01-05 18:26:32 | INFO | 
+================================================================================
+2026-01-05 18:26:32 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2026-01-05 18:26:32 | INFO | Mode: TEST (1 example per dataset)
+2026-01-05 18:26:32 | INFO | Provider: GEMINI
+2026-01-05 18:26:32 | INFO | Output: outputs/test_gemini3_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9
+2026-01-05 18:26:32 | INFO | ================================================================================
+
+2026-01-05 18:26:32 | INFO | df_sample: 2415
+2026-01-05 18:26:32 | INFO | RUNNING LLM 💸💸
+2026-01-05 18:26:32 | INFO | Processing 3 examples
+2026-01-05 18:26:32 | INFO | Total rows: 35
+2026-01-05 18:26:32 | INFO | Datasets: {'cola': 1, 'hatexplain': 1, 'sst2': 1}
+
+2026-01-05 18:26:33 | INFO | [1/3] cola - 534
+2026-01-05 18:26:33 | INFO |   Text: She mailed John a letter, but I don't know to whom....
+2026-01-05 18:26:33 | INFO |   Words: 11 tokens
+2026-01-05 18:26:36 | WARNING | Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2026-01-05 18:26:44 | INFO | Use pytorch device_name: cpu
+2026-01-05 18:26:44 | WARNING |   ✗ LLM parsing failed: LLM error: name 'types' is not defined
+LLM OUTPUT: {"status": "ERROR", "error": "name 'types' is not defined"}
+2026-01-05 18:26:44 | WARNING |   ✗ Failed to generate scores
+2026-01-05 18:26:44 | INFO | [2/3] sst2 - 48
+2026-01-05 18:26:44 | INFO |   Text: has a lot of the virtues of eastwood at his best ....
+2026-01-05 18:26:44 | INFO |   Words: 12 tokens
+2026-01-05 18:26:44 | WARNING | Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2026-01-05 18:26:45 | WARNING | Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2026-01-05 18:26:53 | INFO | Use pytorch device_name: cpu
+2026-01-05 18:26:53 | WARNING |   ✗ LLM parsing failed: LLM error: name 'types' is not defined
+LLM OUTPUT: {"status": "ERROR", "error": "name 'types' is not defined"}
+2026-01-05 18:26:53 | WARNING |   ✗ Failed to generate scores
+2026-01-05 18:26:53 | INFO | [3/3] hatexplain - 1252707503441313794_twitter
+2026-01-05 18:26:53 | INFO |   Text: <user> <user> why are you repeating yourself are you a little retarded...
+2026-01-05 18:26:53 | INFO |   Words: 12 tokens
+2026-01-05 18:27:04 | INFO | Use pytorch device_name: cpu
+2026-01-05 18:27:04 | WARNING |   ✗ LLM parsing failed: LLM error: name 'types' is not defined
+LLM OUTPUT: {"status": "ERROR", "error": "name 'types' is not defined"}
+2026-01-05 18:27:04 | WARNING |   ✗ Failed to generate scores
+2026-01-05 18:27:04 | WARNING | 
+✓ Results saved: results.csv
+2026-01-05 18:27:04 | INFO | 
+Generating evaluation plots...
+2026-01-05 18:27:04 | INFO |   Processing cola...
+2026-01-05 18:27:05 | INFO |   ✓ Saved curves: outputs/test_gemini3_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9/curves_cola.png
+2026-01-05 18:27:05 | INFO |   Processing sst2...
+2026-01-05 18:27:06 | INFO |   ✓ Saved curves: outputs/test_gemini3_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9/curves_sst2.png
+2026-01-05 18:27:06 | INFO |   Processing hatexplain...
+2026-01-05 18:27:06 | INFO |   ✓ Saved curves: outputs/test_gemini3_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9/curves_hatexplain.png
+2026-01-05 18:27:06 | INFO | 
+================================================================================
+2026-01-05 18:27:06 | INFO | AGGREGATE METRICS (Multi-Seed Analysis)
+2026-01-05 18:27:06 | INFO | ================================================================================
+2026-01-05 18:27:06 | INFO | 
+cola:
+2026-01-05 18:27:06 | INFO |   LIME                : ROC_AUC=0.0903±0.0358 PR_AUC=0.2072±0.0067 (seeds=30)
+2026-01-05 18:27:06 | INFO |   Partition SHAP      : ROC_AUC=0.7500 PR_AUC=0.5317 (seeds=1)
+2026-01-05 18:27:06 | INFO |   Integrated Gradient : ROC_AUC=0.2917 PR_AUC=0.2528 (seeds=1)
+2026-01-05 18:27:06 | INFO | 
+hatexplain:
+2026-01-05 18:27:07 | INFO |   LIME                : ROC_AUC=0.0000±0.0000 PR_AUC=0.0833±0.0000 (seeds=30)
+2026-01-05 18:27:07 | INFO |   Partition SHAP      : ROC_AUC=1.0000 PR_AUC=1.0000 (seeds=1)
+2026-01-05 18:27:07 | INFO |   Integrated Gradient : ROC_AUC=1.0000 PR_AUC=1.0000 (seeds=1)
+2026-01-05 18:27:07 | INFO | 
+sst2:
+2026-01-05 18:27:07 | INFO |   LIME                : ROC_AUC=1.0000±0.0000 PR_AUC=1.0000±0.0000 (seeds=30)
+2026-01-05 18:27:07 | INFO |   Partition SHAP      : ROC_AUC=0.0000 PR_AUC=0.1288 (seeds=1)
+2026-01-05 18:27:07 | INFO |   Integrated Gradient : ROC_AUC=1.0000 PR_AUC=1.0000 (seeds=1)
+2026-01-05 18:27:07 | INFO | 
+================================================================================
+2026-01-05 18:27:07 | INFO | ✓ PIPELINE COMPLETE
+2026-01-05 18:27:07 | INFO | Saved: outputs/test_gemini3_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9/aggregate_metrics.json
+2026-01-05 18:27:07 | INFO | ================================================================================
+
+2026-01-05 18:27:07 | WARNING | Failed examples 0/3
+[]
+2026-01-05 18:33:08 | INFO | 
+================================================================================
+2026-01-05 18:33:08 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2026-01-05 18:33:08 | INFO | Mode: TEST (1 example per dataset)
+2026-01-05 18:33:08 | INFO | Provider: GEMINI
+2026-01-05 18:33:08 | INFO | Output: outputs/test_gemini3_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9
+2026-01-05 18:33:08 | INFO | ================================================================================
+
+2026-01-05 18:33:08 | INFO | df_sample: 2415
+2026-01-05 18:33:08 | INFO | RUNNING LLM 💸💸
+2026-01-05 18:33:08 | INFO | Processing 3 examples
+2026-01-05 18:33:08 | INFO | Total rows: 35
+2026-01-05 18:33:08 | INFO | Datasets: {'cola': 1, 'hatexplain': 1, 'sst2': 1}
+
+2026-01-05 18:33:09 | INFO | [1/3] cola - 534
+2026-01-05 18:33:09 | INFO |   Text: She mailed John a letter, but I don't know to whom....
+2026-01-05 18:33:09 | INFO |   Words: 11 tokens
+2026-01-05 18:33:10 | INFO | Use pytorch device_name: cpu
+2026-01-05 18:33:10 | INFO | AFC is enabled with max remote calls: 10.
+2026-01-05 18:34:35 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-01-05 18:34:35 | WARNING |   ✗ LLM parsing failed: LLM error: 'GenerateContentResponse' object has no attribute 'choices'
+LLM OUTPUT: {"status": "ERROR", "error": "'GenerateContentResponse' object has no attribute 'choices'"}
+2026-01-05 18:34:35 | WARNING |   ✗ Failed to generate scores
+2026-01-05 18:34:35 | INFO | [2/3] sst2 - 48
+2026-01-05 18:34:35 | INFO |   Text: has a lot of the virtues of eastwood at his best ....
+2026-01-05 18:34:35 | INFO |   Words: 12 tokens
+2026-01-05 18:34:36 | INFO | Use pytorch device_name: cpu
+2026-01-05 18:34:36 | INFO | AFC is enabled with max remote calls: 10.
+2026-01-05 18:35:00 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-01-05 18:35:00 | WARNING |   ✗ LLM parsing failed: LLM error: 'GenerateContentResponse' object has no attribute 'choices'
+LLM OUTPUT: {"status": "ERROR", "error": "'GenerateContentResponse' object has no attribute 'choices'"}
+2026-01-05 18:35:00 | WARNING |   ✗ Failed to generate scores
+2026-01-05 18:35:00 | INFO | [3/3] hatexplain - 1252707503441313794_twitter
+2026-01-05 18:35:00 | INFO |   Text: <user> <user> why are you repeating yourself are you a little retarded...
+2026-01-05 18:35:00 | INFO |   Words: 12 tokens
+2026-01-05 18:35:00 | INFO | Use pytorch device_name: cpu
+2026-01-05 18:35:00 | INFO | AFC is enabled with max remote calls: 10.
+2026-01-05 18:36:11 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-01-05 18:36:11 | WARNING |   ✗ LLM parsing failed: LLM error: 'GenerateContentResponse' object has no attribute 'choices'
+LLM OUTPUT: {"status": "ERROR", "error": "'GenerateContentResponse' object has no attribute 'choices'"}
+2026-01-05 18:36:11 | WARNING |   ✗ Failed to generate scores
+2026-01-05 18:36:11 | WARNING | 
+✓ Results saved: results.csv
+2026-01-05 18:36:11 | INFO | 
+Generating evaluation plots...
+2026-01-05 18:36:11 | INFO |   Processing cola...
+2026-01-05 18:36:12 | INFO |   ✓ Saved curves: outputs/test_gemini3_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9/curves_cola.png
+2026-01-05 18:36:12 | INFO |   Processing sst2...
+2026-01-05 18:36:12 | INFO |   ✓ Saved curves: outputs/test_gemini3_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9/curves_sst2.png
+2026-01-05 18:36:12 | INFO |   Processing hatexplain...
+2026-01-05 18:36:12 | INFO |   ✓ Saved curves: outputs/test_gemini3_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9/curves_hatexplain.png
+2026-01-05 18:36:12 | INFO | 
+================================================================================
+2026-01-05 18:36:12 | INFO | AGGREGATE METRICS (Multi-Seed Analysis)
+2026-01-05 18:36:12 | INFO | ================================================================================
+2026-01-05 18:36:12 | INFO | 
+cola:
+2026-01-05 18:36:12 | INFO |   LIME                : ROC_AUC=0.0903±0.0358 PR_AUC=0.2072±0.0067 (seeds=30)
+2026-01-05 18:36:12 | INFO |   Partition SHAP      : ROC_AUC=0.7500 PR_AUC=0.5317 (seeds=1)
+2026-01-05 18:36:12 | INFO |   Integrated Gradient : ROC_AUC=0.2917 PR_AUC=0.2528 (seeds=1)
+2026-01-05 18:36:12 | INFO | 
+hatexplain:
+2026-01-05 18:36:13 | INFO |   LIME                : ROC_AUC=0.0000±0.0000 PR_AUC=0.0833±0.0000 (seeds=30)
+2026-01-05 18:36:13 | INFO |   Partition SHAP      : ROC_AUC=1.0000 PR_AUC=1.0000 (seeds=1)
+2026-01-05 18:36:13 | INFO |   Integrated Gradient : ROC_AUC=1.0000 PR_AUC=1.0000 (seeds=1)
+2026-01-05 18:36:13 | INFO | 
+sst2:
+2026-01-05 18:36:13 | INFO |   LIME                : ROC_AUC=1.0000±0.0000 PR_AUC=1.0000±0.0000 (seeds=30)
+2026-01-05 18:36:13 | INFO |   Partition SHAP      : ROC_AUC=0.0000 PR_AUC=0.1288 (seeds=1)
+2026-01-05 18:36:13 | INFO |   Integrated Gradient : ROC_AUC=1.0000 PR_AUC=1.0000 (seeds=1)
+2026-01-05 18:36:13 | INFO | 
+================================================================================
+2026-01-05 18:36:13 | INFO | ✓ PIPELINE COMPLETE
+2026-01-05 18:36:13 | INFO | Saved: outputs/test_gemini3_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9/aggregate_metrics.json
+2026-01-05 18:36:13 | INFO | ================================================================================
+
+2026-01-05 18:36:13 | WARNING | Failed examples 0/3
+[]
+2026-01-05 18:38:45 | INFO | 
+================================================================================
+2026-01-05 18:38:45 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2026-01-05 18:38:45 | INFO | Mode: TEST (1 example per dataset)
+2026-01-05 18:38:45 | INFO | Provider: GEMINI
+2026-01-05 18:38:45 | INFO | Output: outputs/test_gemini3_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9
+2026-01-05 18:38:45 | INFO | ================================================================================
+
+2026-01-05 18:38:45 | INFO | df_sample: 2415
+2026-01-05 18:38:45 | INFO | RUNNING LLM 💸💸
+2026-01-05 18:38:45 | INFO | Processing 3 examples
+2026-01-05 18:38:45 | INFO | Total rows: 35
+2026-01-05 18:38:45 | INFO | Datasets: {'cola': 1, 'hatexplain': 1, 'sst2': 1}
+
+2026-01-05 18:38:47 | INFO | [1/3] cola - 534
+2026-01-05 18:38:47 | INFO |   Text: She mailed John a letter, but I don't know to whom....
+2026-01-05 18:38:47 | INFO |   Words: 11 tokens
+2026-01-05 18:38:48 | INFO | Use pytorch device_name: cpu
+2026-01-05 18:38:48 | INFO | AFC is enabled with max remote calls: 10.
+2026-01-05 18:40:35 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-01-05 18:40:35 | INFO | Use pytorch device_name: cpu
+2026-01-05 18:40:35 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 18:40:35 | WARNING | Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2026-01-05 18:40:43 | INFO |   ✓ LIME-LLM scores generated (11 tokens)
+2026-01-05 18:40:43 | INFO | [2/3] sst2 - 48
+2026-01-05 18:40:43 | INFO |   Text: has a lot of the virtues of eastwood at his best ....
+2026-01-05 18:40:43 | INFO |   Words: 12 tokens
+2026-01-05 18:40:44 | INFO | Use pytorch device_name: cpu
+2026-01-05 18:40:44 | INFO | AFC is enabled with max remote calls: 10.
+2026-01-05 18:42:00 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-01-05 18:42:00 | INFO | Use pytorch device_name: cpu
+2026-01-05 18:42:00 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 18:42:01 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2026-01-05 18:42:01 | INFO | [3/3] hatexplain - 1252707503441313794_twitter
+2026-01-05 18:42:01 | INFO |   Text: <user> <user> why are you repeating yourself are you a little retarded...
+2026-01-05 18:42:01 | INFO |   Words: 12 tokens
+2026-01-05 18:42:02 | INFO | Use pytorch device_name: cpu
+2026-01-05 18:42:02 | INFO | AFC is enabled with max remote calls: 10.
+2026-01-05 18:43:19 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-01-05 18:43:19 | INFO | Use pytorch device_name: cpu
+2026-01-05 18:43:19 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 18:43:20 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2026-01-05 18:43:20 | WARNING | 
+✓ Results saved: results.csv
+2026-01-05 18:43:20 | INFO | 
+Generating evaluation plots...
+2026-01-05 18:43:20 | INFO |   Processing cola...
+2026-01-05 18:43:21 | INFO |   ✓ Saved curves: outputs/test_gemini3_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9/curves_cola.png
+2026-01-05 18:43:21 | INFO |   Processing sst2...
+2026-01-05 18:43:21 | INFO |   ✓ Saved curves: outputs/test_gemini3_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9/curves_sst2.png
+2026-01-05 18:43:21 | INFO |   Processing hatexplain...
+2026-01-05 18:43:22 | INFO |   ✓ Saved curves: outputs/test_gemini3_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9/curves_hatexplain.png
+2026-01-05 18:43:22 | INFO | 
+================================================================================
+2026-01-05 18:43:22 | INFO | AGGREGATE METRICS (Multi-Seed Analysis)
+2026-01-05 18:43:22 | INFO | ================================================================================
+2026-01-05 18:43:22 | INFO | 
+cola:
+2026-01-05 18:43:22 | INFO |   LIME                : ROC_AUC=0.0903±0.0358 PR_AUC=0.2072±0.0067 (seeds=30)
+2026-01-05 18:43:22 | INFO |   Partition SHAP      : ROC_AUC=0.7500 PR_AUC=0.5317 (seeds=1)
+2026-01-05 18:43:22 | INFO |   Integrated Gradient : ROC_AUC=0.2917 PR_AUC=0.2528 (seeds=1)
+2026-01-05 18:43:22 | INFO |   LIME-LLM            : ROC_AUC=0.6667 PR_AUC=0.7576 (seeds=1)
+2026-01-05 18:43:22 | INFO | 
+hatexplain:
+2026-01-05 18:43:22 | INFO |   LIME                : ROC_AUC=0.0000±0.0000 PR_AUC=0.0833±0.0000 (seeds=30)
+2026-01-05 18:43:22 | INFO |   Partition SHAP      : ROC_AUC=1.0000 PR_AUC=1.0000 (seeds=1)
+2026-01-05 18:43:22 | INFO |   Integrated Gradient : ROC_AUC=1.0000 PR_AUC=1.0000 (seeds=1)
+2026-01-05 18:43:22 | INFO |   LIME-LLM            : ROC_AUC=0.9545 PR_AUC=0.5000 (seeds=1)
+2026-01-05 18:43:22 | INFO | 
+sst2:
+2026-01-05 18:43:22 | INFO |   LIME                : ROC_AUC=1.0000±0.0000 PR_AUC=1.0000±0.0000 (seeds=30)
+2026-01-05 18:43:22 | INFO |   Partition SHAP      : ROC_AUC=0.0000 PR_AUC=0.1288 (seeds=1)
+2026-01-05 18:43:22 | INFO |   Integrated Gradient : ROC_AUC=1.0000 PR_AUC=1.0000 (seeds=1)
+2026-01-05 18:43:22 | INFO |   LIME-LLM            : ROC_AUC=0.9000 PR_AUC=0.5833 (seeds=1)
+2026-01-05 18:43:22 | INFO | 
+================================================================================
+2026-01-05 18:43:22 | INFO | ✓ PIPELINE COMPLETE
+2026-01-05 18:43:22 | INFO | Saved: outputs/test_gemini3_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9/aggregate_metrics.json
+2026-01-05 18:43:22 | INFO | ================================================================================
+
+2026-01-05 18:43:22 | WARNING | Failed examples 0/3
+[]

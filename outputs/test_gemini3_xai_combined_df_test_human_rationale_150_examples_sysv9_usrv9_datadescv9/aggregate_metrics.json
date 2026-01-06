@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-01-05T18:43:22.248264",
+  "methods": [
+    "LIME",
+    "Partition SHAP",
+    "Integrated Gradient",
+    "LIME-LLM"
+  ],
+  "datasets": {
+    "cola": {
+      "LIME": {
+        "n_samples": 11,
+        "n_seeds": 30,
+        "roc_auc": 0.09027777777777776,
+        "roc_auc_std": 0.035816102661743406,
+        "pr_auc": 0.2071921596921598,
+        "pr_auc_std": 0.006727708802530208
+      },
+      "Partition SHAP": {
+        "n_samples": 11,
+        "n_seeds": 1,
+        "roc_auc": 0.75,
+        "roc_auc_std": 0.0,
+        "pr_auc": 0.5317460317460317,
+        "pr_auc_std": 0.0
+      },
+      "Integrated Gradient": {
+        "n_samples": 11,
+        "n_seeds": 1,
+        "roc_auc": 0.2916666666666667,
+        "roc_auc_std": 0.0,
+        "pr_auc": 0.2528138528138528,
+        "pr_auc_std": 0.0
+      },
+      "LIME-LLM": {
+        "n_samples": 11,
+        "n_seeds": 1,
+        "roc_auc": 0.6666666666666666,
+        "roc_auc_std": 0.0,
+        "pr_auc": 0.7575757575757576,
+        "pr_auc_std": 0.0
+      }
+    },
+    "hatexplain": {
+      "LIME": {
+        "n_samples": 12,
+        "n_seeds": 30,
+        "roc_auc": 0.0,
+        "roc_auc_std": 0.0,
+        "pr_auc": 0.08333333333333336,
+        "pr_auc_std": 2.7755575615628914e-17
+      },
+      "Partition SHAP": {
+        "n_samples": 12,
+        "n_seeds": 1,
+        "roc_auc": 1.0,
+        "roc_auc_std": 0.0,
+        "pr_auc": 1.0,
+        "pr_auc_std": 0.0
+      },
+      "Integrated Gradient": {
+        "n_samples": 12,
+        "n_seeds": 1,
+        "roc_auc": 1.0,
+        "roc_auc_std": 0.0,
+        "pr_auc": 1.0,
+        "pr_auc_std": 0.0
+      },
+      "LIME-LLM": {
+        "n_samples": 12,
+        "n_seeds": 1,
+        "roc_auc": 0.9545454545454545,
+        "roc_auc_std": 0.0,
+        "pr_auc": 0.5,
+        "pr_auc_std": 0.0
+      }
+    },
+    "sst2": {
+      "LIME": {
+        "n_samples": 12,
+        "n_seeds": 30,
+        "roc_auc": 1.0,
+        "roc_auc_std": 0.0,
+        "pr_auc": 1.0,
+        "pr_auc_std": 0.0
+      },
+      "Partition SHAP": {
+        "n_samples": 12,
+        "n_seeds": 1,
+        "roc_auc": 0.0,
+        "roc_auc_std": 0.0,
+        "pr_auc": 0.12878787878787878,
+        "pr_auc_std": 0.0
+      },
+      "Integrated Gradient": {
+        "n_samples": 12,
+        "n_seeds": 1,
+        "roc_auc": 1.0,
+        "roc_auc_std": 0.0,
+        "pr_auc": 1.0,
+        "pr_auc_std": 0.0
+      },
+      "LIME-LLM": {
+        "n_samples": 12,
+        "n_seeds": 1,
+        "roc_auc": 0.9,
+        "roc_auc_std": 0.0,
+        "pr_auc": 0.5833333333333333,
+        "pr_auc_std": 0.0
+      }
+    }
+  }
+}

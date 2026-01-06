@@ -23,4 +23,8 @@ LLM_SET = {
         "model": "gpt-4.1-2025-04-14",
         "provider": "openai",
     },
+    "gemini3": {
+        "model": "gemini-3-flash-preview",
+        "provider": "gemini",
+    },
 }

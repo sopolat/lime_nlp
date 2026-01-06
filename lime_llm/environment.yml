@@ -16,6 +16,7 @@ dependencies:
   - tiktoken
   - openai
   - anthropic
+  - google-genai
   - tqdm
   - evaluate
   - scikit-learn

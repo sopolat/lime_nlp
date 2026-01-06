@@ -110,6 +110,12 @@ def get_llm_client(args: BaseArgs):
         if not api_key:
             raise ValueError("OPENAI environment variable not set in .env file")
         return OpenAI(api_key=api_key)
+    elif args.LLM_PROVIDER == "gemini":
+        from google import genai
+        api_key = os.getenv("GEMINI")
+        if not api_key:
+            raise ValueError("GEMINI environment variable not set in .env file")
+        return genai.Client(api_key=api_key)
     else:
         from anthropic import Anthropic
         api_key = os.getenv("ANTHROPIC")
@@ -131,6 +137,14 @@ def call_llm(system_msg: str, user_msg: str, client, args: BaseArgs) -> str:
                 temperature=args.TEMPERATURE
             )
             return response.choices[0].message.content
+        elif args.LLM_PROVIDER == "gemini":
+            from google.genai import types
+            response = client.models.generate_content(
+                model=args.LLM_MODEL,
+                config=types.GenerateContentConfig(system_instruction=system_msg, temperature=args.TEMPERATURE),
+                contents=user_msg
+            )
+            return response.text
         elif args.LLM_PROVIDER == "anthropic":
             response = client.messages.create(
                 model=args.LLM_MODEL,
