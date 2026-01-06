@@ -37,7 +37,7 @@ class Args(BaseArgs):
     SYSTEM_PROMPT_USE_VERSION = "v9"
     USER_PROMPT_USE_VERSION = "v9"
     DATASET_DESCRIPTION_VERSION = "v9"
-    LLM_NAME = "gemini3"  # sonnet45 gpt5 gpt41
+    LLM_NAME = "sonnet45"  # sonnet45 gpt5 gpt41 gemini3
     SENTENCE_TRANSFORMER_MODEL = "all-mpnet-base-v2"
     TEMPERATURE = 1  # Open AI needs to be 1 and Anthropic is 0.0
     DATA_SAMPLES = 150  # 30 60 150

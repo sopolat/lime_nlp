@@ -474,6 +474,10 @@ class LimeTextExplainer(object):
         """
 
         def distance_fn(x):
+            #Bow distance
+            return sklearn.metrics.pairwise.pairwise_distances(x, x[0], metric=distance_metric).ravel() * 100
+        def distance_fn2(x):
+            #Sentence Embedding distance
             embeddings = self.sentence_embedder.encode(x)
             similarities = self.sentence_embedder.similarity(embeddings, embeddings[0])
             return similarities.numpy().ravel() * 100
@@ -497,5 +501,7 @@ class LimeTextExplainer(object):
             data = np.array([[1] * len(llm_sample_data["mask"][0])] + llm_sample_data["mask"])
 
         labels = classifier_fn(inverse_data)
-        distances = distance_fn(inverse_data)
+        distances1 = distance_fn(sp.sparse.csr_matrix(data))
+        distances2 = distance_fn2(inverse_data)
+        distances = (distances1+distances2)/2
         return data, labels, distances

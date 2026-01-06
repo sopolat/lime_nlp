@@ -181,7 +181,27 @@ def log_llm_call(idx: str, dataset: str, text: str, predicted_label: str, vocab:
             )
             + "\n"
         )
-
+def read_llm_call_log(idx: str, dataset: str, args: BaseArgs):
+    """Read LLM call logs to find last saved LLM response for given example"""
+    buffer = ""
+    response = "Error"
+    with open(args.LOG_FILE, 'r', encoding='utf-8') as f:
+        for line_number, line in enumerate(f, start=1):
+            line = line.strip()
+            if line == "{":
+                buffer = line
+            elif line == "}":
+                buffer+= line
+                try:
+                    obj = json.loads(buffer)
+                    if (obj["idx"] == idx and obj["dataset"] == dataset):
+                        response = obj["response"]
+                except:
+                    print("there is an error reading the logs")
+            else:
+                buffer+= line
+    return response
+        
 
 # ============================================================================
 # LIME PROCESSING
@@ -255,11 +275,15 @@ def get_lime_llm_scores(text: str, dataset: str, model_path: str, llm_client, id
                                        total_samples=total_samples,
                                        args=args)
 
-    # Get LLM perturbations
-    response = call_llm(system_msg, user_msg, llm_client, args=args)
+    if args.USE_CASH:
+        
+        response = read_llm_call_log(idx, dataset, args=args)
+    else:
+        # Get LLM perturbations
+        response = call_llm(system_msg, user_msg, llm_client, args=args)
 
-    # Log LLM call
-    log_llm_call(idx, dataset, text, predicted_label, vocab, response, args=args)
+        # Log LLM call
+        log_llm_call(idx, dataset, text, predicted_label, vocab, response, args=args)
 
     try:
         llm_data = parse_llm_response(response, args=args)

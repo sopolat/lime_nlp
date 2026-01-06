@@ -1409,3 +1409,1230 @@ sst2:
 
 2026-01-05 21:56:36 | WARNING | Failed examples 1/150
 ["1169443635869487105_twitter|hatexplain|'<user> lol not me i don [UNK] t deal with bms not outside children [UNK] ss i leave that ghetto mess for everybody else [UNK] [UNK] [UNK]'"]
+2026-01-05 23:17:05 | INFO | 
+================================================================================
+2026-01-05 23:17:05 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2026-01-05 23:17:05 | INFO | Mode: FULL
+2026-01-05 23:17:05 | INFO | Provider: GEMINI
+2026-01-05 23:17:05 | INFO | Output: outputs/run_gemini3_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9
+2026-01-05 23:17:05 | INFO | ================================================================================
+
+2026-01-05 23:17:05 | INFO | df_sample: 2415
+2026-01-05 23:17:08 | INFO | Processing 150 examples
+2026-01-05 23:17:08 | INFO | Total rows: 2415
+2026-01-05 23:17:08 | INFO | Datasets: {'cola': 50, 'hatexplain': 50, 'sst2': 50}
+
+2026-01-05 23:17:09 | INFO | [1/150] cola - 534
+2026-01-05 23:17:09 | INFO |   Text: She mailed John a letter, but I don't know to whom....
+2026-01-05 23:17:09 | INFO |   Words: 11 tokens
+2026-01-05 23:17:10 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:17:10 | WARNING |   ✗ Error: read_llm_call_log() got an unexpected keyword argument 'args'
+2026-01-05 23:17:10 | INFO | [2/150] cola - 224
+2026-01-05 23:17:10 | INFO |   Text: They have no in....
+2026-01-05 23:17:10 | INFO |   Words: 4 tokens
+2026-01-05 23:17:10 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:17:10 | WARNING |   ✗ Error: read_llm_call_log() got an unexpected keyword argument 'args'
+2026-01-05 23:17:10 | INFO | [3/150] cola - 836
+2026-01-05 23:17:10 | INFO |   Text: We relied above Leslie....
+2026-01-05 23:17:10 | INFO |   Words: 4 tokens
+2026-01-05 23:17:11 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:17:11 | WARNING |   ✗ Error: read_llm_call_log() got an unexpected keyword argument 'args'
+2026-01-05 23:17:11 | INFO | [4/150] cola - 384
+2026-01-05 23:17:11 | INFO |   Text: John thinks that Mary loves himself....
+2026-01-05 23:17:11 | INFO |   Words: 6 tokens
+2026-01-05 23:17:12 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:17:12 | WARNING |   ✗ Error: read_llm_call_log() got an unexpected keyword argument 'args'
+2026-01-05 23:17:12 | INFO | [5/150] cola - 990
+2026-01-05 23:17:12 | INFO |   Text: It was hated for John to leave....
+2026-01-05 23:17:12 | INFO |   Words: 7 tokens
+2026-01-05 23:17:12 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:17:12 | WARNING |   ✗ Error: read_llm_call_log() got an unexpected keyword argument 'args'
+2026-01-05 23:17:12 | INFO | [6/150] cola - 740
+2026-01-05 23:17:12 | INFO |   Text: Leslie likes ourselves....
+2026-01-05 23:17:12 | INFO |   Words: 3 tokens
+2026-01-05 23:17:13 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:17:13 | WARNING |   ✗ Error: read_llm_call_log() got an unexpected keyword argument 'args'
+2026-01-05 23:17:13 | INFO | [7/150] cola - 191
+2026-01-05 23:17:13 | INFO |   Text: I shaped a loaf....
+2026-01-05 23:17:13 | INFO |   Words: 4 tokens
+2026-01-05 23:17:13 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:17:13 | WARNING |   ✗ Error: read_llm_call_log() got an unexpected keyword argument 'args'
+2026-01-05 23:17:13 | INFO | [8/150] cola - 880
+2026-01-05 23:17:13 | INFO |   Text: I enjoy yourself....
+2026-01-05 23:17:13 | INFO |   Words: 3 tokens
+2026-01-05 23:17:14 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:17:14 | WARNING |   ✗ Error: read_llm_call_log() got an unexpected keyword argument 'args'
+2026-01-05 23:17:14 | INFO | [9/150] cola - 921
+2026-01-05 23:17:14 | INFO |   Text: The patient was died....
+2026-01-05 23:17:14 | INFO |   Words: 4 tokens
+2026-01-05 23:17:15 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:17:15 | WARNING |   ✗ Error: read_llm_call_log() got an unexpected keyword argument 'args'
+2026-01-05 23:17:15 | INFO | [10/150] cola - 860
+2026-01-05 23:17:15 | INFO |   Text: Few dog barked....
+2026-01-05 23:17:15 | INFO |   Words: 3 tokens
+2026-01-05 23:17:15 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:17:15 | WARNING |   ✗ Error: read_llm_call_log() got an unexpected keyword argument 'args'
+2026-01-05 23:17:15 | INFO | [11/150] cola - 695
+2026-01-05 23:17:15 | INFO |   Text: Bother you that Kim left!...
+2026-01-05 23:17:15 | INFO |   Words: 5 tokens
+2026-01-05 23:17:16 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:17:16 | WARNING |   ✗ Error: read_llm_call_log() got an unexpected keyword argument 'args'
+2026-01-05 23:17:16 | INFO | [12/150] cola - 230
+2026-01-05 23:17:16 | INFO |   Text: John sounded very....
+2026-01-05 23:17:16 | INFO |   Words: 3 tokens
+2026-01-05 23:17:16 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:17:16 | WARNING |   ✗ Error: read_llm_call_log() got an unexpected keyword argument 'args'
+2026-01-05 23:17:16 | INFO | [13/150] cola - 206
+2026-01-05 23:17:16 | INFO |   Text: I squeaked the door....
+2026-01-05 23:17:16 | INFO |   Words: 4 tokens
+2026-01-05 23:17:17 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:17:17 | WARNING |   ✗ Error: read_llm_call_log() got an unexpected keyword argument 'args'
+2026-01-05 23:17:17 | INFO | [14/150] cola - 192
+2026-01-05 23:17:17 | INFO |   Text: The children amused....
+2026-01-05 23:17:17 | INFO |   Words: 3 tokens
+2026-01-05 23:17:17 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:17:17 | WARNING |   ✗ Error: read_llm_call_log() got an unexpected keyword argument 'args'
+2026-01-05 23:17:17 | INFO | [15/150] cola - 813
+2026-01-05 23:17:17 | INFO |   Text: Birds sings....
+2026-01-05 23:17:17 | INFO |   Words: 2 tokens
+2026-01-05 23:17:18 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:17:18 | WARNING |   ✗ Error: read_llm_call_log() got an unexpected keyword argument 'args'
+2026-01-05 23:17:18 | INFO | [16/150] cola - 111
+2026-01-05 23:17:18 | INFO |   Text: The socks are ready for for you to put on to be planned....
+2026-01-05 23:17:18 | INFO |   Words: 13 tokens
+2026-01-05 23:17:19 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:17:19 | WARNING |   ✗ Error: read_llm_call_log() got an unexpected keyword argument 'args'
+2026-01-05 23:17:19 | INFO | [17/150] cola - 828
+2026-01-05 23:17:19 | INFO |   Text: The defendants walks....
+2026-01-05 23:17:19 | INFO |   Words: 3 tokens
+2026-01-05 23:17:19 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:17:19 | WARNING |   ✗ Error: read_llm_call_log() got an unexpected keyword argument 'args'
+2026-01-05 23:17:19 | INFO | [18/150] cola - 29
+2026-01-05 23:17:19 | INFO |   Text: The tube was escaped by gas....
+2026-01-05 23:17:19 | INFO |   Words: 6 tokens
+2026-01-05 23:17:20 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:17:20 | WARNING |   ✗ Error: read_llm_call_log() got an unexpected keyword argument 'args'
+2026-01-05 23:17:20 | INFO | [19/150] cola - 458
+2026-01-05 23:17:20 | INFO |   Text: Mary revealed himself to John....
+2026-01-05 23:17:20 | INFO |   Words: 5 tokens
+2026-01-05 23:17:20 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:17:20 | WARNING |   ✗ Error: read_llm_call_log() got an unexpected keyword argument 'args'
+2026-01-05 23:17:20 | INFO | [20/150] cola - 367
+2026-01-05 23:17:20 | INFO |   Text: If I am a rich man, I'd buy a diamond ring....
+2026-01-05 23:17:20 | INFO |   Words: 11 tokens
+2026-01-05 23:17:21 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:17:21 | WARNING |   ✗ Error: read_llm_call_log() got an unexpected keyword argument 'args'
+2026-01-05 23:17:21 | INFO | [21/150] cola - 827
+2026-01-05 23:17:21 | INFO |   Text: The defendant walk....
+2026-01-05 23:17:21 | INFO |   Words: 3 tokens
+2026-01-05 23:18:17 | INFO | 
+================================================================================
+2026-01-05 23:18:17 | INFO | LLM-Enhanced LIME Evaluation Pipeline
+2026-01-05 23:18:17 | INFO | Mode: FULL
+2026-01-05 23:18:17 | INFO | Provider: GEMINI
+2026-01-05 23:18:17 | INFO | Output: outputs/run_gemini3_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9
+2026-01-05 23:18:17 | INFO | ================================================================================
+
+2026-01-05 23:18:17 | INFO | df_sample: 2415
+2026-01-05 23:18:20 | INFO | Processing 150 examples
+2026-01-05 23:18:20 | INFO | Total rows: 2415
+2026-01-05 23:18:20 | INFO | Datasets: {'cola': 50, 'hatexplain': 50, 'sst2': 50}
+
+2026-01-05 23:18:21 | INFO | [1/150] cola - 534
+2026-01-05 23:18:21 | INFO |   Text: She mailed John a letter, but I don't know to whom....
+2026-01-05 23:18:21 | INFO |   Words: 11 tokens
+2026-01-05 23:18:22 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:22 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:22 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:18:23 | INFO |   ✓ LIME-LLM scores generated (11 tokens)
+2026-01-05 23:18:23 | INFO | [2/150] cola - 224
+2026-01-05 23:18:23 | INFO |   Text: They have no in....
+2026-01-05 23:18:23 | INFO |   Words: 4 tokens
+2026-01-05 23:18:23 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:23 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:23 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:18:24 | INFO |   ✓ LIME-LLM scores generated (4 tokens)
+2026-01-05 23:18:24 | INFO | [3/150] cola - 836
+2026-01-05 23:18:24 | INFO |   Text: We relied above Leslie....
+2026-01-05 23:18:24 | INFO |   Words: 4 tokens
+2026-01-05 23:18:25 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:25 | WARNING |   ✗ LLM parsing failed: LLM error: Unknown
+LLM OUTPUT: {
+  "status": "FAIL"
+}
+2026-01-05 23:18:25 | WARNING |   ✗ Failed to generate scores
+2026-01-05 23:18:25 | INFO | [4/150] cola - 384
+2026-01-05 23:18:25 | INFO |   Text: John thinks that Mary loves himself....
+2026-01-05 23:18:25 | INFO |   Words: 6 tokens
+2026-01-05 23:18:25 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:26 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:26 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:18:27 | INFO |   ✓ LIME-LLM scores generated (6 tokens)
+2026-01-05 23:18:27 | INFO | [5/150] cola - 990
+2026-01-05 23:18:27 | INFO |   Text: It was hated for John to leave....
+2026-01-05 23:18:27 | INFO |   Words: 7 tokens
+2026-01-05 23:18:27 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:27 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:27 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:18:28 | INFO |   ✓ LIME-LLM scores generated (7 tokens)
+2026-01-05 23:18:28 | INFO | [6/150] cola - 740
+2026-01-05 23:18:28 | INFO |   Text: Leslie likes ourselves....
+2026-01-05 23:18:28 | INFO |   Words: 3 tokens
+2026-01-05 23:18:29 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:29 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:29 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:18:30 | INFO |   ✓ LIME-LLM scores generated (3 tokens)
+2026-01-05 23:18:30 | INFO | [7/150] cola - 191
+2026-01-05 23:18:30 | INFO |   Text: I shaped a loaf....
+2026-01-05 23:18:30 | INFO |   Words: 4 tokens
+2026-01-05 23:18:30 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:30 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:30 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:18:32 | INFO |   ✓ LIME-LLM scores generated (4 tokens)
+2026-01-05 23:18:32 | INFO | [8/150] cola - 880
+2026-01-05 23:18:32 | INFO |   Text: I enjoy yourself....
+2026-01-05 23:18:32 | INFO |   Words: 3 tokens
+2026-01-05 23:18:32 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:32 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:32 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:18:34 | INFO |   ✓ LIME-LLM scores generated (3 tokens)
+2026-01-05 23:18:34 | INFO | [9/150] cola - 921
+2026-01-05 23:18:34 | INFO |   Text: The patient was died....
+2026-01-05 23:18:34 | INFO |   Words: 4 tokens
+2026-01-05 23:18:35 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:35 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:35 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:18:36 | INFO |   ✓ LIME-LLM scores generated (4 tokens)
+2026-01-05 23:18:36 | INFO | [10/150] cola - 860
+2026-01-05 23:18:36 | INFO |   Text: Few dog barked....
+2026-01-05 23:18:36 | INFO |   Words: 3 tokens
+2026-01-05 23:18:37 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:37 | WARNING |   ✗ LLM parsing failed: LLM error: Unknown
+LLM OUTPUT: {
+  "status": "FAIL",
+  "reason": "The request requires 20 unique binary masks for a vocabulary length of 3. However, a binary vector of length 3 only allows for 8 possible unique combinations (2^3 = 8), making it mathematically impossible to satisfy the 'Unique Mask Constraint' for 20 samples."
+}
+2026-01-05 23:18:37 | WARNING |   ✗ Failed to generate scores
+2026-01-05 23:18:37 | INFO | [11/150] cola - 695
+2026-01-05 23:18:37 | INFO |   Text: Bother you that Kim left!...
+2026-01-05 23:18:37 | INFO |   Words: 5 tokens
+2026-01-05 23:18:37 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:37 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:37 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:18:38 | INFO |   ✓ LIME-LLM scores generated (5 tokens)
+2026-01-05 23:18:38 | INFO | [12/150] cola - 230
+2026-01-05 23:18:38 | INFO |   Text: John sounded very....
+2026-01-05 23:18:38 | INFO |   Words: 3 tokens
+2026-01-05 23:18:39 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:39 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:39 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:18:40 | INFO |   ✓ LIME-LLM scores generated (3 tokens)
+2026-01-05 23:18:40 | INFO | [13/150] cola - 206
+2026-01-05 23:18:40 | INFO |   Text: I squeaked the door....
+2026-01-05 23:18:40 | INFO |   Words: 4 tokens
+2026-01-05 23:18:41 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:41 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:41 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:18:42 | INFO |   ✓ LIME-LLM scores generated (4 tokens)
+2026-01-05 23:18:42 | INFO | [14/150] cola - 192
+2026-01-05 23:18:42 | INFO |   Text: The children amused....
+2026-01-05 23:18:42 | INFO |   Words: 3 tokens
+2026-01-05 23:18:43 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:43 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:43 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:18:44 | INFO |   ✓ LIME-LLM scores generated (3 tokens)
+2026-01-05 23:18:44 | INFO | [15/150] cola - 813
+2026-01-05 23:18:44 | INFO |   Text: Birds sings....
+2026-01-05 23:18:44 | INFO |   Words: 2 tokens
+2026-01-05 23:18:44 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:44 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:44 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:18:45 | INFO |   ✓ LIME-LLM scores generated (2 tokens)
+2026-01-05 23:18:45 | INFO | [16/150] cola - 111
+2026-01-05 23:18:45 | INFO |   Text: The socks are ready for for you to put on to be planned....
+2026-01-05 23:18:45 | INFO |   Words: 13 tokens
+2026-01-05 23:18:46 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:46 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:46 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:18:47 | INFO |   ✓ LIME-LLM scores generated (13 tokens)
+2026-01-05 23:18:47 | INFO | [17/150] cola - 828
+2026-01-05 23:18:47 | INFO |   Text: The defendants walks....
+2026-01-05 23:18:47 | INFO |   Words: 3 tokens
+2026-01-05 23:18:48 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:48 | WARNING |   ✗ LLM parsing failed: LLM error: Unknown
+LLM OUTPUT: {
+  "status": "FAIL"
+}
+2026-01-05 23:18:48 | WARNING |   ✗ Failed to generate scores
+2026-01-05 23:18:48 | INFO | [18/150] cola - 29
+2026-01-05 23:18:48 | INFO |   Text: The tube was escaped by gas....
+2026-01-05 23:18:48 | INFO |   Words: 6 tokens
+2026-01-05 23:18:48 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:48 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:48 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:18:49 | INFO |   ✓ LIME-LLM scores generated (6 tokens)
+2026-01-05 23:18:49 | INFO | [19/150] cola - 458
+2026-01-05 23:18:49 | INFO |   Text: Mary revealed himself to John....
+2026-01-05 23:18:49 | INFO |   Words: 5 tokens
+2026-01-05 23:18:50 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:50 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:50 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:18:51 | INFO |   ✓ LIME-LLM scores generated (5 tokens)
+2026-01-05 23:18:51 | INFO | [20/150] cola - 367
+2026-01-05 23:18:51 | INFO |   Text: If I am a rich man, I'd buy a diamond ring....
+2026-01-05 23:18:51 | INFO |   Words: 11 tokens
+2026-01-05 23:18:51 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:51 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:51 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:18:53 | INFO |   ✓ LIME-LLM scores generated (11 tokens)
+2026-01-05 23:18:53 | INFO | [21/150] cola - 827
+2026-01-05 23:18:53 | INFO |   Text: The defendant walk....
+2026-01-05 23:18:53 | INFO |   Words: 3 tokens
+2026-01-05 23:18:53 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:53 | WARNING |   ✗ LLM parsing failed: LLM error: Unknown
+LLM OUTPUT: {
+  "status": "FAIL"
+}
+2026-01-05 23:18:53 | WARNING |   ✗ Failed to generate scores
+2026-01-05 23:18:53 | INFO | [22/150] cola - 1012
+2026-01-05 23:18:53 | INFO |   Text: John is aware of it that Bill is here....
+2026-01-05 23:18:53 | INFO |   Words: 9 tokens
+2026-01-05 23:18:54 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:54 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:54 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:18:55 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2026-01-05 23:18:55 | INFO | [23/150] cola - 500
+2026-01-05 23:18:55 | INFO |   Text: Gilgamesh is having fought the dragon....
+2026-01-05 23:18:55 | INFO |   Words: 6 tokens
+2026-01-05 23:18:56 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:56 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:56 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:18:57 | INFO |   ✓ LIME-LLM scores generated (6 tokens)
+2026-01-05 23:18:57 | INFO | [24/150] cola - 60
+2026-01-05 23:18:57 | INFO |   Text: I know which book Mag read, and which book Bob read my report that you hadn't....
+2026-01-05 23:18:57 | INFO |   Words: 16 tokens
+2026-01-05 23:18:58 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:58 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:18:58 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:18:59 | INFO |   ✓ LIME-LLM scores generated (16 tokens)
+2026-01-05 23:18:59 | INFO | [25/150] cola - 80
+2026-01-05 23:18:59 | INFO |   Text: Himself is understood by Rutherford....
+2026-01-05 23:18:59 | INFO |   Words: 5 tokens
+2026-01-05 23:19:00 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:00 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:00 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:19:01 | INFO |   ✓ LIME-LLM scores generated (5 tokens)
+2026-01-05 23:19:01 | INFO | [26/150] cola - 362
+2026-01-05 23:19:01 | INFO |   Text: Heidi thinks that Andy to eat salmon flavored candy bars....
+2026-01-05 23:19:01 | INFO |   Words: 10 tokens
+2026-01-05 23:19:02 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:02 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:02 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:19:03 | INFO |   ✓ LIME-LLM scores generated (10 tokens)
+2026-01-05 23:19:03 | INFO | [27/150] cola - 73
+2026-01-05 23:19:03 | INFO |   Text: A proof that the claim had been. made was giver that John had lied....
+2026-01-05 23:19:03 | INFO |   Words: 14 tokens
+2026-01-05 23:19:04 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:04 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:04 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:19:05 | INFO |   ✓ LIME-LLM scores generated (14 tokens)
+2026-01-05 23:19:05 | INFO | [28/150] cola - 338
+2026-01-05 23:19:05 | INFO |   Text: Sally kissed himself....
+2026-01-05 23:19:05 | INFO |   Words: 3 tokens
+2026-01-05 23:19:06 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:06 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:06 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:19:07 | INFO |   ✓ LIME-LLM scores generated (3 tokens)
+2026-01-05 23:19:07 | INFO | [29/150] cola - 630
+2026-01-05 23:19:07 | INFO |   Text: The magazines were sent to herself by Mary....
+2026-01-05 23:19:07 | INFO |   Words: 8 tokens
+2026-01-05 23:19:08 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:08 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:08 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:19:09 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2026-01-05 23:19:09 | INFO | [30/150] cola - 746
+2026-01-05 23:19:09 | INFO |   Text: We gave us to the cause....
+2026-01-05 23:19:09 | INFO |   Words: 6 tokens
+2026-01-05 23:19:10 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:10 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:10 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:19:11 | INFO |   ✓ LIME-LLM scores generated (6 tokens)
+2026-01-05 23:19:11 | INFO | [31/150] cola - 540
+2026-01-05 23:19:11 | INFO |   Text: The ship sank, but I don't know with what....
+2026-01-05 23:19:11 | INFO |   Words: 9 tokens
+2026-01-05 23:19:12 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:12 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:12 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:19:13 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2026-01-05 23:19:13 | INFO | [32/150] cola - 129
+2026-01-05 23:19:13 | INFO |   Text: Sam offered the ball out of the basket....
+2026-01-05 23:19:13 | INFO |   Words: 8 tokens
+2026-01-05 23:19:14 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:14 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:14 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:19:15 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2026-01-05 23:19:15 | INFO | [33/150] cola - 457
+2026-01-05 23:19:15 | INFO |   Text: John's mother likes himself....
+2026-01-05 23:19:15 | INFO |   Words: 4 tokens
+2026-01-05 23:19:16 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:16 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:16 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:19:17 | INFO |   ✓ LIME-LLM scores generated (4 tokens)
+2026-01-05 23:19:17 | INFO | [34/150] cola - 464
+2026-01-05 23:19:17 | INFO |   Text: You should sit before there....
+2026-01-05 23:19:17 | INFO |   Words: 5 tokens
+2026-01-05 23:19:18 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:18 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:18 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:19:19 | INFO |   ✓ LIME-LLM scores generated (5 tokens)
+2026-01-05 23:19:19 | INFO | [35/150] cola - 501
+2026-01-05 23:19:19 | INFO |   Text: Anson thought that himself was happy....
+2026-01-05 23:19:19 | INFO |   Words: 6 tokens
+2026-01-05 23:19:20 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:20 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:20 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:19:21 | INFO |   ✓ LIME-LLM scores generated (6 tokens)
+2026-01-05 23:19:21 | INFO | [36/150] cola - 504
+2026-01-05 23:19:21 | INFO |   Text: I thought he liked myself...
+2026-01-05 23:19:21 | INFO |   Words: 5 tokens
+2026-01-05 23:19:22 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:22 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:22 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:19:23 | INFO |   ✓ LIME-LLM scores generated (5 tokens)
+2026-01-05 23:19:23 | INFO | [37/150] cola - 1014
+2026-01-05 23:19:23 | INFO |   Text: John believed it that Bill was tardy....
+2026-01-05 23:19:23 | INFO |   Words: 7 tokens
+2026-01-05 23:19:24 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:24 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:24 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:19:25 | INFO |   ✓ LIME-LLM scores generated (7 tokens)
+2026-01-05 23:19:25 | INFO | [38/150] cola - 685
+2026-01-05 23:19:25 | INFO |   Text: The book what inspired them was very long....
+2026-01-05 23:19:25 | INFO |   Words: 8 tokens
+2026-01-05 23:19:26 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:26 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:26 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:19:27 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2026-01-05 23:19:27 | INFO | [39/150] cola - 342
+2026-01-05 23:19:27 | INFO |   Text: Blue leather shows herself that Betsy is pretty....
+2026-01-05 23:19:27 | INFO |   Words: 8 tokens
+2026-01-05 23:19:28 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:28 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:28 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:19:29 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2026-01-05 23:19:29 | INFO | [40/150] cola - 137
+2026-01-05 23:19:29 | INFO |   Text: The farmer dumped the cart with apples....
+2026-01-05 23:19:29 | INFO |   Words: 7 tokens
+2026-01-05 23:19:30 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:30 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:30 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:19:31 | INFO |   ✓ LIME-LLM scores generated (7 tokens)
+2026-01-05 23:19:31 | INFO | [41/150] cola - 329
+2026-01-05 23:19:31 | INFO |   Text: 1 gave Mary after the party a book....
+2026-01-05 23:19:31 | INFO |   Words: 8 tokens
+2026-01-05 23:19:32 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:32 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:32 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:19:33 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2026-01-05 23:19:33 | INFO | [42/150] cola - 23
+2026-01-05 23:19:33 | INFO |   Text: Mickey looked up it....
+2026-01-05 23:19:33 | INFO |   Words: 4 tokens
+2026-01-05 23:19:34 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:34 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:34 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:19:35 | INFO |   ✓ LIME-LLM scores generated (4 tokens)
+2026-01-05 23:19:35 | INFO | [43/150] cola - 707
+2026-01-05 23:19:35 | INFO |   Text: I wonder in whom them to place their trust....
+2026-01-05 23:19:35 | INFO |   Words: 9 tokens
+2026-01-05 23:19:36 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:36 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:36 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:19:37 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2026-01-05 23:19:37 | INFO | [44/150] cola - 1020
+2026-01-05 23:19:37 | INFO |   Text: It is to give up to leave....
+2026-01-05 23:19:37 | INFO |   Words: 7 tokens
+2026-01-05 23:19:38 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:38 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:38 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:19:39 | INFO |   ✓ LIME-LLM scores generated (7 tokens)
+2026-01-05 23:19:39 | INFO | [45/150] cola - 252
+2026-01-05 23:19:39 | INFO |   Text: Kim put in the box....
+2026-01-05 23:19:39 | INFO |   Words: 5 tokens
+2026-01-05 23:19:40 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:40 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:40 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:19:41 | INFO |   ✓ LIME-LLM scores generated (5 tokens)
+2026-01-05 23:19:41 | INFO | [46/150] cola - 708
+2026-01-05 23:19:41 | INFO |   Text: I wonder whom us to trust....
+2026-01-05 23:19:41 | INFO |   Words: 6 tokens
+2026-01-05 23:19:42 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:42 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:42 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:19:43 | INFO |   ✓ LIME-LLM scores generated (6 tokens)
+2026-01-05 23:19:43 | INFO | [47/150] cola - 430
+2026-01-05 23:19:43 | INFO |   Text: Which article did Terry file papers without reading?...
+2026-01-05 23:19:43 | INFO |   Words: 8 tokens
+2026-01-05 23:19:43 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:43 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:43 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:19:45 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2026-01-05 23:19:45 | INFO | [48/150] cola - 451
+2026-01-05 23:19:45 | INFO |   Text: John whispered Mary left....
+2026-01-05 23:19:45 | INFO |   Words: 4 tokens
+2026-01-05 23:19:45 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:45 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:45 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:19:47 | INFO |   ✓ LIME-LLM scores generated (4 tokens)
+2026-01-05 23:19:47 | INFO | [49/150] cola - 567
+2026-01-05 23:19:47 | INFO |   Text: John likes some students, but I don't know who John likes some students....
+2026-01-05 23:19:47 | INFO |   Words: 13 tokens
+2026-01-05 23:19:47 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:47 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:47 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:19:49 | INFO |   ✓ LIME-LLM scores generated (13 tokens)
+2026-01-05 23:19:49 | INFO | [50/150] cola - 114
+2026-01-05 23:19:49 | INFO |   Text: My mother is easy to please my father and....
+2026-01-05 23:19:49 | INFO |   Words: 9 tokens
+2026-01-05 23:19:49 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:49 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:49 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:19:51 | INFO |   ✓ LIME-LLM scores generated (9 tokens)
+2026-01-05 23:19:51 | INFO | [51/150] sst2 - 48
+2026-01-05 23:19:51 | INFO |   Text: has a lot of the virtues of eastwood at his best ....
+2026-01-05 23:19:51 | INFO |   Words: 12 tokens
+2026-01-05 23:19:51 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:51 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:51 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:19:53 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2026-01-05 23:19:53 | INFO | [52/150] sst2 - 372
+2026-01-05 23:19:53 | INFO |   Text: the special effects and many scenes of weightlessness look as good or better tha...
+2026-01-05 23:19:53 | INFO |   Words: 37 tokens
+2026-01-05 23:19:53 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:53 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:53 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:19:55 | INFO |   ✓ LIME-LLM scores generated (37 tokens)
+2026-01-05 23:19:55 | INFO | [53/150] sst2 - 729
+2026-01-05 23:19:55 | INFO |   Text: the piece plays as well as it does thanks in large measure to anspaugh 's three ...
+2026-01-05 23:19:55 | INFO |   Words: 19 tokens
+2026-01-05 23:19:55 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:55 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:55 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:19:57 | INFO |   ✓ LIME-LLM scores generated (19 tokens)
+2026-01-05 23:19:57 | INFO | [54/150] sst2 - 323
+2026-01-05 23:19:57 | INFO |   Text: a painfully funny ode to bad behavior ....
+2026-01-05 23:19:57 | INFO |   Words: 8 tokens
+2026-01-05 23:19:57 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:57 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:19:57 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:19:59 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2026-01-05 23:19:59 | INFO | [55/150] sst2 - 128
+2026-01-05 23:19:59 | INFO |   Text: montias ... pumps a lot of energy into his nicely nuanced narrative and surround...
+2026-01-05 23:19:59 | INFO |   Words: 28 tokens
+2026-01-05 23:20:01 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:01 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:01 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:20:03 | INFO |   ✓ LIME-LLM scores generated (28 tokens)
+2026-01-05 23:20:03 | INFO | [56/150] sst2 - 166
+2026-01-05 23:20:03 | INFO |   Text: characters still need to function according to some set of believable and compre...
+2026-01-05 23:20:03 | INFO |   Words: 30 tokens
+2026-01-05 23:20:03 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:03 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:03 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:20:05 | INFO |   ✓ LIME-LLM scores generated (30 tokens)
+2026-01-05 23:20:05 | INFO | [57/150] sst2 - 598
+2026-01-05 23:20:05 | INFO |   Text: nonsensical , dull `` cyber-horror '' flick is a grim , hollow exercise in flat ...
+2026-01-05 23:20:05 | INFO |   Words: 20 tokens
+2026-01-05 23:20:06 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:06 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:06 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:20:07 | INFO |   ✓ LIME-LLM scores generated (20 tokens)
+2026-01-05 23:20:07 | INFO | [58/150] sst2 - 100
+2026-01-05 23:20:07 | INFO |   Text: neither parker nor donovan is a typical romantic lead , but they bring a fresh ,...
+2026-01-05 23:20:07 | INFO |   Words: 22 tokens
+2026-01-05 23:20:08 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:08 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:08 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:20:09 | INFO |   ✓ LIME-LLM scores generated (22 tokens)
+2026-01-05 23:20:09 | INFO | [59/150] sst2 - 181
+2026-01-05 23:20:09 | INFO |   Text: it 's a bad thing when a movie has about as much substance as its end credits bl...
+2026-01-05 23:20:09 | INFO |   Words: 20 tokens
+2026-01-05 23:20:10 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:10 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:10 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:20:11 | INFO |   ✓ LIME-LLM scores generated (20 tokens)
+2026-01-05 23:20:11 | INFO | [60/150] sst2 - 560
+2026-01-05 23:20:11 | INFO |   Text: do n't be fooled by the impressive cast list - eye see you is pure junk ....
+2026-01-05 23:20:11 | INFO |   Words: 17 tokens
+2026-01-05 23:20:12 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:12 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:12 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:20:13 | INFO |   ✓ LIME-LLM scores generated (17 tokens)
+2026-01-05 23:20:13 | INFO | [61/150] sst2 - 596
+2026-01-05 23:20:13 | INFO |   Text: the director knows how to apply textural gloss , but his portrait of sex-as-war ...
+2026-01-05 23:20:13 | INFO |   Words: 18 tokens
+2026-01-05 23:20:14 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:14 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:14 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:20:15 | INFO |   ✓ LIME-LLM scores generated (18 tokens)
+2026-01-05 23:20:15 | INFO | [62/150] sst2 - 489
+2026-01-05 23:20:15 | INFO |   Text: it 's dumb , but more importantly , it 's just not scary ....
+2026-01-05 23:20:15 | INFO |   Words: 14 tokens
+2026-01-05 23:20:16 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:16 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:16 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:20:17 | INFO |   ✓ LIME-LLM scores generated (14 tokens)
+2026-01-05 23:20:17 | INFO | [63/150] sst2 - 763
+2026-01-05 23:20:17 | INFO |   Text: there 's something auspicious , and daring , too , about the artistic instinct t...
+2026-01-05 23:20:17 | INFO |   Words: 36 tokens
+2026-01-05 23:20:18 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:18 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:18 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:20:19 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2026-01-05 23:20:19 | INFO | [64/150] sst2 - 345
+2026-01-05 23:20:19 | INFO |   Text: this tenth feature is a big deal , indeed -- at least the third-best , and maybe...
+2026-01-05 23:20:19 | INFO |   Words: 36 tokens
+2026-01-05 23:20:19 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:20 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:20 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:20:21 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2026-01-05 23:20:21 | INFO | [65/150] sst2 - 251
+2026-01-05 23:20:21 | INFO |   Text: the film tries too hard to be funny and tries too hard to be hip ....
+2026-01-05 23:20:21 | INFO |   Words: 16 tokens
+2026-01-05 23:20:21 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:21 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:21 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:20:23 | INFO |   ✓ LIME-LLM scores generated (16 tokens)
+2026-01-05 23:20:23 | INFO | [66/150] sst2 - 838
+2026-01-05 23:20:23 | INFO |   Text: sometimes seems less like storytelling than something the otherwise compelling d...
+2026-01-05 23:20:23 | INFO |   Words: 18 tokens
+2026-01-05 23:20:23 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:23 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:23 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:20:24 | INFO |   ✓ LIME-LLM scores generated (18 tokens)
+2026-01-05 23:20:24 | INFO | [67/150] sst2 - 254
+2026-01-05 23:20:24 | INFO |   Text: attempts by this ensemble film to impart a message are so heavy-handed that they...
+2026-01-05 23:20:24 | INFO |   Words: 19 tokens
+2026-01-05 23:20:25 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:25 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:25 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:20:26 | INFO |   ✓ LIME-LLM scores generated (19 tokens)
+2026-01-05 23:20:26 | INFO | [68/150] sst2 - 435
+2026-01-05 23:20:26 | INFO |   Text: a marvel like none you 've seen ....
+2026-01-05 23:20:26 | INFO |   Words: 8 tokens
+2026-01-05 23:20:27 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:27 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:27 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:20:28 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2026-01-05 23:20:28 | INFO | [69/150] sst2 - 325
+2026-01-05 23:20:28 | INFO |   Text: liotta put on 30 pounds for the role , and has completely transformed himself fr...
+2026-01-05 23:20:28 | INFO |   Words: 21 tokens
+2026-01-05 23:20:28 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:28 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:28 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:20:30 | INFO |   ✓ LIME-LLM scores generated (21 tokens)
+2026-01-05 23:20:30 | INFO | [70/150] sst2 - 488
+2026-01-05 23:20:30 | INFO |   Text: a cartoon that 's truly cinematic in scope , and a story that 's compelling and ...
+2026-01-05 23:20:30 | INFO |   Words: 30 tokens
+2026-01-05 23:20:30 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:30 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:30 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:20:32 | INFO |   ✓ LIME-LLM scores generated (30 tokens)
+2026-01-05 23:20:32 | INFO | [71/150] sst2 - 99
+2026-01-05 23:20:32 | INFO |   Text: why make a documentary about these marginal historical figures ?...
+2026-01-05 23:20:32 | INFO |   Words: 10 tokens
+2026-01-05 23:20:33 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:33 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:33 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:20:34 | INFO |   ✓ LIME-LLM scores generated (10 tokens)
+2026-01-05 23:20:34 | INFO | [72/150] sst2 - 870
+2026-01-05 23:20:34 | INFO |   Text: ... is an arthritic attempt at directing by callie khouri ....
+2026-01-05 23:20:34 | INFO |   Words: 11 tokens
+2026-01-05 23:20:34 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:34 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:34 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:20:36 | INFO |   ✓ LIME-LLM scores generated (11 tokens)
+2026-01-05 23:20:36 | INFO | [73/150] sst2 - 258
+2026-01-05 23:20:36 | INFO |   Text: `` the time machine '' is a movie that has no interest in itself ....
+2026-01-05 23:20:36 | INFO |   Words: 15 tokens
+2026-01-05 23:20:38 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:38 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:38 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:20:40 | INFO |   ✓ LIME-LLM scores generated (15 tokens)
+2026-01-05 23:20:40 | INFO | [74/150] sst2 - 785
+2026-01-05 23:20:40 | INFO |   Text: aside from minor tinkering , this is the same movie you probably loved in 1994 ,...
+2026-01-05 23:20:40 | INFO |   Words: 23 tokens
+2026-01-05 23:20:40 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:40 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:40 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:20:42 | INFO |   ✓ LIME-LLM scores generated (23 tokens)
+2026-01-05 23:20:42 | INFO | [75/150] sst2 - 859
+2026-01-05 23:20:42 | INFO |   Text: add yet another hat to a talented head , clooney 's a good director ....
+2026-01-05 23:20:42 | INFO |   Words: 15 tokens
+2026-01-05 23:20:42 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:42 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:42 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:20:43 | INFO |   ✓ LIME-LLM scores generated (15 tokens)
+2026-01-05 23:20:43 | INFO | [76/150] sst2 - 149
+2026-01-05 23:20:43 | INFO |   Text: the volatile dynamics of female friendship is the subject of this unhurried , lo...
+2026-01-05 23:20:43 | INFO |   Words: 30 tokens
+2026-01-05 23:20:44 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:44 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:44 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:20:45 | INFO |   ✓ LIME-LLM scores generated (30 tokens)
+2026-01-05 23:20:45 | INFO | [77/150] sst2 - 113
+2026-01-05 23:20:45 | INFO |   Text: this movie is maddening ....
+2026-01-05 23:20:45 | INFO |   Words: 5 tokens
+2026-01-05 23:20:46 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:46 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:46 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:20:47 | INFO |   ✓ LIME-LLM scores generated (5 tokens)
+2026-01-05 23:20:47 | INFO | [78/150] sst2 - 571
+2026-01-05 23:20:47 | INFO |   Text: passable entertainment , but it 's the kind of motion picture that wo n't make m...
+2026-01-05 23:20:47 | INFO |   Words: 32 tokens
+2026-01-05 23:20:47 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:47 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:47 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:20:49 | INFO |   ✓ LIME-LLM scores generated (32 tokens)
+2026-01-05 23:20:49 | INFO | [79/150] sst2 - 109
+2026-01-05 23:20:49 | INFO |   Text: it 's great escapist fun that recreates a place and time that will never happen ...
+2026-01-05 23:20:49 | INFO |   Words: 17 tokens
+2026-01-05 23:20:49 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:49 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:49 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:20:51 | INFO |   ✓ LIME-LLM scores generated (17 tokens)
+2026-01-05 23:20:51 | INFO | [80/150] sst2 - 60
+2026-01-05 23:20:51 | INFO |   Text: this is a story of two misfits who do n't stand a chance alone , but together th...
+2026-01-05 23:20:51 | INFO |   Words: 21 tokens
+2026-01-05 23:20:51 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:51 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:51 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:20:52 | INFO |   ✓ LIME-LLM scores generated (21 tokens)
+2026-01-05 23:20:52 | INFO | [81/150] sst2 - 212
+2026-01-05 23:20:52 | INFO |   Text: the entire movie is about a boring , sad man being boring and sad ....
+2026-01-05 23:20:52 | INFO |   Words: 15 tokens
+2026-01-05 23:20:53 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:53 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:53 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:20:54 | INFO |   ✓ LIME-LLM scores generated (15 tokens)
+2026-01-05 23:20:54 | INFO | [82/150] sst2 - 580
+2026-01-05 23:20:54 | INFO |   Text: it takes a certain kind of horror movie to qualify as ` worse than expected , ' ...
+2026-01-05 23:20:54 | INFO |   Words: 27 tokens
+2026-01-05 23:20:54 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:54 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:54 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:20:56 | INFO |   ✓ LIME-LLM scores generated (27 tokens)
+2026-01-05 23:20:56 | INFO | [83/150] sst2 - 868
+2026-01-05 23:20:56 | INFO |   Text: a movie with a real anarchic flair ....
+2026-01-05 23:20:56 | INFO |   Words: 8 tokens
+2026-01-05 23:20:56 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:56 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:56 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:20:57 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2026-01-05 23:20:57 | INFO | [84/150] sst2 - 539
+2026-01-05 23:20:57 | INFO |   Text: do not see this film ....
+2026-01-05 23:20:57 | INFO |   Words: 6 tokens
+2026-01-05 23:20:58 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:58 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:58 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:20:59 | INFO |   ✓ LIME-LLM scores generated (6 tokens)
+2026-01-05 23:20:59 | INFO | [85/150] sst2 - 726
+2026-01-05 23:20:59 | INFO |   Text: it gets onto the screen just about as much of the novella as one could reasonabl...
+2026-01-05 23:20:59 | INFO |   Words: 28 tokens
+2026-01-05 23:20:59 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:59 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:20:59 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:21:01 | INFO |   ✓ LIME-LLM scores generated (28 tokens)
+2026-01-05 23:21:01 | INFO | [86/150] sst2 - 80
+2026-01-05 23:21:01 | INFO |   Text: the draw ( for `` big bad love '' ) is a solid performance by arliss howard ....
+2026-01-05 23:21:01 | INFO |   Words: 18 tokens
+2026-01-05 23:21:01 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:01 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:01 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:21:03 | INFO |   ✓ LIME-LLM scores generated (18 tokens)
+2026-01-05 23:21:03 | INFO | [87/150] sst2 - 225
+2026-01-05 23:21:03 | INFO |   Text: far more imaginative and ambitious than the trivial , cash-in features nickelode...
+2026-01-05 23:21:03 | INFO |   Words: 21 tokens
+2026-01-05 23:21:03 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:03 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:03 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:21:05 | INFO |   ✓ LIME-LLM scores generated (21 tokens)
+2026-01-05 23:21:05 | INFO | [88/150] sst2 - 189
+2026-01-05 23:21:05 | INFO |   Text: its story may be a thousand years old , but why did it have to seem like it took...
+2026-01-05 23:21:05 | INFO |   Words: 27 tokens
+2026-01-05 23:21:05 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:05 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:05 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:21:07 | INFO |   ✓ LIME-LLM scores generated (27 tokens)
+2026-01-05 23:21:07 | INFO | [89/150] sst2 - 134
+2026-01-05 23:21:07 | INFO |   Text: it all drags on so interminably it 's like watching a miserable relationship unf...
+2026-01-05 23:21:07 | INFO |   Words: 18 tokens
+2026-01-05 23:21:07 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:07 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:07 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:21:09 | INFO |   ✓ LIME-LLM scores generated (18 tokens)
+2026-01-05 23:21:09 | INFO | [90/150] sst2 - 210
+2026-01-05 23:21:09 | INFO |   Text: not only is undercover brother as funny , if not more so , than both austin powe...
+2026-01-05 23:21:09 | INFO |   Words: 37 tokens
+2026-01-05 23:21:09 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:09 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:09 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:21:11 | INFO |   ✓ LIME-LLM scores generated (37 tokens)
+2026-01-05 23:21:11 | INFO | [91/150] sst2 - 193
+2026-01-05 23:21:11 | INFO |   Text: morton uses her face and her body language to bring us morvern 's soul , even th...
+2026-01-05 23:21:11 | INFO |   Words: 24 tokens
+2026-01-05 23:21:11 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:11 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:11 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:21:13 | INFO |   ✓ LIME-LLM scores generated (24 tokens)
+2026-01-05 23:21:13 | INFO | [92/150] sst2 - 719
+2026-01-05 23:21:13 | INFO |   Text: whaley 's determination to immerse you in sheer , unrelenting wretchedness is ex...
+2026-01-05 23:21:13 | INFO |   Words: 14 tokens
+2026-01-05 23:21:13 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:13 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:13 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:21:15 | INFO |   ✓ LIME-LLM scores generated (14 tokens)
+2026-01-05 23:21:15 | INFO | [93/150] sst2 - 472
+2026-01-05 23:21:15 | INFO |   Text: you will emerge with a clearer view of how the gears of justice grind on and the...
+2026-01-05 23:21:15 | INFO |   Words: 28 tokens
+2026-01-05 23:21:15 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:15 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:15 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:21:17 | INFO |   ✓ LIME-LLM scores generated (28 tokens)
+2026-01-05 23:21:17 | INFO | [94/150] sst2 - 355
+2026-01-05 23:21:17 | INFO |   Text: there is no pleasure in watching a child suffer ....
+2026-01-05 23:21:17 | INFO |   Words: 10 tokens
+2026-01-05 23:21:17 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:17 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:17 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:21:18 | INFO |   ✓ LIME-LLM scores generated (10 tokens)
+2026-01-05 23:21:18 | INFO | [95/150] sst2 - 336
+2026-01-05 23:21:18 | INFO |   Text: having had the good sense to cast actors who are , generally speaking , adored b...
+2026-01-05 23:21:18 | INFO |   Words: 29 tokens
+2026-01-05 23:21:19 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:19 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:19 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:21:20 | INFO |   ✓ LIME-LLM scores generated (29 tokens)
+2026-01-05 23:21:20 | INFO | [96/150] sst2 - 846
+2026-01-05 23:21:20 | INFO |   Text: an absurdist comedy about alienation , separation and loss ....
+2026-01-05 23:21:20 | INFO |   Words: 10 tokens
+2026-01-05 23:21:21 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:21 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:21 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:21:22 | INFO |   ✓ LIME-LLM scores generated (10 tokens)
+2026-01-05 23:21:22 | INFO | [97/150] sst2 - 770
+2026-01-05 23:21:22 | INFO |   Text: i do n't think i laughed out loud once ....
+2026-01-05 23:21:22 | INFO |   Words: 10 tokens
+2026-01-05 23:21:22 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:22 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:22 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:21:24 | INFO |   ✓ LIME-LLM scores generated (10 tokens)
+2026-01-05 23:21:24 | INFO | [98/150] sst2 - 593
+2026-01-05 23:21:24 | INFO |   Text: the terrific and bewilderingly underrated campbell scott gives a star performanc...
+2026-01-05 23:21:24 | INFO |   Words: 18 tokens
+2026-01-05 23:21:24 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:24 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:24 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:21:25 | INFO |   ✓ LIME-LLM scores generated (18 tokens)
+2026-01-05 23:21:25 | INFO | [99/150] sst2 - 72
+2026-01-05 23:21:25 | INFO |   Text: uses high comedy to evoke surprising poignance ....
+2026-01-05 23:21:25 | INFO |   Words: 8 tokens
+2026-01-05 23:21:26 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:26 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:26 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:21:27 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2026-01-05 23:21:27 | INFO | [100/150] sst2 - 671
+2026-01-05 23:21:27 | INFO |   Text: two hours fly by -- opera 's a pleasure when you do n't have to endure intermiss...
+2026-01-05 23:21:27 | INFO |   Words: 29 tokens
+2026-01-05 23:21:27 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:27 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:27 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:21:29 | INFO |   ✓ LIME-LLM scores generated (29 tokens)
+2026-01-05 23:21:29 | INFO | [101/150] hatexplain - 1252707503441313794_twitter
+2026-01-05 23:21:29 | INFO |   Text: <user> <user> why are you repeating yourself are you a little retarded...
+2026-01-05 23:21:29 | INFO |   Words: 12 tokens
+2026-01-05 23:21:30 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:30 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:30 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:21:31 | INFO |   ✓ LIME-LLM scores generated (12 tokens)
+2026-01-05 23:21:31 | INFO | [102/150] hatexplain - 1169443635869487105_twitter
+2026-01-05 23:21:31 | INFO |   Text: <user> lol not me i don [UNK] t deal with bms not outside children [UNK] ss i le...
+2026-01-05 23:21:31 | INFO |   Words: 27 tokens
+2026-01-05 23:21:32 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:32 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:32 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:21:32 | WARNING |   ✗ Error: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (21,) + inhomogeneous part.
+2026-01-05 23:21:33 | INFO | [103/150] hatexplain - 17372469_gab
+2026-01-05 23:21:33 | INFO |   Text: an these nigger biches look like godzilla nasty...
+2026-01-05 23:21:33 | INFO |   Words: 8 tokens
+2026-01-05 23:21:33 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:33 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:33 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:21:34 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2026-01-05 23:21:34 | INFO | [104/150] hatexplain - 1168407844095483904_twitter
+2026-01-05 23:21:34 | INFO |   Text: yeah humnh what how do i use this app i [UNK] m alittle retarded [UNK]...
+2026-01-05 23:21:34 | INFO |   Words: 15 tokens
+2026-01-05 23:21:35 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:35 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:35 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:21:36 | INFO |   ✓ LIME-LLM scores generated (15 tokens)
+2026-01-05 23:21:36 | INFO | [105/150] hatexplain - 12643541_gab
+2026-01-05 23:21:36 | INFO |   Text: black people are oppressed by their own culture and community blacks need to wak...
+2026-01-05 23:21:36 | INFO |   Words: 49 tokens
+2026-01-05 23:21:37 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:37 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:37 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:21:39 | INFO |   ✓ LIME-LLM scores generated (49 tokens)
+2026-01-05 23:21:39 | INFO | [106/150] hatexplain - 18943330_gab
+2026-01-05 23:21:39 | INFO |   Text: the muzzie loving natsoc get the sword...
+2026-01-05 23:21:39 | INFO |   Words: 7 tokens
+2026-01-05 23:21:39 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:39 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:39 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:21:41 | INFO |   ✓ LIME-LLM scores generated (7 tokens)
+2026-01-05 23:21:41 | INFO | [107/150] hatexplain - 1077853_gab
+2026-01-05 23:21:41 | INFO |   Text: tbtc take back the country toxic masculinity patriarchy harm men noxious femalen...
+2026-01-05 23:21:41 | INFO |   Words: 38 tokens
+2026-01-05 23:21:41 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:41 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:41 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:21:43 | INFO |   ✓ LIME-LLM scores generated (38 tokens)
+2026-01-05 23:21:43 | INFO | [108/150] hatexplain - 1162547667416899586_twitter
+2026-01-05 23:21:43 | INFO |   Text: there too many wypipo asking what this is and if they can get in this is a nigge...
+2026-01-05 23:21:43 | INFO |   Words: 20 tokens
+2026-01-05 23:21:44 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:44 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:44 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:21:45 | INFO |   ✓ LIME-LLM scores generated (20 tokens)
+2026-01-05 23:21:45 | INFO | [109/150] hatexplain - 20989384_gab
+2026-01-05 23:21:45 | INFO |   Text: i hope there are not many of my fellow asians in sweden high chance of falling v...
+2026-01-05 23:21:45 | INFO |   Words: 24 tokens
+2026-01-05 23:21:46 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:46 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:46 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:21:48 | INFO |   ✓ LIME-LLM scores generated (24 tokens)
+2026-01-05 23:21:48 | INFO | [110/150] hatexplain - 1083042797995941889_twitter
+2026-01-05 23:21:48 | INFO |   Text: take drugs and rape sluts...
+2026-01-05 23:21:48 | INFO |   Words: 5 tokens
+2026-01-05 23:21:48 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:48 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:48 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:21:49 | INFO |   ✓ LIME-LLM scores generated (5 tokens)
+2026-01-05 23:21:49 | INFO | [111/150] hatexplain - 1079795475560218626_twitter
+2026-01-05 23:21:49 | INFO |   Text: <user> <user> treat the immigrants as drug traffickers they will soon have a cha...
+2026-01-05 23:21:49 | INFO |   Words: 17 tokens
+2026-01-05 23:21:50 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:50 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:50 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:21:51 | INFO |   ✓ LIME-LLM scores generated (17 tokens)
+2026-01-05 23:21:51 | INFO | [112/150] hatexplain - 13948927_gab
+2026-01-05 23:21:51 | INFO |   Text: cia nigger apologizes to pol for the poz...
+2026-01-05 23:21:51 | INFO |   Words: 8 tokens
+2026-01-05 23:21:52 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:52 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:52 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:21:53 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2026-01-05 23:21:53 | INFO | [113/150] hatexplain - 1225858073270476800_twitter
+2026-01-05 23:21:53 | INFO |   Text: space is gay and so are you...
+2026-01-05 23:21:53 | INFO |   Words: 7 tokens
+2026-01-05 23:21:53 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:53 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:53 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:21:55 | INFO |   ✓ LIME-LLM scores generated (7 tokens)
+2026-01-05 23:21:55 | INFO | [114/150] hatexplain - 18529253_gab
+2026-01-05 23:21:55 | INFO |   Text: fun fact did you know kardashian is armenian for nigger lover...
+2026-01-05 23:21:55 | INFO |   Words: 11 tokens
+2026-01-05 23:21:55 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:55 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:55 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:21:56 | INFO |   ✓ LIME-LLM scores generated (11 tokens)
+2026-01-05 23:21:56 | INFO | [115/150] hatexplain - 13455893_gab
+2026-01-05 23:21:56 | INFO |   Text: new rule in all competitive shows baking dancing or other let paki or nigger tok...
+2026-01-05 23:21:56 | INFO |   Words: 36 tokens
+2026-01-05 23:21:57 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:57 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:57 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:21:59 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2026-01-05 23:21:59 | INFO | [116/150] hatexplain - 1100389613074558976_twitter
+2026-01-05 23:21:59 | INFO |   Text: <user> not low class they enjoy to get fucked by muslims...
+2026-01-05 23:21:59 | INFO |   Words: 11 tokens
+2026-01-05 23:21:59 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:59 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:21:59 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:22:00 | INFO |   ✓ LIME-LLM scores generated (11 tokens)
+2026-01-05 23:22:00 | INFO | [117/150] hatexplain - 5942714_gab
+2026-01-05 23:22:00 | INFO |   Text: are you talking about sand niggers...
+2026-01-05 23:22:00 | INFO |   Words: 6 tokens
+2026-01-05 23:22:01 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:01 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:01 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:22:02 | INFO |   ✓ LIME-LLM scores generated (6 tokens)
+2026-01-05 23:22:02 | INFO | [118/150] hatexplain - 21217776_gab
+2026-01-05 23:22:02 | INFO |   Text: imagine being so disconnected that youd think a dickies work shirt and some blac...
+2026-01-05 23:22:02 | INFO |   Words: 50 tokens
+2026-01-05 23:22:02 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:02 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:02 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:22:05 | INFO |   ✓ LIME-LLM scores generated (50 tokens)
+2026-01-05 23:22:05 | INFO | [119/150] hatexplain - 6817112_gab
+2026-01-05 23:22:05 | INFO |   Text: sweden suicide is a foregone conclusion no amount of tweeting raging philosophiz...
+2026-01-05 23:22:05 | INFO |   Words: 38 tokens
+2026-01-05 23:22:05 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:05 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:05 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:22:07 | INFO |   ✓ LIME-LLM scores generated (38 tokens)
+2026-01-05 23:22:07 | INFO | [120/150] hatexplain - 1090673738545283074_twitter
+2026-01-05 23:22:07 | INFO |   Text: i do not listen to niggershitbullshit...
+2026-01-05 23:22:07 | INFO |   Words: 6 tokens
+2026-01-05 23:22:08 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:08 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:08 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:22:09 | INFO |   ✓ LIME-LLM scores generated (6 tokens)
+2026-01-05 23:22:09 | INFO | [121/150] hatexplain - 21836106_gab
+2026-01-05 23:22:09 | INFO |   Text: mfw i m trying to write an important term paper and some affirmative action ass ...
+2026-01-05 23:22:09 | INFO |   Words: 23 tokens
+2026-01-05 23:22:10 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:10 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:10 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:22:11 | INFO |   ✓ LIME-LLM scores generated (23 tokens)
+2026-01-05 23:22:11 | INFO | [122/150] hatexplain - 17074293_gab
+2026-01-05 23:22:11 | INFO |   Text: agreed and riyadh and any another place in that cesspool they congregate as i sa...
+2026-01-05 23:22:11 | INFO |   Words: 34 tokens
+2026-01-05 23:22:12 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:12 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:12 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:22:14 | INFO |   ✓ LIME-LLM scores generated (34 tokens)
+2026-01-05 23:22:14 | INFO | [123/150] hatexplain - 1120883481549189120_twitter
+2026-01-05 23:22:14 | INFO |   Text: <user> <user> u spell it like a retard...
+2026-01-05 23:22:14 | INFO |   Words: 8 tokens
+2026-01-05 23:22:14 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:14 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:14 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:22:16 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2026-01-05 23:22:16 | INFO | [124/150] hatexplain - 24642826_gab
+2026-01-05 23:22:16 | INFO |   Text: as evidenced by the fact that they do not attack nigger toxic masculinity like r...
+2026-01-05 23:22:16 | INFO |   Words: 28 tokens
+2026-01-05 23:22:16 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:16 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:16 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:22:18 | INFO |   ✓ LIME-LLM scores generated (28 tokens)
+2026-01-05 23:22:18 | INFO | [125/150] hatexplain - 24226678_gab
+2026-01-05 23:22:18 | INFO |   Text: always thought that nigger was a faggot...
+2026-01-05 23:22:18 | INFO |   Words: 7 tokens
+2026-01-05 23:22:18 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:18 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:18 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:22:20 | INFO |   ✓ LIME-LLM scores generated (7 tokens)
+2026-01-05 23:22:20 | INFO | [126/150] hatexplain - 14095649_gab
+2026-01-05 23:22:20 | INFO |   Text: if they are seeking asylum from a terrible mussie country why then are they work...
+2026-01-05 23:22:20 | INFO |   Words: 38 tokens
+2026-01-05 23:22:20 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:20 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:20 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:22:22 | INFO |   ✓ LIME-LLM scores generated (38 tokens)
+2026-01-05 23:22:22 | INFO | [127/150] hatexplain - 1178251992801533952_twitter
+2026-01-05 23:22:22 | INFO |   Text: mohammad bin salman al saud ordered the bone sawing of an american journalist i ...
+2026-01-05 23:22:22 | INFO |   Words: 47 tokens
+2026-01-05 23:22:23 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:23 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:23 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:22:25 | INFO |   ✓ LIME-LLM scores generated (47 tokens)
+2026-01-05 23:22:25 | INFO | [128/150] hatexplain - 18195956_gab
+2026-01-05 23:22:25 | INFO |   Text: kick all illegal immigrants out they do not belong here they have no business be...
+2026-01-05 23:22:25 | INFO |   Words: 20 tokens
+2026-01-05 23:22:25 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:25 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:25 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:22:27 | INFO |   ✓ LIME-LLM scores generated (20 tokens)
+2026-01-05 23:22:27 | INFO | [129/150] hatexplain - 23169645_gab
+2026-01-05 23:22:27 | INFO |   Text: idiot boy trudeau his somali moslem immigration minister ahmed hussen want to br...
+2026-01-05 23:22:27 | INFO |   Words: 33 tokens
+2026-01-05 23:22:27 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:27 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:27 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:22:30 | INFO |   ✓ LIME-LLM scores generated (33 tokens)
+2026-01-05 23:22:30 | INFO | [130/150] hatexplain - 1105655062599208960_twitter
+2026-01-05 23:22:30 | INFO |   Text: suck out you faggot...
+2026-01-05 23:22:30 | INFO |   Words: 4 tokens
+2026-01-05 23:22:30 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:30 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:30 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:22:32 | INFO |   ✓ LIME-LLM scores generated (4 tokens)
+2026-01-05 23:22:32 | INFO | [131/150] hatexplain - 19792641_gab
+2026-01-05 23:22:32 | INFO |   Text: ovomits a nigger and a half nigger...
+2026-01-05 23:22:32 | INFO |   Words: 7 tokens
+2026-01-05 23:22:32 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:32 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:32 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:22:33 | INFO |   ✓ LIME-LLM scores generated (7 tokens)
+2026-01-05 23:22:33 | INFO | [132/150] hatexplain - 15835814_gab
+2026-01-05 23:22:33 | INFO |   Text: so he admits to his inner retard that can not cope with facts not aligning with ...
+2026-01-05 23:22:33 | INFO |   Words: 19 tokens
+2026-01-05 23:22:34 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:34 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:34 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:22:35 | INFO |   ✓ LIME-LLM scores generated (19 tokens)
+2026-01-05 23:22:35 | INFO | [133/150] hatexplain - 17188614_gab
+2026-01-05 23:22:35 | INFO |   Text: <number> years of inbreeding make their hasbara basically retarded it a kike thi...
+2026-01-05 23:22:35 | INFO |   Words: 13 tokens
+2026-01-05 23:22:36 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:36 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:36 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:22:37 | INFO |   ✓ LIME-LLM scores generated (13 tokens)
+2026-01-05 23:22:37 | INFO | [134/150] hatexplain - 1178170242872283137_twitter
+2026-01-05 23:22:37 | INFO |   Text: <number> years ago i do not believe the best of europeans anticipated the slave ...
+2026-01-05 23:22:37 | INFO |   Words: 38 tokens
+2026-01-05 23:22:38 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:38 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:38 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:22:40 | INFO |   ✓ LIME-LLM scores generated (38 tokens)
+2026-01-05 23:22:40 | INFO | [135/150] hatexplain - 23877736_gab
+2026-01-05 23:22:40 | INFO |   Text: my goal on this site is expose the filthy disgusting hoodrat nigger bitch in all...
+2026-01-05 23:22:40 | INFO |   Words: 25 tokens
+2026-01-05 23:22:40 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:40 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:40 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:22:42 | INFO |   ✓ LIME-LLM scores generated (25 tokens)
+2026-01-05 23:22:42 | INFO | [136/150] hatexplain - 12487417_gab
+2026-01-05 23:22:42 | INFO |   Text: come on please you forgot you are from europe you think north africa is black yo...
+2026-01-05 23:22:42 | INFO |   Words: 35 tokens
+2026-01-05 23:22:42 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:42 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:42 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:22:45 | INFO |   ✓ LIME-LLM scores generated (35 tokens)
+2026-01-05 23:22:45 | INFO | [137/150] hatexplain - 13879478_gab
+2026-01-05 23:22:45 | INFO |   Text: america always was a country for by and of genetic europeans a white man born in...
+2026-01-05 23:22:45 | INFO |   Words: 33 tokens
+2026-01-05 23:22:45 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:45 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:45 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:22:47 | INFO |   ✓ LIME-LLM scores generated (33 tokens)
+2026-01-05 23:22:47 | INFO | [138/150] hatexplain - 21757892_gab
+2026-01-05 23:22:47 | INFO |   Text: fuck that towelhead terrorist ship him to syria and drop him off a building fuck...
+2026-01-05 23:22:47 | INFO |   Words: 16 tokens
+2026-01-05 23:22:47 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:47 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:47 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:22:49 | INFO |   ✓ LIME-LLM scores generated (16 tokens)
+2026-01-05 23:22:49 | INFO | [139/150] hatexplain - 1144477259425730560_twitter
+2026-01-05 23:22:49 | INFO |   Text: <user> there were also no mentions of the threats immigrants present to citizens...
+2026-01-05 23:22:49 | INFO |   Words: 15 tokens
+2026-01-05 23:22:49 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:49 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:49 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:22:51 | INFO |   ✓ LIME-LLM scores generated (15 tokens)
+2026-01-05 23:22:51 | INFO | [140/150] hatexplain - 15731682_gab
+2026-01-05 23:22:51 | INFO |   Text: besides i am irish white nigger spud nigger shamrock nigger leprechaun nigger po...
+2026-01-05 23:22:51 | INFO |   Words: 41 tokens
+2026-01-05 23:22:51 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:51 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:51 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:22:54 | INFO |   ✓ LIME-LLM scores generated (41 tokens)
+2026-01-05 23:22:54 | INFO | [141/150] hatexplain - 1081320994244055040_twitter
+2026-01-05 23:22:54 | INFO |   Text: that hoe only got time for his friends...
+2026-01-05 23:22:54 | INFO |   Words: 8 tokens
+2026-01-05 23:22:54 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:54 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:54 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:22:55 | INFO |   ✓ LIME-LLM scores generated (8 tokens)
+2026-01-05 23:22:55 | INFO | [142/150] hatexplain - 9867117_gab
+2026-01-05 23:22:55 | INFO |   Text: well my dear lgbtq brothers and sisters i do not want to die at the hands of a m...
+2026-01-05 23:22:55 | INFO |   Words: 43 tokens
+2026-01-05 23:22:56 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:56 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:56 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:22:58 | INFO |   ✓ LIME-LLM scores generated (43 tokens)
+2026-01-05 23:22:58 | INFO | [143/150] hatexplain - 1179048638921596928_twitter
+2026-01-05 23:22:58 | INFO |   Text: <user> <user> ching chong <number>...
+2026-01-05 23:22:58 | INFO |   Words: 5 tokens
+2026-01-05 23:22:58 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:58 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:22:58 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:23:00 | INFO |   ✓ LIME-LLM scores generated (5 tokens)
+2026-01-05 23:23:00 | INFO | [144/150] hatexplain - 1178837672699269126_twitter
+2026-01-05 23:23:00 | INFO |   Text: dababy security explaining why he knocked out that dyke should not be as funny a...
+2026-01-05 23:23:00 | INFO |   Words: 17 tokens
+2026-01-05 23:23:00 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:23:00 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:23:00 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:23:02 | INFO |   ✓ LIME-LLM scores generated (17 tokens)
+2026-01-05 23:23:02 | INFO | [145/150] hatexplain - 4701852_gab
+2026-01-05 23:23:02 | INFO |   Text: fanbloodytastic by time these leeches are held to account especially the muzzie ...
+2026-01-05 23:23:02 | INFO |   Words: 36 tokens
+2026-01-05 23:23:02 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:23:02 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:23:02 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:23:04 | INFO |   ✓ LIME-LLM scores generated (36 tokens)
+2026-01-05 23:23:04 | INFO | [146/150] hatexplain - 22842291_gab
+2026-01-05 23:23:04 | INFO |   Text: i never thought i would see the day when faggots and niggers are held in a highe...
+2026-01-05 23:23:04 | INFO |   Words: 35 tokens
+2026-01-05 23:23:05 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:23:05 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:23:05 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:23:07 | INFO |   ✓ LIME-LLM scores generated (35 tokens)
+2026-01-05 23:23:07 | INFO | [147/150] hatexplain - 23834135_gab
+2026-01-05 23:23:07 | INFO |   Text: obama was ghetto bigger so yes...
+2026-01-05 23:23:07 | INFO |   Words: 6 tokens
+2026-01-05 23:23:07 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:23:07 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:23:07 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:23:08 | INFO |   ✓ LIME-LLM scores generated (6 tokens)
+2026-01-05 23:23:08 | INFO | [148/150] hatexplain - 25250350_gab
+2026-01-05 23:23:08 | INFO |   Text: that fat fucking dyke pos should indeed be prosecuted and campaign finance viola...
+2026-01-05 23:23:08 | INFO |   Words: 31 tokens
+2026-01-05 23:23:09 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:23:09 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:23:09 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:23:10 | INFO |   ✓ LIME-LLM scores generated (31 tokens)
+2026-01-05 23:23:10 | INFO | [149/150] hatexplain - 10088571_gab
+2026-01-05 23:23:10 | INFO |   Text: jews are the only enemy in the history of the world that resort to crying its an...
+2026-01-05 23:23:10 | INFO |   Words: 24 tokens
+2026-01-05 23:23:11 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:23:11 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:23:11 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-01-05 23:23:13 | INFO |   ✓ LIME-LLM scores generated (24 tokens)
+2026-01-05 23:23:13 | INFO | [150/150] hatexplain - 18315448_gab
+2026-01-05 23:23:14 | INFO |   Text: a god dam kike only thinks about sucking babydicks and making believe they holy...
+2026-01-05 23:23:14 | INFO |   Words: 14 tokens
+2026-01-05 23:23:14 | INFO | Use pytorch device_name: cpu
+2026-01-05 23:23:14 | WARNING |   ✗ LLM parsing failed: 'NoneType' object has no attribute 'strip'
+2026-01-05 23:23:14 | WARNING |   ✗ Failed to generate scores
+2026-01-05 23:23:14 | WARNING | 
+✓ Results saved: results.csv
+2026-01-05 23:23:14 | INFO | 
+Generating evaluation plots...
+2026-01-05 23:23:14 | INFO |   Processing cola...
+2026-01-05 23:23:15 | INFO |   ✓ Saved curves: outputs/run_gemini3_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9/curves_cola.png
+2026-01-05 23:23:15 | INFO |   Processing sst2...
+2026-01-05 23:23:16 | INFO |   ✓ Saved curves: outputs/run_gemini3_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9/curves_sst2.png
+2026-01-05 23:23:16 | INFO |   Processing hatexplain...
+2026-01-05 23:23:17 | INFO |   ✓ Saved curves: outputs/run_gemini3_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9/curves_hatexplain.png
+2026-01-05 23:23:17 | INFO | 
+================================================================================
+2026-01-05 23:23:17 | INFO | AGGREGATE METRICS (Multi-Seed Analysis)
+2026-01-05 23:23:17 | INFO | ================================================================================
+2026-01-05 23:23:17 | INFO | 
+cola:
+2026-01-05 23:23:17 | INFO |   LIME                : ROC_AUC=0.2548±0.0023 PR_AUC=0.2100±0.0006 (seeds=30)
+2026-01-05 23:23:17 | INFO |   Partition SHAP      : ROC_AUC=0.5444 PR_AUC=0.3932 (seeds=1)
+2026-01-05 23:23:17 | INFO |   Integrated Gradient : ROC_AUC=0.5397 PR_AUC=0.4016 (seeds=1)
+2026-01-05 23:23:17 | INFO |   LIME-LLM            : ROC_AUC=0.5441 PR_AUC=0.3888 (seeds=1)
+2026-01-05 23:23:17 | INFO | 
+hatexplain:
+2026-01-05 23:23:17 | INFO |   LIME                : ROC_AUC=0.3363±0.0031 PR_AUC=0.2335±0.0014 (seeds=30)
+2026-01-05 23:23:17 | INFO |   Partition SHAP      : ROC_AUC=0.5208 PR_AUC=0.4150 (seeds=1)
+2026-01-05 23:23:17 | INFO |   Integrated Gradient : ROC_AUC=0.5794 PR_AUC=0.4905 (seeds=1)
+2026-01-05 23:23:17 | INFO |   LIME-LLM            : ROC_AUC=0.6595 PR_AUC=0.4524 (seeds=1)
+2026-01-05 23:23:17 | INFO | 
+sst2:
+2026-01-05 23:23:17 | INFO |   LIME                : ROC_AUC=0.5097±0.0032 PR_AUC=0.3660±0.0030 (seeds=30)
+2026-01-05 23:23:17 | INFO |   Partition SHAP      : ROC_AUC=0.5294 PR_AUC=0.4548 (seeds=1)
+2026-01-05 23:23:17 | INFO |   Integrated Gradient : ROC_AUC=0.6655 PR_AUC=0.4834 (seeds=1)
+2026-01-05 23:23:17 | INFO |   LIME-LLM            : ROC_AUC=0.6818 PR_AUC=0.3882 (seeds=1)
+2026-01-05 23:23:17 | INFO | 
+================================================================================
+2026-01-05 23:23:17 | INFO | ✓ PIPELINE COMPLETE
+2026-01-05 23:23:17 | INFO | Saved: outputs/run_gemini3_xai_combined_df_test_human_rationale_150_examples_sysv9_usrv9_datadescv9/aggregate_metrics.json
+2026-01-05 23:23:17 | INFO | ================================================================================
+
+2026-01-05 23:23:17 | WARNING | Failed examples 1/150
+["1169443635869487105_twitter|hatexplain|'<user> lol not me i don [UNK] t deal with bms not outside children [UNK] ss i leave that ghetto mess for everybody else [UNK] [UNK] [UNK]'"]

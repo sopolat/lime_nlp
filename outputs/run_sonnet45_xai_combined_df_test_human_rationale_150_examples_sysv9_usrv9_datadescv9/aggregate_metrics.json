@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-02T14:27:13.187284",
+  "generated_at": "2026-01-06T00:18:19.630649",
   "methods": [
     "LIME",
     "Partition SHAP",
@@ -10,11 +10,11 @@
     "cola": {
       "LIME": {
         "n_samples": 324,
-        "n_seeds": 1,
-        "roc_auc": 0.2553086419753086,
-        "roc_auc_std": 0.0,
-        "pr_auc": 0.20998185937649833,
-        "pr_auc_std": 0.0
+        "n_seeds": 30,
+        "roc_auc": 0.25477291432846993,
+        "roc_auc_std": 0.0023447335787296717,
+        "pr_auc": 0.2100145061215795,
+        "pr_auc_std": 0.0006419819513133858
       },
       "Partition SHAP": {
         "n_samples": 324,
@@ -35,20 +35,20 @@
       "LIME-LLM": {
         "n_samples": 324,
         "n_seeds": 1,
-        "roc_auc": 0.5871829405162738,
+        "roc_auc": 0.597665544332211,
         "roc_auc_std": 0.0,
-        "pr_auc": 0.39358078797321905,
+        "pr_auc": 0.4571295206956062,
         "pr_auc_std": 0.0
       }
     },
     "hatexplain": {
       "LIME": {
         "n_samples": 1098,
-        "n_seeds": 1,
-        "roc_auc": 0.34284485230857475,
-        "roc_auc_std": 0.0,
-        "pr_auc": 0.23621070814116948,
-        "pr_auc_std": 0.0
+        "n_seeds": 30,
+        "roc_auc": 0.3362696588670731,
+        "roc_auc_std": 0.003149661568114851,
+        "pr_auc": 0.23354896098578729,
+        "pr_auc_std": 0.0013629731149359325
       },
       "Partition SHAP": {
         "n_samples": 1098,
@@ -69,20 +69,20 @@
       "LIME-LLM": {
         "n_samples": 1001,
         "n_seeds": 1,
-        "roc_auc": 0.5992249609926442,
+        "roc_auc": 0.6261771862694107,
         "roc_auc_std": 0.0,
-        "pr_auc": 0.4145009618969865,
+        "pr_auc": 0.48572599515622533,
         "pr_auc_std": 0.0
       }
     },
     "sst2": {
       "LIME": {
         "n_samples": 993,
-        "n_seeds": 1,
-        "roc_auc": 0.5114086541618332,
-        "roc_auc_std": 0.0,
-        "pr_auc": 0.3685018010239818,
-        "pr_auc_std": 0.0
+        "n_seeds": 30,
+        "roc_auc": 0.5096941641678887,
+        "roc_auc_std": 0.0031684353121226518,
+        "pr_auc": 0.36599388429330415,
+        "pr_auc_std": 0.0030464053699764742
       },
       "Partition SHAP": {
         "n_samples": 993,
@@ -103,9 +103,9 @@
       "LIME-LLM": {
         "n_samples": 993,
         "n_seeds": 1,
-        "roc_auc": 0.6967650856880212,
+        "roc_auc": 0.6806725907767734,
         "roc_auc_std": 0.0,
-        "pr_auc": 0.3848688728137468,
+        "pr_auc": 0.4246712233210586,
         "pr_auc_std": 0.0
       }
     }
