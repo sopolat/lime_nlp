@@ -588,7 +588,7 @@ def plot_curves_multiseed(df: pd.DataFrame, dataset: str, args):
     Handles multi-seed methods (like LIME) by plotting Mean line + Shaded Std Dev.
     Handles single-seed methods (like SHAP) by plotting a single line.
     """
-    colors = ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728"]
+    colors = ["#1f77b4", "#ff7f0e", "#2ca02c","#964B00", "#d62728"]
 
     # Create dataset-specific subset
     df_dataset = df[df["dataset_name"] == dataset].copy()
@@ -612,7 +612,7 @@ def plot_curves_multiseed(df: pd.DataFrame, dataset: str, args):
 
         # Strict filter: If method is "LIME", ignore "LIME-LLM"
         if method == "LIME":
-            relevant_cols = [c for c in relevant_cols if "LIME-LLM" not in c]
+            relevant_cols = [c for c in relevant_cols if "LIME-LLM" not in c or "LLiMe" not in c]
 
         if not relevant_cols:
             continue

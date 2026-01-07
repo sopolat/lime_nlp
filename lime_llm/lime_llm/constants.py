@@ -8,7 +8,7 @@ TASK_MODELS = {
         "hatexplain": "gmihaila/bert-base-cased-hatexplain",
         "cola": "textattack/distilbert-base-uncased-CoLA"
     }
-METHODS = ["LIME", "Partition SHAP", "Integrated Gradient", "LIME-LLM"]
+METHODS = ["LIME", "Partition SHAP", "Integrated Gradient","LLiMe", "LIME-LLM"]
 
 LLM_SET = {
     "sonnet45": {

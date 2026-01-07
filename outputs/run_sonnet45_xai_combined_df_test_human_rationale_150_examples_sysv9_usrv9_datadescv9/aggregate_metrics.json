@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-06T00:18:19.630649",
+  "generated_at": "2026-01-06T06:44:08.385554",
   "methods": [
     "LIME",
     "Partition SHAP",
@@ -69,9 +69,9 @@
       "LIME-LLM": {
         "n_samples": 1001,
         "n_seeds": 1,
-        "roc_auc": 0.6261771862694107,
+        "roc_auc": 0.6267901590014117,
         "roc_auc_std": 0.0,
-        "pr_auc": 0.48572599515622533,
+        "pr_auc": 0.4854975642125112,
         "pr_auc_std": 0.0
       }
     },
